@@ -1,1 +1,56 @@
 Avaliações dos clientes (estudantes), relativamente aos quartos
+
+
+A aplicação deve fazer
+
+- Controlo das habitações para alugar
+- Gestão dos alugueres em curso
+- Histórico de alugueres
+- Pesquisa de habitações para alugar
+- Divulgação de habitações na página do facebook
+- Área de clientes
+- Integração com aplicações externas
+- Integração com area de cliente web
+- Assim que a aplicação web for disponibilizada para utilização é intenção da
+empresa enviar a todos os seus clientes credenciais de acesso (envio massivo de emails??)
+
+
+Área de clientes
+- Dados de Cliente
+  - Nome
+  - Data de Nascimento
+  - Género
+  - Email
+  - Facebook (opcional)
+  - Linkedin (opcional)
+  - Twitter (opcional)
+  - Intituição de ensino superior
+  - Curso
+  - Ano
+  - Gostos
+- Pesquisa por habitações para alugar
+- Registo de avaliações sobre as habitações
+- Pedidos de informação anónima aos inquilinos
+
+Pesquisa de habitações para alugar, critérios:
+- Localização
+- Pesquisa por Habitação 
+
+- Pesquisa por Quarto
+  - Tipologia (dos alunos)
+  - casa de banho privativa
+  - tamanho do quarto
+  - Número de camas 
+
+Informação da habitação:
+- Descrição da habitação
+- Número de assoalhadas
+- Número de quartos
+- total m2
+- Ano de Construção
+- Internet e Wi-Fi
+- Numero de quartos disponíveis
+- Retrições ao aluguer
+- Avaliações e comentários
+- Pontos de interesse
+- Localização no mapa
