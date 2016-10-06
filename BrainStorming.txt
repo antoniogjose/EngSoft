@@ -54,3 +54,10 @@ Informação da habitação:
 - Avaliações e comentários
 - Pontos de interesse
 - Localização no mapa
+
+
+
+Links:
+Metro Framework
+- Video do projecto e Código: https://www.youtube.com/watch?v=PZXla-mLotE
+- Video: https://www.youtube.com/watch?v=Ryxew9cgkZA / https://www.youtube.com/watch?v=mdFgbdM8PYk
