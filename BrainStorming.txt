@@ -1,4 +1,4 @@
-Avaliações dos clientes (estudantes), relativamente aos quartosf
+Avaliações dos clientes (estudantes), relativamente aos quartos
 
 
 A aplicação deve fazer
