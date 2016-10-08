@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "imoEstudante", "imoEstudante\imoEstudante.csproj", "{20DB73BD-35A8-4489-838D-A3B6874A0F77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImoEstudante", "imoEstudante\ImoEstudante.csproj", "{20DB73BD-35A8-4489-838D-A3B6874A0F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImoEstudanteBL", "ImoEstudanteBL\ImoEstudanteBL.csproj", "{24857250-423C-461A-BFE3-0FF2B13F1D4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImoEstudanteDL", "ImoEstudanteDL\ImoEstudanteDL.csproj", "{59CBCBFA-7625-4CFD-B199-BDCECF2DC768}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{20DB73BD-35A8-4489-838D-A3B6874A0F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20DB73BD-35A8-4489-838D-A3B6874A0F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20DB73BD-35A8-4489-838D-A3B6874A0F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24857250-423C-461A-BFE3-0FF2B13F1D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24857250-423C-461A-BFE3-0FF2B13F1D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24857250-423C-461A-BFE3-0FF2B13F1D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24857250-423C-461A-BFE3-0FF2B13F1D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59CBCBFA-7625-4CFD-B199-BDCECF2DC768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CBCBFA-7625-4CFD-B199-BDCECF2DC768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CBCBFA-7625-4CFD-B199-BDCECF2DC768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CBCBFA-7625-4CFD-B199-BDCECF2DC768}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
