@@ -25,17 +25,45 @@
                                Text="Home" />
                 </StackPanel>
             </Controls:HamburgerButtonInfo>
+            <!--  Alugueres button  -->
 
             <Controls:HamburgerButtonInfo ClearHistory="True"  PageType="views:DetailPage">
 
                 <StackPanel Orientation="Horizontal">
                     <SymbolIcon Width="48" Height="48"  
-                                Symbol="Calendar" />
-                    <TextBlock Text="Calendar" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
+                                Symbol="Map" />
+                    <TextBlock Text="Alugueres" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
+                </StackPanel>
+
+
+            </Controls:HamburgerButtonInfo>
+
+            <!--  Habitacoes button  -->
+            <Controls:HamburgerButtonInfo ClearHistory="True"  PageType="views:DetailPage">
+
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"  
+                                Symbol="Street" />
+                    <TextBlock Text="Habitações" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
                 </StackPanel>
                 
 
             </Controls:HamburgerButtonInfo>
+            <!--  Clientes button  -->
+            
+            <Controls:HamburgerButtonInfo ClearHistory="True"  PageType="views:DetailPage">
+
+                <StackPanel Orientation="Horizontal">
+                    <SymbolIcon Width="48" Height="48"  
+                                Symbol="People" />
+                    <TextBlock Text="Clientes" Margin="12, 0, 0, 0" VerticalAlignment="Center" />
+                </StackPanel>
+
+
+            </Controls:HamburgerButtonInfo>
+
+
+
 
 
 

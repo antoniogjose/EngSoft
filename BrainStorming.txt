@@ -46,6 +46,7 @@ Informação da habitação:
 - Descrição da habitação
 - Número de assoalhadas
 - Número de quartos
+  - Valor por quarto/ área / WC privativo.
 - total m2
 - Ano de Construção
 - Internet e Wi-Fi
@@ -54,6 +55,8 @@ Informação da habitação:
 - Avaliações e comentários
 - Pontos de interesse
 - Localização no mapa
+- Visao a 360º
+- Planta da habitação
 
 
 
