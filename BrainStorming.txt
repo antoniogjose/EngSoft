@@ -64,3 +64,8 @@ Links:
 Metro Framework
 - Video do projecto e Código: https://www.youtube.com/watch?v=PZXla-mLotE
 - Video: https://www.youtube.com/watch?v=Ryxew9cgkZA / https://www.youtube.com/watch?v=mdFgbdM8PYk
+
+Multil.
+http://www.linhadecodigo.com.br/artigo/1322/desenvolvendo-aplicacoes-multi-idioma.aspx
+https://www.youtube.com/watch?v=SNIyP1QQdVs
+
