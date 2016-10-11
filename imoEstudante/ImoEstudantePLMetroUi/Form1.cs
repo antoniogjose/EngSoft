@@ -26,5 +26,17 @@ namespace ImoEstudantePLMetroUi
         {
 
         }
+
+        private void portuguêsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Idioma.AjustaCultura(this, "pt");
+            if (inglesToolStripMenuItem.Checked == true) inglesToolStripMenuItem.Checked = false;
+        }
+
+        private void inguelasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Idioma.AjustaCultura(this, "en");
+            if (portuguêsToolStripMenuItem.Checked == true) portuguêsToolStripMenuItem.Checked = false;
+        }
     }
 }

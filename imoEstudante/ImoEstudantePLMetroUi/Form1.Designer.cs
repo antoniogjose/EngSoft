@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +38,8 @@
             this.menuToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.portuguêsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inglesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,11 +50,8 @@
             this.menuToolStripMenuItem5,
             this.menuToolStripMenuItem6,
             this.clientesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(23, 60);
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(802, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // menuToolStripMenuItem
             // 
@@ -61,63 +61,68 @@
             this.menuToolStripMenuItem3,
             this.menuToolStripMenuItem4});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.menuToolStripMenuItem.Text = "File";
+            resources.ApplyResources(this.menuToolStripMenuItem, "menuToolStripMenuItem");
             this.menuToolStripMenuItem.Click += new System.EventHandler(this.menuToolStripMenuItem_Click);
             // 
             // menuToolStripMenuItem1
             // 
+            this.menuToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.portuguêsToolStripMenuItem,
+            this.inglesToolStripMenuItem});
             this.menuToolStripMenuItem1.Name = "menuToolStripMenuItem1";
-            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.menuToolStripMenuItem1.Text = "Menu";
+            resources.ApplyResources(this.menuToolStripMenuItem1, "menuToolStripMenuItem1");
             // 
             // menuToolStripMenuItem2
             // 
             this.menuToolStripMenuItem2.Name = "menuToolStripMenuItem2";
-            this.menuToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.menuToolStripMenuItem2.Text = "Menu";
+            resources.ApplyResources(this.menuToolStripMenuItem2, "menuToolStripMenuItem2");
             // 
             // menuToolStripMenuItem3
             // 
             this.menuToolStripMenuItem3.Name = "menuToolStripMenuItem3";
-            this.menuToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
-            this.menuToolStripMenuItem3.Text = "Menu";
+            resources.ApplyResources(this.menuToolStripMenuItem3, "menuToolStripMenuItem3");
             // 
             // menuToolStripMenuItem4
             // 
             this.menuToolStripMenuItem4.Name = "menuToolStripMenuItem4";
-            this.menuToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
-            this.menuToolStripMenuItem4.Text = "Menu";
+            resources.ApplyResources(this.menuToolStripMenuItem4, "menuToolStripMenuItem4");
             // 
             // menuToolStripMenuItem5
             // 
             this.menuToolStripMenuItem5.Name = "menuToolStripMenuItem5";
-            this.menuToolStripMenuItem5.Size = new System.Drawing.Size(72, 20);
-            this.menuToolStripMenuItem5.Text = "Alugueres";
+            resources.ApplyResources(this.menuToolStripMenuItem5, "menuToolStripMenuItem5");
             // 
             // menuToolStripMenuItem6
             // 
             this.menuToolStripMenuItem6.Name = "menuToolStripMenuItem6";
-            this.menuToolStripMenuItem6.Size = new System.Drawing.Size(78, 20);
-            this.menuToolStripMenuItem6.Text = "Habitações";
+            resources.ApplyResources(this.menuToolStripMenuItem6, "menuToolStripMenuItem6");
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.clientesToolStripMenuItem.Text = "Clientes";
+            resources.ApplyResources(this.clientesToolStripMenuItem, "clientesToolStripMenuItem");
+            // 
+            // portuguêsToolStripMenuItem
+            // 
+            this.portuguêsToolStripMenuItem.Checked = true;
+            this.portuguêsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.portuguêsToolStripMenuItem.Name = "portuguêsToolStripMenuItem";
+            resources.ApplyResources(this.portuguêsToolStripMenuItem, "portuguêsToolStripMenuItem");
+            this.portuguêsToolStripMenuItem.Click += new System.EventHandler(this.portuguêsToolStripMenuItem_Click);
+            // 
+            // inglesToolStripMenuItem
+            // 
+            this.inglesToolStripMenuItem.Name = "inglesToolStripMenuItem";
+            resources.ApplyResources(this.inglesToolStripMenuItem, "inglesToolStripMenuItem");
+            this.inglesToolStripMenuItem.Click += new System.EventHandler(this.inguelasToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 396);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(23, 60, 23, 20);
-            this.Text = "ImoEstudante";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -137,6 +142,8 @@
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem portuguêsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inglesToolStripMenuItem;
     }
 }
 
