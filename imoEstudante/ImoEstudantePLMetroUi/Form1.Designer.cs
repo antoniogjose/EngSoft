@@ -32,14 +32,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.portuguêsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inglesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.portuguêsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inglesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,22 @@
             this.menuToolStripMenuItem1.Name = "menuToolStripMenuItem1";
             resources.ApplyResources(this.menuToolStripMenuItem1, "menuToolStripMenuItem1");
             // 
+            // portuguêsToolStripMenuItem
+            // 
+            this.portuguêsToolStripMenuItem.Checked = true;
+            this.portuguêsToolStripMenuItem.CheckOnClick = true;
+            this.portuguêsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.portuguêsToolStripMenuItem.Name = "portuguêsToolStripMenuItem";
+            resources.ApplyResources(this.portuguêsToolStripMenuItem, "portuguêsToolStripMenuItem");
+            this.portuguêsToolStripMenuItem.Click += new System.EventHandler(this.portuguêsToolStripMenuItem_Click);
+            // 
+            // inglesToolStripMenuItem
+            // 
+            this.inglesToolStripMenuItem.CheckOnClick = true;
+            this.inglesToolStripMenuItem.Name = "inglesToolStripMenuItem";
+            resources.ApplyResources(this.inglesToolStripMenuItem, "inglesToolStripMenuItem");
+            this.inglesToolStripMenuItem.Click += new System.EventHandler(this.inguelasToolStripMenuItem_Click);
+            // 
             // menuToolStripMenuItem2
             // 
             this.menuToolStripMenuItem2.Name = "menuToolStripMenuItem2";
@@ -101,20 +117,6 @@
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             resources.ApplyResources(this.clientesToolStripMenuItem, "clientesToolStripMenuItem");
-            // 
-            // portuguêsToolStripMenuItem
-            // 
-            this.portuguêsToolStripMenuItem.Checked = true;
-            this.portuguêsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.portuguêsToolStripMenuItem.Name = "portuguêsToolStripMenuItem";
-            resources.ApplyResources(this.portuguêsToolStripMenuItem, "portuguêsToolStripMenuItem");
-            this.portuguêsToolStripMenuItem.Click += new System.EventHandler(this.portuguêsToolStripMenuItem_Click);
-            // 
-            // inglesToolStripMenuItem
-            // 
-            this.inglesToolStripMenuItem.Name = "inglesToolStripMenuItem";
-            resources.ApplyResources(this.inglesToolStripMenuItem, "inglesToolStripMenuItem");
-            this.inglesToolStripMenuItem.Click += new System.EventHandler(this.inguelasToolStripMenuItem_Click);
             // 
             // Form1
             // 
