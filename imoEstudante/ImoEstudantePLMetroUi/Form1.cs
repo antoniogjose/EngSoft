@@ -14,6 +14,7 @@ namespace ImoEstudantePLMetroUi
     {
         public Form1()
         {
+            Idioma.AjustaCultura(this, "pt");
             InitializeComponent();
         }
 
@@ -31,12 +32,24 @@ namespace ImoEstudantePLMetroUi
         {
             Idioma.AjustaCultura(this, "pt");
             if (inglesToolStripMenuItem.Checked == true) inglesToolStripMenuItem.Checked = false;
+            portuguêsToolStripMenuItem.Enabled = false;
+            inglesToolStripMenuItem.Enabled = true;
+
         }
 
         private void inguelasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Idioma.AjustaCultura(this, "en");
             if (portuguêsToolStripMenuItem.Checked == true) portuguêsToolStripMenuItem.Checked = false;
+            inglesToolStripMenuItem.Enabled = false;
+            portuguêsToolStripMenuItem.Enabled = true;
+
+
+        }
+
+        private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
