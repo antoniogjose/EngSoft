@@ -135,6 +135,9 @@
     <EmbeddedResource Include="DashBoardMainPage.resx">
       <DependentUpon>DashBoardMainPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.en.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

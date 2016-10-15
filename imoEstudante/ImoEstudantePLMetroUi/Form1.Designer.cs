@@ -75,6 +75,7 @@
             this.helpToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // menuToolStripMenuItem
             // 
@@ -273,14 +274,14 @@
             // 
             // panel
             // 
-            this.panel.BackColor = System.Drawing.Color.WhiteSmoke;
+            resources.ApplyResources(this.panel, "panel");
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;
             this.panel.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.panel, "panel");
             this.panel.Name = "panel";
+            this.panel.VerticalScrollbar = true;
             this.panel.VerticalScrollbarBarColor = true;
-            this.panel.VerticalScrollbarHighlightOnWheel = false;
+            this.panel.VerticalScrollbarHighlightOnWheel = true;
             this.panel.VerticalScrollbarSize = 10;
             // 
             // Form1
