@@ -59,6 +59,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreOImoEstudanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Panel = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -256,10 +257,16 @@
             this.sobreOImoEstudanteToolStripMenuItem.Name = "sobreOImoEstudanteToolStripMenuItem";
             resources.ApplyResources(this.sobreOImoEstudanteToolStripMenuItem, "sobreOImoEstudanteToolStripMenuItem");
             // 
+            // Panel
+            // 
+            resources.ApplyResources(this.Panel, "Panel");
+            this.Panel.Name = "Panel";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Panel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -304,6 +311,7 @@
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.Panel Panel;
     }
 }
 
