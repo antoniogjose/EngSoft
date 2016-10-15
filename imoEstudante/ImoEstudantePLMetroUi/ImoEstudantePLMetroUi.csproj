@@ -81,6 +81,12 @@
     <Compile Include="Dasboard.Designer.cs">
       <DependentUpon>Dasboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DashBoardMainPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashBoardMainPage.Designer.cs">
+      <DependentUpon>DashBoardMainPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dasboard.resx">
       <DependentUpon>Dasboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardMainPage.resx">
+      <DependentUpon>DashBoardMainPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.en.resx">
       <DependentUpon>Form1.cs</DependentUpon>

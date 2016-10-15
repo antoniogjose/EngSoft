@@ -57,24 +57,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreOImoEstudanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pieChart1 = new LiveCharts.WinForms.PieChart();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pieChart2 = new LiveCharts.WinForms.PieChart();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pieChart3 = new LiveCharts.WinForms.PieChart();
             this.menuStrip1.SuspendLayout();
-            this.metroPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -259,101 +242,16 @@
             this.sobreOImoEstudanteToolStripMenuItem.Name = "sobreOImoEstudanteToolStripMenuItem";
             resources.ApplyResources(this.sobreOImoEstudanteToolStripMenuItem, "sobreOImoEstudanteToolStripMenuItem");
             // 
-            // metroPanel1
-            // 
-            this.metroPanel1.Controls.Add(this.panel1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            resources.ApplyResources(this.metroPanel1, "metroPanel1");
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.cartesianChart1);
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // cartesianChart1
-            // 
-            resources.ApplyResources(this.cartesianChart1, "cartesianChart1");
-            this.cartesianChart1.Name = "cartesianChart1";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Name = "label1";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.pieChart1);
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Name = "panel3";
-            // 
-            // pieChart1
-            // 
-            resources.ApplyResources(this.pieChart1, "pieChart1");
-            this.pieChart1.Name = "pieChart1";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.pieChart2);
-            resources.ApplyResources(this.panel4, "panel4");
-            this.panel4.Name = "panel4";
-            // 
-            // pieChart2
-            // 
-            resources.ApplyResources(this.pieChart2, "pieChart2");
-            this.pieChart2.Name = "pieChart2";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.pieChart3);
-            resources.ApplyResources(this.panel5, "panel5");
-            this.panel5.Name = "panel5";
-            // 
-            // pieChart3
-            // 
-            resources.ApplyResources(this.pieChart3, "pieChart3");
-            this.pieChart3.Name = "pieChart3";
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.metroPanel1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -390,17 +288,6 @@
         private System.Windows.Forms.ToolStripMenuItem fecharToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private LiveCharts.WinForms.PieChart pieChart3;
-        private System.Windows.Forms.Panel panel4;
-        private LiveCharts.WinForms.PieChart pieChart2;
-        private System.Windows.Forms.Panel panel3;
-        private LiveCharts.WinForms.PieChart pieChart1;
-        private System.Windows.Forms.Label label1;
-        private LiveCharts.WinForms.CartesianChart cartesianChart1;
     }
 }
 

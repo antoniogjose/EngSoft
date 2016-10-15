@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ImoEstudantePLMetroUi
 {
-    public partial class Dasboard : MetroFramework.Controls.MetroUserControl
+    public partial class AddAluguer : UserControl
     {
-        public Dasboard()
+        public AddAluguer()
         {
             InitializeComponent();
-        }
-
-        private void Dasboard_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
