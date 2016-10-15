@@ -131,7 +131,7 @@
             this.panel2.Controls.Add(this.cartesianChart1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(795, 229);
+            this.panel2.Size = new System.Drawing.Size(793, 229);
             this.panel2.TabIndex = 0;
             // 
             // label1

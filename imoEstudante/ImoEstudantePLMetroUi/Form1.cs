@@ -7,15 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace ImoEstudantePLMetroUi
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class Form1 : MetroForm
     {
         public Form1()
         {
             Idioma.AjustaCultura(this, "pt");
             InitializeComponent();
+            if (!panel.Controls.Contains(DashBoardMainPage.Instance))
+            {
+                panel.Controls.Add(DashBoardMainPage.Instance);
+                DashBoardMainPage.Instance.Dock = DockStyle.Fill;
+                DashBoardMainPage.Instance.BringToFront();
+            }
+            else
+                DashBoardMainPage.Instance.BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
