@@ -65,5 +65,17 @@ namespace ImoEstudantePLMetroUi
         {
 
         }
+
+        private void menuToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(EditUser.Instance))
+            {
+                panel.Controls.Add(EditUser.Instance);
+                EditUser.Instance.Dock = DockStyle.Fill;
+                EditUser.Instance.BringToFront();
+            }
+            else
+                EditUser.Instance.BringToFront();
+        }
     }
 }

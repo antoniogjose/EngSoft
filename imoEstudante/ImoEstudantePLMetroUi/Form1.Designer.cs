@@ -94,6 +94,7 @@
             // 
             this.menuToolStripMenuItem2.Name = "menuToolStripMenuItem2";
             resources.ApplyResources(this.menuToolStripMenuItem2, "menuToolStripMenuItem2");
+            this.menuToolStripMenuItem2.Click += new System.EventHandler(this.menuToolStripMenuItem2_Click);
             // 
             // adicionarUtilizadorToolStripMenuItem
             // 

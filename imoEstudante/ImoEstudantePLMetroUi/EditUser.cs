@@ -10,8 +10,19 @@ using System.Windows.Forms;
 
 namespace ImoEstudantePLMetroUi
 {
-    public partial class EditUser : UserControl
+    public partial class EditUser : MetroFramework.Controls.MetroUserControl
     {
+        private static EditUser _instance;
+
+        public static EditUser Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new EditUser();
+                return _instance;
+            }
+        }
         public EditUser()
         {
             InitializeComponent();
