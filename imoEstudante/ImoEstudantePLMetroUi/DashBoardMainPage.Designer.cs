@@ -49,16 +49,13 @@
             // 
             // panelDashBoard
             // 
-            this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
             this.panelDashBoard.HorizontalScrollbarHighlightOnWheel = false;
             this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(804, 389);
+            this.panelDashBoard.Size = new System.Drawing.Size(801, 389);
             this.panelDashBoard.TabIndex = 2;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
@@ -171,8 +168,7 @@
             // 
             // DashBoardMainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.panelDashBoard);
             this.Name = "DashBoardMainPage";
             this.Size = new System.Drawing.Size(801, 389);

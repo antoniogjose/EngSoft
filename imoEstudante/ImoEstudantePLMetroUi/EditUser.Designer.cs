@@ -31,7 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditUser));
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label14 = new System.Windows.Forms.Label();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -58,17 +63,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.metroPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.metroPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDashBoard
@@ -79,7 +79,7 @@
             this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(804, 389);
+            this.panelDashBoard.Size = new System.Drawing.Size(801, 389);
             this.panelDashBoard.TabIndex = 3;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
@@ -94,6 +94,40 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(804, 375);
             this.panel1.TabIndex = 2;
+            // 
+            // metroPanel2
+            // 
+            this.metroPanel2.Controls.Add(this.dataGridView1);
+            this.metroPanel2.Controls.Add(this.label14);
+            this.metroPanel2.HorizontalScrollbarBarColor = true;
+            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.Location = new System.Drawing.Point(3, 3);
+            this.metroPanel2.Name = "metroPanel2";
+            this.metroPanel2.Size = new System.Drawing.Size(270, 369);
+            this.metroPanel2.TabIndex = 2;
+            this.metroPanel2.VerticalScrollbarBarColor = true;
+            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 30);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(270, 320);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(0, 12);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(118, 15);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Gestão de Utilizador";
             // 
             // metroPanel1
             // 
@@ -130,12 +164,28 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(279, 3);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(522, 369);
+            this.metroPanel1.Size = new System.Drawing.Size(520, 369);
             this.metroPanel1.TabIndex = 1;
             this.metroPanel1.VerticalScrollbar = true;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.Location = new System.Drawing.Point(433, 309);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(75, 45);
+            this.metroButton2.TabIndex = 6;
+            this.metroButton2.Text = "Salvar";
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(356, 309);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 45);
+            this.metroButton1.TabIndex = 6;
+            this.metroButton1.Text = "Editar";
             // 
             // richTextBox1
             // 
@@ -375,71 +425,21 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 30);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(270, 339);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // metroPanel2
-            // 
-            this.metroPanel2.Controls.Add(this.dataGridView1);
-            this.metroPanel2.Controls.Add(this.label14);
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(3, 3);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(270, 369);
-            this.metroPanel2.TabIndex = 2;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(0, 12);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(118, 15);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Gestão de Utilizador";
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(356, 309);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 45);
-            this.metroButton1.TabIndex = 6;
-            this.metroButton1.Text = "Editar";
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.Location = new System.Drawing.Point(433, 309);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(75, 45);
-            this.metroButton2.TabIndex = 6;
-            this.metroButton2.Text = "Salvar";
-            // 
             // EditUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.Controls.Add(this.panelDashBoard);
             this.Name = "EditUser";
             this.Size = new System.Drawing.Size(804, 389);
             this.panelDashBoard.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.metroPanel2.ResumeLayout(false);
+            this.metroPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.metroPanel2.ResumeLayout(false);
-            this.metroPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
