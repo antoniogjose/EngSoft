@@ -10,8 +10,19 @@ using System.Windows.Forms;
 
 namespace ImoEstudantePLMetroUi
 {
-    public partial class ListHouse : UserControl
+    public partial class ListHouse : MetroFramework.Controls.MetroUserControl
     {
+        private static ListHouse _instance;
+
+        public static ListHouse Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new ListHouse();
+                return _instance;
+            }
+        }
         public ListHouse()
         {
             InitializeComponent();

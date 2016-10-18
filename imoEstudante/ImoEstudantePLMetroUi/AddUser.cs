@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ImoEstudantePLMetroUi
 {
-    public partial class AddUser : UserControl
+    public partial class AddUser : MetroFramework.Controls.MetroUserControl
     {
         private static AddUser _instance;
 

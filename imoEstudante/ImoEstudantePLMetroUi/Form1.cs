@@ -77,5 +77,56 @@ namespace ImoEstudantePLMetroUi
             else
                 EditUser.Instance.BringToFront();
         }
+
+        private void adicionarUtilizadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(AddClient.Instance))
+            {
+                panel.Controls.Add(AddClient.Instance);
+                AddClient.Instance.Dock = DockStyle.Fill;
+                AddClient.Instance.BringToFront();
+            }
+            else
+                AddClient.Instance.BringToFront();
+        }
+
+        private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(SearchRent.Instance))
+            {
+                panel.Controls.Add(SearchRent.Instance);
+                SearchRent.Instance.Dock = DockStyle.Fill;
+                SearchRent.Instance.BringToFront();
+            }
+            else
+                SearchRent.Instance.BringToFront();
+
+        }
+
+        private void btAddRent_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(AddRent.Instance))
+            {
+                panel.Controls.Add(AddRent.Instance);
+                AddRent.Instance.Dock = DockStyle.Fill;
+                AddRent.Instance.BringToFront();
+            }
+            else
+                AddRent.Instance.BringToFront();
+
+        }
+
+        private void btEditRent_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(EditRent.Instance))
+            {
+                panel.Controls.Add(EditRent.Instance);
+                EditRent.Instance.Dock = DockStyle.Fill;
+                EditRent.Instance.BringToFront();
+            }
+            else
+                EditRent.Instance.BringToFront();
+
+        }
     }
 }

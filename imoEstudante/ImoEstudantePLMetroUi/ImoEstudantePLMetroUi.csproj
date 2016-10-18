@@ -87,6 +87,12 @@
     <Compile Include="AddHouse.Designer.cs">
       <DependentUpon>AddHouse.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddRent.Designer.cs">
+      <DependentUpon>AddRent.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,17 +180,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AddRent.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddRent.Designer.cs">
-      <DependentUpon>AddRent.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddHouse.resx">
       <DependentUpon>AddHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRent.resx">
+      <DependentUpon>AddRent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
