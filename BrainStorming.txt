@@ -69,3 +69,30 @@ Multil.
 http://www.linhadecodigo.com.br/artigo/1322/desenvolvendo-aplicacoes-multi-idioma.aspx
 https://www.youtube.com/watch?v=SNIyP1QQdVs
 
+Menus / "paginas"
+Dasboard (pagina inicial) - OK
+Gestão de utilizador - OK
+Adicionar Utilizador - 
+Pesquisa de Alugueres - 
+Adicionar - 
+Editar - 
+Remover - 
+Listar - 
+Habitações - 
+Pesquisa de Habitações - 
+Adicionar - 
+Editar - 
+Remover - 
+Listar - 
+Pesquisa de clientes - 
+Adicionar - 
+Editar - 
+Remover - 
+Listar - 
+
+
+
+
+
+
+
