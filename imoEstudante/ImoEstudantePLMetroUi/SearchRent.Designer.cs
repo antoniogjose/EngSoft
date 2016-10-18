@@ -55,9 +55,9 @@
             this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
             this.metroLabel1.Location = new System.Drawing.Point(4, 22);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(139, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(233, 19);
             this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "Pesquisa de Alugueres";
+            this.metroLabel1.Text = "ImoEstudante » Pesquisa de Alugueres";
             // 
             // panel1
             // 

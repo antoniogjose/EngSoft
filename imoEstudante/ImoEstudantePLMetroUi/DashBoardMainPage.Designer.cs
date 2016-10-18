@@ -32,12 +32,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.pieChart3 = new LiveCharts.WinForms.PieChart();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pieChart2 = new LiveCharts.WinForms.PieChart();
+            this.pieChart3 = new LiveCharts.WinForms.PieChart();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pieChart2 = new LiveCharts.WinForms.PieChart();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -51,9 +52,9 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(0, 44);
+            this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(804, 408);
+            this.panel1.Size = new System.Drawing.Size(805, 413);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -66,7 +67,7 @@
             this.panel2.Controls.Add(this.cartesianChart1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(796, 246);
+            this.panel2.Size = new System.Drawing.Size(797, 251);
             this.panel2.TabIndex = 2;
             // 
             // label1
@@ -89,6 +90,18 @@
             this.cartesianChart1.TabIndex = 0;
             this.cartesianChart1.Text = "cartesianChart1";
             // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.pieChart3);
+            this.panel5.Location = new System.Drawing.Point(539, 260);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(261, 150);
+            this.panel5.TabIndex = 3;
+            // 
             // pieChart3
             // 
             this.pieChart3.Location = new System.Drawing.Point(29, 21);
@@ -97,17 +110,17 @@
             this.pieChart3.TabIndex = 0;
             this.pieChart3.Text = "pieChart1";
             // 
-            // panel5
+            // panel4
             // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.pieChart3);
-            this.panel5.Location = new System.Drawing.Point(539, 252);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(260, 153);
-            this.panel5.TabIndex = 3;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.pieChart2);
+            this.panel4.Location = new System.Drawing.Point(273, 260);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(261, 150);
+            this.panel4.TabIndex = 4;
             // 
             // pieChart2
             // 
@@ -117,18 +130,6 @@
             this.pieChart2.TabIndex = 0;
             this.pieChart2.Text = "pieChart1";
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.pieChart2);
-            this.panel4.Location = new System.Drawing.Point(273, 252);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(260, 153);
-            this.panel4.TabIndex = 4;
-            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -136,9 +137,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.pieChart1);
-            this.panel3.Location = new System.Drawing.Point(3, 252);
+            this.panel3.Location = new System.Drawing.Point(3, 260);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(260, 153);
+            this.panel3.Size = new System.Drawing.Size(261, 150);
             this.panel3.TabIndex = 5;
             // 
             // pieChart1
@@ -149,9 +150,20 @@
             this.pieChart1.TabIndex = 0;
             this.pieChart1.Text = "pieChart1";
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
+            this.metroLabel1.Location = new System.Drawing.Point(4, 22);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(88, 19);
+            this.metroLabel1.TabIndex = 4;
+            this.metroLabel1.Text = "ImoEstudante";
+            // 
             // DashBoardMainPage
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.panel1);
             this.Name = "DashBoardMainPage";
             this.Size = new System.Drawing.Size(830, 460);
@@ -162,6 +174,7 @@
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -177,5 +190,6 @@
         private LiveCharts.WinForms.PieChart pieChart2;
         private System.Windows.Forms.Panel panel3;
         private LiveCharts.WinForms.PieChart pieChart1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }

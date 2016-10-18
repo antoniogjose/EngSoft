@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditUser));
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -63,7 +64,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
@@ -86,6 +86,16 @@
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
             this.panelDashBoard.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
+            this.metroLabel1.Location = new System.Drawing.Point(4, 22);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(221, 19);
+            this.metroLabel1.TabIndex = 4;
+            this.metroLabel1.Text = "ImoEstudante » Edição de Utilizador";
             // 
             // panel1
             // 
@@ -427,16 +437,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
-            this.metroLabel1.Location = new System.Drawing.Point(4, 22);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(127, 19);
-            this.metroLabel1.TabIndex = 4;
-            this.metroLabel1.Text = "Edição de Utilizador";
             // 
             // EditUser
             // 
