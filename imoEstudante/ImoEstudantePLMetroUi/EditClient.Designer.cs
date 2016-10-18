@@ -1,6 +1,6 @@
 ﻿namespace ImoEstudantePLMetroUi
 {
-    partial class EditAluguer
+    partial class EditClient
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // EditClient
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Name = "EditClient";
+            this.Size = new System.Drawing.Size(830, 460);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

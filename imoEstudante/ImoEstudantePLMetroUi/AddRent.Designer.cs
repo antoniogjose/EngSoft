@@ -1,6 +1,6 @@
 ﻿namespace ImoEstudantePLMetroUi
 {
-    partial class AddUser
+    partial class AddRent
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,16 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // AddUser
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "AddUser";
-            this.Size = new System.Drawing.Size(830, 460);
-            this.ResumeLayout(false);
-
         }
 
         #endregion

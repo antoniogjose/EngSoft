@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace ImoEstudantePLMetroUi
 {
-    public partial class AddAluguer : UserControl
+    public partial class ListRent : UserControl
     {
-        private static AddAluguer _instance;
+        private static ListRent _instance;
 
-        public static AddAluguer Instance
+        public static ListRent Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new AddAluguer();
+                    _instance = new ListRent();
                 return _instance;
             }
         }
-        public AddAluguer()
+        public ListRent()
         {
             InitializeComponent();
         }

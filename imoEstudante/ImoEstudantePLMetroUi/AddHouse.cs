@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ImoEstudantePLMetroUi
 {
-    public partial class SearchAluguer : UserControl
+    public partial class AddHouse : UserControl
     {
-        public SearchAluguer()
+        public AddHouse()
         {
             InitializeComponent();
         }

@@ -75,11 +75,47 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddAluguer.cs">
+    <Compile Include="AddClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddAluguer.Designer.cs">
-      <DependentUpon>AddAluguer.cs</DependentUpon>
+    <Compile Include="AddClient.Designer.cs">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddHouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddHouse.Designer.cs">
+      <DependentUpon>AddHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditClient.Designer.cs">
+      <DependentUpon>EditClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditHouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditHouse.Designer.cs">
+      <DependentUpon>EditHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListClient.Designer.cs">
+      <DependentUpon>ListClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListHouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListHouse.Designer.cs">
+      <DependentUpon>ListHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListRent.Designer.cs">
+      <DependentUpon>ListRent.cs</DependentUpon>
     </Compile>
     <Compile Include="AddUser.cs">
       <SubType>UserControl</SubType>
@@ -93,11 +129,11 @@
     <Compile Include="DashBoardMainPage.Designer.cs">
       <DependentUpon>DashBoardMainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditAluguer.cs">
+    <Compile Include="EditRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EditAluguer.Designer.cs">
-      <DependentUpon>EditAluguer.cs</DependentUpon>
+    <Compile Include="EditRent.Designer.cs">
+      <DependentUpon>EditRent.cs</DependentUpon>
     </Compile>
     <Compile Include="EditUser.cs">
       <SubType>UserControl</SubType>
@@ -111,11 +147,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestUser.cs">
+    <Compile Include="SearchClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GestUser.Designer.cs">
-      <DependentUpon>GestUser.cs</DependentUpon>
+    <Compile Include="SearchClient.Designer.cs">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchHouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchHouse.Designer.cs">
+      <DependentUpon>SearchHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchRent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchRent.Designer.cs">
+      <DependentUpon>SearchRent.cs</DependentUpon>
     </Compile>
     <Compile Include="Idioma.cs" />
     <Compile Include="Login.cs">
@@ -126,14 +174,32 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchAluguer.cs">
+    <Compile Include="AddRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchAluguer.Designer.cs">
-      <DependentUpon>SearchAluguer.cs</DependentUpon>
+    <Compile Include="AddRent.Designer.cs">
+      <DependentUpon>AddRent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddClient.resx">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddHouse.resx">
+      <DependentUpon>AddHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashBoardMainPage.resx">
       <DependentUpon>DashBoardMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClient.resx">
+      <DependentUpon>EditClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditHouse.resx">
+      <DependentUpon>EditHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRent.resx">
+      <DependentUpon>EditRent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
@@ -143,6 +209,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListClient.resx">
+      <DependentUpon>ListClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListHouse.resx">
+      <DependentUpon>ListHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListRent.resx">
+      <DependentUpon>ListRent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -157,6 +232,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SearchClient.resx">
+      <DependentUpon>SearchClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchHouse.resx">
+      <DependentUpon>SearchHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchRent.resx">
+      <DependentUpon>SearchRent.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

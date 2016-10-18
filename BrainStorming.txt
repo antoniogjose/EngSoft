@@ -71,24 +71,22 @@ https://www.youtube.com/watch?v=SNIyP1QQdVs
 
 Menus / "paginas"
 Dasboard (pagina inicial) - OK
-Gestão de utilizador - OK
-Adicionar Utilizador - 
-Pesquisa de Alugueres - 
-Adicionar - 
-Editar - 
-Remover - 
-Listar - 
+Gestão de utilizador -      EditUser      - Criado - OK
+Adicionar Utilizador -      AddUSer       - Criado
+Pesquisa de Alugueres -     SearchRent    - Criado
+Adicionar -                 AddRent       - Criado
+Editar -                    EditRent      - Criado
+Remover - 		    RemoveRent    - Pode não ser preciso, movemos esta linha para o histórico
+Listar - 		    ListRent      - Criado
 Habitações - 
-Pesquisa de Habitações - 
-Adicionar - 
-Editar - 
-Remover - 
-Listar - 
-Pesquisa de clientes - 
-Adicionar - 
-Editar - 
-Remover - 
-Listar - 
+Pesquisa de Habitações -    SearchHouse   - Criado
+Adicionar - 		    AddHouse      - Criado
+Editar - 		    EditHouse     - Criado
+Listar -                    ListHouse     - Criado
+Pesquisa de clientes -      SearchClient  - Criado
+Adicionar - 		    AddClient     - Criado
+Editar - 		    EditClient    - Criado                
+Listar - 		    ListClient    - Criado
 
 
 
