@@ -74,6 +74,9 @@
             // 
             // panelDashBoard
             // 
+            this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDashBoard.Controls.Add(this.metroLabel1);
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
@@ -81,7 +84,7 @@
             this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(805, 460);
+            this.panelDashBoard.Size = new System.Drawing.Size(830, 460);
             this.panelDashBoard.TabIndex = 3;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
@@ -99,17 +102,21 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.metroPanel2);
             this.panel1.Controls.Add(this.metroPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(804, 413);
+            this.panel1.Size = new System.Drawing.Size(830, 413);
             this.panel1.TabIndex = 2;
             // 
             // metroPanel2
             // 
+            this.metroPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.metroPanel2.Controls.Add(this.dataGridView1);
             this.metroPanel2.Controls.Add(this.label14);
             this.metroPanel2.HorizontalScrollbarBarColor = true;
@@ -125,6 +132,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(0, 70);
             this.dataGridView1.Name = "dataGridView1";
@@ -144,6 +153,9 @@
             // 
             // metroPanel1
             // 
+            this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroPanel1.Controls.Add(this.metroButton2);
             this.metroPanel1.Controls.Add(this.metroButton1);
             this.metroPanel1.Controls.Add(this.richTextBox1);
@@ -177,7 +189,7 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(281, 3);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(520, 407);
+            this.metroPanel1.Size = new System.Drawing.Size(546, 407);
             this.metroPanel1.TabIndex = 1;
             this.metroPanel1.VerticalScrollbar = true;
             this.metroPanel1.VerticalScrollbarBarColor = true;
@@ -186,6 +198,7 @@
             // 
             // metroButton2
             // 
+            this.metroButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton2.Location = new System.Drawing.Point(433, 338);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(75, 45);
@@ -194,6 +207,7 @@
             // 
             // metroButton1
             // 
+            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton1.Location = new System.Drawing.Point(356, 338);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(75, 45);
@@ -202,6 +216,8 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Location = new System.Drawing.Point(140, 225);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(197, 60);
@@ -210,6 +226,8 @@
             // 
             // textBox6
             // 
+            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox6.Location = new System.Drawing.Point(140, 121);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(197, 20);
@@ -217,6 +235,8 @@
             // 
             // textBox5
             // 
+            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.Location = new System.Drawing.Point(140, 95);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(197, 20);
@@ -224,6 +244,7 @@
             // 
             // textBox9
             // 
+            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox9.Location = new System.Drawing.Point(356, 226);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(152, 20);
@@ -231,6 +252,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(356, 174);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(152, 20);
@@ -238,6 +260,8 @@
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(140, 147);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(197, 20);
@@ -245,6 +269,8 @@
             // 
             // textBox11
             // 
+            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox11.Location = new System.Drawing.Point(140, 363);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(197, 20);
@@ -252,6 +278,8 @@
             // 
             // textBox8
             // 
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox8.Location = new System.Drawing.Point(140, 199);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(197, 20);
@@ -259,6 +287,8 @@
             // 
             // textBox10
             // 
+            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox10.Location = new System.Drawing.Point(140, 337);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(197, 20);
@@ -266,6 +296,8 @@
             // 
             // textBox7
             // 
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox7.Location = new System.Drawing.Point(140, 173);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(197, 20);
@@ -273,6 +305,8 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(140, 69);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(197, 20);
@@ -302,6 +336,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -335,6 +370,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -401,6 +437,8 @@
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(140, 42);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(197, 20);
@@ -430,6 +468,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(356, 42);
             this.pictureBox1.Name = "pictureBox1";
