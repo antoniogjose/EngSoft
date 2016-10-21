@@ -92,6 +92,18 @@ Distribuição de trabalho
 
 
 
+Dados de utilizador (Gestores da plataforma)
+---------------------------------------------
+Nome Completo
+Email
+Contacto telefonico
+tipo
+
+
+
+
+
+
 
 
 

@@ -36,6 +36,9 @@
             // 
             // panelDashBoard
             // 
+            this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDashBoard.Controls.Add(this.metroLabel1);
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
@@ -43,7 +46,7 @@
             this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(805, 460);
+            this.panelDashBoard.Size = new System.Drawing.Size(754, 496);
             this.panelDashBoard.TabIndex = 4;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
@@ -61,11 +64,13 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(805, 413);
+            this.panel1.Size = new System.Drawing.Size(754, 449);
             this.panel1.TabIndex = 2;
             // 
             // EditClient
@@ -75,7 +80,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelDashBoard);
             this.Name = "EditClient";
-            this.Size = new System.Drawing.Size(830, 460);
+            this.Size = new System.Drawing.Size(754, 496);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
             this.ResumeLayout(false);

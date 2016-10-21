@@ -61,6 +61,9 @@
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreOImoEstudanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new MetroFramework.Controls.MetroPanel();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.defeniçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +87,9 @@
             this.toolStripSeparator2,
             this.menuToolStripMenuItem1,
             this.toolStripSeparator1,
+            this.defeniçõesToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.logOutToolStripMenuItem,
             this.fecharToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             resources.ApplyResources(this.menuToolStripMenuItem, "menuToolStripMenuItem");
@@ -291,6 +297,21 @@
             this.panel.VerticalScrollbarHighlightOnWheel = true;
             this.panel.VerticalScrollbarSize = 10;
             // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            resources.ApplyResources(this.logOutToolStripMenuItem, "logOutToolStripMenuItem");
+            // 
+            // defeniçõesToolStripMenuItem
+            // 
+            this.defeniçõesToolStripMenuItem.Name = "defeniçõesToolStripMenuItem";
+            resources.ApplyResources(this.defeniçõesToolStripMenuItem, "defeniçõesToolStripMenuItem");
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -342,6 +363,9 @@
         private System.Windows.Forms.ToolStripMenuItem btSearchHouse;
         private System.Windows.Forms.ToolStripMenuItem btSearchClient;
         private MetroFramework.Controls.MetroPanel panel;
+        private System.Windows.Forms.ToolStripMenuItem defeniçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
     }
 }
 
