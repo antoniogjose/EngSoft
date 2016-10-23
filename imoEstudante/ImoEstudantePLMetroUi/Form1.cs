@@ -236,5 +236,17 @@ namespace ImoEstudantePLMetroUi
             else
                 SearchHouse.Instance.BringToFront();
         }
+
+        private void adicionarUtilizadorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(AddUser.Instance))
+            {
+                panel.Controls.Add(AddUser.Instance);
+                AddUser.Instance.Dock = DockStyle.Fill;
+                AddUser.Instance.BringToFront();
+            }
+            else
+                AddUser.Instance.BringToFront();
+        }
     }
 }

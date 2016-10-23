@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.adicionarUtilizadorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarUtilizadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +62,6 @@
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreOImoEstudanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new MetroFramework.Controls.MetroPanel();
-            this.adicionarUtilizadorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -99,6 +99,12 @@
             this.menuToolStripMenuItem2.Name = "menuToolStripMenuItem2";
             resources.ApplyResources(this.menuToolStripMenuItem2, "menuToolStripMenuItem2");
             this.menuToolStripMenuItem2.Click += new System.EventHandler(this.menuToolStripMenuItem2_Click);
+            // 
+            // adicionarUtilizadorToolStripMenuItem1
+            // 
+            this.adicionarUtilizadorToolStripMenuItem1.Name = "adicionarUtilizadorToolStripMenuItem1";
+            resources.ApplyResources(this.adicionarUtilizadorToolStripMenuItem1, "adicionarUtilizadorToolStripMenuItem1");
+            this.adicionarUtilizadorToolStripMenuItem1.Click += new System.EventHandler(this.adicionarUtilizadorToolStripMenuItem1_Click);
             // 
             // adicionarUtilizadorToolStripMenuItem
             // 
@@ -289,11 +295,6 @@
             this.panel.VerticalScrollbarBarColor = true;
             this.panel.VerticalScrollbarHighlightOnWheel = true;
             this.panel.VerticalScrollbarSize = 10;
-            // 
-            // adicionarUtilizadorToolStripMenuItem1
-            // 
-            this.adicionarUtilizadorToolStripMenuItem1.Name = "adicionarUtilizadorToolStripMenuItem1";
-            resources.ApplyResources(this.adicionarUtilizadorToolStripMenuItem1, "adicionarUtilizadorToolStripMenuItem1");
             // 
             // Form1
             // 

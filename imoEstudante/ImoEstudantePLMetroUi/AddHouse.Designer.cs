@@ -31,7 +31,13 @@
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.panelDashBoard.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.metroTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDashBoard
@@ -67,11 +73,58 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.metroTabControl1);
             this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(754, 449);
             this.panel1.TabIndex = 2;
+            // 
+            // metroTabControl1
+            // 
+            this.metroTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            this.metroTabControl1.Controls.Add(this.metroTabPage2);
+            this.metroTabControl1.Controls.Add(this.metroTabPage3);
+            this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
+            this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.Size = new System.Drawing.Size(754, 449);
+            this.metroTabControl1.TabIndex = 1;
+            // 
+            // metroTabPage1
+            // 
+            this.metroTabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTabPage1.HorizontalScrollbarBarColor = true;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage1.Name = "metroTabPage1";
+            this.metroTabPage1.Size = new System.Drawing.Size(746, 410);
+            this.metroTabPage1.TabIndex = 0;
+            this.metroTabPage1.Text = "Dados da Habitação";
+            this.metroTabPage1.VerticalScrollbarBarColor = true;
+            // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(746, 410);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "Mapa e Pontos de Interesse";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            // 
+            // metroTabPage3
+            // 
+            this.metroTabPage3.HorizontalScrollbarBarColor = true;
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage3.Name = "metroTabPage3";
+            this.metroTabPage3.Size = new System.Drawing.Size(746, 410);
+            this.metroTabPage3.TabIndex = 2;
+            this.metroTabPage3.Text = "Avaliações";
+            this.metroTabPage3.VerticalScrollbarBarColor = true;
             // 
             // AddHouse
             // 
@@ -82,6 +135,8 @@
             this.Size = new System.Drawing.Size(754, 496);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.metroTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -91,5 +146,9 @@
         private MetroFramework.Controls.MetroPanel panelDashBoard;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.Panel panel1;
+        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private MetroFramework.Controls.MetroTabPage metroTabPage1;
+        private MetroFramework.Controls.MetroTabPage metroTabPage2;
+        private MetroFramework.Controls.MetroTabPage metroTabPage3;
     }
 }
