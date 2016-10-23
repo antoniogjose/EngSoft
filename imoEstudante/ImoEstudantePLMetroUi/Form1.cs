@@ -80,14 +80,14 @@ namespace ImoEstudantePLMetroUi
 
         private void adicionarUtilizadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!panel.Controls.Contains(AddClient.Instance))
+            if (!panel.Controls.Contains(SearchUser.Instance))
             {
-                panel.Controls.Add(AddClient.Instance);
-                AddClient.Instance.Dock = DockStyle.Fill;
-                AddClient.Instance.BringToFront();
+                panel.Controls.Add(SearchUser.Instance);
+                SearchUser.Instance.Dock = DockStyle.Fill;
+                SearchUser.Instance.BringToFront();
             }
             else
-                AddClient.Instance.BringToFront();
+                SearchUser.Instance.BringToFront();
         }
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)

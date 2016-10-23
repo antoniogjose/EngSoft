@@ -31,7 +31,9 @@
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.panelDashBoard.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDashBoard
@@ -68,10 +70,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.metroTabControl1);
             this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(754, 449);
             this.panel1.TabIndex = 2;
+            // 
+            // metroTabControl1
+            // 
+            this.metroTabControl1.Location = new System.Drawing.Point(4, 3);
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.Size = new System.Drawing.Size(747, 443);
+            this.metroTabControl1.TabIndex = 0;
             // 
             // EditClient
             // 
@@ -83,6 +93,7 @@
             this.Size = new System.Drawing.Size(754, 496);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -92,5 +103,6 @@
         private MetroFramework.Controls.MetroPanel panelDashBoard;
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroTabControl metroTabControl1;
     }
 }

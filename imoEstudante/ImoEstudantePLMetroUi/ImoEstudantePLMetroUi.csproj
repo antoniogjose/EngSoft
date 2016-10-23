@@ -153,6 +153,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="SearchUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchUser.Designer.cs">
+      <DependentUpon>SearchUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListRent.resx">
       <DependentUpon>ListRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchUser.resx">
+      <DependentUpon>SearchUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
