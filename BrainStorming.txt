@@ -104,9 +104,13 @@ Adicionar Cliente
 TABS -> DadosDoCliente/Alugueres/Menssagens??
 
 
+Gmaps
+-------
+1) https://www.youtube.com/watch?v=lRoAjs8RwfE
 
 
-
+IDEIA : O Cliente poder selecionar uma gama de interesses
+Depois faziamos aparecer no gmap esses interesses
 
 
 
