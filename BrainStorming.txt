@@ -112,6 +112,11 @@ Por fazer :
 Pontos de interesse
 Movimento do mapa para analise da zona
 
+POI
+---
+https://msdn.microsoft.com/pt-pt/windows/uwp/maps-and-location/display-poi   ??
+
+
 
 
 
