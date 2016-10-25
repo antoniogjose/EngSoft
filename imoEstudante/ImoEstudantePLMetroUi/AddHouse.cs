@@ -43,6 +43,8 @@ namespace ImoEstudantePLMetroUi
             // gMapControl1.Position = new PointLatLng(55.755786121111, 37.617633343333);
             gMapControl1.SetPositionByKeywords("Paris, France");
 
+            gMapControl1.DragButton = MouseButtons.Left;
+
             //zoom min/max; default both = 2
             gMapControl1.MinZoom = 1;
             gMapControl1.MaxZoom = 20;
