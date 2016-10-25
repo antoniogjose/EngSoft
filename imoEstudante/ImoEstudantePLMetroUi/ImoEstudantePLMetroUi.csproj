@@ -234,6 +234,8 @@
     <EmbeddedResource Include="ListRent.resx">
       <DependentUpon>ListRent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Res.en.resx" />
+    <EmbeddedResource Include="Resources\Res.pt.resx" />
     <EmbeddedResource Include="SearchUser.resx">
       <DependentUpon>SearchUser.cs</DependentUpon>
     </EmbeddedResource>
