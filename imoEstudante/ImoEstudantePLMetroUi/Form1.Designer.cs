@@ -139,7 +139,7 @@
             this.inglesToolStripMenuItem.CheckOnClick = true;
             this.inglesToolStripMenuItem.Name = "inglesToolStripMenuItem";
             resources.ApplyResources(this.inglesToolStripMenuItem, "inglesToolStripMenuItem");
-            this.inglesToolStripMenuItem.Click += new System.EventHandler(this.inguelasToolStripMenuItem_Click);
+            this.inglesToolStripMenuItem.Click += new System.EventHandler(this.inglesToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
