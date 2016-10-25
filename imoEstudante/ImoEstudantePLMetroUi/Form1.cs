@@ -35,7 +35,11 @@ namespace ImoEstudantePLMetroUi
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // inicia em portugues
+            //portuguêsToolStripMenuItem.Checked = true;
+            //inglesToolStripMenuItem.Checked = false;
 
+            res_man = new ResourceManager("ImoEstudantePLMetroUi.Resources.Res", typeof(Form1).Assembly);
         }
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,7 +81,7 @@ namespace ImoEstudantePLMetroUi
             }
             else // (portuguêsToolStripMenuItem.Checked == true)
             {
-                // cultura: português
+                // cultura base: português
                 cul = CultureInfo.CreateSpecificCulture("pt");
             }
 

@@ -16,29 +16,35 @@ namespace ImoEstudantePLMetroUi
     {
         public static void switchLanguage(MetroFramework.Forms.MetroForm frm, CultureInfo cul, ResourceManager res_man)
         {
-            //Altera o nome do form
-            //frm.Text = resx.GetObject("$this.Text", System.Threading.Thread.CurrentThread.CurrentCulture).ToString();
-            //Varre os controles do form aplicando a nova cultura
-            //foreach (Control ctrl in frm.Controls)
+            //foreach (Control ctrls in frm.Controls)
             //{
-            //    if (string.IsNullOrEmpty(ctrl.Name) == false)
+            //    try
             //    {
-            //        var result = MessageBox.Show(ctrl.Name);
-
-            //        //if (string.IsNullOrEmpty(ctrl.Text = res_man.GetString(ctrl.Name, cul)) == false)
-            //        //{
-            //        ctrl.Text = res_man.GetString(ctrl.Name, cul);
-            //        // }
+            //        ctrls.Text = res_man.GetString(ctrls.Name, cul);
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
             //    }
             //}
 
             foreach (ToolStripMenuItem ctrl in frm.MainMenuStrip.Items)
             {
-                if (ctrl is ToolStripMenuItem)
+                try
+                {
+                    ctrl.Text = res_man.GetString(ctrl.Name, cul);
+                }
+                catch (Exception e)
+                {
+                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                }
+
+                foreach (ToolStripItem dropDownItem in ((ToolStripDropDownItem)ctrl).DropDownItems)
                 {
                     try
                     {
-                        ctrl.Text = res_man.GetString(ctrl.Name, cul);
+                        dropDownItem.Text = res_man.GetString(dropDownItem.Name, cul);
+                        //ctrl.Text = res_man.GetString(ctrl.Name, cul);
                     }
                     catch (Exception e)
                     {
@@ -46,7 +52,6 @@ namespace ImoEstudantePLMetroUi
                     }
                 }
             }
-
         }
     }
 }

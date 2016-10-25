@@ -117,7 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Exit_menu" xml:space="preserve">
-    <value>quitter</value>
+  <data name="helpToolStripMenuItem" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="menuToolStripMenuItem" xml:space="preserve">
+    <value>ImoEstudante</value>
+  </data>
+  <data name="menuToolStripMenuItem2" xml:space="preserve">
+    <value>Dados Pessoais</value>
+  </data>
+  <data name="metroTabPage1" xml:space="preserve">
+    <value>Dados de Negócio</value>
+  </data>
+  <data name="viewHelpToolStripMenuItem" xml:space="preserve">
+    <value>Ver Ajuda</value>
   </data>
 </root>
