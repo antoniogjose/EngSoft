@@ -7,36 +7,46 @@ using System.Threading.Tasks;
 
 using System.Windows.Forms;
 
+using System.Globalization;
+using System.Resources;
+
 namespace ImoEstudantePLMetroUi
 {
-    class Idioma
+    class Idioma : Exception
     {
-
-        private static void AlteraThreadIdioma(string culture)
-        {
-            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(culture, true);
-            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(culture, true);
-        }
-        // O método acima altera a cultura da aplicação enquanto o método abaixo varre os controles alterando suas propriedades.
-        private static void AlteraCultura(MetroFramework.Forms.MetroForm frm, System.ComponentModel.ComponentResourceManager resx)
+        public static void switchLanguage(MetroFramework.Forms.MetroForm frm, CultureInfo cul, ResourceManager res_man)
         {
             //Altera o nome do form
-            frm.Text = resx.GetObject("$this.Text", System.Threading.Thread.CurrentThread.CurrentCulture).ToString();
+            //frm.Text = resx.GetObject("$this.Text", System.Threading.Thread.CurrentThread.CurrentCulture).ToString();
             //Varre os controles do form aplicando a nova cultura
-            foreach (Control ctrl in frm.Controls)
-                resx.ApplyResources(ctrl, ctrl.Name, System.Threading.Thread.CurrentThread.CurrentCulture);
+            //foreach (Control ctrl in frm.Controls)
+            //{
+            //    if (string.IsNullOrEmpty(ctrl.Name) == false)
+            //    {
+            //        var result = MessageBox.Show(ctrl.Name);
+
+            //        //if (string.IsNullOrEmpty(ctrl.Text = res_man.GetString(ctrl.Name, cul)) == false)
+            //        //{
+            //        ctrl.Text = res_man.GetString(ctrl.Name, cul);
+            //        // }
+            //    }
+            //}
+
+            foreach (ToolStripMenuItem ctrl in frm.MainMenuStrip.Items)
+            {
+                if (ctrl is ToolStripMenuItem)
+                {
+                    try
+                    {
+                        ctrl.Text = res_man.GetString(ctrl.Name, cul);
+                    }
+                    catch (Exception e)
+                    {
+                        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                    }
+                }
+            }
+
         }
-
-        public static void AjustaCultura(MetroFramework.Forms.MetroForm frm, string culture)
-        {
-            AlteraThreadIdioma(culture);
-            System.ComponentModel.ComponentResourceManager resx = new System.ComponentModel.ComponentResourceManager(frm.GetType());
-            AlteraCultura(frm, resx);
-        }
-
-
-        //Read more: http://www.linhadecodigo.com.br/artigo/1322/desenvolvendo-aplicacoes-multi-idioma.aspx#ixzz4MoauhPYK
-
-
     }
 }

@@ -9,13 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroFramework.Forms;
 
+using System.Globalization;
+using System.Resources;
+
 namespace ImoEstudantePLMetroUi
 {
     public partial class Form1 : MetroForm
     {
+        ResourceManager res_man;    // Recursos
+        CultureInfo cul;            // Cultura
+
         public Form1()
         {
-            Idioma.AjustaCultura(this, "pt");
+            // Idioma.AjustaCultura(this, "pt");
             InitializeComponent();
             if (!panel.Controls.Contains(DashBoardMainPage.Instance))
             {
@@ -39,21 +45,88 @@ namespace ImoEstudantePLMetroUi
 
         private void portuguêsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Idioma.AjustaCultura(this, "pt");
-            if (inglesToolStripMenuItem.Checked == true) inglesToolStripMenuItem.Checked = false;
-            portuguêsToolStripMenuItem.Enabled = false;
-            inglesToolStripMenuItem.Enabled = true;
+            if (inglesToolStripMenuItem.Checked == true)
+            {
+                inglesToolStripMenuItem.Checked = false;
+                portuguêsToolStripMenuItem.Checked = true;
+
+                switch_language();
+            }
+        }
+
+        private void inglesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (portuguêsToolStripMenuItem.Checked == true)
+            {
+                portuguêsToolStripMenuItem.Checked = false;
+                inglesToolStripMenuItem.Enabled = true;
+
+                switch_language();
+            }
 
         }
 
-        private void inguelasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Idioma.AjustaCultura(this, "en");
-            if (portuguêsToolStripMenuItem.Checked == true) portuguêsToolStripMenuItem.Checked = false;
-            inglesToolStripMenuItem.Enabled = false;
-            portuguêsToolStripMenuItem.Enabled = true;
+
+        //Function for switch language
+        private void switch_language()
+        {            
+            if (inglesToolStripMenuItem.Checked == true)
+            {
+                // cultura: inglês
+                cul = CultureInfo.CreateSpecificCulture("en");
+            }
+            else // (portuguêsToolStripMenuItem.Checked == true)
+            {
+                // cultura: português
+                cul = CultureInfo.CreateSpecificCulture("pt");
+            }
+
+            // mudar idioma
+            Idioma.switchLanguage(this, cul, res_man);
+
+            //foreach (ToolStripMenuItem ctrlsss in this.menuStrip1.Items)
+            //{
+            //    if (ctrlsss is ToolStripMenuItem)
+            //    {
+            //        var result2 = MessageBox.Show(ctrlsss.Name);
+            //    }
+            //    //else
+            //    //{
+            //    //    var result3 = MessageBox.Show(ctrlsss.Name);
+            //    //}
+            //}
+
+            /*exit_text_string = res_man.GetString("exit_text_string", cul);
+            exit_caption_string = res_man.GetString("exit_caption_string", cul);*/
 
 
+            //
+            //this.Text = res_man.GetString("Form1_text", cul);
+
+            //menuToolStripMenuItem.Text = res_man.GetString(menuToolStripMenuItem.Name, cul);
+
+            //foreach(Control x in this.Controls)
+            //{
+            //    if (string.IsNullOrEmpty(res_man.GetString(x.Name,cul)))
+            //    {
+            //        x.Text = res_man.GetString(x.Name, cul);
+            //    }
+            //    /*
+            //    if (x.Name.Equals("menuToolStripMenuItem"))
+            //    {
+            //        x.Text = res_man.GetString("menuToolStripMenuItem", cul);
+            //    }*/               
+            //}
+
+            /*
+            fileToolStripMenuItem.Text = res_man.GetString("File_menu", cul);
+            exitToolStripMenuItem.Text = res_man.GetString("Exit_menu", cul);
+
+            languageToolStripMenuItem.Text = res_man.GetString("Language_menu", cul);
+            vietnameseToolStripMenuItem.Text = res_man.GetString("Vietnamese_menu", cul);
+            englishToolStripMenuItem.Text = res_man.GetString("English_menu", cul);
+
+            textBox1.Text = res_man.GetString("Textbox_text", cul);*/
         }
 
         private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
