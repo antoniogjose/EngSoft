@@ -80,14 +80,14 @@ namespace ImoEstudantePLMetroUi
 
         private void adicionarUtilizadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!panel.Controls.Contains(AddClient.Instance))
+            if (!panel.Controls.Contains(SearchUser.Instance))
             {
-                panel.Controls.Add(AddClient.Instance);
-                AddClient.Instance.Dock = DockStyle.Fill;
-                AddClient.Instance.BringToFront();
+                panel.Controls.Add(SearchUser.Instance);
+                SearchUser.Instance.Dock = DockStyle.Fill;
+                SearchUser.Instance.BringToFront();
             }
             else
-                AddClient.Instance.BringToFront();
+                SearchUser.Instance.BringToFront();
         }
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -127,6 +127,126 @@ namespace ImoEstudantePLMetroUi
             else
                 EditRent.Instance.BringToFront();
 
+        }
+
+        private void btAddHouse_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(AddHouse.Instance))
+            {
+                panel.Controls.Add(AddHouse.Instance);
+                AddHouse.Instance.Dock = DockStyle.Fill;
+                AddHouse.Instance.BringToFront();
+            }
+            else
+                AddHouse.Instance.BringToFront();
+        }
+
+        private void btEditHouse_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(EditHouse.Instance))
+            {
+                panel.Controls.Add(EditHouse.Instance);
+                EditHouse.Instance.Dock = DockStyle.Fill;
+                EditHouse.Instance.BringToFront();
+            }
+            else
+                EditHouse.Instance.BringToFront();
+        }
+
+        private void btListHouse_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(ListHouse.Instance))
+            {
+                panel.Controls.Add(ListHouse.Instance);
+                ListHouse.Instance.Dock = DockStyle.Fill;
+                ListHouse.Instance.BringToFront();
+            }
+            else
+                ListHouse.Instance.BringToFront();
+        }
+
+        private void btSearchClient_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(SearchClient.Instance))
+            {
+                panel.Controls.Add(SearchClient.Instance);
+                SearchClient.Instance.Dock = DockStyle.Fill;
+                SearchClient.Instance.BringToFront();
+            }
+            else
+                SearchClient.Instance.BringToFront();
+        }
+
+        private void btAddClient_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(AddClient.Instance))
+            {
+                panel.Controls.Add(AddClient.Instance);
+                AddClient.Instance.Dock = DockStyle.Fill;
+                AddClient.Instance.BringToFront();
+            }
+            else
+                AddClient.Instance.BringToFront();
+        }
+
+        private void btEditClient_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(EditClient.Instance))
+            {
+                panel.Controls.Add(EditClient.Instance);
+                EditClient.Instance.Dock = DockStyle.Fill;
+                EditClient.Instance.BringToFront();
+            }
+            else
+                EditClient.Instance.BringToFront();
+        }
+
+        private void btListClient_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(ListClient.Instance))
+            {
+                panel.Controls.Add(ListClient.Instance);
+                ListClient.Instance.Dock = DockStyle.Fill;
+                ListClient.Instance.BringToFront();
+            }
+            else
+                ListClient.Instance.BringToFront();
+        }
+
+        private void listarToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(ListRent.Instance))
+            {
+                panel.Controls.Add(ListRent.Instance);
+                ListRent.Instance.Dock = DockStyle.Fill;
+                ListRent.Instance.BringToFront();
+            }
+            else
+                ListRent.Instance.BringToFront();
+        }
+
+        private void btSearchHouse_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(SearchHouse.Instance))
+            {
+                panel.Controls.Add(SearchHouse.Instance);
+                SearchHouse.Instance.Dock = DockStyle.Fill;
+                SearchHouse.Instance.BringToFront();
+            }
+            else
+                SearchHouse.Instance.BringToFront();
+        }
+
+        private void adicionarUtilizadorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (!panel.Controls.Contains(AddUser.Instance))
+            {
+                panel.Controls.Add(AddUser.Instance);
+                AddUser.Instance.Dock = DockStyle.Fill;
+                AddUser.Instance.BringToFront();
+            }
+            else
+                AddUser.Instance.BringToFront();
         }
     }
 }

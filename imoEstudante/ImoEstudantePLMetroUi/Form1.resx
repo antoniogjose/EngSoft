@@ -125,13 +125,19 @@
     <value>178, 22</value>
   </data>
   <data name="menuToolStripMenuItem2.Text" xml:space="preserve">
-    <value>Gerir Utilizador</value>
+    <value>Dados Pessoais</value>
+  </data>
+  <data name="adicionarUtilizadorToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="adicionarUtilizadorToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Adicionar Utilizador</value>
   </data>
   <data name="adicionarUtilizadorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 22</value>
   </data>
   <data name="adicionarUtilizadorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Adicionar Utilizador</value>
+    <value>Pesquisar Utilizador</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 6</value>
@@ -157,6 +163,21 @@
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 6</value>
   </data>
+  <data name="defeniçõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="defeniçõesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Defenições</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 6</value>
+  </data>
+  <data name="logOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="logOutToolStripMenuItem.Text" xml:space="preserve">
+    <value>LogOut</value>
+  </data>
   <data name="fecharToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 22</value>
   </data>
@@ -170,31 +191,25 @@
     <value>ImoEstudante</value>
   </data>
   <data name="pesquisarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="pesquisarToolStripMenuItem.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
   <data name="btAddRent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="btAddRent.Text" xml:space="preserve">
     <value>Adicionar</value>
   </data>
-  <data name="btEditRent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="btEditRent.Text" xml:space="preserve">
-    <value>Editar</value>
-  </data>
   <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
   <data name="listarToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="listarToolStripMenuItem4.Text" xml:space="preserve">
     <value>Listar</value>
@@ -206,33 +221,27 @@
     <value>Alugueres</value>
   </data>
   <data name="btSearchHouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="btSearchHouse.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
-  <data name="adicionarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+  <data name="btAddHouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
   </data>
-  <data name="adicionarToolStripMenuItem.Text" xml:space="preserve">
+  <data name="btAddHouse.Text" xml:space="preserve">
     <value>Adicionar</value>
   </data>
-  <data name="editarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="editarToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Editar</value>
-  </data>
   <data name="listarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="listarToolStripMenuItem1.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
-  <data name="listarToolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+  <data name="btListHouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
   </data>
-  <data name="listarToolStripMenuItem5.Text" xml:space="preserve">
+  <data name="btListHouse.Text" xml:space="preserve">
     <value>Listar</value>
   </data>
   <data name="menuToolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
@@ -241,23 +250,17 @@
   <data name="menuToolStripMenuItem6.Text" xml:space="preserve">
     <value>Habitações</value>
   </data>
-  <data name="pesquisarToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btSearchClient.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 22</value>
   </data>
-  <data name="pesquisarToolStripMenuItem2.Text" xml:space="preserve">
+  <data name="btSearchClient.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
-  <data name="criarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btAddClient.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 22</value>
   </data>
-  <data name="criarToolStripMenuItem.Text" xml:space="preserve">
+  <data name="btAddClient.Text" xml:space="preserve">
     <value>Adicionar</value>
-  </data>
-  <data name="editarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="editarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Editar</value>
   </data>
   <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 22</value>
@@ -265,10 +268,10 @@
   <data name="listarToolStripMenuItem.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
-  <data name="listarToolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btListClient.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 22</value>
   </data>
-  <data name="listarToolStripMenuItem6.Text" xml:space="preserve">
+  <data name="btListClient.Text" xml:space="preserve">
     <value>Listar</value>
   </data>
   <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -299,7 +302,7 @@
     <value>23, 60</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>814, 24</value>
+    <value>754, 24</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -334,7 +337,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>814, 396</value>
+    <value>754, 496</value>
   </data>
   <data name="panel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -355,16 +358,19 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>28</value>
+    <value>83</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>7, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>860, 500</value>
+    <value>800, 600</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 600</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>23, 60, 23, 20</value>
@@ -385,6 +391,12 @@
     <value>menuToolStripMenuItem2</value>
   </data>
   <data name="&gt;&gt;menuToolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;adicionarUtilizadorToolStripMenuItem1.Name" xml:space="preserve">
+    <value>adicionarUtilizadorToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;adicionarUtilizadorToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;adicionarUtilizadorToolStripMenuItem.Name" xml:space="preserve">
@@ -423,6 +435,24 @@
   <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;defeniçõesToolStripMenuItem.Name" xml:space="preserve">
+    <value>defeniçõesToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;defeniçõesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logOutToolStripMenuItem.Name" xml:space="preserve">
+    <value>logOutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;logOutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;fecharToolStripMenuItem.Name" xml:space="preserve">
     <value>fecharToolStripMenuItem</value>
   </data>
@@ -445,12 +475,6 @@
     <value>btAddRent</value>
   </data>
   <data name="&gt;&gt;btAddRent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btEditRent.Name" xml:space="preserve">
-    <value>btEditRent</value>
-  </data>
-  <data name="&gt;&gt;btEditRent.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;listarToolStripMenuItem3.Name" xml:space="preserve">
@@ -477,16 +501,10 @@
   <data name="&gt;&gt;btSearchHouse.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;adicionarToolStripMenuItem.Name" xml:space="preserve">
-    <value>adicionarToolStripMenuItem</value>
+  <data name="&gt;&gt;btAddHouse.Name" xml:space="preserve">
+    <value>btAddHouse</value>
   </data>
-  <data name="&gt;&gt;adicionarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;editarToolStripMenuItem1.Name" xml:space="preserve">
-    <value>editarToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;editarToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;btAddHouse.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;listarToolStripMenuItem1.Name" xml:space="preserve">
@@ -495,10 +513,10 @@
   <data name="&gt;&gt;listarToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem5.Name" xml:space="preserve">
-    <value>listarToolStripMenuItem5</value>
+  <data name="&gt;&gt;btListHouse.Name" xml:space="preserve">
+    <value>btListHouse</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem5.Type" xml:space="preserve">
+  <data name="&gt;&gt;btListHouse.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;clientesToolStripMenuItem.Name" xml:space="preserve">
@@ -507,22 +525,16 @@
   <data name="&gt;&gt;clientesToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pesquisarToolStripMenuItem2.Name" xml:space="preserve">
-    <value>pesquisarToolStripMenuItem2</value>
+  <data name="&gt;&gt;btSearchClient.Name" xml:space="preserve">
+    <value>btSearchClient</value>
   </data>
-  <data name="&gt;&gt;pesquisarToolStripMenuItem2.Type" xml:space="preserve">
+  <data name="&gt;&gt;btSearchClient.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;criarToolStripMenuItem.Name" xml:space="preserve">
-    <value>criarToolStripMenuItem</value>
+  <data name="&gt;&gt;btAddClient.Name" xml:space="preserve">
+    <value>btAddClient</value>
   </data>
-  <data name="&gt;&gt;criarToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;editarToolStripMenuItem.Name" xml:space="preserve">
-    <value>editarToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;editarToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;btAddClient.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;listarToolStripMenuItem.Name" xml:space="preserve">
@@ -531,10 +543,10 @@
   <data name="&gt;&gt;listarToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem6.Name" xml:space="preserve">
-    <value>listarToolStripMenuItem6</value>
+  <data name="&gt;&gt;btListClient.Name" xml:space="preserve">
+    <value>btListClient</value>
   </data>
-  <data name="&gt;&gt;listarToolStripMenuItem6.Type" xml:space="preserve">
+  <data name="&gt;&gt;btListClient.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">

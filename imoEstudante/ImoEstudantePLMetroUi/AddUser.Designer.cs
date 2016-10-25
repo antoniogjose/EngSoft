@@ -31,11 +31,18 @@
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.panelDashBoard.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.metroTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDashBoard
             // 
+            this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDashBoard.Controls.Add(this.metroLabel1);
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
@@ -43,7 +50,7 @@
             this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(805, 460);
+            this.panelDashBoard.Size = new System.Drawing.Size(754, 496);
             this.panelDashBoard.TabIndex = 5;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
@@ -55,18 +62,45 @@
             this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
             this.metroLabel1.Location = new System.Drawing.Point(4, 22);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(125, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(219, 19);
             this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "Adicionar Utilizador";
+            this.metroLabel1.Text = "ImoEstudante » Adicionar Utilizador";
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.metroTabControl1);
             this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(805, 413);
+            this.panel1.Size = new System.Drawing.Size(754, 449);
             this.panel1.TabIndex = 2;
+            // 
+            // metroTabControl1
+            // 
+            this.metroTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
+            this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.Size = new System.Drawing.Size(754, 449);
+            this.metroTabControl1.TabIndex = 2;
+            // 
+            // metroTabPage1
+            // 
+            this.metroTabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTabPage1.HorizontalScrollbarBarColor = true;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage1.Name = "metroTabPage1";
+            this.metroTabPage1.Size = new System.Drawing.Size(746, 410);
+            this.metroTabPage1.TabIndex = 0;
+            this.metroTabPage1.Text = "Dados do Utilizador";
+            this.metroTabPage1.VerticalScrollbarBarColor = true;
             // 
             // AddUser
             // 
@@ -74,9 +108,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelDashBoard);
             this.Name = "AddUser";
-            this.Size = new System.Drawing.Size(830, 460);
+            this.Size = new System.Drawing.Size(754, 496);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.metroTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -86,5 +122,7 @@
         private MetroFramework.Controls.MetroPanel panelDashBoard;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private System.Windows.Forms.Panel panel1;
+        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private MetroFramework.Controls.MetroTabPage metroTabPage1;
     }
 }

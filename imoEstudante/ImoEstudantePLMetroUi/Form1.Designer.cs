@@ -32,31 +32,32 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.adicionarUtilizadorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarUtilizadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.portuguêsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inglesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.defeniçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fecharToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.pesquisarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btAddRent = new System.Windows.Forms.ToolStripMenuItem();
-            this.btEditRent = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.btSearchHouse = new System.Windows.Forms.ToolStripMenuItem();
-            this.adicionarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btAddHouse = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btListHouse = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pesquisarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.criarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btSearchClient = new System.Windows.Forms.ToolStripMenuItem();
+            this.btAddClient = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarToolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btListClient = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewHelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreOImoEstudanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,10 +81,14 @@
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem2,
+            this.adicionarUtilizadorToolStripMenuItem1,
             this.adicionarUtilizadorToolStripMenuItem,
             this.toolStripSeparator2,
             this.menuToolStripMenuItem1,
             this.toolStripSeparator1,
+            this.defeniçõesToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.logOutToolStripMenuItem,
             this.fecharToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             resources.ApplyResources(this.menuToolStripMenuItem, "menuToolStripMenuItem");
@@ -94,6 +99,12 @@
             this.menuToolStripMenuItem2.Name = "menuToolStripMenuItem2";
             resources.ApplyResources(this.menuToolStripMenuItem2, "menuToolStripMenuItem2");
             this.menuToolStripMenuItem2.Click += new System.EventHandler(this.menuToolStripMenuItem2_Click);
+            // 
+            // adicionarUtilizadorToolStripMenuItem1
+            // 
+            this.adicionarUtilizadorToolStripMenuItem1.Name = "adicionarUtilizadorToolStripMenuItem1";
+            resources.ApplyResources(this.adicionarUtilizadorToolStripMenuItem1, "adicionarUtilizadorToolStripMenuItem1");
+            this.adicionarUtilizadorToolStripMenuItem1.Click += new System.EventHandler(this.adicionarUtilizadorToolStripMenuItem1_Click);
             // 
             // adicionarUtilizadorToolStripMenuItem
             // 
@@ -135,6 +146,21 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
+            // defeniçõesToolStripMenuItem
+            // 
+            this.defeniçõesToolStripMenuItem.Name = "defeniçõesToolStripMenuItem";
+            resources.ApplyResources(this.defeniçõesToolStripMenuItem, "defeniçõesToolStripMenuItem");
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            resources.ApplyResources(this.logOutToolStripMenuItem, "logOutToolStripMenuItem");
+            // 
             // fecharToolStripMenuItem
             // 
             this.fecharToolStripMenuItem.Name = "fecharToolStripMenuItem";
@@ -146,7 +172,6 @@
             this.menuToolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pesquisarToolStripMenuItem,
             this.btAddRent,
-            this.btEditRent,
             this.listarToolStripMenuItem3,
             this.listarToolStripMenuItem4});
             this.menuToolStripMenuItem5.Name = "menuToolStripMenuItem5";
@@ -164,12 +189,6 @@
             resources.ApplyResources(this.btAddRent, "btAddRent");
             this.btAddRent.Click += new System.EventHandler(this.btAddRent_Click);
             // 
-            // btEditRent
-            // 
-            this.btEditRent.Name = "btEditRent";
-            resources.ApplyResources(this.btEditRent, "btEditRent");
-            this.btEditRent.Click += new System.EventHandler(this.btEditRent_Click);
-            // 
             // listarToolStripMenuItem3
             // 
             this.listarToolStripMenuItem3.Name = "listarToolStripMenuItem3";
@@ -179,15 +198,15 @@
             // 
             this.listarToolStripMenuItem4.Name = "listarToolStripMenuItem4";
             resources.ApplyResources(this.listarToolStripMenuItem4, "listarToolStripMenuItem4");
+            this.listarToolStripMenuItem4.Click += new System.EventHandler(this.listarToolStripMenuItem4_Click);
             // 
             // menuToolStripMenuItem6
             // 
             this.menuToolStripMenuItem6.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btSearchHouse,
-            this.adicionarToolStripMenuItem,
-            this.editarToolStripMenuItem1,
+            this.btAddHouse,
             this.listarToolStripMenuItem1,
-            this.listarToolStripMenuItem5});
+            this.btListHouse});
             this.menuToolStripMenuItem6.Name = "menuToolStripMenuItem6";
             resources.ApplyResources(this.menuToolStripMenuItem6, "menuToolStripMenuItem6");
             // 
@@ -195,62 +214,57 @@
             // 
             this.btSearchHouse.Name = "btSearchHouse";
             resources.ApplyResources(this.btSearchHouse, "btSearchHouse");
+            this.btSearchHouse.Click += new System.EventHandler(this.btSearchHouse_Click);
             // 
-            // adicionarToolStripMenuItem
+            // btAddHouse
             // 
-            this.adicionarToolStripMenuItem.Name = "adicionarToolStripMenuItem";
-            resources.ApplyResources(this.adicionarToolStripMenuItem, "adicionarToolStripMenuItem");
-            // 
-            // editarToolStripMenuItem1
-            // 
-            this.editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            resources.ApplyResources(this.editarToolStripMenuItem1, "editarToolStripMenuItem1");
+            this.btAddHouse.Name = "btAddHouse";
+            resources.ApplyResources(this.btAddHouse, "btAddHouse");
+            this.btAddHouse.Click += new System.EventHandler(this.btAddHouse_Click);
             // 
             // listarToolStripMenuItem1
             // 
             this.listarToolStripMenuItem1.Name = "listarToolStripMenuItem1";
             resources.ApplyResources(this.listarToolStripMenuItem1, "listarToolStripMenuItem1");
             // 
-            // listarToolStripMenuItem5
+            // btListHouse
             // 
-            this.listarToolStripMenuItem5.Name = "listarToolStripMenuItem5";
-            resources.ApplyResources(this.listarToolStripMenuItem5, "listarToolStripMenuItem5");
+            this.btListHouse.Name = "btListHouse";
+            resources.ApplyResources(this.btListHouse, "btListHouse");
+            this.btListHouse.Click += new System.EventHandler(this.btListHouse_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pesquisarToolStripMenuItem2,
-            this.criarToolStripMenuItem,
-            this.editarToolStripMenuItem,
+            this.btSearchClient,
+            this.btAddClient,
             this.listarToolStripMenuItem,
-            this.listarToolStripMenuItem6});
+            this.btListClient});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             resources.ApplyResources(this.clientesToolStripMenuItem, "clientesToolStripMenuItem");
             // 
-            // pesquisarToolStripMenuItem2
+            // btSearchClient
             // 
-            this.pesquisarToolStripMenuItem2.Name = "pesquisarToolStripMenuItem2";
-            resources.ApplyResources(this.pesquisarToolStripMenuItem2, "pesquisarToolStripMenuItem2");
+            this.btSearchClient.Name = "btSearchClient";
+            resources.ApplyResources(this.btSearchClient, "btSearchClient");
+            this.btSearchClient.Click += new System.EventHandler(this.btSearchClient_Click);
             // 
-            // criarToolStripMenuItem
+            // btAddClient
             // 
-            this.criarToolStripMenuItem.Name = "criarToolStripMenuItem";
-            resources.ApplyResources(this.criarToolStripMenuItem, "criarToolStripMenuItem");
-            // 
-            // editarToolStripMenuItem
-            // 
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            resources.ApplyResources(this.editarToolStripMenuItem, "editarToolStripMenuItem");
+            this.btAddClient.Name = "btAddClient";
+            resources.ApplyResources(this.btAddClient, "btAddClient");
+            this.btAddClient.Click += new System.EventHandler(this.btAddClient_Click);
             // 
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
             resources.ApplyResources(this.listarToolStripMenuItem, "listarToolStripMenuItem");
             // 
-            // listarToolStripMenuItem6
+            // btListClient
             // 
-            this.listarToolStripMenuItem6.Name = "listarToolStripMenuItem6";
-            resources.ApplyResources(this.listarToolStripMenuItem6, "listarToolStripMenuItem6");
+            this.btListClient.Name = "btListClient";
+            resources.ApplyResources(this.btListClient, "btListClient");
+            this.btListClient.Click += new System.EventHandler(this.btListClient_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -311,17 +325,14 @@
         private System.Windows.Forms.ToolStripMenuItem portuguêsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inglesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btAddRent;
-        private System.Windows.Forms.ToolStripMenuItem btEditRent;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem adicionarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem btAddHouse;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem criarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btListHouse;
+        private System.Windows.Forms.ToolStripMenuItem btAddClient;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem btListClient;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewHelpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sobreOImoEstudanteToolStripMenuItem;
@@ -331,8 +342,12 @@
         private System.Windows.Forms.ToolStripMenuItem adicionarUtilizadorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btSearchHouse;
-        private System.Windows.Forms.ToolStripMenuItem pesquisarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem btSearchClient;
         private MetroFramework.Controls.MetroPanel panel;
+        private System.Windows.Forms.ToolStripMenuItem defeniçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adicionarUtilizadorToolStripMenuItem1;
     }
 }
 

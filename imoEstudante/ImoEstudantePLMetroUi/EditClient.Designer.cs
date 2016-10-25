@@ -29,13 +29,18 @@
         private void InitializeComponent()
         {
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.panelDashBoard.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelDashBoard
             // 
+            this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDashBoard.Controls.Add(this.metroLabel1);
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
@@ -43,20 +48,11 @@
             this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(805, 460);
+            this.panelDashBoard.Size = new System.Drawing.Size(754, 496);
             this.panelDashBoard.TabIndex = 4;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
             this.panelDashBoard.VerticalScrollbarSize = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Location = new System.Drawing.Point(0, 47);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(805, 413);
-            this.panel1.TabIndex = 2;
             // 
             // metroLabel1
             // 
@@ -64,9 +60,28 @@
             this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
             this.metroLabel1.Location = new System.Drawing.Point(4, 22);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(113, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(205, 19);
             this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "Edição de Cliente";
+            this.metroLabel1.Text = "ImoEstudante » Edição de Cliente";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.metroTabControl1);
+            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(754, 449);
+            this.panel1.TabIndex = 2;
+            // 
+            // metroTabControl1
+            // 
+            this.metroTabControl1.Location = new System.Drawing.Point(4, 3);
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.Size = new System.Drawing.Size(747, 443);
+            this.metroTabControl1.TabIndex = 0;
             // 
             // EditClient
             // 
@@ -75,9 +90,10 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelDashBoard);
             this.Name = "EditClient";
-            this.Size = new System.Drawing.Size(830, 460);
+            this.Size = new System.Drawing.Size(754, 496);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -87,5 +103,6 @@
         private MetroFramework.Controls.MetroPanel panelDashBoard;
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroTabControl metroTabControl1;
     }
 }
