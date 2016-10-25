@@ -104,6 +104,15 @@ Adicionar Cliente
 TABS -> DadosDoCliente/Alugueres/Menssagens??
 
 
+Gmap
+--------
+http://www.independent-software.com/gmap-net-beginners-tutorial-maps-markers-polygons-routes-updated-for-visual-studio-2015-and-gmap-net-1-7/
+http://stackoverflow.com/questions/10547147/a-working-gmap-net-application-source
+Por fazer :
+Pontos de interesse
+Movimento do mapa para analise da zona
+
+
 
 
 
