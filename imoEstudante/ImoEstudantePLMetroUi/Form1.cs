@@ -88,6 +88,8 @@ namespace ImoEstudantePLMetroUi
             // mudar idioma
             Idioma.switchLanguage(this, cul, res_man);
 
+
+
             //foreach (ToolStripMenuItem ctrlsss in this.menuStrip1.Items)
             //{
             //    if (ctrlsss is ToolStripMenuItem)
