@@ -126,7 +126,7 @@
   <data name="menuToolStripMenuItem2" xml:space="preserve">
     <value>Personal Data</value>
   </data>
-  <data name="metroTabPage1" xml:space="preserve">
+  <data name="metroTabControl1" xml:space="preserve">
     <value>Business Data</value>
   </data>
   <data name="viewHelpToolStripMenuItem" xml:space="preserve">

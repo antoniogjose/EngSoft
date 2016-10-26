@@ -16,7 +16,7 @@ namespace ImoEstudantePLMetroUi
     {
         public static void switchLanguage(MetroFramework.Forms.MetroForm frm, CultureInfo cul, ResourceManager res_man)
         {
-            //foreach (Control ctrls in frm.Controls)
+            //foreach (MetroFramework.Controls.MetroTabControl ctrls in frm.Controls)
             //{
             //    try
             //    {
