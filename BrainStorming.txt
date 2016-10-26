@@ -124,6 +124,7 @@ http://stackoverflow.com/questions/14750099/location-information-where-mouse-cli
 Depois precisamos de tratar os resultados XML ou JSON
 
 Tipos para adicionar na base de dados
+Dividir por áreas
 
 accounting
 airport
