@@ -235,4 +235,10 @@ E = 0
 RX = 1
 D = 0
 
+Casos de USO
+
+http://creately.com/blog/diagrams/use-case-diagram-tutorial/
+http://creately.com/blog/diagrams/use-case-diagram-relationships/
+
+
 
