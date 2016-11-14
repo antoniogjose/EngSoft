@@ -16,17 +16,19 @@ namespace ImoEstudantePLMetroUi
     {
         public static void switchLanguage(MetroFramework.Forms.MetroForm frm, CultureInfo cul, ResourceManager res_man)
         {
-            //foreach (MetroFramework.Controls.MetroTabControl ctrls in frm.Controls)
-            //{
-            //    try
-            //    {
-            //        ctrls.Text = res_man.GetString(ctrls.Name, cul);
-            //    }
-            //    catch (Exception e)
-            //    {
-            //        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
-            //    }
-            //}
+            foreach (Control ctrls in frm.Controls)
+            {
+                try
+                {
+                    DialogResult result = MessageBox.Show(ctrls.Text);
+
+                    ctrls.Text = res_man.GetString(ctrls.Name, cul);
+                }
+                catch (Exception e)
+                {
+                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                }
+            }
 
             foreach (ToolStripMenuItem ctrl in frm.MainMenuStrip.Items)
             {
