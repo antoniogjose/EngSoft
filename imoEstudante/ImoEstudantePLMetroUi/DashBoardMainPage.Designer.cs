@@ -32,10 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
-            this.pieChart1 = new LiveCharts.WinForms.PieChart();
-            this.pieChart2 = new LiveCharts.WinForms.PieChart();
             this.pieChart3 = new LiveCharts.WinForms.PieChart();
+            this.pieChart2 = new LiveCharts.WinForms.PieChart();
+            this.pieChart1 = new LiveCharts.WinForms.PieChart();
+            this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
@@ -47,7 +47,7 @@
             this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
             this.metroLabel1.Location = new System.Drawing.Point(4, 22);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(88, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(93, 20);
             this.metroLabel1.TabIndex = 4;
             this.metroLabel1.Text = "ImoEstudante";
             // 
@@ -84,34 +84,23 @@
             this.metroTabPage1.Controls.Add(this.cartesianChart1);
             this.metroTabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 39);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(746, 410);
+            this.metroTabPage1.Size = new System.Drawing.Size(746, 406);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Dados de Negócio";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             // 
-            // cartesianChart1
+            // pieChart3
             // 
-            this.cartesianChart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pieChart3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cartesianChart1.BackColor = System.Drawing.Color.White;
-            this.cartesianChart1.Location = new System.Drawing.Point(0, 17);
-            this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(743, 224);
-            this.cartesianChart1.TabIndex = 2;
-            this.cartesianChart1.Text = "cartesianChart1";
-            // 
-            // pieChart1
-            // 
-            this.pieChart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pieChart1.BackColor = System.Drawing.Color.White;
-            this.pieChart1.Location = new System.Drawing.Point(20, 247);
-            this.pieChart1.Name = "pieChart1";
-            this.pieChart1.Size = new System.Drawing.Size(200, 160);
-            this.pieChart1.TabIndex = 3;
-            this.pieChart1.Text = "pieChart1";
+            this.pieChart3.BackColor = System.Drawing.Color.White;
+            this.pieChart3.Location = new System.Drawing.Point(543, 247);
+            this.pieChart3.Name = "pieChart3";
+            this.pieChart3.Size = new System.Drawing.Size(200, 160);
+            this.pieChart3.TabIndex = 3;
+            this.pieChart3.Text = "pieChart1";
             // 
             // pieChart2
             // 
@@ -124,16 +113,27 @@
             this.pieChart2.TabIndex = 3;
             this.pieChart2.Text = "pieChart1";
             // 
-            // pieChart3
+            // pieChart1
             // 
-            this.pieChart3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pieChart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pieChart3.BackColor = System.Drawing.Color.White;
-            this.pieChart3.Location = new System.Drawing.Point(543, 247);
-            this.pieChart3.Name = "pieChart3";
-            this.pieChart3.Size = new System.Drawing.Size(200, 160);
-            this.pieChart3.TabIndex = 3;
-            this.pieChart3.Text = "pieChart1";
+            this.pieChart1.BackColor = System.Drawing.Color.White;
+            this.pieChart1.Location = new System.Drawing.Point(20, 247);
+            this.pieChart1.Name = "pieChart1";
+            this.pieChart1.Size = new System.Drawing.Size(200, 160);
+            this.pieChart1.TabIndex = 3;
+            this.pieChart1.Text = "pieChart1";
+            // 
+            // cartesianChart1
+            // 
+            this.cartesianChart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cartesianChart1.BackColor = System.Drawing.Color.White;
+            this.cartesianChart1.Location = new System.Drawing.Point(0, 17);
+            this.cartesianChart1.Name = "cartesianChart1";
+            this.cartesianChart1.Size = new System.Drawing.Size(743, 224);
+            this.cartesianChart1.TabIndex = 2;
+            this.cartesianChart1.Text = "cartesianChart1";
             // 
             // DashBoardMainPage
             // 
