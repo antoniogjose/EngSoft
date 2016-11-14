@@ -41,11 +41,11 @@ namespace ImoEstudantePLMetroUi
             GMapProvider.WebProxy = null;
             //center map on moscow
             // gMapControl1.Position = new PointLatLng(55.755786121111, 37.617633343333);
-<<<<<<< Updated upstream
+
             gMapControl1.SetPositionByKeywords("Braga, Portugal");
-=======
+
             gMapControl1.SetPositionByKeywords("Barcelos, Portugal");
->>>>>>> Stashed changes
+
 
             gMapControl1.DragButton = MouseButtons.Left;
 
