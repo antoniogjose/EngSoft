@@ -122,6 +122,7 @@ namespace GmapExemple
                 Example pois = jss.Deserialize<Example>(results);
 
 
+
                 for (int i = 0; i < pois.results.Count; i++)
                 {
                     // apresentar o nome do POI em portugues
