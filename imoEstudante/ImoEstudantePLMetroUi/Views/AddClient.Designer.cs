@@ -34,8 +34,8 @@
             this.addClient_tabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.addClient_tabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.addClient_tabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.label2 = new System.Windows.Forms.Label();
             this.addClient_label2 = new System.Windows.Forms.Label();
+            this.addClient_label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.addClient_button2 = new MetroFramework.Controls.MetroButton();
             this.addClient_button1 = new MetroFramework.Controls.MetroButton();
@@ -122,8 +122,8 @@
             // 
             // addClient_tabPage2
             // 
-            this.addClient_tabPage2.Controls.Add(this.label2);
             this.addClient_tabPage2.Controls.Add(this.addClient_label2);
+            this.addClient_tabPage2.Controls.Add(this.addClient_label3);
             this.addClient_tabPage2.Controls.Add(this.dataGridView2);
             this.addClient_tabPage2.Controls.Add(this.addClient_button2);
             this.addClient_tabPage2.Controls.Add(this.addClient_button1);
@@ -139,29 +139,29 @@
             this.addClient_tabPage2.VerticalScrollbarBarColor = true;
             this.addClient_tabPage2.VerticalScrollbarSize = 13;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 15);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 18);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Alugueres em Curso";
-            // 
             // addClient_label2
             // 
             this.addClient_label2.AutoSize = true;
             this.addClient_label2.BackColor = System.Drawing.Color.Transparent;
             this.addClient_label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addClient_label2.Location = new System.Drawing.Point(0, 258);
+            this.addClient_label2.Location = new System.Drawing.Point(0, 15);
             this.addClient_label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.addClient_label2.Name = "addClient_label2";
-            this.addClient_label2.Size = new System.Drawing.Size(157, 18);
+            this.addClient_label2.Size = new System.Drawing.Size(143, 18);
             this.addClient_label2.TabIndex = 13;
-            this.addClient_label2.Text = "Histórico de Alugueres";
+            this.addClient_label2.Text = "Alugueres em Curso";
+            // 
+            // addClient_label3
+            // 
+            this.addClient_label3.AutoSize = true;
+            this.addClient_label3.BackColor = System.Drawing.Color.Transparent;
+            this.addClient_label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addClient_label3.Location = new System.Drawing.Point(0, 258);
+            this.addClient_label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.addClient_label3.Name = "addClient_label3";
+            this.addClient_label3.Size = new System.Drawing.Size(157, 18);
+            this.addClient_label3.TabIndex = 13;
+            this.addClient_label3.Text = "Histórico de Alugueres";
             // 
             // dataGridView2
             // 
@@ -235,8 +235,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private MetroFramework.Controls.MetroButton addClient_button1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label addClient_label2;
+        private System.Windows.Forms.Label addClient_label3;
         private MetroFramework.Controls.MetroButton addClient_button2;
     }
 }

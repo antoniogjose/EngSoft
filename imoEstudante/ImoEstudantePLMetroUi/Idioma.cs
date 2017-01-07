@@ -77,14 +77,13 @@ namespace ImoEstudantePLMetroUi
         }
 
         
-        public static void switchLanguage3(MetroFramework.Controls.MetroPanel frms, CultureInfo cul, ResourceManager res_man)
+        public static void switchLanguage(MetroFramework.Controls.MetroPanel frms, CultureInfo cul, ResourceManager res_man)
         {
             foreach (Control ctrls in frms.Controls)
             {
                 try
                 {
                     //DialogResult result = MessageBox.Show(ctrls.Name);
-
                     ctrls.Text = res_man.GetString(ctrls.Name, cul);
                 }
                 catch (Exception e)
@@ -103,9 +102,64 @@ namespace ImoEstudantePLMetroUi
                     catch (Exception e)
                     {
                         //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
-                    }                    
-                }
+                    }
 
+
+                    foreach (Control label in drops.Controls)
+                    {
+                        try
+                        {
+                            //DialogResult result = MessageBox.Show(label.Name);
+                            label.Text = res_man.GetString(label.Name, cul);
+                        }
+                        catch (Exception e)
+                        {
+                            //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                        }
+
+
+                        foreach (Control lab in label.Controls)
+                        {
+                            try
+                            {
+                                //DialogResult result = MessageBox.Show(lab.Name);
+                                lab.Text = res_man.GetString(lab.Name, cul);
+                            }
+                            catch (Exception e)
+                            {
+                                //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                            }
+
+
+                            foreach (Control labi in lab.Controls)
+                            {
+                                try
+                                {
+                                    //DialogResult result = MessageBox.Show(labi.Name);
+                                    labi.Text = res_man.GetString(labi.Name, cul);
+                                }
+                                catch (Exception e)
+                                {
+                                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                                }
+
+
+                                foreach (Control lab1 in labi.Controls)
+                                {
+                                    try
+                                    {
+                                        //DialogResult result = MessageBox.Show(lab1.Name);
+                                        lab1.Text = res_man.GetString(lab1.Name, cul);
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }                
             }
         }
     }

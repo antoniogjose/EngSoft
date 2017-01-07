@@ -96,23 +96,26 @@ namespace ImoEstudantePLMetroUi
                 cul = CultureInfo.CreateSpecificCulture("pt");
             }
 
-            // mudar idioma
+            // switch language
             Idioma.switchLanguage(this, cul, res_man);
-            Idioma.switchLanguage2(DashBoardMainPage.Instance, cul, res_man);
-            Idioma.switchLanguage3(panel, cul, res_man);
-            
+            //Idioma.switchLanguage2(DashBoardMainPage.Instance, cul, res_man);
 
-
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void menuToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -125,6 +128,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 EditUser.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void adicionarUtilizadorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -137,6 +143,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 SearchUser.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void pesquisarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -150,6 +159,8 @@ namespace ImoEstudantePLMetroUi
             else
                 SearchRent.Instance.BringToFront();
 
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btAddRent_Click(object sender, EventArgs e)
@@ -162,6 +173,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 AddRent.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btEditRent_Click(object sender, EventArgs e)
@@ -175,6 +189,8 @@ namespace ImoEstudantePLMetroUi
             else
                 EditRent.Instance.BringToFront();
 
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btAddHouse_Click(object sender, EventArgs e)
@@ -187,6 +203,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 AddHouse.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btEditHouse_Click(object sender, EventArgs e)
@@ -199,6 +218,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 EditHouse.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btListHouse_Click(object sender, EventArgs e)
@@ -211,6 +233,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 ListHouse.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btSearchClient_Click(object sender, EventArgs e)
@@ -223,6 +248,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 SearchClient.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btAddClient_Click(object sender, EventArgs e)
@@ -235,6 +263,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 AddClient.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btEditClient_Click(object sender, EventArgs e)
@@ -247,6 +278,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 EditClient.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btListClient_Click(object sender, EventArgs e)
@@ -259,6 +293,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 ListClient.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void listarToolStripMenuItem4_Click(object sender, EventArgs e)
@@ -271,6 +308,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 ListRent.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void btSearchHouse_Click(object sender, EventArgs e)
@@ -283,6 +323,9 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 SearchHouse.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void adicionarUtilizadorToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -295,11 +338,16 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 AddUser.Instance.BringToFront();
+
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
         private void defeniçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
     }
 }
