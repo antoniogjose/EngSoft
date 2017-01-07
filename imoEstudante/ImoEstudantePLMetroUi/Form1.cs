@@ -162,9 +162,6 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 AddRent.Instance.BringToFront();
-
-            Idioma.switchLanguage(this, cul, res_man);
-            Idioma.switchLanguage3(panel, cul, res_man);
         }
 
         private void btEditRent_Click(object sender, EventArgs e)
@@ -238,9 +235,6 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 AddClient.Instance.BringToFront();
-
-            Idioma.switchLanguage(this, cul, res_man);
-            Idioma.switchLanguage3(panel, cul, res_man);
         }
 
         private void btEditClient_Click(object sender, EventArgs e)

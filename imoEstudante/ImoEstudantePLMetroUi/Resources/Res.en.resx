@@ -138,8 +138,8 @@
   <data name="dashBoard_label1" xml:space="preserve">
     <value>ImoEstudante (en)</value>
   </data>
-  <data name="viewHelpToolStripMenuItem" xml:space="preserve">
-    <value>See Help</value>
+  <data name="adicionarUtilizadorToolStripMenuItem" xml:space="preserve">
+    <value>Search User</value>
   </data>
   <data name="addClient_tabPage1" xml:space="preserve">
     <value>Client Data</value>
@@ -147,10 +147,82 @@
   <data name="dashBoard_tabPage1" xml:space="preserve">
     <value>Business Data</value>
   </data>
-  <data name="tabRent" xml:space="preserve">
-    <value>Rent Data</value>
+  <data name="adicionarUtilizadorToolStripMenuItem1" xml:space="preserve">
+    <value>Add User</value>
   </data>
-  <data name="metroLabel1" xml:space="preserve">
-    <value>here</value>
+  <data name="menuToolStripMenuItem2" xml:space="preserve">
+    <value>Personal Data</value>
+  </data>
+  <data name="defeniçõesToolStripMenuItem" xml:space="preserve">
+    <value>Definitions</value>
+  </data>
+  <data name="fecharToolStripMenuItem" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="inglesToolStripMenuItem" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="logOutToolStripMenuItem" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="menuToolStripMenuItem1" xml:space="preserve">
+    <value>Idiom</value>
+  </data>
+  <data name="portuguêsToolStripMenuItem" xml:space="preserve">
+    <value>Portuguese</value>
+  </data>
+  <data name="btAddClient" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btAddHouse" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btAddRent" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btListClient" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="btListHouse" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="btSearchClient" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btSearchHouse" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="clientesToolStripMenuItem" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="helpToolStripMenuItem" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="listarToolStripMenuItem" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="listarToolStripMenuItem1" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="listarToolStripMenuItem3" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="listarToolStripMenuItem4" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="menuToolStripMenuItem5" xml:space="preserve">
+    <value>Rents</value>
+  </data>
+  <data name="menuToolStripMenuItem6" xml:space="preserve">
+    <value>Habitations</value>
+  </data>
+  <data name="pesquisarToolStripMenuItem" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="sobreOImoEstudanteToolStripMenuItem" xml:space="preserve">
+    <value>About ImoEstudante</value>
+  </data>
+  <data name="viewHelpToolStripMenuItem" xml:space="preserve">
+    <value>See Help</value>
   </data>
 </root>

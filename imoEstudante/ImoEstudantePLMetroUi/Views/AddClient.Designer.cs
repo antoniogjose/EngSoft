@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
+            this.addClient_panelDashBoard = new MetroFramework.Controls.MetroPanel();
             this.addClient_label1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.addClient_tabControl1 = new MetroFramework.Controls.MetroTabControl();
@@ -40,7 +40,7 @@
             this.addClient_button2 = new MetroFramework.Controls.MetroButton();
             this.addClient_button1 = new MetroFramework.Controls.MetroButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panelDashBoard.SuspendLayout();
+            this.addClient_panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.addClient_tabControl1.SuspendLayout();
             this.addClient_tabPage2.SuspendLayout();
@@ -48,24 +48,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelDashBoard
+            // addClient_panelDashBoard
             // 
-            this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.addClient_panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDashBoard.Controls.Add(this.addClient_label1);
-            this.panelDashBoard.Controls.Add(this.panel1);
-            this.panelDashBoard.HorizontalScrollbarBarColor = true;
-            this.panelDashBoard.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.HorizontalScrollbarSize = 12;
-            this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
-            this.panelDashBoard.Margin = new System.Windows.Forms.Padding(4);
-            this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(1005, 610);
-            this.panelDashBoard.TabIndex = 5;
-            this.panelDashBoard.VerticalScrollbarBarColor = true;
-            this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.VerticalScrollbarSize = 13;
+            this.addClient_panelDashBoard.Controls.Add(this.addClient_label1);
+            this.addClient_panelDashBoard.Controls.Add(this.panel1);
+            this.addClient_panelDashBoard.HorizontalScrollbarBarColor = true;
+            this.addClient_panelDashBoard.HorizontalScrollbarHighlightOnWheel = false;
+            this.addClient_panelDashBoard.HorizontalScrollbarSize = 12;
+            this.addClient_panelDashBoard.Location = new System.Drawing.Point(0, 0);
+            this.addClient_panelDashBoard.Margin = new System.Windows.Forms.Padding(4);
+            this.addClient_panelDashBoard.Name = "addClient_panelDashBoard";
+            this.addClient_panelDashBoard.Size = new System.Drawing.Size(1005, 610);
+            this.addClient_panelDashBoard.TabIndex = 5;
+            this.addClient_panelDashBoard.VerticalScrollbarBarColor = true;
+            this.addClient_panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
+            this.addClient_panelDashBoard.VerticalScrollbarSize = 13;
             // 
             // addClient_label1
             // 
@@ -208,12 +208,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panelDashBoard);
+            this.Controls.Add(this.addClient_panelDashBoard);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddClient";
             this.Size = new System.Drawing.Size(1005, 610);
-            this.panelDashBoard.ResumeLayout(false);
-            this.panelDashBoard.PerformLayout();
+            this.addClient_panelDashBoard.ResumeLayout(false);
+            this.addClient_panelDashBoard.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.addClient_tabControl1.ResumeLayout(false);
             this.addClient_tabPage2.ResumeLayout(false);
@@ -226,7 +226,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroPanel panelDashBoard;
+        private MetroFramework.Controls.MetroPanel addClient_panelDashBoard;
         private MetroFramework.Controls.MetroLabel addClient_label1;
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroTabControl addClient_tabControl1;

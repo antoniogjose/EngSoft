@@ -67,6 +67,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
             this.menuToolStripMenuItem5,
@@ -290,12 +291,12 @@
             resources.ApplyResources(this.panel, "panel");
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;
-            this.panel.HorizontalScrollbarSize = 10;
+            this.panel.HorizontalScrollbarSize = 13;
             this.panel.Name = "panel";
             this.panel.VerticalScrollbar = true;
             this.panel.VerticalScrollbarBarColor = true;
             this.panel.VerticalScrollbarHighlightOnWheel = true;
-            this.panel.VerticalScrollbarSize = 10;
+            this.panel.VerticalScrollbarSize = 13;
             // 
             // Form1
             // 

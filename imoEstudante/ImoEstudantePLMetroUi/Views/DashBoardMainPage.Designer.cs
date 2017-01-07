@@ -30,14 +30,14 @@
         {
             this.dashBoard_label1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.dashBoard_tabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.dashBoard_tabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.pieChart3 = new LiveCharts.WinForms.PieChart();
             this.pieChart2 = new LiveCharts.WinForms.PieChart();
             this.pieChart1 = new LiveCharts.WinForms.PieChart();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
             this.panel1.SuspendLayout();
-            this.metroTabControl1.SuspendLayout();
+            this.dashBoard_tabControl1.SuspendLayout();
             this.dashBoard_tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,24 +57,24 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.metroTabControl1);
+            this.panel1.Controls.Add(this.dashBoard_tabControl1);
             this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(754, 449);
             this.panel1.TabIndex = 5;
             // 
-            // metroTabControl1
+            // dashBoard_tabControl1
             // 
-            this.metroTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dashBoard_tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTabControl1.Controls.Add(this.dashBoard_tabPage1);
-            this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
-            this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
-            this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(754, 449);
-            this.metroTabControl1.TabIndex = 2;
+            this.dashBoard_tabControl1.Controls.Add(this.dashBoard_tabPage1);
+            this.dashBoard_tabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
+            this.dashBoard_tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.dashBoard_tabControl1.Name = "dashBoard_tabControl1";
+            this.dashBoard_tabControl1.SelectedIndex = 0;
+            this.dashBoard_tabControl1.Size = new System.Drawing.Size(754, 449);
+            this.dashBoard_tabControl1.TabIndex = 2;
             // 
             // dashBoard_tabPage1
             // 
@@ -143,7 +143,7 @@
             this.Name = "DashBoardMainPage";
             this.Size = new System.Drawing.Size(754, 496);
             this.panel1.ResumeLayout(false);
-            this.metroTabControl1.ResumeLayout(false);
+            this.dashBoard_tabControl1.ResumeLayout(false);
             this.dashBoard_tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,7 +153,7 @@
         #endregion
         private MetroFramework.Controls.MetroLabel dashBoard_label1;
         private System.Windows.Forms.Panel panel1;
-        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private MetroFramework.Controls.MetroTabControl dashBoard_tabControl1;
         private MetroFramework.Controls.MetroTabPage dashBoard_tabPage1;
         private LiveCharts.WinForms.PieChart pieChart3;
         private LiveCharts.WinForms.PieChart pieChart2;

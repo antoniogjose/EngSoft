@@ -122,91 +122,95 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="menuToolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+    <value>217, 26</value>
   </data>
   <data name="menuToolStripMenuItem2.Text" xml:space="preserve">
     <value>Dados Pessoais</value>
   </data>
   <data name="adicionarUtilizadorToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+    <value>217, 26</value>
   </data>
   <data name="adicionarUtilizadorToolStripMenuItem1.Text" xml:space="preserve">
     <value>Adicionar Utilizador</value>
   </data>
   <data name="adicionarUtilizadorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+    <value>217, 26</value>
   </data>
   <data name="adicionarUtilizadorToolStripMenuItem.Text" xml:space="preserve">
     <value>Pesquisar Utilizador</value>
   </data>
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 6</value>
+    <value>214, 6</value>
   </data>
   <data name="menuToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+    <value>217, 26</value>
   </data>
   <data name="menuToolStripMenuItem1.Text" xml:space="preserve">
     <value>Idioma</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 6</value>
+    <value>214, 6</value>
   </data>
   <data name="defeniçõesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+    <value>217, 26</value>
   </data>
   <data name="defeniçõesToolStripMenuItem.Text" xml:space="preserve">
-    <value>definições</value>
+    <value>Definições</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 6</value>
+    <value>214, 6</value>
   </data>
   <data name="logOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+    <value>217, 26</value>
   </data>
   <data name="logOutToolStripMenuItem.Text" xml:space="preserve">
-    <value>LogOut</value>
+    <value>Sair</value>
   </data>
   <data name="fecharToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+    <value>217, 26</value>
   </data>
   <data name="fecharToolStripMenuItem.Text" xml:space="preserve">
     <value>Fechar</value>
   </data>
   <data name="menuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 20</value>
+    <value>112, 24</value>
   </data>
   <data name="menuToolStripMenuItem.Text" xml:space="preserve">
     <value>ImoEstudante</value>
   </data>
   <data name="menuToolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 20</value>
+    <value>87, 24</value>
   </data>
   <data name="menuToolStripMenuItem5.Text" xml:space="preserve">
     <value>Alugueres</value>
   </data>
   <data name="menuToolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 20</value>
+    <value>96, 24</value>
   </data>
   <data name="menuToolStripMenuItem6.Text" xml:space="preserve">
     <value>Habitações</value>
   </data>
   <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
+    <value>73, 24</value>
   </data>
   <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
     <value>Clientes</value>
   </data>
   <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
+    <value>60, 24</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Ajuda</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 60</value>
+    <value>30, 78</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 3, 0, 3</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 24</value>
+    <value>969, 30</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
@@ -228,97 +232,97 @@
     <value>1</value>
   </data>
   <data name="portuguêsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 22</value>
+    <value>181, 26</value>
   </data>
   <data name="portuguêsToolStripMenuItem.Text" xml:space="preserve">
     <value>Português</value>
   </data>
   <data name="inglesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 22</value>
+    <value>181, 26</value>
   </data>
   <data name="inglesToolStripMenuItem.Text" xml:space="preserve">
     <value>Inglês</value>
   </data>
   <data name="pesquisarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="pesquisarToolStripMenuItem.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
   <data name="btAddRent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="btAddRent.Text" xml:space="preserve">
     <value>Adicionar</value>
   </data>
   <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
   <data name="listarToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="listarToolStripMenuItem4.Text" xml:space="preserve">
     <value>Listar</value>
   </data>
   <data name="btSearchHouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="btSearchHouse.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
   <data name="btAddHouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="btAddHouse.Text" xml:space="preserve">
     <value>Adicionar</value>
   </data>
   <data name="listarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="listarToolStripMenuItem1.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
   <data name="btListHouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="btListHouse.Text" xml:space="preserve">
     <value>Listar</value>
   </data>
   <data name="btSearchClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="btSearchClient.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
   <data name="btAddClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="btAddClient.Text" xml:space="preserve">
     <value>Adicionar</value>
   </data>
   <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="listarToolStripMenuItem.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
   <data name="btListClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
+    <value>148, 26</value>
   </data>
   <data name="btListClient.Text" xml:space="preserve">
     <value>Listar</value>
   </data>
   <data name="viewHelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
+    <value>231, 26</value>
   </data>
   <data name="viewHelpToolStripMenuItem.Text" xml:space="preserve">
     <value>Ver ajuda</value>
   </data>
   <data name="sobreOImoEstudanteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
+    <value>231, 26</value>
   </data>
   <data name="sobreOImoEstudanteToolStripMenuItem.Text" xml:space="preserve">
     <value>Sobre o ImoEstudante</value>
@@ -326,18 +330,17 @@
   <data name="panel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
   <data name="panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 84</value>
+    <value>30, 108</value>
   </data>
   <data name="panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
   <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>754, 496</value>
+    <value>969, 651</value>
   </data>
   <data name="panel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -361,19 +364,22 @@
     <value>83</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 13</value>
+    <value>9, 17</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 600</value>
+    <value>1029, 785</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 600</value>
+    <value>1029, 785</value>
   </data>
   <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>23, 60, 23, 20</value>
+    <value>30, 78, 30, 26</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>WindowsDefaultLocation</value>
