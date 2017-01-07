@@ -20,7 +20,7 @@ namespace ImoEstudantePLMetroUi
             {
                 try
                 {
-                    //DialogResult result = MessageBox.Show(ctrls.Text);
+                    //DialogResult result = MessageBox.Show(ctrls.Name);
 
                     ctrls.Text = res_man.GetString(ctrls.Name, cul);
                 }
@@ -45,8 +45,8 @@ namespace ImoEstudantePLMetroUi
                 {
                     try
                     {
+                        //DialogResult result = MessageBox.Show(dropDownItem.Name);
                         dropDownItem.Text = res_man.GetString(dropDownItem.Name, cul);
-                        //ctrl.Text = res_man.GetString(ctrl.Name, cul);
                     }
                     catch (Exception e)
                     {
@@ -103,11 +103,10 @@ namespace ImoEstudantePLMetroUi
                     catch (Exception e)
                     {
                         //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
-                    }
+                    }                    
                 }
+
             }
-
-
         }
     }
 }

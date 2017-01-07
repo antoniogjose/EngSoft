@@ -117,23 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="helpToolStripMenuItem" xml:space="preserve">
-    <value>Help</value>
+  <data name="labelAddClient1" xml:space="preserve">
+    <value>ImoEstudante » Add Client</value>
   </data>
-  <data name="menuToolStripMenuItem" xml:space="preserve">
-    <value>ImoEstudante</value>
+  <data name="tabPageAddClient2" xml:space="preserve">
+    <value>Rents</value>
   </data>
-  <data name="menuToolStripMenuItem2" xml:space="preserve">
-    <value>Personal Data</value>
+  <data name="labelAddClient2" xml:space="preserve">
+    <value>Rents in Course</value>
   </data>
-  <data name="metroLabel1" xml:space="preserve">
-    <value>Imo</value>
+  <data name="labelAddClient3" xml:space="preserve">
+    <value>Rents History</value>
   </data>
-  <data name="metroTabControl1" xml:space="preserve">
-    <value>Business Data</value>
+  <data name="buttonAddClient1" xml:space="preserve">
+    <value>Add Rent</value>
   </data>
-  <data name="metroTabPage1" xml:space="preserve">
-    <value>Stuff</value>
+  <data name="buttonAddClient2" xml:space="preserve">
+    <value>Finish Rental</value>
   </data>
   <data name="String1" xml:space="preserve">
     <value>Rent Data</value>
@@ -141,13 +141,16 @@
   <data name="viewHelpToolStripMenuItem" xml:space="preserve">
     <value>See Help</value>
   </data>
-  <data name="labelAddRent" xml:space="preserve">
-    <value>ImoEstudante » Add Rent</value>
+  <data name="tabPageAddClient1" xml:space="preserve">
+    <value>Client Data</value>
   </data>
   <data name="String2" xml:space="preserve">
     <value>ImoEstudante » Add User</value>
   </data>
   <data name="tabRent" xml:space="preserve">
     <value>Rent Data</value>
+  </data>
+  <data name="metroLabel1" xml:space="preserve">
+    <value>here</value>
   </data>
 </root>

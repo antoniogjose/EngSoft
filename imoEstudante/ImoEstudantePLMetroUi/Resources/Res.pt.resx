@@ -117,23 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="helpToolStripMenuItem" xml:space="preserve">
-    <value>Ajuda</value>
+  <data name="labelAddClient1" xml:space="preserve">
+    <value>ImoEstudante » Adicionar de Cliente</value>
   </data>
-  <data name="menuToolStripMenuItem" xml:space="preserve">
-    <value>ImoEstudante</value>
+  <data name="tabPageAddClient2" xml:space="preserve">
+    <value>Alugueres</value>
   </data>
-  <data name="menuToolStripMenuItem2" xml:space="preserve">
-    <value>Dados Pessoais</value>
+  <data name="labelAddClient2" xml:space="preserve">
+    <value>Alugueres em Curso</value>
   </data>
-  <data name="metroLabel1" xml:space="preserve">
-    <value>ImoEstudante</value>
+  <data name="labelAddClient3" xml:space="preserve">
+    <value>Histórico de Alugueres</value>
   </data>
-  <data name="metroTabControl1" xml:space="preserve">
-    <value>Dados de Negócio</value>
+  <data name="buttonAddClient1" xml:space="preserve">
+    <value>Adicionar Aluguer</value>
   </data>
-  <data name="metroTabPage1" xml:space="preserve">
-    <value>ah pois é</value>
+  <data name="buttonAddClient2" xml:space="preserve">
+    <value>Finalizar Aluguer</value>
   </data>
   <data name="String1" xml:space="preserve">
     <value>Dados do Aluguer</value>
@@ -141,13 +141,16 @@
   <data name="viewHelpToolStripMenuItem" xml:space="preserve">
     <value>Ver Ajuda</value>
   </data>
-  <data name="labelAddRent" xml:space="preserve">
-    <value>ImoEstudante » Adicionar Aluguer</value>
+  <data name="tabPageAddClient1" xml:space="preserve">
+    <value>Dados de Cliente</value>
   </data>
   <data name="String2" xml:space="preserve">
     <value>ImoEstudante » Adicionar Utilizador</value>
   </data>
   <data name="tabRent" xml:space="preserve">
     <value>Dados do Aluguer</value>
+  </data>
+  <data name="metroLabel1" xml:space="preserve">
+    <value>aqui pah</value>
   </data>
 </root>
