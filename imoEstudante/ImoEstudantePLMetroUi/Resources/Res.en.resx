@@ -126,11 +126,17 @@
   <data name="menuToolStripMenuItem2" xml:space="preserve">
     <value>Personal Data</value>
   </data>
+  <data name="metroLabel1" xml:space="preserve">
+    <value>Imo</value>
+  </data>
   <data name="metroTabControl1" xml:space="preserve">
     <value>Business Data</value>
   </data>
   <data name="metroTabPage1" xml:space="preserve">
-    <value>Coisas</value>
+    <value>Stuff</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Rent Data</value>
   </data>
   <data name="viewHelpToolStripMenuItem" xml:space="preserve">
     <value>See Help</value>

@@ -20,14 +20,14 @@ namespace ImoEstudantePLMetroUi
             {
                 try
                 {
-                    DialogResult result = MessageBox.Show(ctrls.Text);
+                    //DialogResult result = MessageBox.Show(ctrls.Text);
 
                     ctrls.Text = res_man.GetString(ctrls.Name, cul);
                 }
                 catch (Exception e)
                 {
                     //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
-                }
+                }                
             }
 
             foreach (ToolStripMenuItem ctrl in frm.MainMenuStrip.Items)
@@ -54,6 +54,40 @@ namespace ImoEstudantePLMetroUi
                     }
                 }
             }
+        }
+
+
+
+        public static void switchLanguage2(DashBoardMainPage frm, CultureInfo cul, ResourceManager res_man)
+        {
+            foreach (Control ctrls in frm.Controls)
+            {
+                try
+                {
+                    DialogResult result = MessageBox.Show(ctrls.Text);
+
+                    ctrls.Text = res_man.GetString(ctrls.Name, cul);
+                }
+                catch (Exception e)
+                {
+                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                }
+
+                //foreach (MetroFramework.Controls.MetroPanel drops in ((MetroFramework.Controls.MetroPanel)ctrls).Controls)
+                //{
+                //    try
+                //    {
+                //        drops.Text = res_man.GetString(drops.Name, cul);
+                //        //ctrl.Text = res_man.GetString(ctrl.Name, cul);
+                //    }
+                //    catch (Exception e)
+                //    {
+                //        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                //    }
+                //}
+            }
+
+            
         }
     }
 }
