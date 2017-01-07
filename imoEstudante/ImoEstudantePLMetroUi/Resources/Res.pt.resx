@@ -138,7 +138,7 @@
   <data name="dashBoard_label1" xml:space="preserve">
     <value>ImoEstudante (pt)</value>
   </data>
-  <data name="adicionarUtilizadorToolStripMenuItem" xml:space="preserve">
+  <data name="menuImoEstudante_Search" xml:space="preserve">
     <value>Pesquisar Utilizador</value>
   </data>
   <data name="addClient_tabPage1" xml:space="preserve">
@@ -147,82 +147,82 @@
   <data name="dashBoard_tabPage1" xml:space="preserve">
     <value>Dados de Negócio</value>
   </data>
-  <data name="adicionarUtilizadorToolStripMenuItem1" xml:space="preserve">
+  <data name="menuImoEstudante_Add" xml:space="preserve">
     <value>Adicionar Utilizador</value>
   </data>
-  <data name="menuToolStripMenuItem2" xml:space="preserve">
+  <data name="menuImoEstudante_Data" xml:space="preserve">
     <value>Dados Pessoais</value>
   </data>
-  <data name="defeniçõesToolStripMenuItem" xml:space="preserve">
+  <data name="menuImoEstudante_Definitions" xml:space="preserve">
     <value>Definições</value>
   </data>
-  <data name="fecharToolStripMenuItem" xml:space="preserve">
+  <data name="menuImoEstudante_Close" xml:space="preserve">
     <value>Fechar</value>
   </data>
-  <data name="inglesToolStripMenuItem" xml:space="preserve">
+  <data name="menuImoEstudante_Idiom_EN" xml:space="preserve">
     <value>Inglês</value>
   </data>
-  <data name="logOutToolStripMenuItem" xml:space="preserve">
-    <value>Sair</value>
-  </data>
-  <data name="menuToolStripMenuItem1" xml:space="preserve">
+  <data name="menuImoEstudante_Idiom" xml:space="preserve">
     <value>Idioma</value>
   </data>
-  <data name="portuguêsToolStripMenuItem" xml:space="preserve">
+  <data name="menuImoEstudante_Idiom_PT" xml:space="preserve">
     <value>Português</value>
   </data>
-  <data name="btAddClient" xml:space="preserve">
+  <data name="menuClients_Add" xml:space="preserve">
     <value>Adicionar</value>
   </data>
-  <data name="btAddHouse" xml:space="preserve">
+  <data name="menuHabitations_Add" xml:space="preserve">
     <value>Adicionar</value>
   </data>
-  <data name="btAddRent" xml:space="preserve">
+  <data name="menuRents_Add" xml:space="preserve">
     <value>Adicionar</value>
   </data>
-  <data name="btListClient" xml:space="preserve">
+  <data name="menuClients_List" xml:space="preserve">
     <value>Listar</value>
   </data>
-  <data name="btListHouse" xml:space="preserve">
+  <data name="menuHabitations_List" xml:space="preserve">
     <value>Listar</value>
   </data>
-  <data name="btSearchClient" xml:space="preserve">
+  <data name="menuClients_Search" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
-  <data name="btSearchHouse" xml:space="preserve">
+  <data name="menuHabitations_Search" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
-  <data name="clientesToolStripMenuItem" xml:space="preserve">
+  <data name="menuClients" xml:space="preserve">
     <value>Clientes</value>
   </data>
-  <data name="helpToolStripMenuItem" xml:space="preserve">
+  <data name="menuHelp" xml:space="preserve">
     <value>Ajuda</value>
   </data>
-  <data name="listarToolStripMenuItem" xml:space="preserve">
+  <data name="menuClients_Export" xml:space="preserve">
     <value>Exportar</value>
   </data>
-  <data name="listarToolStripMenuItem1" xml:space="preserve">
+  <data name="menuHabitations_Export" xml:space="preserve">
     <value>Exportar</value>
   </data>
-  <data name="listarToolStripMenuItem3" xml:space="preserve">
+  <data name="menuRents_Export" xml:space="preserve">
     <value>Exportar</value>
   </data>
-  <data name="listarToolStripMenuItem4" xml:space="preserve">
+  <data name="menuRents_List" xml:space="preserve">
     <value>Listar</value>
   </data>
-  <data name="menuToolStripMenuItem5" xml:space="preserve">
+  <data name="menuRents" xml:space="preserve">
     <value>Alugueres</value>
   </data>
-  <data name="menuToolStripMenuItem6" xml:space="preserve">
+  <data name="menuHabitations" xml:space="preserve">
     <value>Habitações</value>
   </data>
-  <data name="pesquisarToolStripMenuItem" xml:space="preserve">
+  <data name="menuRents_Search" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
-  <data name="sobreOImoEstudanteToolStripMenuItem" xml:space="preserve">
+  <data name="menuHelp_About" xml:space="preserve">
     <value>Sobre o ImoEstudante</value>
   </data>
-  <data name="viewHelpToolStripMenuItem" xml:space="preserve">
+  <data name="menuHelp_View" xml:space="preserve">
     <value>Ver Ajuda</value>
+  </data>
+  <data name="menuImoEstudante_LogOut" xml:space="preserve">
+    <value>Sair</value>
   </data>
 </root>

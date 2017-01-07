@@ -57,7 +57,7 @@ namespace ImoEstudantePLMetroUi
         }
 
 
-
+        /*
         public static void switchLanguage2(DashBoardMainPage frm, CultureInfo cul, ResourceManager res_man)
         {
             foreach (Control ctrls in frm.Controls)
@@ -75,7 +75,7 @@ namespace ImoEstudantePLMetroUi
             }
             
         }
-
+        */
         
         public static void switchLanguage(MetroFramework.Controls.MetroPanel frms, CultureInfo cul, ResourceManager res_man)
         {
