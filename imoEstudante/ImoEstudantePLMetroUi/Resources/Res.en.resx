@@ -117,35 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="labelAddClient1" xml:space="preserve">
+  <data name="addClient_label1" xml:space="preserve">
     <value>ImoEstudante » Add Client</value>
   </data>
-  <data name="tabPageAddClient2" xml:space="preserve">
+  <data name="addClient_tabPage2" xml:space="preserve">
     <value>Rents</value>
   </data>
-  <data name="labelAddClient2" xml:space="preserve">
+  <data name="addClient_label2" xml:space="preserve">
     <value>Rents in Course</value>
   </data>
-  <data name="labelAddClient3" xml:space="preserve">
+  <data name="addClient_label3" xml:space="preserve">
     <value>Rents History</value>
   </data>
-  <data name="buttonAddClient1" xml:space="preserve">
+  <data name="addClient_button1" xml:space="preserve">
     <value>Add Rent</value>
   </data>
-  <data name="buttonAddClient2" xml:space="preserve">
+  <data name="addClient_button2" xml:space="preserve">
     <value>Finish Rental</value>
   </data>
-  <data name="String1" xml:space="preserve">
-    <value>Rent Data</value>
+  <data name="dashBoard_label1" xml:space="preserve">
+    <value>ImoEstudante (en)</value>
   </data>
   <data name="viewHelpToolStripMenuItem" xml:space="preserve">
     <value>See Help</value>
   </data>
-  <data name="tabPageAddClient1" xml:space="preserve">
+  <data name="addClient_tabPage1" xml:space="preserve">
     <value>Client Data</value>
   </data>
-  <data name="String2" xml:space="preserve">
-    <value>ImoEstudante » Add User</value>
+  <data name="dashBoard_tabPage1" xml:space="preserve">
+    <value>Business Data</value>
   </data>
   <data name="tabRent" xml:space="preserve">
     <value>Rent Data</value>
