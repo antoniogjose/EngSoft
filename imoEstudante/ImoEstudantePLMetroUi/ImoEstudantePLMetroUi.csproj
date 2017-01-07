@@ -81,76 +81,76 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddClient.cs">
+    <Compile Include="Views\AddClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddClient.Designer.cs">
+    <Compile Include="Views\AddClient.Designer.cs">
       <DependentUpon>AddClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddHouse.cs">
+    <Compile Include="Views\AddHouse.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddHouse.Designer.cs">
+    <Compile Include="Views\AddHouse.Designer.cs">
       <DependentUpon>AddHouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddRent.cs">
+    <Compile Include="Views\AddRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddRent.Designer.cs">
+    <Compile Include="Views\AddRent.Designer.cs">
       <DependentUpon>AddRent.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditClient.cs">
+    <Compile Include="Views\EditClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EditClient.Designer.cs">
+    <Compile Include="Views\EditClient.Designer.cs">
       <DependentUpon>EditClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditHouse.cs">
+    <Compile Include="Views\EditHouse.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EditHouse.Designer.cs">
+    <Compile Include="Views\EditHouse.Designer.cs">
       <DependentUpon>EditHouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListClient.cs">
+    <Compile Include="Views\ListClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ListClient.Designer.cs">
+    <Compile Include="Views\ListClient.Designer.cs">
       <DependentUpon>ListClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListHouse.cs">
+    <Compile Include="Views\ListHouse.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ListHouse.Designer.cs">
+    <Compile Include="Views\ListHouse.Designer.cs">
       <DependentUpon>ListHouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListRent.cs">
+    <Compile Include="Views\ListRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ListRent.Designer.cs">
+    <Compile Include="Views\ListRent.Designer.cs">
       <DependentUpon>ListRent.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddUser.cs">
+    <Compile Include="Views\AddUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="AddUser.Designer.cs">
+    <Compile Include="Views\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="DashBoardMainPage.cs">
+    <Compile Include="Views\DashBoardMainPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DashBoardMainPage.Designer.cs">
+    <Compile Include="Views\DashBoardMainPage.Designer.cs">
       <DependentUpon>DashBoardMainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditRent.cs">
+    <Compile Include="Views\EditRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EditRent.Designer.cs">
+    <Compile Include="Views\EditRent.Designer.cs">
       <DependentUpon>EditRent.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditUser.cs">
+    <Compile Include="Views\EditUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EditUser.Designer.cs">
+    <Compile Include="Views\EditUser.Designer.cs">
       <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -159,64 +159,64 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchUser.cs">
+    <Compile Include="Views\SearchUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchUser.Designer.cs">
+    <Compile Include="Views\SearchUser.Designer.cs">
       <DependentUpon>SearchUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchClient.cs">
+    <Compile Include="Views\SearchClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchClient.Designer.cs">
+    <Compile Include="Views\SearchClient.Designer.cs">
       <DependentUpon>SearchClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchHouse.cs">
+    <Compile Include="Views\SearchHouse.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchHouse.Designer.cs">
+    <Compile Include="Views\SearchHouse.Designer.cs">
       <DependentUpon>SearchHouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchRent.cs">
+    <Compile Include="Views\SearchRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SearchRent.Designer.cs">
+    <Compile Include="Views\SearchRent.Designer.cs">
       <DependentUpon>SearchRent.cs</DependentUpon>
     </Compile>
     <Compile Include="Idioma.cs" />
-    <Compile Include="Login.cs">
+    <Compile Include="Views\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Views\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddClient.resx">
+    <EmbeddedResource Include="Views\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddHouse.resx">
+    <EmbeddedResource Include="Views\AddHouse.resx">
       <DependentUpon>AddHouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddRent.resx">
+    <EmbeddedResource Include="Views\AddRent.resx">
       <DependentUpon>AddRent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddUser.resx">
+    <EmbeddedResource Include="Views\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DashBoardMainPage.resx">
+    <EmbeddedResource Include="Views\DashBoardMainPage.resx">
       <DependentUpon>DashBoardMainPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditClient.resx">
+    <EmbeddedResource Include="Views\EditClient.resx">
       <DependentUpon>EditClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditHouse.resx">
+    <EmbeddedResource Include="Views\EditHouse.resx">
       <DependentUpon>EditHouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditRent.resx">
+    <EmbeddedResource Include="Views\EditRent.resx">
       <DependentUpon>EditRent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditUser.resx">
+    <EmbeddedResource Include="Views\EditUser.resx">
       <DependentUpon>EditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.en.resx">
@@ -225,21 +225,21 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListClient.resx">
+    <EmbeddedResource Include="Views\ListClient.resx">
       <DependentUpon>ListClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListHouse.resx">
+    <EmbeddedResource Include="Views\ListHouse.resx">
       <DependentUpon>ListHouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListRent.resx">
+    <EmbeddedResource Include="Views\ListRent.resx">
       <DependentUpon>ListRent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Res.en.resx" />
     <EmbeddedResource Include="Resources\Res.pt.resx" />
-    <EmbeddedResource Include="SearchUser.resx">
+    <EmbeddedResource Include="Views\SearchUser.resx">
       <DependentUpon>SearchUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -252,13 +252,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SearchClient.resx">
+    <EmbeddedResource Include="Views\SearchClient.resx">
       <DependentUpon>SearchClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SearchHouse.resx">
+    <EmbeddedResource Include="Views\SearchHouse.resx">
       <DependentUpon>SearchHouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SearchRent.resx">
+    <EmbeddedResource Include="Views\SearchRent.resx">
       <DependentUpon>SearchRent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

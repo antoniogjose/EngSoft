@@ -23,14 +23,25 @@ namespace ImoEstudantePLMetroUi
         {
             // Idioma.AjustaCultura(this, "pt");
             InitializeComponent();
-            if (!panel.Controls.Contains(DashBoardMainPage.Instance))
+
+            if (!panel.Controls.Contains(Login.Instance))
             {
-                panel.Controls.Add(DashBoardMainPage.Instance);
-                DashBoardMainPage.Instance.Dock = DockStyle.Fill;
-                DashBoardMainPage.Instance.BringToFront();
+                //if (!panel.Controls.Contains(DashBoardMainPage.Instance))
+                //{
+                //    panel.Controls.Add(DashBoardMainPage.Instance);
+                //    DashBoardMainPage.Instance.Dock = DockStyle.Fill;
+                //    DashBoardMainPage.Instance.BringToFront();
+                //}
+                //else
+                //    DashBoardMainPage.Instance.BringToFront();
+
+                panel.Controls.Add(Login.Instance);
+                Login.Instance.Dock = DockStyle.Fill;
+                Login.Instance.BringToFront();
+                menuStrip1.Enabled = false;
             }
             else
-                DashBoardMainPage.Instance.BringToFront();
+                Login.Instance.BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -326,6 +337,11 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 AddUser.Instance.BringToFront();
+        }
+
+        private void defeniçõesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

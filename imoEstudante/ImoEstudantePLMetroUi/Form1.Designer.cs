@@ -150,6 +150,7 @@
             // 
             this.defeniçõesToolStripMenuItem.Name = "defeniçõesToolStripMenuItem";
             resources.ApplyResources(this.defeniçõesToolStripMenuItem, "defeniçõesToolStripMenuItem");
+            this.defeniçõesToolStripMenuItem.Click += new System.EventHandler(this.defeniçõesToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 

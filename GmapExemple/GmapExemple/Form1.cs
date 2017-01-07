@@ -24,6 +24,7 @@ namespace GmapExemple
 {
     public partial class Form1 : Form
     {
+        internal readonly GMapOverlay objects = new GMapOverlay("objects");
         public Form1()
         {
             InitializeComponent();
@@ -121,7 +122,7 @@ namespace GmapExemple
 
                 Example pois = jss.Deserialize<Example>(results);
 
-
+                
 
                 for (int i = 0; i < pois.results.Count; i++)
                 {
