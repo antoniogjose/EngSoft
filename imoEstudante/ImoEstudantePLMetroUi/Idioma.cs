@@ -64,7 +64,26 @@ namespace ImoEstudantePLMetroUi
             {
                 try
                 {
-                    DialogResult result = MessageBox.Show(ctrls.Text);
+                    //DialogResult result = MessageBox.Show(ctrls.Name);
+
+                    ctrls.Text = res_man.GetString(ctrls.Name, cul);
+                }
+                catch (Exception e)
+                {
+                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                }
+            }
+            
+        }
+
+        
+        public static void switchLanguage3(MetroFramework.Controls.MetroPanel frms, CultureInfo cul, ResourceManager res_man)
+        {
+            foreach (Control ctrls in frms.Controls)
+            {
+                try
+                {
+                    DialogResult result = MessageBox.Show(ctrls.Name);
 
                     ctrls.Text = res_man.GetString(ctrls.Name, cul);
                 }
@@ -73,21 +92,22 @@ namespace ImoEstudantePLMetroUi
                     //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
                 }
 
-                //foreach (MetroFramework.Controls.MetroPanel drops in ((MetroFramework.Controls.MetroPanel)ctrls).Controls)
-                //{
-                //    try
-                //    {
-                //        drops.Text = res_man.GetString(drops.Name, cul);
-                //        //ctrl.Text = res_man.GetString(ctrl.Name, cul);
-                //    }
-                //    catch (Exception e)
-                //    {
-                //        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
-                //    }
-                //}
+                foreach (Control drops in ctrls.Controls)
+                {
+                    try
+                    {
+                        DialogResult result = MessageBox.Show(drops.Name);
+                        drops.Text = res_man.GetString(drops.Name, cul);
+                        //ctrl.Text = res_man.GetString(ctrl.Name, cul);
+                    }
+                    catch (Exception e)
+                    {
+                        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                    }
+                }
             }
 
-            
+
         }
     }
 }

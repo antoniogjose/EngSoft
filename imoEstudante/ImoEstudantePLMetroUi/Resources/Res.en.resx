@@ -141,4 +141,13 @@
   <data name="viewHelpToolStripMenuItem" xml:space="preserve">
     <value>See Help</value>
   </data>
+  <data name="labelAddRent" xml:space="preserve">
+    <value>ImoEstudante » Add Rent</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>ImoEstudante » Add User</value>
+  </data>
+  <data name="tabRent" xml:space="preserve">
+    <value>Rent Data</value>
+  </data>
 </root>

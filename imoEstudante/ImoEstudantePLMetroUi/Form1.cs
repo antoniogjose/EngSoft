@@ -24,31 +24,31 @@ namespace ImoEstudantePLMetroUi
             // Idioma.AjustaCultura(this, "pt");
             InitializeComponent();
 
-            if (!panel.Controls.Contains(Login.Instance))
-            {
-                //if (!panel.Controls.Contains(DashBoardMainPage.Instance))
-                //{
-                //    panel.Controls.Add(DashBoardMainPage.Instance);
-                //    DashBoardMainPage.Instance.Dock = DockStyle.Fill;
-                //    DashBoardMainPage.Instance.BringToFront();
+            //if (!panel.Controls.Contains(Login.Instance))
+            //{
+                if (!panel.Controls.Contains(DashBoardMainPage.Instance))
+                {
+                    panel.Controls.Add(DashBoardMainPage.Instance);
+                    DashBoardMainPage.Instance.Dock = DockStyle.Fill;
+                    DashBoardMainPage.Instance.BringToFront();
+                }
+                else
+                    DashBoardMainPage.Instance.BringToFront();
+
+                //    panel.Controls.Add(Login.Instance);
+                //    Login.Instance.Dock = DockStyle.Fill;
+                //    Login.Instance.BringToFront();
+                //    menuStrip1.Enabled = false;
                 //}
                 //else
-                //    DashBoardMainPage.Instance.BringToFront();
-
-                panel.Controls.Add(Login.Instance);
-                Login.Instance.Dock = DockStyle.Fill;
-                Login.Instance.BringToFront();
-                menuStrip1.Enabled = false;
+                //    Login.Instance.BringToFront();
             }
-            else
-                Login.Instance.BringToFront();
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             // inicia em portugues
-            //portuguêsToolStripMenuItem.Checked = true;
-            //inglesToolStripMenuItem.Checked = false;
+            portuguêsToolStripMenuItem.Checked = true;
+            inglesToolStripMenuItem.Checked = false;
 
             res_man = new ResourceManager("ImoEstudantePLMetroUi.Resources.Res", typeof(Form1).Assembly);
         }
@@ -99,51 +99,10 @@ namespace ImoEstudantePLMetroUi
             // mudar idioma
             Idioma.switchLanguage(this, cul, res_man);
             Idioma.switchLanguage2(DashBoardMainPage.Instance, cul, res_man);
+            Idioma.switchLanguage3(panel, cul, res_man);
+            
 
 
-            //foreach (ToolStripMenuItem ctrlsss in this.menuStrip1.Items)
-            //{
-            //    if (ctrlsss is ToolStripMenuItem)
-            //    {
-            //        var result2 = MessageBox.Show(ctrlsss.Name);
-            //    }
-            //    //else
-            //    //{
-            //    //    var result3 = MessageBox.Show(ctrlsss.Name);
-            //    //}
-            //}
-
-            /*exit_text_string = res_man.GetString("exit_text_string", cul);
-            exit_caption_string = res_man.GetString("exit_caption_string", cul);*/
-
-
-            //
-            //this.Text = res_man.GetString("Form1_text", cul);
-
-            //menuToolStripMenuItem.Text = res_man.GetString(menuToolStripMenuItem.Name, cul);
-
-            //foreach(Control x in this.Controls)
-            //{
-            //    if (string.IsNullOrEmpty(res_man.GetString(x.Name,cul)))
-            //    {
-            //        x.Text = res_man.GetString(x.Name, cul);
-            //    }
-            //    /*
-            //    if (x.Name.Equals("menuToolStripMenuItem"))
-            //    {
-            //        x.Text = res_man.GetString("menuToolStripMenuItem", cul);
-            //    }*/               
-            //}
-
-            /*
-            fileToolStripMenuItem.Text = res_man.GetString("File_menu", cul);
-            exitToolStripMenuItem.Text = res_man.GetString("Exit_menu", cul);
-
-            languageToolStripMenuItem.Text = res_man.GetString("Language_menu", cul);
-            vietnameseToolStripMenuItem.Text = res_man.GetString("Vietnamese_menu", cul);
-            englishToolStripMenuItem.Text = res_man.GetString("English_menu", cul);
-
-            textBox1.Text = res_man.GetString("Textbox_text", cul);*/
         }
 
         private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
@@ -203,7 +162,6 @@ namespace ImoEstudantePLMetroUi
             }
             else
                 AddRent.Instance.BringToFront();
-
         }
 
         private void btEditRent_Click(object sender, EventArgs e)
