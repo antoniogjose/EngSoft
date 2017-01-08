@@ -225,4 +225,7 @@
   <data name="menuImoEstudante_LogOut" xml:space="preserve">
     <value>Sair</value>
   </data>
+  <data name="menuImoEstudante_Idiom_SP" xml:space="preserve">
+    <value>Espanhol</value>
+  </data>
 </root>

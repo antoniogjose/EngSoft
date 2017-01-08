@@ -16,150 +16,104 @@ namespace ImoEstudantePLMetroUi
     {
         public static void switchLanguage(MetroFramework.Forms.MetroForm frm, CultureInfo cul, ResourceManager res_man)
         {
-            foreach (Control ctrls in frm.Controls)
+            foreach (ToolStripMenuItem ctrlTool in frm.MainMenuStrip.Items)
             {
                 try
                 {
-                    //DialogResult result = MessageBox.Show(ctrls.Name);
-
-                    ctrls.Text = res_man.GetString(ctrls.Name, cul);
+                    ctrlTool.Text = res_man.GetString(ctrlTool.Name, cul);
                 }
                 catch (Exception e)
                 {
-                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
-                }                
-            }
-
-            foreach (ToolStripMenuItem ctrl in frm.MainMenuStrip.Items)
-            {
-                try
-                {
-                    ctrl.Text = res_man.GetString(ctrl.Name, cul);
-                }
-                catch (Exception e)
-                {
-                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                    //throw new Exception("Error.", e);
                 }
 
-                foreach (ToolStripItem dropDownItem in ((ToolStripDropDownItem)ctrl).DropDownItems)
+                foreach (ToolStripItem ctrlDrop in ((ToolStripDropDownItem)ctrlTool).DropDownItems)
                 {
                     try
                     {
-                        //DialogResult result = MessageBox.Show(dropDownItem.Name);
-                        dropDownItem.Text = res_man.GetString(dropDownItem.Name, cul);
+                        ctrlDrop.Text = res_man.GetString(ctrlDrop.Name, cul);
                     }
                     catch (Exception e)
                     {
-                        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
-                    }                    
+                        //throw new Exception("Error.", e);
+                    }
                 }
             }
         }
 
 
-        /*
-        public static void switchLanguage2(DashBoardMainPage frm, CultureInfo cul, ResourceManager res_man)
+        public static void switchLanguage(MetroFramework.Controls.MetroPanel panel, CultureInfo cul, ResourceManager res_man)
         {
-            foreach (Control ctrls in frm.Controls)
+            foreach (Control ctrls001 in panel.Controls)
             {
                 try
                 {
-                    //DialogResult result = MessageBox.Show(ctrls.Name);
-
-                    ctrls.Text = res_man.GetString(ctrls.Name, cul);
+                    ctrls001.Text = res_man.GetString(ctrls001.Name, cul);
                 }
                 catch (Exception e)
                 {
-                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
-                }
-            }
-            
-        }
-        */
-        
-        public static void switchLanguage(MetroFramework.Controls.MetroPanel frms, CultureInfo cul, ResourceManager res_man)
-        {
-            foreach (Control ctrls in frms.Controls)
-            {
-                try
-                {
-                    //DialogResult result = MessageBox.Show(ctrls.Name);
-                    ctrls.Text = res_man.GetString(ctrls.Name, cul);
-                }
-                catch (Exception e)
-                {
-                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                    //throw new Exception("Error.", e);
                 }
 
-                foreach (Control drops in ctrls.Controls)
+                foreach (Control ctrls002 in ctrls001.Controls)
                 {
                     try
                     {
-                        //DialogResult result = MessageBox.Show(drops.Name);
-                        drops.Text = res_man.GetString(drops.Name, cul);
-                        //ctrl.Text = res_man.GetString(ctrl.Name, cul);
+                        ctrls002.Text = res_man.GetString(ctrls002.Name, cul);
                     }
                     catch (Exception e)
                     {
-                        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                        //throw new Exception("Error.", e);
                     }
-
-
-                    foreach (Control label in drops.Controls)
+                    
+                    foreach (Control ctrls003 in ctrls002.Controls)
                     {
                         try
                         {
-                            //DialogResult result = MessageBox.Show(label.Name);
-                            label.Text = res_man.GetString(label.Name, cul);
+                            ctrls003.Text = res_man.GetString(ctrls003.Name, cul);
                         }
                         catch (Exception e)
                         {
-                            //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                            //throw new Exception("Error.", e);
                         }
-
-
-                        foreach (Control lab in label.Controls)
+                        
+                        foreach (Control ctrls004 in ctrls003.Controls)
                         {
                             try
                             {
-                                //DialogResult result = MessageBox.Show(lab.Name);
-                                lab.Text = res_man.GetString(lab.Name, cul);
+                                ctrls004.Text = res_man.GetString(ctrls004.Name, cul);
                             }
                             catch (Exception e)
                             {
-                                //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                                //throw new Exception("Error.", e);
                             }
-
-
-                            foreach (Control labi in lab.Controls)
+                            
+                            foreach (Control ctrls005 in ctrls004.Controls)
                             {
                                 try
                                 {
-                                    //DialogResult result = MessageBox.Show(labi.Name);
-                                    labi.Text = res_man.GetString(labi.Name, cul);
+                                    ctrls005.Text = res_man.GetString(ctrls005.Name, cul);
                                 }
                                 catch (Exception e)
                                 {
-                                    //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                                    //throw new Exception("Error.", e);
                                 }
 
-
-                                foreach (Control lab1 in labi.Controls)
+                                foreach (Control ctrls006 in ctrls005.Controls)
                                 {
                                     try
                                     {
-                                        //DialogResult result = MessageBox.Show(lab1.Name);
-                                        lab1.Text = res_man.GetString(lab1.Name, cul);
+                                        ctrls006.Text = res_man.GetString(ctrls006.Name, cul);
                                     }
                                     catch (Exception e)
                                     {
-                                        //throw new Exception("Error in CatchInner caused by calling the ThrowInner method.", e);
+                                        //throw new Exception("Error.", e);
                                     }
                                 }
                             }
                         }
                     }
-                }                
+                }
             }
         }
     }

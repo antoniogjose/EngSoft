@@ -142,6 +142,24 @@
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 6</value>
   </data>
+  <data name="menuImoEstudante_Idiom_PT.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="menuImoEstudante_Idiom_PT.Text" xml:space="preserve">
+    <value>Português</value>
+  </data>
+  <data name="menuImoEstudante_Idiom_EN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="menuImoEstudante_Idiom_EN.Text" xml:space="preserve">
+    <value>Inglês</value>
+  </data>
+  <data name="menuImoEstudante_Idiom_SP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 26</value>
+  </data>
+  <data name="menuImoEstudante_Idiom_SP.Text" xml:space="preserve">
+    <value>Espanhol</value>
+  </data>
   <data name="menuImoEstudante_Idiom.Size" type="System.Drawing.Size, System.Drawing">
     <value>217, 26</value>
   </data>
@@ -231,86 +249,74 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="menuImoEstudante_Idiom_PT.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
-  </data>
-  <data name="menuImoEstudante_Idiom_PT.Text" xml:space="preserve">
-    <value>Português</value>
-  </data>
-  <data name="menuImoEstudante_Idiom_EN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
-  </data>
-  <data name="menuImoEstudante_Idiom_EN.Text" xml:space="preserve">
-    <value>Inglês</value>
-  </data>
   <data name="menuRents_Search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuRents_Search.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
   <data name="menuRents_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuRents_Add.Text" xml:space="preserve">
     <value>Adicionar</value>
   </data>
   <data name="menuRents_Export.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuRents_Export.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
   <data name="menuRents_List.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuRents_List.Text" xml:space="preserve">
     <value>Listar</value>
   </data>
   <data name="menuHabitations_Search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuHabitations_Search.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
   <data name="menuHabitations_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuHabitations_Add.Text" xml:space="preserve">
     <value>Adicionar</value>
   </data>
   <data name="menuHabitations_Export.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuHabitations_Export.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
   <data name="menuHabitations_List.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuHabitations_List.Text" xml:space="preserve">
     <value>Listar</value>
   </data>
   <data name="menuClients_Search.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuClients_Search.Text" xml:space="preserve">
     <value>Pesquisar</value>
   </data>
   <data name="menuClients_Add.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuClients_Add.Text" xml:space="preserve">
     <value>Adicionar</value>
   </data>
   <data name="menuClients_Export.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuClients_Export.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
   <data name="menuClients_List.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+    <value>148, 26</value>
   </data>
   <data name="menuClients_List.Text" xml:space="preserve">
     <value>Listar</value>
@@ -571,6 +577,12 @@
     <value>menuHelp_About</value>
   </data>
   <data name="&gt;&gt;menuHelp_About.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuImoEstudante_Idiom_SP.Name" xml:space="preserve">
+    <value>menuImoEstudante_Idiom_SP</value>
+  </data>
+  <data name="&gt;&gt;menuImoEstudante_Idiom_SP.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

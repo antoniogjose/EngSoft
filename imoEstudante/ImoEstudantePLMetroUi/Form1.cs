@@ -49,31 +49,60 @@ namespace ImoEstudantePLMetroUi
             // inicia em portugues
             menuImoEstudante_Idiom_PT.Checked = true;
             menuImoEstudante_Idiom_EN.Checked = false;
+            menuImoEstudante_Idiom_SP.Checked = false;
 
             res_man = new ResourceManager("ImoEstudantePLMetroUi.Resources.Res", typeof(Form1).Assembly);
         }
 
+        // PT
         private void portuguêsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (menuImoEstudante_Idiom_EN.Checked == true)
+            if (menuImoEstudante_Idiom_EN.Checked == true || menuImoEstudante_Idiom_SP.Checked == true)
             {
-                menuImoEstudante_Idiom_EN.Checked = false;
                 menuImoEstudante_Idiom_PT.Checked = true;
+                menuImoEstudante_Idiom_EN.Checked = false;
+                menuImoEstudante_Idiom_SP.Checked = false;
 
                 switch_language();
+            }
+            else // apenas para manter o visto
+            {
+                menuImoEstudante_Idiom_PT.Checked = true;
             }
         }
 
+        // EN
         private void inglesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (menuImoEstudante_Idiom_PT.Checked == true)
+            if (menuImoEstudante_Idiom_PT.Checked == true || menuImoEstudante_Idiom_SP.Checked == true)
             {
                 menuImoEstudante_Idiom_PT.Checked = false;
-                menuImoEstudante_Idiom_EN.Enabled = true;
+                menuImoEstudante_Idiom_EN.Checked = true;
+                menuImoEstudante_Idiom_SP.Checked = false;
 
                 switch_language();
             }
+            else // apenas para manter o visto
+            {
+                menuImoEstudante_Idiom_EN.Checked = true;
+            }
+        }
 
+        // SP
+        private void menuImoEstudante_Idiom_SP_Click(object sender, EventArgs e)
+        {
+            if (menuImoEstudante_Idiom_PT.Checked == true || menuImoEstudante_Idiom_EN.Checked == true)
+            {
+                menuImoEstudante_Idiom_PT.Checked = false;
+                menuImoEstudante_Idiom_EN.Checked = false;
+                menuImoEstudante_Idiom_SP.Checked = true;
+
+                switch_language();
+            }
+            else // apenas para manter o visto
+            {
+                menuImoEstudante_Idiom_SP.Checked = true;
+            }
         }
 
 
@@ -85,19 +114,24 @@ namespace ImoEstudantePLMetroUi
                 // cultura: inglês
                 cul = CultureInfo.CreateSpecificCulture("en");
             }
-            else // (portuguêsToolStripMenuItem.Checked == true)
+            else if (menuImoEstudante_Idiom_PT.Checked == true)
             {
-                // cultura base: português
+                // cultura: português
                 cul = CultureInfo.CreateSpecificCulture("pt");
+            }
+            else if (menuImoEstudante_Idiom_SP.Checked == true)
+            {
+                // cultura: português
+                cul = CultureInfo.CreateSpecificCulture("sp");
             }
 
             // switch language
             Idioma.switchLanguage(this, cul, res_man);
-            //Idioma.switchLanguage2(DashBoardMainPage.Instance, cul, res_man);
 
             // switch language panel
             Idioma.switchLanguage(panel, cul, res_man);
         }
+
 
         private void menuToolStripMenuItem2_Click(object sender, EventArgs e)
         {

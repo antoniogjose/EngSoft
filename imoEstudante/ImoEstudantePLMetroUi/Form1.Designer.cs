@@ -62,6 +62,7 @@
             this.menuHelp_View = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelp_About = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new MetroFramework.Controls.MetroPanel();
+            this.menuImoEstudante_Idiom_SP = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,7 +121,8 @@
             // 
             this.menuImoEstudante_Idiom.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuImoEstudante_Idiom_PT,
-            this.menuImoEstudante_Idiom_EN});
+            this.menuImoEstudante_Idiom_EN,
+            this.menuImoEstudante_Idiom_SP});
             this.menuImoEstudante_Idiom.Name = "menuImoEstudante_Idiom";
             resources.ApplyResources(this.menuImoEstudante_Idiom, "menuImoEstudante_Idiom");
             // 
@@ -294,6 +296,12 @@
             this.panel.VerticalScrollbarHighlightOnWheel = true;
             this.panel.VerticalScrollbarSize = 13;
             // 
+            // menuImoEstudante_Idiom_SP
+            // 
+            this.menuImoEstudante_Idiom_SP.Name = "menuImoEstudante_Idiom_SP";
+            resources.ApplyResources(this.menuImoEstudante_Idiom_SP, "menuImoEstudante_Idiom_SP");
+            this.menuImoEstudante_Idiom_SP.Click += new System.EventHandler(this.menuImoEstudante_Idiom_SP_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -346,6 +354,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_LogOut;
         private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Add;
+        private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Idiom_SP;
     }
 }
 
