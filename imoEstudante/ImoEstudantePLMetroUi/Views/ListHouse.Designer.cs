@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.listHouse_label1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelDashBoard.SuspendLayout();
             this.SuspendLayout();
@@ -39,28 +39,30 @@
             this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDashBoard.Controls.Add(this.metroLabel1);
+            this.panelDashBoard.Controls.Add(this.listHouse_label1);
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
             this.panelDashBoard.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.HorizontalScrollbarSize = 10;
+            this.panelDashBoard.HorizontalScrollbarSize = 12;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
+            this.panelDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(754, 496);
+            this.panelDashBoard.Size = new System.Drawing.Size(1005, 610);
             this.panelDashBoard.TabIndex = 5;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.VerticalScrollbarSize = 10;
+            this.panelDashBoard.VerticalScrollbarSize = 13;
             // 
-            // metroLabel1
+            // listHouse_label1
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
-            this.metroLabel1.Location = new System.Drawing.Point(4, 22);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(215, 19);
-            this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "ImoEstudante » Lista de Habitações";
+            this.listHouse_label1.AutoSize = true;
+            this.listHouse_label1.BackColor = System.Drawing.Color.DimGray;
+            this.listHouse_label1.Location = new System.Drawing.Point(5, 27);
+            this.listHouse_label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.listHouse_label1.Name = "listHouse_label1";
+            this.listHouse_label1.Size = new System.Drawing.Size(227, 20);
+            this.listHouse_label1.TabIndex = 3;
+            this.listHouse_label1.Text = "ImoEstudante » Lista de Habitações";
             // 
             // panel1
             // 
@@ -68,18 +70,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Location = new System.Drawing.Point(0, 58);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 449);
+            this.panel1.Size = new System.Drawing.Size(1005, 553);
             this.panel1.TabIndex = 2;
             // 
             // ListHouse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelDashBoard);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListHouse";
-            this.Size = new System.Drawing.Size(754, 496);
+            this.Size = new System.Drawing.Size(1005, 610);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
             this.ResumeLayout(false);
@@ -89,7 +93,7 @@
         #endregion
 
         private MetroFramework.Controls.MetroPanel panelDashBoard;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel listHouse_label1;
         private System.Windows.Forms.Panel panel1;
     }
 }

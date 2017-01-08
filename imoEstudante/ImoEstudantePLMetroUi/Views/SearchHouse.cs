@@ -27,5 +27,10 @@ namespace ImoEstudantePLMetroUi
         {
             InitializeComponent();
         }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

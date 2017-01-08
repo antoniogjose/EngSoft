@@ -121,7 +121,7 @@ namespace ImoEstudantePLMetroUi
             }
             else if (menuImoEstudante_Idiom_SP.Checked == true)
             {
-                // cultura: português
+                // cultura: espanhol
                 cul = CultureInfo.CreateSpecificCulture("sp");
             }
 

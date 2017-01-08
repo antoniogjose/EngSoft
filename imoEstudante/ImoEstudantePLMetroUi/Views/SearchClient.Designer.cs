@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.searchClient_label1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
-            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.searchClient_tabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.searchClient_label2 = new System.Windows.Forms.Label();
+            this.searchClient_label3 = new System.Windows.Forms.Label();
+            this.searchClient_button4 = new MetroFramework.Controls.MetroButton();
+            this.searchClient_button3 = new MetroFramework.Controls.MetroButton();
+            this.searchClient_button2 = new MetroFramework.Controls.MetroButton();
+            this.searchClient_button1 = new MetroFramework.Controls.MetroButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
-            this.metroTabPage1.SuspendLayout();
+            this.searchClient_tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,28 +54,30 @@
             this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDashBoard.Controls.Add(this.metroLabel1);
+            this.panelDashBoard.Controls.Add(this.searchClient_label1);
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
             this.panelDashBoard.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.HorizontalScrollbarSize = 10;
+            this.panelDashBoard.HorizontalScrollbarSize = 12;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
+            this.panelDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(754, 496);
+            this.panelDashBoard.Size = new System.Drawing.Size(1005, 610);
             this.panelDashBoard.TabIndex = 5;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.VerticalScrollbarSize = 10;
+            this.panelDashBoard.VerticalScrollbarSize = 13;
             // 
-            // metroLabel1
+            // searchClient_label1
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
-            this.metroLabel1.Location = new System.Drawing.Point(4, 22);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(215, 19);
-            this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "ImoEstudante » Pesquisa de Cliente";
+            this.searchClient_label1.AutoSize = true;
+            this.searchClient_label1.BackColor = System.Drawing.Color.DimGray;
+            this.searchClient_label1.Location = new System.Drawing.Point(5, 27);
+            this.searchClient_label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.searchClient_label1.Name = "searchClient_label1";
+            this.searchClient_label1.Size = new System.Drawing.Size(228, 20);
+            this.searchClient_label1.TabIndex = 3;
+            this.searchClient_label1.Text = "ImoEstudante » Pesquisa de Cliente";
             // 
             // panel1
             // 
@@ -84,9 +86,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.metroTabControl1);
-            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Location = new System.Drawing.Point(0, 58);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 449);
+            this.panel1.Size = new System.Drawing.Size(1005, 553);
             this.panel1.TabIndex = 2;
             // 
             // metroTabControl1
@@ -94,100 +97,36 @@
             this.metroTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            this.metroTabControl1.Controls.Add(this.searchClient_tabPage1);
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
+            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(754, 449);
+            this.metroTabControl1.Size = new System.Drawing.Size(1005, 553);
             this.metroTabControl1.TabIndex = 6;
             // 
-            // metroTabPage1
+            // searchClient_tabPage1
             // 
-            this.metroTabPage1.Controls.Add(this.comboBox1);
-            this.metroTabPage1.Controls.Add(this.label2);
-            this.metroTabPage1.Controls.Add(this.label1);
-            this.metroTabPage1.Controls.Add(this.metroButton4);
-            this.metroTabPage1.Controls.Add(this.metroButton3);
-            this.metroTabPage1.Controls.Add(this.metroButton1);
-            this.metroTabPage1.Controls.Add(this.metroButton2);
-            this.metroTabPage1.Controls.Add(this.textBox1);
-            this.metroTabPage1.Controls.Add(this.dataGridView1);
-            this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(746, 410);
-            this.metroTabPage1.TabIndex = 1;
-            this.metroTabPage1.Text = "Clientes";
-            this.metroTabPage1.VerticalScrollbarBarColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 59);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(747, 321);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(195, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 21);
-            this.textBox1.TabIndex = 6;
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButton2.Location = new System.Drawing.Point(0, 386);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(125, 21);
-            this.metroButton2.TabIndex = 7;
-            this.metroButton2.Text = "Pesquisar";
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButton1.Location = new System.Drawing.Point(131, 386);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(125, 21);
-            this.metroButton1.TabIndex = 7;
-            this.metroButton1.Text = "Editar";
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButton3.Location = new System.Drawing.Point(262, 386);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(125, 21);
-            this.metroButton3.TabIndex = 7;
-            this.metroButton3.Text = "Ver Lista";
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButton4.Location = new System.Drawing.Point(393, 386);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(125, 21);
-            this.metroButton4.TabIndex = 7;
-            this.metroButton4.Text = "Limpar Pesquisa";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(192, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Texto de pesquisa";
+            this.searchClient_tabPage1.Controls.Add(this.comboBox1);
+            this.searchClient_tabPage1.Controls.Add(this.searchClient_label2);
+            this.searchClient_tabPage1.Controls.Add(this.searchClient_label3);
+            this.searchClient_tabPage1.Controls.Add(this.searchClient_button4);
+            this.searchClient_tabPage1.Controls.Add(this.searchClient_button3);
+            this.searchClient_tabPage1.Controls.Add(this.searchClient_button2);
+            this.searchClient_tabPage1.Controls.Add(this.searchClient_button1);
+            this.searchClient_tabPage1.Controls.Add(this.textBox1);
+            this.searchClient_tabPage1.Controls.Add(this.dataGridView1);
+            this.searchClient_tabPage1.HorizontalScrollbarBarColor = true;
+            this.searchClient_tabPage1.HorizontalScrollbarSize = 12;
+            this.searchClient_tabPage1.Location = new System.Drawing.Point(4, 39);
+            this.searchClient_tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchClient_tabPage1.Name = "searchClient_tabPage1";
+            this.searchClient_tabPage1.Size = new System.Drawing.Size(997, 510);
+            this.searchClient_tabPage1.TabIndex = 1;
+            this.searchClient_tabPage1.Text = "Clientes";
+            this.searchClient_tabPage1.VerticalScrollbarBarColor = true;
+            this.searchClient_tabPage1.VerticalScrollbarSize = 13;
             // 
             // comboBox1
             // 
@@ -198,35 +137,113 @@
             "Iten1",
             "Iten2",
             "Iten3"});
-            this.comboBox1.Location = new System.Drawing.Point(0, 30);
+            this.comboBox1.Location = new System.Drawing.Point(0, 37);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(152, 23);
+            this.comboBox1.Size = new System.Drawing.Size(201, 26);
             this.comboBox1.TabIndex = 9;
             // 
-            // label2
+            // searchClient_label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 15);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Pesquisar em : ";
+            this.searchClient_label2.AutoSize = true;
+            this.searchClient_label2.BackColor = System.Drawing.Color.Transparent;
+            this.searchClient_label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchClient_label2.Location = new System.Drawing.Point(0, 15);
+            this.searchClient_label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.searchClient_label2.Name = "searchClient_label2";
+            this.searchClient_label2.Size = new System.Drawing.Size(111, 18);
+            this.searchClient_label2.TabIndex = 8;
+            this.searchClient_label2.Text = "Pesquisar em : ";
+            // 
+            // searchClient_label3
+            // 
+            this.searchClient_label3.AutoSize = true;
+            this.searchClient_label3.BackColor = System.Drawing.Color.Transparent;
+            this.searchClient_label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchClient_label3.Location = new System.Drawing.Point(256, 17);
+            this.searchClient_label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.searchClient_label3.Name = "searchClient_label3";
+            this.searchClient_label3.Size = new System.Drawing.Size(128, 18);
+            this.searchClient_label3.TabIndex = 8;
+            this.searchClient_label3.Text = "Texto de pesquisa";
+            // 
+            // searchClient_button4
+            // 
+            this.searchClient_button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.searchClient_button4.Location = new System.Drawing.Point(524, 470);
+            this.searchClient_button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchClient_button4.Name = "searchClient_button4";
+            this.searchClient_button4.Size = new System.Drawing.Size(167, 26);
+            this.searchClient_button4.TabIndex = 7;
+            this.searchClient_button4.Text = "Limpar Pesquisa";
+            // 
+            // searchClient_button3
+            // 
+            this.searchClient_button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.searchClient_button3.Location = new System.Drawing.Point(349, 470);
+            this.searchClient_button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchClient_button3.Name = "searchClient_button3";
+            this.searchClient_button3.Size = new System.Drawing.Size(167, 26);
+            this.searchClient_button3.TabIndex = 7;
+            this.searchClient_button3.Text = "Ver Lista";
+            // 
+            // searchClient_button2
+            // 
+            this.searchClient_button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.searchClient_button2.Location = new System.Drawing.Point(175, 470);
+            this.searchClient_button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchClient_button2.Name = "searchClient_button2";
+            this.searchClient_button2.Size = new System.Drawing.Size(167, 26);
+            this.searchClient_button2.TabIndex = 7;
+            this.searchClient_button2.Text = "Editar";
+            // 
+            // searchClient_button1
+            // 
+            this.searchClient_button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.searchClient_button1.Location = new System.Drawing.Point(0, 470);
+            this.searchClient_button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchClient_button1.Name = "searchClient_button1";
+            this.searchClient_button1.Size = new System.Drawing.Size(167, 26);
+            this.searchClient_button1.TabIndex = 7;
+            this.searchClient_button1.Text = "Pesquisar";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(260, 39);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(253, 24);
+            this.textBox1.TabIndex = 6;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 73);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(996, 390);
+            this.dataGridView1.TabIndex = 2;
             // 
             // SearchClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelDashBoard);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SearchClient";
-            this.Size = new System.Drawing.Size(754, 496);
+            this.Size = new System.Drawing.Size(1005, 610);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
-            this.metroTabPage1.ResumeLayout(false);
-            this.metroTabPage1.PerformLayout();
+            this.searchClient_tabPage1.ResumeLayout(false);
+            this.searchClient_tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -235,18 +252,18 @@
         #endregion
 
         private MetroFramework.Controls.MetroPanel panelDashBoard;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel searchClient_label1;
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
-        private MetroFramework.Controls.MetroTabPage metroTabPage1;
+        private MetroFramework.Controls.MetroTabPage searchClient_tabPage1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton4;
-        private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private System.Windows.Forms.Label label1;
+        private MetroFramework.Controls.MetroButton searchClient_button1;
+        private MetroFramework.Controls.MetroButton searchClient_button4;
+        private MetroFramework.Controls.MetroButton searchClient_button3;
+        private MetroFramework.Controls.MetroButton searchClient_button2;
+        private System.Windows.Forms.Label searchClient_label3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label searchClient_label2;
     }
 }
