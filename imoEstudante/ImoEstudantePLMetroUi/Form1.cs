@@ -122,7 +122,7 @@ namespace ImoEstudantePLMetroUi
             else if (menuImoEstudante_Idiom_SP.Checked == true)
             {
                 // cultura: espanhol
-                cul = CultureInfo.CreateSpecificCulture("sp");
+                cul = CultureInfo.CreateSpecificCulture("es");
             }
 
             // switch language

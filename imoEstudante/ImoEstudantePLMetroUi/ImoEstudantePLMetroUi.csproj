@@ -192,7 +192,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Resources\Res.sp.resx" />
+    <EmbeddedResource Include="Resources\Res.es.resx" />
     <EmbeddedResource Include="Views\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
