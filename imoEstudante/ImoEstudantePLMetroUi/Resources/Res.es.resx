@@ -117,224 +117,224 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="addClient_label1" xml:space="preserve">
-    <value>ImoEstudante » Adicionar de Cliente</value>
-  </data>
-  <data name="addClient_tabPage2" xml:space="preserve">
-    <value>Alugueres</value>
-  </data>
-  <data name="addClient_label2" xml:space="preserve">
-    <value>Alugueres em Curso</value>
-  </data>
-  <data name="addClient_label3" xml:space="preserve">
-    <value>Histórico de Alugueres</value>
-  </data>
   <data name="addClient_button1" xml:space="preserve">
-    <value>Adicionar Aluguer</value>
+    <value>Agregar vacaciones</value>
   </data>
   <data name="addClient_button2" xml:space="preserve">
-    <value>Finalizar Aluguer</value>
+    <value>Alquiler finales</value>
   </data>
-  <data name="dashBoard_label1" xml:space="preserve">
-    <value>ImoEstudante (pt)</value>
+  <data name="addClient_label1" xml:space="preserve">
+    <value>ImoEstudante » para agregar clientes</value>
   </data>
-  <data name="menuImoEstudante_Search" xml:space="preserve">
-    <value>Pesquisar Utilizador</value>
+  <data name="addClient_label2" xml:space="preserve">
+    <value>Vacaciones en Progreso</value>
+  </data>
+  <data name="addClient_label3" xml:space="preserve">
+    <value>Alquiler de Historia</value>
   </data>
   <data name="addClient_tabPage1" xml:space="preserve">
-    <value>Dados de Cliente</value>
+    <value>Datos del Cliente</value>
   </data>
-  <data name="dashBoard_tabPage1" xml:space="preserve">
-    <value>Dados de Negócio</value>
-  </data>
-  <data name="menuImoEstudante_Add" xml:space="preserve">
-    <value>Adicionar Utilizador</value>
-  </data>
-  <data name="menuImoEstudante_Data" xml:space="preserve">
-    <value>Dados Pessoais</value>
-  </data>
-  <data name="menuImoEstudante_Definitions" xml:space="preserve">
-    <value>Definições</value>
-  </data>
-  <data name="menuImoEstudante_Close" xml:space="preserve">
-    <value>Fechar</value>
-  </data>
-  <data name="menuImoEstudante_Idiom_EN" xml:space="preserve">
-    <value>Inglês</value>
-  </data>
-  <data name="menuImoEstudante_Idiom" xml:space="preserve">
-    <value>Idioma</value>
-  </data>
-  <data name="menuImoEstudante_Idiom_PT" xml:space="preserve">
-    <value>Português</value>
-  </data>
-  <data name="menuClients_Add" xml:space="preserve">
-    <value>Adicionar</value>
-  </data>
-  <data name="menuHabitations_Add" xml:space="preserve">
-    <value>Adicionar</value>
-  </data>
-  <data name="menuRents_Add" xml:space="preserve">
-    <value>Adicionar</value>
-  </data>
-  <data name="menuClients_List" xml:space="preserve">
-    <value>Listar</value>
-  </data>
-  <data name="menuHabitations_List" xml:space="preserve">
-    <value>Listar</value>
-  </data>
-  <data name="menuClients_Search" xml:space="preserve">
-    <value>Pesquisar</value>
-  </data>
-  <data name="menuHabitations_Search" xml:space="preserve">
-    <value>Pesquisar</value>
-  </data>
-  <data name="menuClients" xml:space="preserve">
-    <value>Clientes</value>
-  </data>
-  <data name="menuHelp" xml:space="preserve">
-    <value>Ajuda</value>
-  </data>
-  <data name="menuClients_Export" xml:space="preserve">
-    <value>Exportar</value>
-  </data>
-  <data name="menuHabitations_Export" xml:space="preserve">
-    <value>Exportar</value>
-  </data>
-  <data name="menuRents_Export" xml:space="preserve">
-    <value>Exportar</value>
-  </data>
-  <data name="menuRents_List" xml:space="preserve">
-    <value>Listar</value>
-  </data>
-  <data name="menuRents" xml:space="preserve">
-    <value>Alugueres</value>
-  </data>
-  <data name="menuHabitations" xml:space="preserve">
-    <value>Habitações</value>
-  </data>
-  <data name="menuRents_Search" xml:space="preserve">
-    <value>Pesquisar</value>
-  </data>
-  <data name="menuHelp_About" xml:space="preserve">
-    <value>Sobre o ImoEstudante</value>
-  </data>
-  <data name="menuHelp_View" xml:space="preserve">
-    <value>Ver Ajuda</value>
-  </data>
-  <data name="menuImoEstudante_LogOut" xml:space="preserve">
-    <value>Sair</value>
+  <data name="addClient_tabPage2" xml:space="preserve">
+    <value>Alquileres</value>
   </data>
   <data name="addHouse_label1" xml:space="preserve">
-    <value>ImoEstudante » Adicionar Habitação</value>
+    <value>ImoEstudante » Añadir Vivienda</value>
   </data>
   <data name="addHouse_tabPage1" xml:space="preserve">
-    <value>Dados da Habitação</value>
+    <value>Datos de la Propiedad</value>
   </data>
   <data name="addHouse_tabPage2" xml:space="preserve">
-    <value>Avaliações</value>
+    <value>Críticas</value>
   </data>
   <data name="addHouse_tabPage3" xml:space="preserve">
-    <value>Mapa e Pontos de Interesse</value>
+    <value>Mapa Puntos de interés</value>
   </data>
   <data name="addRent_label1" xml:space="preserve">
-    <value>ImoEstudante » Adicionar Aluguer</value>
+    <value>ImoEstudante » Agregar vacaciones</value>
   </data>
   <data name="addRent_tabPage1" xml:space="preserve">
-    <value>Dados do Aluguer</value>
+    <value>Alquiler de los datos</value>
   </data>
   <data name="addUser_label1" xml:space="preserve">
-    <value>ImoEstudante » Adicionar Utilizador</value>
+    <value>ImoEstudante » Agregar usuario</value>
   </data>
   <data name="addUser_tabPage1" xml:space="preserve">
-    <value>Dados do Utilizador</value>
+    <value>Los datos de usuario</value>
+  </data>
+  <data name="dashBoard_label1" xml:space="preserve">
+    <value>ImoEstudante (es)</value>
+  </data>
+  <data name="dashBoard_tabPage1" xml:space="preserve">
+    <value>Los datos de negocios</value>
   </data>
   <data name="editClient_label1" xml:space="preserve">
-    <value>ImoEstudante » Edição de Cliente</value>
+    <value>ImoEstudante » edición Client</value>
   </data>
   <data name="editHouse_label1" xml:space="preserve">
-    <value>ImoEstudante » Edição de Habitação</value>
+    <value>Edición ImoEstudante » Vivienda</value>
   </data>
   <data name="editHouse_tabPage1" xml:space="preserve">
-    <value>Dados da Habitação</value>
+    <value>Datos de la Propiedad</value>
   </data>
   <data name="editHouse_tabPage2" xml:space="preserve">
-    <value>Avaliações</value>
+    <value>Críticas</value>
   </data>
   <data name="editHouse_tabPage3" xml:space="preserve">
-    <value>Mapa e Pontos de Interesse</value>
+    <value>Mapa Puntos de interés</value>
   </data>
   <data name="editRent_label1" xml:space="preserve">
-    <value>ImoEstudante » Edição de Aluguer</value>
-  </data>
-  <data name="menuImoEstudante_Idiom_SP" xml:space="preserve">
-    <value>Espanhol</value>
+    <value>ImoEstudante » Alquiler Edición</value>
   </data>
   <data name="editUser_button1" xml:space="preserve">
     <value>Editar</value>
   </data>
   <data name="editUser_button2" xml:space="preserve">
-    <value>Salvar</value>
+    <value>Guardar</value>
   </data>
   <data name="editUser_label1" xml:space="preserve">
-    <value>ImoEstudante » Edição de Utilizador</value>
+    <value>ImoEstudante » User Edition</value>
   </data>
   <data name="editUser_label10" xml:space="preserve">
-    <value>Morada</value>
+    <value>Vivienda</value>
   </data>
   <data name="editUser_label11" xml:space="preserve">
-    <value>Contacto em caso de emergência</value>
+    <value>Contacto en caso de emergencia</value>
   </data>
   <data name="editUser_label12" xml:space="preserve">
-    <value>Nome</value>
+    <value>Nombre</value>
   </data>
   <data name="editUser_label13" xml:space="preserve">
-    <value>Telefone</value>
+    <value>Teléfono</value>
   </data>
   <data name="editUser_label14" xml:space="preserve">
-    <value>Nome de Utilizador</value>
+    <value>Nombre de utilizador</value>
   </data>
   <data name="editUser_label15" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="editUser_label16" xml:space="preserve">
     <value>Estado</value>
   </data>
   <data name="editUser_label2" xml:space="preserve">
-    <value>Utilizadores</value>
+    <value>Usuarios</value>
   </data>
   <data name="editUser_label3" xml:space="preserve">
-    <value>Nome</value>
+    <value>Nombre</value>
   </data>
   <data name="editUser_label4" xml:space="preserve">
-    <value>Apelido</value>
+    <value>Apodo</value>
   </data>
   <data name="editUser_label5" xml:space="preserve">
-    <value>Data de Nascimento</value>
+    <value>Fecha de nacimiento</value>
   </data>
   <data name="editUser_label6" xml:space="preserve">
-    <value>Gênero</value>
+    <value>Género</value>
   </data>
   <data name="editUser_label7" xml:space="preserve">
-    <value>Nacionalidade</value>
+    <value>Nacionalidad</value>
   </data>
   <data name="editUser_label8" xml:space="preserve">
-    <value>Telefone</value>
+    <value>Teléfono</value>
   </data>
   <data name="editUser_label9" xml:space="preserve">
-    <value>Email</value>
+    <value>Correo Electrónico</value>
   </data>
   <data name="listClient_label1" xml:space="preserve">
-    <value>ImoEstudante » Lista de Cliente</value>
+    <value>ImoEstudante » Lista de Clientes</value>
   </data>
   <data name="listHouse_label1" xml:space="preserve">
-    <value>ImoEstudante » Lista de Habitações</value>
+    <value>ImoEstudante » Lista de Vivienda</value>
   </data>
   <data name="listRent_label1" xml:space="preserve">
-    <value>ImoEstudante » Lista de Alugueres</value>
+    <value>ImoEstudante » Lista de Alquileres</value>
+  </data>
+  <data name="menuClients" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="menuClients_Add" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="menuClients_Export" xml:space="preserve">
+    <value>Exportación</value>
+  </data>
+  <data name="menuClients_List" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="menuClients_Search" xml:space="preserve">
+    <value>Investigación</value>
+  </data>
+  <data name="menuHabitations" xml:space="preserve">
+    <value>Habitaciones</value>
+  </data>
+  <data name="menuHabitations_Add" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="menuHabitations_Export" xml:space="preserve">
+    <value>Exportación</value>
+  </data>
+  <data name="menuHabitations_List" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="menuHabitations_Search" xml:space="preserve">
+    <value>Investigación</value>
+  </data>
+  <data name="menuHelp" xml:space="preserve">
+    <value>Ayudar</value>
+  </data>
+  <data name="menuHelp_About" xml:space="preserve">
+    <value>Sobre ImoEstudante</value>
+  </data>
+  <data name="menuHelp_View" xml:space="preserve">
+    <value>Ver Ayuda</value>
+  </data>
+  <data name="menuImoEstudante_Add" xml:space="preserve">
+    <value>Agregar usuario</value>
+  </data>
+  <data name="menuImoEstudante_Close" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
+  <data name="menuImoEstudante_Data" xml:space="preserve">
+    <value>Datos personales</value>
+  </data>
+  <data name="menuImoEstudante_Definitions" xml:space="preserve">
+    <value>Ajustes</value>
+  </data>
+  <data name="menuImoEstudante_Idiom" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="menuImoEstudante_Idiom_EN" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="menuImoEstudante_Idiom_PT" xml:space="preserve">
+    <value>Portugués</value>
+  </data>
+  <data name="menuImoEstudante_Idiom_SP" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="menuImoEstudante_LogOut" xml:space="preserve">
+    <value>Dejar</value>
+  </data>
+  <data name="menuImoEstudante_Search" xml:space="preserve">
+    <value>Buscar user</value>
+  </data>
+  <data name="menuRents" xml:space="preserve">
+    <value>Alquileres</value>
+  </data>
+  <data name="menuRents_Add" xml:space="preserve">
+    <value>Añadir</value>
+  </data>
+  <data name="menuRents_Export" xml:space="preserve">
+    <value>Exportación</value>
+  </data>
+  <data name="menuRents_List" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="menuRents_Search" xml:space="preserve">
+    <value>Investigación</value>
   </data>
   <data name="searchClient_button1" xml:space="preserve">
-    <value>Pesquisar</value>
+    <value>Investigación</value>
   </data>
   <data name="searchClient_button2" xml:space="preserve">
     <value>Editar</value>
@@ -343,22 +343,22 @@
     <value>Ver Lista</value>
   </data>
   <data name="searchClient_button4" xml:space="preserve">
-    <value>Limpar Pesquisa</value>
+    <value>Búsqueda Borrar</value>
   </data>
   <data name="searchClient_label1" xml:space="preserve">
-    <value>ImoEstudante » Pesquisa de Cliente</value>
+    <value>ImoEstudante » Investigación de atención al cliente</value>
   </data>
   <data name="searchClient_label2" xml:space="preserve">
-    <value>Pesquisar em:</value>
+    <value>Buscar:</value>
   </data>
   <data name="searchClient_label3" xml:space="preserve">
-    <value>Texto de pesquisa</value>
+    <value>Texto de Búsqueda</value>
   </data>
   <data name="searchClient_tabPage1" xml:space="preserve">
     <value>Clientes</value>
   </data>
   <data name="searchHabitation_button1" xml:space="preserve">
-    <value>Pesquisar</value>
+    <value>Investigación</value>
   </data>
   <data name="searchHabitation_button2" xml:space="preserve">
     <value>Editar</value>
@@ -367,48 +367,46 @@
     <value>Ver Lista</value>
   </data>
   <data name="searchHabitation_button4" xml:space="preserve">
-    <value>Limpar Pesquisa</value>
+    <value>Búsqueda Borrar</value>
   </data>
   <data name="searchHabitation_checkListBox1" xml:space="preserve">
-    <value>Casa Inteira
-Quarto Privado
-Quarto Partilhado</value>
+    <value>Full House</value>
   </data>
   <data name="searchHabitation_label1" xml:space="preserve">
-    <value>ImoEstudante » Pesquisa de Habitação</value>
+    <value>ImoEstudante » Búsqueda de vivienda</value>
   </data>
   <data name="searchHabitation_label10" xml:space="preserve">
-    <value>Opções de Pesquisa</value>
+    <value>Opciones de Búsqueda</value>
   </data>
   <data name="searchHabitation_label2" xml:space="preserve">
-    <value>Localidade</value>
+    <value>Localidad</value>
   </data>
   <data name="searchHabitation_label3" xml:space="preserve">
-    <value>Tipo de Alojamento</value>
+    <value>Tipo de Alojamiento</value>
   </data>
   <data name="searchHabitation_label4" xml:space="preserve">
-    <value>Valor Mínimo</value>
+    <value>Mínimo</value>
   </data>
   <data name="searchHabitation_label5" xml:space="preserve">
-    <value>Valor Máximo</value>
+    <value>El valor máximo</value>
   </data>
   <data name="searchHabitation_label6" xml:space="preserve">
     <value>Comodidades</value>
   </data>
   <data name="searchHabitation_label7" xml:space="preserve">
-    <value>(Selecione uma ou várias opções)</value>
+    <value>(Seleccione una o más opciones)</value>
   </data>
   <data name="searchHabitation_label8" xml:space="preserve">
-    <value>Regras da Casa</value>
+    <value>Reglas de la Casa</value>
   </data>
   <data name="searchHabitation_label9" xml:space="preserve">
-    <value>(Selecione uma ou várias opções)</value>
+    <value>(Seleccione una o más opciones)</value>
   </data>
   <data name="searchHabitation_tabPage1" xml:space="preserve">
-    <value>Habitações</value>
+    <value>Habitaciones</value>
   </data>
   <data name="searchRent_button1" xml:space="preserve">
-    <value>Pesquisar</value>
+    <value>Investigación</value>
   </data>
   <data name="searchRent_button2" xml:space="preserve">
     <value>Editar</value>
@@ -417,22 +415,22 @@ Quarto Partilhado</value>
     <value>Ver Lista</value>
   </data>
   <data name="searchRent_button4" xml:space="preserve">
-    <value>Limpar Pesquisa</value>
+    <value>Búsqueda Borrar</value>
   </data>
   <data name="searchRent_label1" xml:space="preserve">
-    <value>ImoEstudante » Pesquisa de Alugueres</value>
+    <value>ImoEstudante » Buscar Alquiler</value>
   </data>
   <data name="searchRent_label2" xml:space="preserve">
-    <value>Pesquisar em:</value>
+    <value>Buscar:</value>
   </data>
   <data name="searchRent_label3" xml:space="preserve">
-    <value>Texto de Pesquisa</value>
+    <value>Búsqueda de Texto</value>
   </data>
   <data name="searchRent_tabPage1" xml:space="preserve">
-    <value>Alugueres</value>
+    <value>Alquileres</value>
   </data>
   <data name="searchUser_button1" xml:space="preserve">
-    <value>Pesquisar</value>
+    <value>Investigación</value>
   </data>
   <data name="searchUser_button2" xml:space="preserve">
     <value>Editar</value>
@@ -441,18 +439,24 @@ Quarto Partilhado</value>
     <value>Ver Lista</value>
   </data>
   <data name="searchUser_button4" xml:space="preserve">
-    <value>Limpar Pesquisa</value>
+    <value>Búsqueda Borrar</value>
   </data>
   <data name="searchUser_label1" xml:space="preserve">
-    <value>ImoEstudante » Pesquisa de Utilizador</value>
+    <value>ImoEstudante » Usuario Buscar</value>
   </data>
   <data name="searchUser_label2" xml:space="preserve">
-    <value>Pesquisar em:</value>
+    <value>Buscar:</value>
   </data>
   <data name="searchUser_label3" xml:space="preserve">
-    <value>Texto de Pesquisa</value>
+    <value>Búsqueda de Texto</value>
   </data>
   <data name="searchUser_tabPage1" xml:space="preserve">
-    <value>Utilizadores</value>
+    <value>Usuarios</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>Reservado</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Habitación compartida</value>
   </data>
 </root>

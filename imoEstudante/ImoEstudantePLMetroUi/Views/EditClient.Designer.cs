@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.editClient_label1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.panelDashBoard.SuspendLayout();
@@ -41,28 +41,30 @@
             this.panelDashBoard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDashBoard.Controls.Add(this.metroLabel1);
+            this.panelDashBoard.Controls.Add(this.editClient_label1);
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
             this.panelDashBoard.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.HorizontalScrollbarSize = 10;
+            this.panelDashBoard.HorizontalScrollbarSize = 12;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
+            this.panelDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(754, 496);
+            this.panelDashBoard.Size = new System.Drawing.Size(1005, 610);
             this.panelDashBoard.TabIndex = 4;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.VerticalScrollbarSize = 10;
+            this.panelDashBoard.VerticalScrollbarSize = 13;
             // 
-            // metroLabel1
+            // editClient_label1
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.BackColor = System.Drawing.Color.DimGray;
-            this.metroLabel1.Location = new System.Drawing.Point(4, 22);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(205, 19);
-            this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "ImoEstudante » Edição de Cliente";
+            this.editClient_label1.AutoSize = true;
+            this.editClient_label1.BackColor = System.Drawing.Color.DimGray;
+            this.editClient_label1.Location = new System.Drawing.Point(5, 27);
+            this.editClient_label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.editClient_label1.Name = "editClient_label1";
+            this.editClient_label1.Size = new System.Drawing.Size(216, 20);
+            this.editClient_label1.TabIndex = 3;
+            this.editClient_label1.Text = "ImoEstudante » Edição de Cliente";
             // 
             // panel1
             // 
@@ -71,26 +73,29 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.metroTabControl1);
-            this.panel1.Location = new System.Drawing.Point(0, 47);
+            this.panel1.Location = new System.Drawing.Point(0, 58);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 449);
+            this.panel1.Size = new System.Drawing.Size(1005, 553);
             this.panel1.TabIndex = 2;
             // 
             // metroTabControl1
             // 
-            this.metroTabControl1.Location = new System.Drawing.Point(4, 3);
+            this.metroTabControl1.Location = new System.Drawing.Point(5, 4);
+            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.Size = new System.Drawing.Size(747, 443);
+            this.metroTabControl1.Size = new System.Drawing.Size(996, 545);
             this.metroTabControl1.TabIndex = 0;
             // 
             // EditClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panelDashBoard);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditClient";
-            this.Size = new System.Drawing.Size(754, 496);
+            this.Size = new System.Drawing.Size(1005, 610);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -102,7 +107,7 @@
 
         private MetroFramework.Controls.MetroPanel panelDashBoard;
         private System.Windows.Forms.Panel panel1;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel editClient_label1;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
     }
 }

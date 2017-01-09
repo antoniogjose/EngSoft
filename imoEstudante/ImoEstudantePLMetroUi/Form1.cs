@@ -24,137 +24,114 @@ namespace ImoEstudantePLMetroUi
             // Idioma.AjustaCultura(this, "pt");
             InitializeComponent();
 
-            if (!panel.Controls.Contains(Login.Instance))
-            {
-                //if (!panel.Controls.Contains(DashBoardMainPage.Instance))
-                //{
-                //    panel.Controls.Add(DashBoardMainPage.Instance);
-                //    DashBoardMainPage.Instance.Dock = DockStyle.Fill;
-                //    DashBoardMainPage.Instance.BringToFront();
+            //if (!panel.Controls.Contains(Login.Instance))
+            //{
+                if (!panel.Controls.Contains(DashBoardMainPage.Instance))
+                {
+                    panel.Controls.Add(DashBoardMainPage.Instance);
+                    DashBoardMainPage.Instance.Dock = DockStyle.Fill;
+                    DashBoardMainPage.Instance.BringToFront();
+                }
+                else
+                    DashBoardMainPage.Instance.BringToFront();
+
+                //    panel.Controls.Add(Login.Instance);
+                //    Login.Instance.Dock = DockStyle.Fill;
+                //    Login.Instance.BringToFront();
+                //    menuStrip1.Enabled = false;
                 //}
                 //else
-                //    DashBoardMainPage.Instance.BringToFront();
-
-                panel.Controls.Add(Login.Instance);
-                Login.Instance.Dock = DockStyle.Fill;
-                Login.Instance.BringToFront();
-                menuStrip1.Enabled = false;
+                //    Login.Instance.BringToFront();
             }
-            else
-                Login.Instance.BringToFront();
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             // inicia em portugues
-            //portuguêsToolStripMenuItem.Checked = true;
-            //inglesToolStripMenuItem.Checked = false;
+            menuImoEstudante_Idiom_PT.Checked = true;
+            menuImoEstudante_Idiom_EN.Checked = false;
+            menuImoEstudante_Idiom_SP.Checked = false;
 
             res_man = new ResourceManager("ImoEstudantePLMetroUi.Resources.Res", typeof(Form1).Assembly);
         }
 
-        private void menuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // PT
         private void portuguêsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (inglesToolStripMenuItem.Checked == true)
+            if (menuImoEstudante_Idiom_EN.Checked == true || menuImoEstudante_Idiom_SP.Checked == true)
             {
-                inglesToolStripMenuItem.Checked = false;
-                portuguêsToolStripMenuItem.Checked = true;
+                menuImoEstudante_Idiom_PT.Checked = true;
+                menuImoEstudante_Idiom_EN.Checked = false;
+                menuImoEstudante_Idiom_SP.Checked = false;
 
                 switch_language();
+            }
+            else // apenas para manter o visto
+            {
+                menuImoEstudante_Idiom_PT.Checked = true;
             }
         }
 
+        // EN
         private void inglesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (portuguêsToolStripMenuItem.Checked == true)
+            if (menuImoEstudante_Idiom_PT.Checked == true || menuImoEstudante_Idiom_SP.Checked == true)
             {
-                portuguêsToolStripMenuItem.Checked = false;
-                inglesToolStripMenuItem.Enabled = true;
+                menuImoEstudante_Idiom_PT.Checked = false;
+                menuImoEstudante_Idiom_EN.Checked = true;
+                menuImoEstudante_Idiom_SP.Checked = false;
 
                 switch_language();
             }
+            else // apenas para manter o visto
+            {
+                menuImoEstudante_Idiom_EN.Checked = true;
+            }
+        }
 
+        // SP
+        private void menuImoEstudante_Idiom_SP_Click(object sender, EventArgs e)
+        {
+            if (menuImoEstudante_Idiom_PT.Checked == true || menuImoEstudante_Idiom_EN.Checked == true)
+            {
+                menuImoEstudante_Idiom_PT.Checked = false;
+                menuImoEstudante_Idiom_EN.Checked = false;
+                menuImoEstudante_Idiom_SP.Checked = true;
+
+                switch_language();
+            }
+            else // apenas para manter o visto
+            {
+                menuImoEstudante_Idiom_SP.Checked = true;
+            }
         }
 
 
         //Function for switch language
         private void switch_language()
         {            
-            if (inglesToolStripMenuItem.Checked == true)
+            if (menuImoEstudante_Idiom_EN.Checked == true)
             {
                 // cultura: inglês
                 cul = CultureInfo.CreateSpecificCulture("en");
             }
-            else // (portuguêsToolStripMenuItem.Checked == true)
+            else if (menuImoEstudante_Idiom_PT.Checked == true)
             {
-                // cultura base: português
+                // cultura: português
                 cul = CultureInfo.CreateSpecificCulture("pt");
             }
+            else if (menuImoEstudante_Idiom_SP.Checked == true)
+            {
+                // cultura: espanhol
+                cul = CultureInfo.CreateSpecificCulture("es");
+            }
 
-            // mudar idioma
+            // switch language
             Idioma.switchLanguage(this, cul, res_man);
 
-
-
-            //foreach (ToolStripMenuItem ctrlsss in this.menuStrip1.Items)
-            //{
-            //    if (ctrlsss is ToolStripMenuItem)
-            //    {
-            //        var result2 = MessageBox.Show(ctrlsss.Name);
-            //    }
-            //    //else
-            //    //{
-            //    //    var result3 = MessageBox.Show(ctrlsss.Name);
-            //    //}
-            //}
-
-            /*exit_text_string = res_man.GetString("exit_text_string", cul);
-            exit_caption_string = res_man.GetString("exit_caption_string", cul);*/
-
-
-            //
-            //this.Text = res_man.GetString("Form1_text", cul);
-
-            //menuToolStripMenuItem.Text = res_man.GetString(menuToolStripMenuItem.Name, cul);
-
-            //foreach(Control x in this.Controls)
-            //{
-            //    if (string.IsNullOrEmpty(res_man.GetString(x.Name,cul)))
-            //    {
-            //        x.Text = res_man.GetString(x.Name, cul);
-            //    }
-            //    /*
-            //    if (x.Name.Equals("menuToolStripMenuItem"))
-            //    {
-            //        x.Text = res_man.GetString("menuToolStripMenuItem", cul);
-            //    }*/               
-            //}
-
-            /*
-            fileToolStripMenuItem.Text = res_man.GetString("File_menu", cul);
-            exitToolStripMenuItem.Text = res_man.GetString("Exit_menu", cul);
-
-            languageToolStripMenuItem.Text = res_man.GetString("Language_menu", cul);
-            vietnameseToolStripMenuItem.Text = res_man.GetString("Vietnamese_menu", cul);
-            englishToolStripMenuItem.Text = res_man.GetString("English_menu", cul);
-
-            textBox1.Text = res_man.GetString("Textbox_text", cul);*/
+            // switch language panel
+            Idioma.switchLanguage(panel, cul, res_man);
         }
 
-        private void fecharToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
 
         private void menuToolStripMenuItem2_Click(object sender, EventArgs e)
         {
@@ -163,6 +140,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(EditUser.Instance);
                 EditUser.Instance.Dock = DockStyle.Fill;
                 EditUser.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 EditUser.Instance.BringToFront();
@@ -175,6 +155,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(SearchUser.Instance);
                 SearchUser.Instance.Dock = DockStyle.Fill;
                 SearchUser.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 SearchUser.Instance.BringToFront();
@@ -187,10 +170,12 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(SearchRent.Instance);
                 SearchRent.Instance.Dock = DockStyle.Fill;
                 SearchRent.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 SearchRent.Instance.BringToFront();
-
         }
 
         private void btAddRent_Click(object sender, EventArgs e)
@@ -200,10 +185,12 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(AddRent.Instance);
                 AddRent.Instance.Dock = DockStyle.Fill;
                 AddRent.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 AddRent.Instance.BringToFront();
-
         }
 
         private void btEditRent_Click(object sender, EventArgs e)
@@ -213,10 +200,12 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(EditRent.Instance);
                 EditRent.Instance.Dock = DockStyle.Fill;
                 EditRent.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 EditRent.Instance.BringToFront();
-
         }
 
         private void btAddHouse_Click(object sender, EventArgs e)
@@ -226,6 +215,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(AddHouse.Instance);
                 AddHouse.Instance.Dock = DockStyle.Fill;
                 AddHouse.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 AddHouse.Instance.BringToFront();
@@ -238,6 +230,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(EditHouse.Instance);
                 EditHouse.Instance.Dock = DockStyle.Fill;
                 EditHouse.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 EditHouse.Instance.BringToFront();
@@ -250,6 +245,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(ListHouse.Instance);
                 ListHouse.Instance.Dock = DockStyle.Fill;
                 ListHouse.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 ListHouse.Instance.BringToFront();
@@ -262,6 +260,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(SearchClient.Instance);
                 SearchClient.Instance.Dock = DockStyle.Fill;
                 SearchClient.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 SearchClient.Instance.BringToFront();
@@ -274,9 +275,12 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(AddClient.Instance);
                 AddClient.Instance.Dock = DockStyle.Fill;
                 AddClient.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
-                AddClient.Instance.BringToFront();
+                AddClient.Instance.BringToFront();            
         }
 
         private void btEditClient_Click(object sender, EventArgs e)
@@ -286,6 +290,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(EditClient.Instance);
                 EditClient.Instance.Dock = DockStyle.Fill;
                 EditClient.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 EditClient.Instance.BringToFront();
@@ -298,6 +305,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(ListClient.Instance);
                 ListClient.Instance.Dock = DockStyle.Fill;
                 ListClient.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 ListClient.Instance.BringToFront();
@@ -310,6 +320,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(ListRent.Instance);
                 ListRent.Instance.Dock = DockStyle.Fill;
                 ListRent.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 ListRent.Instance.BringToFront();
@@ -322,6 +335,9 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(SearchHouse.Instance);
                 SearchHouse.Instance.Dock = DockStyle.Fill;
                 SearchHouse.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 SearchHouse.Instance.BringToFront();
@@ -334,14 +350,12 @@ namespace ImoEstudantePLMetroUi
                 panel.Controls.Add(AddUser.Instance);
                 AddUser.Instance.Dock = DockStyle.Fill;
                 AddUser.Instance.BringToFront();
+
+                // switch language panel
+                Idioma.switchLanguage(panel, cul, res_man);
             }
             else
                 AddUser.Instance.BringToFront();
-        }
-
-        private void defeniçõesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
