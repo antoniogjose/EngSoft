@@ -142,6 +142,18 @@
   <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 6</value>
   </data>
+  <data name="portuguêsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 22</value>
+  </data>
+  <data name="portuguêsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Português</value>
+  </data>
+  <data name="inglesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 22</value>
+  </data>
+  <data name="inglesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Inglês</value>
+  </data>
   <data name="menuToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 22</value>
   </data>
@@ -159,6 +171,12 @@
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 6</value>
+  </data>
+  <data name="logInToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="logInToolStripMenuItem.Text" xml:space="preserve">
+    <value>LogIn</value>
   </data>
   <data name="logOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 22</value>
@@ -178,11 +196,59 @@
   <data name="menuToolStripMenuItem.Text" xml:space="preserve">
     <value>ImoEstudante</value>
   </data>
+  <data name="pesquisarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="pesquisarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pesquisar</value>
+  </data>
+  <data name="btAddRent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="btAddRent.Text" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="listarToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="listarToolStripMenuItem4.Text" xml:space="preserve">
+    <value>Listar</value>
+  </data>
   <data name="menuToolStripMenuItem5.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 20</value>
   </data>
   <data name="menuToolStripMenuItem5.Text" xml:space="preserve">
     <value>Alugueres</value>
+  </data>
+  <data name="btSearchHouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="btSearchHouse.Text" xml:space="preserve">
+    <value>Pesquisar</value>
+  </data>
+  <data name="btAddHouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="btAddHouse.Text" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="listarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="listarToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="btListHouse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="btListHouse.Text" xml:space="preserve">
+    <value>Listar</value>
   </data>
   <data name="menuToolStripMenuItem6.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 20</value>
@@ -190,11 +256,47 @@
   <data name="menuToolStripMenuItem6.Text" xml:space="preserve">
     <value>Habitações</value>
   </data>
+  <data name="btSearchClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="btSearchClient.Text" xml:space="preserve">
+    <value>Pesquisar</value>
+  </data>
+  <data name="btAddClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="btAddClient.Text" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="listarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="btListClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 22</value>
+  </data>
+  <data name="btListClient.Text" xml:space="preserve">
+    <value>Listar</value>
+  </data>
   <data name="clientesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
   </data>
   <data name="clientesToolStripMenuItem.Text" xml:space="preserve">
     <value>Clientes</value>
+  </data>
+  <data name="viewHelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
+  <data name="viewHelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ver ajuda</value>
+  </data>
+  <data name="sobreOImoEstudanteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
+  <data name="sobreOImoEstudanteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sobre o ImoEstudante</value>
   </data>
   <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 20</value>
@@ -226,102 +328,6 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="portuguêsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 22</value>
-  </data>
-  <data name="portuguêsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Português</value>
-  </data>
-  <data name="inglesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 22</value>
-  </data>
-  <data name="inglesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Inglês</value>
-  </data>
-  <data name="pesquisarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="pesquisarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Pesquisar</value>
-  </data>
-  <data name="btAddRent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="btAddRent.Text" xml:space="preserve">
-    <value>Adicionar</value>
-  </data>
-  <data name="listarToolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="listarToolStripMenuItem3.Text" xml:space="preserve">
-    <value>Exportar</value>
-  </data>
-  <data name="listarToolStripMenuItem4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="listarToolStripMenuItem4.Text" xml:space="preserve">
-    <value>Listar</value>
-  </data>
-  <data name="btSearchHouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="btSearchHouse.Text" xml:space="preserve">
-    <value>Pesquisar</value>
-  </data>
-  <data name="btAddHouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="btAddHouse.Text" xml:space="preserve">
-    <value>Adicionar</value>
-  </data>
-  <data name="listarToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="listarToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Exportar</value>
-  </data>
-  <data name="btListHouse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="btListHouse.Text" xml:space="preserve">
-    <value>Listar</value>
-  </data>
-  <data name="btSearchClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="btSearchClient.Text" xml:space="preserve">
-    <value>Pesquisar</value>
-  </data>
-  <data name="btAddClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="btAddClient.Text" xml:space="preserve">
-    <value>Adicionar</value>
-  </data>
-  <data name="listarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="listarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exportar</value>
-  </data>
-  <data name="btListClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 22</value>
-  </data>
-  <data name="btListClient.Text" xml:space="preserve">
-    <value>Listar</value>
-  </data>
-  <data name="viewHelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
-  </data>
-  <data name="viewHelpToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ver ajuda</value>
-  </data>
-  <data name="sobreOImoEstudanteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
-  </data>
-  <data name="sobreOImoEstudanteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sobre o ImoEstudante</value>
   </data>
   <data name="panel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -446,6 +452,12 @@
   </data>
   <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logInToolStripMenuItem.Name" xml:space="preserve">
+    <value>logInToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;logInToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;logOutToolStripMenuItem.Name" xml:space="preserve">
     <value>logOutToolStripMenuItem</value>
