@@ -67,11 +67,6 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.IdentityModel" />
-    <Reference Include="System.IdentityModel.Selectors" />
-    <Reference Include="System.identitymodel.services" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -86,18 +81,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LogForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LogForm.Designer.cs">
-      <DependentUpon>LogForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ClasseStatic.cs" />
-    <Compile Include="Service References\CRUDImoestudante\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Views\AddClient.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -201,11 +184,14 @@
       <DependentUpon>SearchRent.cs</DependentUpon>
     </Compile>
     <Compile Include="Idioma.cs" />
+    <Compile Include="Views\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LogForm.resx">
-      <DependentUpon>LogForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\AddClient.resx">
       <DependentUpon>AddClient.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +239,9 @@
     <EmbeddedResource Include="Views\SearchUser.resx">
       <DependentUpon>SearchUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -282,62 +271,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Service References\CRUDImoestudante\ImoEstudantePLMetroUi.CRUDImoestudante.alojamento.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\CRUDImoestudante\ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\CRUDImoestudante\ImoEstudantePLMetroUi.CRUDImoestudante.aluguer.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\CRUDImoestudante\ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\CRUDImoestudante\ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\CRUDImoestudante\ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\CRUDImoestudante\ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\CRUDImoestudante\ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\CRUDImoestudante\Service1.wsdl" />
-    <None Include="Service References\CRUDImoestudante\Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CRUDImoestudante\Service11.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CRUDImoestudante\Service12.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\CRUDImoestudante\Service13.xsd">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
-    <None Include="Service References\CRUDImoestudante\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\CRUDImoestudante\configuration.svcinfo" />
-    <None Include="Service References\CRUDImoestudante\configuration91.svcinfo" />
     <None Include="Resources\logotipo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\CRUDImoestudante\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

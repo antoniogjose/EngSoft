@@ -12,13 +12,8 @@ using MetroFramework.Forms;
 using System.Globalization;
 using System.Resources;
 
-using System.ServiceModel.Security;
-using ImoEstudantePLMetroUi.CRUDImoestudante;
-using ImoEstudantePLMetroUi.Resources;
-
 namespace ImoEstudantePLMetroUi
 {
-
     public partial class Form1 : MetroForm
     {
         ResourceManager res_man;    // Recursos
@@ -29,21 +24,24 @@ namespace ImoEstudantePLMetroUi
             // Idioma.AjustaCultura(this, "pt");
             InitializeComponent();
 
-            if (!panel.Controls.Contains(DashBoardMainPage.Instance))
+            if (!panel.Controls.Contains(Login.Instance))
             {
-                panel.Controls.Add(DashBoardMainPage.Instance);
-                DashBoardMainPage.Instance.Dock = DockStyle.Fill;
-                DashBoardMainPage.Instance.BringToFront();
+                //if (!panel.Controls.Contains(DashBoardMainPage.Instance))
+                //{
+                //    panel.Controls.Add(DashBoardMainPage.Instance);
+                //    DashBoardMainPage.Instance.Dock = DockStyle.Fill;
+                //    DashBoardMainPage.Instance.BringToFront();
+                //}
+                //else
+                //    DashBoardMainPage.Instance.BringToFront();
+
+                panel.Controls.Add(Login.Instance);
+                Login.Instance.Dock = DockStyle.Fill;
+                Login.Instance.BringToFront();
+                menuStrip1.Enabled = false;
             }
             else
-                DashBoardMainPage.Instance.BringToFront();
-
-            if(ClasseStatic.us != null)
-            {
-                logInToolStripMenuItem.Enabled = false;
-                logOutToolStripMenuItem.Text = logOutToolStripMenuItem.Text + " : "+ ClasseStatic.us.Nome.TrimEnd();
-            }
-
+                Login.Instance.BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -344,26 +342,6 @@ namespace ImoEstudantePLMetroUi
         private void defeniçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void logInToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LogForm userLogin = new LogForm();
-            try
-            {
-                if (userLogin.ShowDialog(this) == DialogResult.OK)
-                {
-                    userLogin.Dispose();
-                    logOutToolStripMenuItem.Enabled = false;
-
-                }
-
-            }
-            catch
-            {
-                // this.Close();
-
-            }
         }
     }
 }
