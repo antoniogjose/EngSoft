@@ -11,11 +11,17 @@ using System.Windows.Forms;
 using GMap.NET.MapProviders;
 using GMap.NET;
 
+
+
+
+
+
 namespace ImoEstudantePLMetroUi
 {
     public partial class AddHouse : MetroFramework.Controls.MetroUserControl
     {
         private static AddHouse _instance;
+        internal readonly GMapOverlay objects = new GMapOverlay("objects");
 
         public static AddHouse Instance
         {
@@ -33,8 +39,9 @@ namespace ImoEstudantePLMetroUi
 
         private void metroTabPage2_Enter(object sender, EventArgs e)
         {
+            //
             //use google provider
-            gMapControl1.MapProvider = GoogleMapProvider.Instance;
+             gMapControl1.MapProvider = GoogleMapProvider.Instance;
             //get tiles from server only
             gMapControl1.Manager.Mode = AccessMode.ServerOnly;
             //not use proxy
