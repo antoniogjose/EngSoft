@@ -989,6 +989,12 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         private int idTipologiaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string latitudeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string longitudeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ImoEstudantePLMetroUi.CRUDImoestudante.morada moradaField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1120,6 +1126,32 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
                 if ((this.idTipologiaField.Equals(value) != true)) {
                     this.idTipologiaField = value;
                     this.RaisePropertyChanged("idTipologia");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string latitude {
+            get {
+                return this.latitudeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.latitudeField, value) != true)) {
+                    this.latitudeField = value;
+                    this.RaisePropertyChanged("latitude");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string longitude {
+            get {
+                return this.longitudeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.longitudeField, value) != true)) {
+                    this.longitudeField = value;
+                    this.RaisePropertyChanged("longitude");
                 }
             }
         }
@@ -2596,13 +2628,19 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         private int IdAlojamentoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LatitudeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LongitudeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ImoEstudantePLMetroUi.CRUDImoestudante.MoradaRespostaPedido MoradaAlojamentoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ImoEstudantePLMetroUi.CRUDImoestudante.tipoAlojamentoRespostaPedido TipoAlojField;
+        private string TipoAlojField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ImoEstudantePLMetroUi.CRUDImoestudante.tipologiaRespostaPedido TipolField;
+        private string TipolField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] comodidadesField;
@@ -2644,6 +2682,32 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Latitude {
+            get {
+                return this.LatitudeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LatitudeField, value) != true)) {
+                    this.LatitudeField = value;
+                    this.RaisePropertyChanged("Latitude");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Longitude {
+            get {
+                return this.LongitudeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LongitudeField, value) != true)) {
+                    this.LongitudeField = value;
+                    this.RaisePropertyChanged("Longitude");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public ImoEstudantePLMetroUi.CRUDImoestudante.MoradaRespostaPedido MoradaAlojamento {
             get {
                 return this.MoradaAlojamentoField;
@@ -2657,7 +2721,7 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ImoEstudantePLMetroUi.CRUDImoestudante.tipoAlojamentoRespostaPedido TipoAloj {
+        public string TipoAloj {
             get {
                 return this.TipoAlojField;
             }
@@ -2670,7 +2734,7 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ImoEstudantePLMetroUi.CRUDImoestudante.tipologiaRespostaPedido Tipol {
+        public string Tipol {
             get {
                 return this.TipolField;
             }
@@ -2691,128 +2755,6 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
                 if ((object.ReferenceEquals(this.comodidadesField, value) != true)) {
                     this.comodidadesField = value;
                     this.RaisePropertyChanged("comodidades");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="tipoAlojamentoRespostaPedido", Namespace="http://schemas.datacontract.org/2004/07/CRUDImoestudante")]
-    [System.SerializableAttribute()]
-    public partial class tipoAlojamentoRespostaPedido : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescTipoAlojamentoField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdTipoAlojamentoField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string DescTipoAlojamento {
-            get {
-                return this.DescTipoAlojamentoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescTipoAlojamentoField, value) != true)) {
-                    this.DescTipoAlojamentoField = value;
-                    this.RaisePropertyChanged("DescTipoAlojamento");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int IdTipoAlojamento {
-            get {
-                return this.IdTipoAlojamentoField;
-            }
-            set {
-                if ((this.IdTipoAlojamentoField.Equals(value) != true)) {
-                    this.IdTipoAlojamentoField = value;
-                    this.RaisePropertyChanged("IdTipoAlojamento");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="tipologiaRespostaPedido", Namespace="http://schemas.datacontract.org/2004/07/CRUDImoestudante")]
-    [System.SerializableAttribute()]
-    public partial class tipologiaRespostaPedido : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescTipologiaField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int IdTipologiaField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string DescTipologia {
-            get {
-                return this.DescTipologiaField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescTipologiaField, value) != true)) {
-                    this.DescTipologiaField = value;
-                    this.RaisePropertyChanged("DescTipologia");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int IdTipologia {
-            get {
-                return this.IdTipologiaField;
-            }
-            set {
-                if ((this.IdTipologiaField.Equals(value) != true)) {
-                    this.IdTipologiaField = value;
-                    this.RaisePropertyChanged("IdTipologia");
                 }
             }
         }
@@ -2895,122 +2837,162 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUsersData", ReplyAction="http://tempuri.org/IService1/GetUsersDataResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[] GetUsersData();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUsersData", ReplyAction="http://tempuri.org/IService1/GetUsersDataResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[]> GetUsersDataAsync();
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/GetUsersData", ReplyAction="http://tempuri.org/IService1/GetUsersDataResponse")]
+        System.IAsyncResult BeginGetUsersData(System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[] EndGetUsersData(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchUserId", ReplyAction="http://tempuri.org/IService1/SearchUserIdResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido SearchUserId(string id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchUserId", ReplyAction="http://tempuri.org/IService1/SearchUserIdResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido> SearchUserIdAsync(string id);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/SearchUserId", ReplyAction="http://tempuri.org/IService1/SearchUserIdResponse")]
+        System.IAsyncResult BeginSearchUserId(string id, System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido EndSearchUserId(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddUser", ReplyAction="http://tempuri.org/IService1/AddUserResponse")]
         bool AddUser(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddUser", ReplyAction="http://tempuri.org/IService1/AddUserResponse")]
-        System.Threading.Tasks.Task<bool> AddUserAsync(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/AddUser", ReplyAction="http://tempuri.org/IService1/AddUserResponse")]
+        System.IAsyncResult BeginAddUser(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador, System.AsyncCallback callback, object asyncState);
+        
+        bool EndAddUser(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserTypes", ReplyAction="http://tempuri.org/IService1/GetUserTypesResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[] GetUserTypes();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserTypes", ReplyAction="http://tempuri.org/IService1/GetUserTypesResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[]> GetUserTypesAsync();
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/GetUserTypes", ReplyAction="http://tempuri.org/IService1/GetUserTypesResponse")]
+        System.IAsyncResult BeginGetUserTypes(System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[] EndGetUserTypes(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserType", ReplyAction="http://tempuri.org/IService1/GetUserTypeResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido GetUserType(string userLogin);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserType", ReplyAction="http://tempuri.org/IService1/GetUserTypeResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido> GetUserTypeAsync(string userLogin);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/GetUserType", ReplyAction="http://tempuri.org/IService1/GetUserTypeResponse")]
+        System.IAsyncResult BeginGetUserType(string userLogin, System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido EndGetUserType(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpDatePais", ReplyAction="http://tempuri.org/IService1/UpDatePaisResponse")]
         bool UpDatePais(ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpDatePais", ReplyAction="http://tempuri.org/IService1/UpDatePaisResponse")]
-        System.Threading.Tasks.Task<bool> UpDatePaisAsync(ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/UpDatePais", ReplyAction="http://tempuri.org/IService1/UpDatePaisResponse")]
+        System.IAsyncResult BeginUpDatePais(ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises, System.AsyncCallback callback, object asyncState);
+        
+        bool EndUpDatePais(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetPaises", ReplyAction="http://tempuri.org/IService1/GetPaisesResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] GetPaises(string token);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetPaises", ReplyAction="http://tempuri.org/IService1/GetPaisesResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[]> GetPaisesAsync(string token);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/GetPaises", ReplyAction="http://tempuri.org/IService1/GetPaisesResponse")]
+        System.IAsyncResult BeginGetPaises(string token, System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] EndGetPaises(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetContractData", ReplyAction="http://tempuri.org/IService1/GetContractDataResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[] GetContractData();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetContractData", ReplyAction="http://tempuri.org/IService1/GetContractDataResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[]> GetContractDataAsync();
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/GetContractData", ReplyAction="http://tempuri.org/IService1/GetContractDataResponse")]
+        System.IAsyncResult BeginGetContractData(System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[] EndGetContractData(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchContractId", ReplyAction="http://tempuri.org/IService1/SearchContractIdResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.aluguer SearchContractId(string id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchContractId", ReplyAction="http://tempuri.org/IService1/SearchContractIdResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.aluguer> SearchContractIdAsync(string id);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/SearchContractId", ReplyAction="http://tempuri.org/IService1/SearchContractIdResponse")]
+        System.IAsyncResult BeginSearchContractId(string id, System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.aluguer EndSearchContractId(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Addcontract", ReplyAction="http://tempuri.org/IService1/AddcontractResponse")]
         bool Addcontract(ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Addcontract", ReplyAction="http://tempuri.org/IService1/AddcontractResponse")]
-        System.Threading.Tasks.Task<bool> AddcontractAsync(ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/Addcontract", ReplyAction="http://tempuri.org/IService1/AddcontractResponse")]
+        System.IAsyncResult BeginAddcontract(ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData, System.AsyncCallback callback, object asyncState);
+        
+        bool EndAddcontract(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetHouseData", ReplyAction="http://tempuri.org/IService1/GetHouseDataResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[] GetHouseData();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetHouseData", ReplyAction="http://tempuri.org/IService1/GetHouseDataResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[]> GetHouseDataAsync();
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/GetHouseData", ReplyAction="http://tempuri.org/IService1/GetHouseDataResponse")]
+        System.IAsyncResult BeginGetHouseData(System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[] EndGetHouseData(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchHouseId", ReplyAction="http://tempuri.org/IService1/SearchHouseIdResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.alojamento SearchHouseId(string id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/SearchHouseId", ReplyAction="http://tempuri.org/IService1/SearchHouseIdResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.alojamento> SearchHouseIdAsync(string id);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/SearchHouseId", ReplyAction="http://tempuri.org/IService1/SearchHouseIdResponse")]
+        System.IAsyncResult BeginSearchHouseId(string id, System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.alojamento EndSearchHouseId(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddHouse", ReplyAction="http://tempuri.org/IService1/AddHouseResponse")]
         bool AddHouse(ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddHouse", ReplyAction="http://tempuri.org/IService1/AddHouseResponse")]
-        System.Threading.Tasks.Task<bool> AddHouseAsync(ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/AddHouse", ReplyAction="http://tempuri.org/IService1/AddHouseResponse")]
+        System.IAsyncResult BeginAddHouse(ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData, System.AsyncCallback callback, object asyncState);
+        
+        bool EndAddHouse(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComodData", ReplyAction="http://tempuri.org/IService1/GetComodDataResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] GetComodData();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComodData", ReplyAction="http://tempuri.org/IService1/GetComodDataResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[]> GetComodDataAsync();
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/GetComodData", ReplyAction="http://tempuri.org/IService1/GetComodDataResponse")]
+        System.IAsyncResult BeginGetComodData(System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] EndGetComodData(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComodDataAlojID", ReplyAction="http://tempuri.org/IService1/GetComodDataAlojIDResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] GetComodDataAlojID(string id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetComodDataAlojID", ReplyAction="http://tempuri.org/IService1/GetComodDataAlojIDResponse")]
-        System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[]> GetComodDataAlojIDAsync(string id);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/GetComodDataAlojID", ReplyAction="http://tempuri.org/IService1/GetComodDataAlojIDResponse")]
+        System.IAsyncResult BeginGetComodDataAlojID(string id, System.AsyncCallback callback, object asyncState);
+        
+        ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] EndGetComodDataAlojID(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/RemoveComod", ReplyAction="http://tempuri.org/IService1/RemoveComodResponse")]
         bool RemoveComod(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/RemoveComod", ReplyAction="http://tempuri.org/IService1/RemoveComodResponse")]
-        System.Threading.Tasks.Task<bool> RemoveComodAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/RemoveComod", ReplyAction="http://tempuri.org/IService1/RemoveComodResponse")]
+        System.IAsyncResult BeginRemoveComod(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData, System.AsyncCallback callback, object asyncState);
+        
+        bool EndRemoveComod(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddComodList", ReplyAction="http://tempuri.org/IService1/AddComodListResponse")]
         bool AddComodList(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddComodList", ReplyAction="http://tempuri.org/IService1/AddComodListResponse")]
-        System.Threading.Tasks.Task<bool> AddComodListAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/AddComodList", ReplyAction="http://tempuri.org/IService1/AddComodListResponse")]
+        System.IAsyncResult BeginAddComodList(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData, System.AsyncCallback callback, object asyncState);
+        
+        bool EndAddComodList(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddComod", ReplyAction="http://tempuri.org/IService1/AddComodResponse")]
         bool AddComod(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/AddComod", ReplyAction="http://tempuri.org/IService1/AddComodResponse")]
-        System.Threading.Tasks.Task<bool> AddComodAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/AddComod", ReplyAction="http://tempuri.org/IService1/AddComodResponse")]
+        System.IAsyncResult BeginAddComod(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod, System.AsyncCallback callback, object asyncState);
+        
+        bool EndAddComod(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FacePublicHabitacao", ReplyAction="http://tempuri.org/IService1/FacePublicHabitacaoResponse")]
         bool FacePublicHabitacao(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FacePublicHabitacao", ReplyAction="http://tempuri.org/IService1/FacePublicHabitacaoResponse")]
-        System.Threading.Tasks.Task<bool> FacePublicHabitacaoAsync(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/FacePublicHabitacao", ReplyAction="http://tempuri.org/IService1/FacePublicHabitacaoResponse")]
+        System.IAsyncResult BeginFacePublicHabitacao(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento, System.AsyncCallback callback, object asyncState);
+        
+        bool EndFacePublicHabitacao(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TwittHabitacao", ReplyAction="http://tempuri.org/IService1/TwittHabitacaoResponse")]
         bool TwittHabitacao(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/TwittHabitacao", ReplyAction="http://tempuri.org/IService1/TwittHabitacaoResponse")]
-        System.Threading.Tasks.Task<bool> TwittHabitacaoAsync(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/TwittHabitacao", ReplyAction="http://tempuri.org/IService1/TwittHabitacaoResponse")]
+        System.IAsyncResult BeginTwittHabitacao(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento, System.AsyncCallback callback, object asyncState);
+        
+        bool EndTwittHabitacao(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -3019,7 +3001,507 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetUsersDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetUsersDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[] Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[])(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class SearchUserIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public SearchUserIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class AddUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public AddUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetUserTypesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetUserTypesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[] Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[])(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetUserTypeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetUserTypeCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class UpDatePaisCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public UpDatePaisCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetPaisesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetPaisesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[])(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetContractDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetContractDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[] Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[])(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class SearchContractIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public SearchContractIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.aluguer Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.aluguer)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class AddcontractCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public AddcontractCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetHouseDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetHouseDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[] Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[])(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class SearchHouseIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public SearchHouseIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.alojamento Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.alojamento)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class AddHouseCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public AddHouseCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetComodDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetComodDataCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[])(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class GetComodDataAlojIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetComodDataAlojIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[])(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class RemoveComodCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public RemoveComodCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class AddComodListCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public AddComodListCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class AddComodCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public AddComodCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class FacePublicHabitacaoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public FacePublicHabitacaoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class TwittHabitacaoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public TwittHabitacaoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class Service1Client : System.ServiceModel.ClientBase<ImoEstudantePLMetroUi.CRUDImoestudante.IService1>, ImoEstudantePLMetroUi.CRUDImoestudante.IService1 {
+        
+        private BeginOperationDelegate onBeginGetUsersDataDelegate;
+        
+        private EndOperationDelegate onEndGetUsersDataDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetUsersDataCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginSearchUserIdDelegate;
+        
+        private EndOperationDelegate onEndSearchUserIdDelegate;
+        
+        private System.Threading.SendOrPostCallback onSearchUserIdCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginAddUserDelegate;
+        
+        private EndOperationDelegate onEndAddUserDelegate;
+        
+        private System.Threading.SendOrPostCallback onAddUserCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetUserTypesDelegate;
+        
+        private EndOperationDelegate onEndGetUserTypesDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetUserTypesCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetUserTypeDelegate;
+        
+        private EndOperationDelegate onEndGetUserTypeDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetUserTypeCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginUpDatePaisDelegate;
+        
+        private EndOperationDelegate onEndUpDatePaisDelegate;
+        
+        private System.Threading.SendOrPostCallback onUpDatePaisCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetPaisesDelegate;
+        
+        private EndOperationDelegate onEndGetPaisesDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetPaisesCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetContractDataDelegate;
+        
+        private EndOperationDelegate onEndGetContractDataDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetContractDataCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginSearchContractIdDelegate;
+        
+        private EndOperationDelegate onEndSearchContractIdDelegate;
+        
+        private System.Threading.SendOrPostCallback onSearchContractIdCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginAddcontractDelegate;
+        
+        private EndOperationDelegate onEndAddcontractDelegate;
+        
+        private System.Threading.SendOrPostCallback onAddcontractCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetHouseDataDelegate;
+        
+        private EndOperationDelegate onEndGetHouseDataDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetHouseDataCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginSearchHouseIdDelegate;
+        
+        private EndOperationDelegate onEndSearchHouseIdDelegate;
+        
+        private System.Threading.SendOrPostCallback onSearchHouseIdCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginAddHouseDelegate;
+        
+        private EndOperationDelegate onEndAddHouseDelegate;
+        
+        private System.Threading.SendOrPostCallback onAddHouseCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetComodDataDelegate;
+        
+        private EndOperationDelegate onEndGetComodDataDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetComodDataCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetComodDataAlojIDDelegate;
+        
+        private EndOperationDelegate onEndGetComodDataAlojIDDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetComodDataAlojIDCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginRemoveComodDelegate;
+        
+        private EndOperationDelegate onEndRemoveComodDelegate;
+        
+        private System.Threading.SendOrPostCallback onRemoveComodCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginAddComodListDelegate;
+        
+        private EndOperationDelegate onEndAddComodListDelegate;
+        
+        private System.Threading.SendOrPostCallback onAddComodListCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginAddComodDelegate;
+        
+        private EndOperationDelegate onEndAddComodDelegate;
+        
+        private System.Threading.SendOrPostCallback onAddComodCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginFacePublicHabitacaoDelegate;
+        
+        private EndOperationDelegate onEndFacePublicHabitacaoDelegate;
+        
+        private System.Threading.SendOrPostCallback onFacePublicHabitacaoCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginTwittHabitacaoDelegate;
+        
+        private EndOperationDelegate onEndTwittHabitacaoDelegate;
+        
+        private System.Threading.SendOrPostCallback onTwittHabitacaoCompletedDelegate;
         
         public Service1Client() {
         }
@@ -3040,164 +3522,1034 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
                 base(binding, remoteAddress) {
         }
         
+        public event System.EventHandler<GetUsersDataCompletedEventArgs> GetUsersDataCompleted;
+        
+        public event System.EventHandler<SearchUserIdCompletedEventArgs> SearchUserIdCompleted;
+        
+        public event System.EventHandler<AddUserCompletedEventArgs> AddUserCompleted;
+        
+        public event System.EventHandler<GetUserTypesCompletedEventArgs> GetUserTypesCompleted;
+        
+        public event System.EventHandler<GetUserTypeCompletedEventArgs> GetUserTypeCompleted;
+        
+        public event System.EventHandler<UpDatePaisCompletedEventArgs> UpDatePaisCompleted;
+        
+        public event System.EventHandler<GetPaisesCompletedEventArgs> GetPaisesCompleted;
+        
+        public event System.EventHandler<GetContractDataCompletedEventArgs> GetContractDataCompleted;
+        
+        public event System.EventHandler<SearchContractIdCompletedEventArgs> SearchContractIdCompleted;
+        
+        public event System.EventHandler<AddcontractCompletedEventArgs> AddcontractCompleted;
+        
+        public event System.EventHandler<GetHouseDataCompletedEventArgs> GetHouseDataCompleted;
+        
+        public event System.EventHandler<SearchHouseIdCompletedEventArgs> SearchHouseIdCompleted;
+        
+        public event System.EventHandler<AddHouseCompletedEventArgs> AddHouseCompleted;
+        
+        public event System.EventHandler<GetComodDataCompletedEventArgs> GetComodDataCompleted;
+        
+        public event System.EventHandler<GetComodDataAlojIDCompletedEventArgs> GetComodDataAlojIDCompleted;
+        
+        public event System.EventHandler<RemoveComodCompletedEventArgs> RemoveComodCompleted;
+        
+        public event System.EventHandler<AddComodListCompletedEventArgs> AddComodListCompleted;
+        
+        public event System.EventHandler<AddComodCompletedEventArgs> AddComodCompleted;
+        
+        public event System.EventHandler<FacePublicHabitacaoCompletedEventArgs> FacePublicHabitacaoCompleted;
+        
+        public event System.EventHandler<TwittHabitacaoCompletedEventArgs> TwittHabitacaoCompleted;
+        
         public ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[] GetUsersData() {
             return base.Channel.GetUsersData();
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[]> GetUsersDataAsync() {
-            return base.Channel.GetUsersDataAsync();
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginGetUsersData(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetUsersData(callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[] EndGetUsersData(System.IAsyncResult result) {
+            return base.Channel.EndGetUsersData(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetUsersData(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return this.BeginGetUsersData(callback, asyncState);
+        }
+        
+        private object[] OnEndGetUsersData(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.MultiUtilizadorRespostaPedido[] retVal = this.EndGetUsersData(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetUsersDataCompleted(object state) {
+            if ((this.GetUsersDataCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetUsersDataCompleted(this, new GetUsersDataCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetUsersDataAsync() {
+            this.GetUsersDataAsync(null);
+        }
+        
+        public void GetUsersDataAsync(object userState) {
+            if ((this.onBeginGetUsersDataDelegate == null)) {
+                this.onBeginGetUsersDataDelegate = new BeginOperationDelegate(this.OnBeginGetUsersData);
+            }
+            if ((this.onEndGetUsersDataDelegate == null)) {
+                this.onEndGetUsersDataDelegate = new EndOperationDelegate(this.OnEndGetUsersData);
+            }
+            if ((this.onGetUsersDataCompletedDelegate == null)) {
+                this.onGetUsersDataCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetUsersDataCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetUsersDataDelegate, null, this.onEndGetUsersDataDelegate, this.onGetUsersDataCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido SearchUserId(string id) {
             return base.Channel.SearchUserId(id);
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido> SearchUserIdAsync(string id) {
-            return base.Channel.SearchUserIdAsync(id);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginSearchUserId(string id, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginSearchUserId(id, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido EndSearchUserId(System.IAsyncResult result) {
+            return base.Channel.EndSearchUserId(result);
+        }
+        
+        private System.IAsyncResult OnBeginSearchUserId(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string id = ((string)(inValues[0]));
+            return this.BeginSearchUserId(id, callback, asyncState);
+        }
+        
+        private object[] OnEndSearchUserId(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido retVal = this.EndSearchUserId(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnSearchUserIdCompleted(object state) {
+            if ((this.SearchUserIdCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.SearchUserIdCompleted(this, new SearchUserIdCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void SearchUserIdAsync(string id) {
+            this.SearchUserIdAsync(id, null);
+        }
+        
+        public void SearchUserIdAsync(string id, object userState) {
+            if ((this.onBeginSearchUserIdDelegate == null)) {
+                this.onBeginSearchUserIdDelegate = new BeginOperationDelegate(this.OnBeginSearchUserId);
+            }
+            if ((this.onEndSearchUserIdDelegate == null)) {
+                this.onEndSearchUserIdDelegate = new EndOperationDelegate(this.OnEndSearchUserId);
+            }
+            if ((this.onSearchUserIdCompletedDelegate == null)) {
+                this.onSearchUserIdCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnSearchUserIdCompleted);
+            }
+            base.InvokeAsync(this.onBeginSearchUserIdDelegate, new object[] {
+                        id}, this.onEndSearchUserIdDelegate, this.onSearchUserIdCompletedDelegate, userState);
         }
         
         public bool AddUser(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador) {
             return base.Channel.AddUser(utilizador);
         }
         
-        public System.Threading.Tasks.Task<bool> AddUserAsync(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador) {
-            return base.Channel.AddUserAsync(utilizador);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginAddUser(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginAddUser(utilizador, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndAddUser(System.IAsyncResult result) {
+            return base.Channel.EndAddUser(result);
+        }
+        
+        private System.IAsyncResult OnBeginAddUser(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador = ((ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido)(inValues[0]));
+            return this.BeginAddUser(utilizador, callback, asyncState);
+        }
+        
+        private object[] OnEndAddUser(System.IAsyncResult result) {
+            bool retVal = this.EndAddUser(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnAddUserCompleted(object state) {
+            if ((this.AddUserCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.AddUserCompleted(this, new AddUserCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void AddUserAsync(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador) {
+            this.AddUserAsync(utilizador, null);
+        }
+        
+        public void AddUserAsync(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador, object userState) {
+            if ((this.onBeginAddUserDelegate == null)) {
+                this.onBeginAddUserDelegate = new BeginOperationDelegate(this.OnBeginAddUser);
+            }
+            if ((this.onEndAddUserDelegate == null)) {
+                this.onEndAddUserDelegate = new EndOperationDelegate(this.OnEndAddUser);
+            }
+            if ((this.onAddUserCompletedDelegate == null)) {
+                this.onAddUserCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnAddUserCompleted);
+            }
+            base.InvokeAsync(this.onBeginAddUserDelegate, new object[] {
+                        utilizador}, this.onEndAddUserDelegate, this.onAddUserCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[] GetUserTypes() {
             return base.Channel.GetUserTypes();
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[]> GetUserTypesAsync() {
-            return base.Channel.GetUserTypesAsync();
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginGetUserTypes(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetUserTypes(callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[] EndGetUserTypes(System.IAsyncResult result) {
+            return base.Channel.EndGetUserTypes(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetUserTypes(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return this.BeginGetUserTypes(callback, asyncState);
+        }
+        
+        private object[] OnEndGetUserTypes(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[] retVal = this.EndGetUserTypes(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetUserTypesCompleted(object state) {
+            if ((this.GetUserTypesCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetUserTypesCompleted(this, new GetUserTypesCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetUserTypesAsync() {
+            this.GetUserTypesAsync(null);
+        }
+        
+        public void GetUserTypesAsync(object userState) {
+            if ((this.onBeginGetUserTypesDelegate == null)) {
+                this.onBeginGetUserTypesDelegate = new BeginOperationDelegate(this.OnBeginGetUserTypes);
+            }
+            if ((this.onEndGetUserTypesDelegate == null)) {
+                this.onEndGetUserTypesDelegate = new EndOperationDelegate(this.OnEndGetUserTypes);
+            }
+            if ((this.onGetUserTypesCompletedDelegate == null)) {
+                this.onGetUserTypesCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetUserTypesCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetUserTypesDelegate, null, this.onEndGetUserTypesDelegate, this.onGetUserTypesCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido GetUserType(string userLogin) {
             return base.Channel.GetUserType(userLogin);
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido> GetUserTypeAsync(string userLogin) {
-            return base.Channel.GetUserTypeAsync(userLogin);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginGetUserType(string userLogin, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetUserType(userLogin, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido EndGetUserType(System.IAsyncResult result) {
+            return base.Channel.EndGetUserType(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetUserType(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string userLogin = ((string)(inValues[0]));
+            return this.BeginGetUserType(userLogin, callback, asyncState);
+        }
+        
+        private object[] OnEndGetUserType(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido retVal = this.EndGetUserType(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetUserTypeCompleted(object state) {
+            if ((this.GetUserTypeCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetUserTypeCompleted(this, new GetUserTypeCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetUserTypeAsync(string userLogin) {
+            this.GetUserTypeAsync(userLogin, null);
+        }
+        
+        public void GetUserTypeAsync(string userLogin, object userState) {
+            if ((this.onBeginGetUserTypeDelegate == null)) {
+                this.onBeginGetUserTypeDelegate = new BeginOperationDelegate(this.OnBeginGetUserType);
+            }
+            if ((this.onEndGetUserTypeDelegate == null)) {
+                this.onEndGetUserTypeDelegate = new EndOperationDelegate(this.OnEndGetUserType);
+            }
+            if ((this.onGetUserTypeCompletedDelegate == null)) {
+                this.onGetUserTypeCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetUserTypeCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetUserTypeDelegate, new object[] {
+                        userLogin}, this.onEndGetUserTypeDelegate, this.onGetUserTypeCompletedDelegate, userState);
         }
         
         public bool UpDatePais(ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises) {
             return base.Channel.UpDatePais(paises);
         }
         
-        public System.Threading.Tasks.Task<bool> UpDatePaisAsync(ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises) {
-            return base.Channel.UpDatePaisAsync(paises);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginUpDatePais(ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginUpDatePais(paises, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndUpDatePais(System.IAsyncResult result) {
+            return base.Channel.EndUpDatePais(result);
+        }
+        
+        private System.IAsyncResult OnBeginUpDatePais(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises = ((ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[])(inValues[0]));
+            return this.BeginUpDatePais(paises, callback, asyncState);
+        }
+        
+        private object[] OnEndUpDatePais(System.IAsyncResult result) {
+            bool retVal = this.EndUpDatePais(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnUpDatePaisCompleted(object state) {
+            if ((this.UpDatePaisCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.UpDatePaisCompleted(this, new UpDatePaisCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void UpDatePaisAsync(ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises) {
+            this.UpDatePaisAsync(paises, null);
+        }
+        
+        public void UpDatePaisAsync(ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] paises, object userState) {
+            if ((this.onBeginUpDatePaisDelegate == null)) {
+                this.onBeginUpDatePaisDelegate = new BeginOperationDelegate(this.OnBeginUpDatePais);
+            }
+            if ((this.onEndUpDatePaisDelegate == null)) {
+                this.onEndUpDatePaisDelegate = new EndOperationDelegate(this.OnEndUpDatePais);
+            }
+            if ((this.onUpDatePaisCompletedDelegate == null)) {
+                this.onUpDatePaisCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnUpDatePaisCompleted);
+            }
+            base.InvokeAsync(this.onBeginUpDatePaisDelegate, new object[] {
+                        paises}, this.onEndUpDatePaisDelegate, this.onUpDatePaisCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] GetPaises(string token) {
             return base.Channel.GetPaises(token);
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[]> GetPaisesAsync(string token) {
-            return base.Channel.GetPaisesAsync(token);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginGetPaises(string token, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetPaises(token, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] EndGetPaises(System.IAsyncResult result) {
+            return base.Channel.EndGetPaises(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetPaises(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string token = ((string)(inValues[0]));
+            return this.BeginGetPaises(token, callback, asyncState);
+        }
+        
+        private object[] OnEndGetPaises(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.PaisRespostaPedido[] retVal = this.EndGetPaises(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetPaisesCompleted(object state) {
+            if ((this.GetPaisesCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetPaisesCompleted(this, new GetPaisesCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetPaisesAsync(string token) {
+            this.GetPaisesAsync(token, null);
+        }
+        
+        public void GetPaisesAsync(string token, object userState) {
+            if ((this.onBeginGetPaisesDelegate == null)) {
+                this.onBeginGetPaisesDelegate = new BeginOperationDelegate(this.OnBeginGetPaises);
+            }
+            if ((this.onEndGetPaisesDelegate == null)) {
+                this.onEndGetPaisesDelegate = new EndOperationDelegate(this.OnEndGetPaises);
+            }
+            if ((this.onGetPaisesCompletedDelegate == null)) {
+                this.onGetPaisesCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetPaisesCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetPaisesDelegate, new object[] {
+                        token}, this.onEndGetPaisesDelegate, this.onGetPaisesCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[] GetContractData() {
             return base.Channel.GetContractData();
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[]> GetContractDataAsync() {
-            return base.Channel.GetContractDataAsync();
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginGetContractData(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetContractData(callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[] EndGetContractData(System.IAsyncResult result) {
+            return base.Channel.EndGetContractData(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetContractData(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return this.BeginGetContractData(callback, asyncState);
+        }
+        
+        private object[] OnEndGetContractData(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.aluguer[] retVal = this.EndGetContractData(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetContractDataCompleted(object state) {
+            if ((this.GetContractDataCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetContractDataCompleted(this, new GetContractDataCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetContractDataAsync() {
+            this.GetContractDataAsync(null);
+        }
+        
+        public void GetContractDataAsync(object userState) {
+            if ((this.onBeginGetContractDataDelegate == null)) {
+                this.onBeginGetContractDataDelegate = new BeginOperationDelegate(this.OnBeginGetContractData);
+            }
+            if ((this.onEndGetContractDataDelegate == null)) {
+                this.onEndGetContractDataDelegate = new EndOperationDelegate(this.OnEndGetContractData);
+            }
+            if ((this.onGetContractDataCompletedDelegate == null)) {
+                this.onGetContractDataCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetContractDataCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetContractDataDelegate, null, this.onEndGetContractDataDelegate, this.onGetContractDataCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.aluguer SearchContractId(string id) {
             return base.Channel.SearchContractId(id);
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.aluguer> SearchContractIdAsync(string id) {
-            return base.Channel.SearchContractIdAsync(id);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginSearchContractId(string id, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginSearchContractId(id, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.aluguer EndSearchContractId(System.IAsyncResult result) {
+            return base.Channel.EndSearchContractId(result);
+        }
+        
+        private System.IAsyncResult OnBeginSearchContractId(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string id = ((string)(inValues[0]));
+            return this.BeginSearchContractId(id, callback, asyncState);
+        }
+        
+        private object[] OnEndSearchContractId(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.aluguer retVal = this.EndSearchContractId(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnSearchContractIdCompleted(object state) {
+            if ((this.SearchContractIdCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.SearchContractIdCompleted(this, new SearchContractIdCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void SearchContractIdAsync(string id) {
+            this.SearchContractIdAsync(id, null);
+        }
+        
+        public void SearchContractIdAsync(string id, object userState) {
+            if ((this.onBeginSearchContractIdDelegate == null)) {
+                this.onBeginSearchContractIdDelegate = new BeginOperationDelegate(this.OnBeginSearchContractId);
+            }
+            if ((this.onEndSearchContractIdDelegate == null)) {
+                this.onEndSearchContractIdDelegate = new EndOperationDelegate(this.OnEndSearchContractId);
+            }
+            if ((this.onSearchContractIdCompletedDelegate == null)) {
+                this.onSearchContractIdCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnSearchContractIdCompleted);
+            }
+            base.InvokeAsync(this.onBeginSearchContractIdDelegate, new object[] {
+                        id}, this.onEndSearchContractIdDelegate, this.onSearchContractIdCompletedDelegate, userState);
         }
         
         public bool Addcontract(ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData) {
             return base.Channel.Addcontract(aluguerData);
         }
         
-        public System.Threading.Tasks.Task<bool> AddcontractAsync(ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData) {
-            return base.Channel.AddcontractAsync(aluguerData);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginAddcontract(ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginAddcontract(aluguerData, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndAddcontract(System.IAsyncResult result) {
+            return base.Channel.EndAddcontract(result);
+        }
+        
+        private System.IAsyncResult OnBeginAddcontract(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData = ((ImoEstudantePLMetroUi.CRUDImoestudante.aluguer)(inValues[0]));
+            return this.BeginAddcontract(aluguerData, callback, asyncState);
+        }
+        
+        private object[] OnEndAddcontract(System.IAsyncResult result) {
+            bool retVal = this.EndAddcontract(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnAddcontractCompleted(object state) {
+            if ((this.AddcontractCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.AddcontractCompleted(this, new AddcontractCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void AddcontractAsync(ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData) {
+            this.AddcontractAsync(aluguerData, null);
+        }
+        
+        public void AddcontractAsync(ImoEstudantePLMetroUi.CRUDImoestudante.aluguer aluguerData, object userState) {
+            if ((this.onBeginAddcontractDelegate == null)) {
+                this.onBeginAddcontractDelegate = new BeginOperationDelegate(this.OnBeginAddcontract);
+            }
+            if ((this.onEndAddcontractDelegate == null)) {
+                this.onEndAddcontractDelegate = new EndOperationDelegate(this.OnEndAddcontract);
+            }
+            if ((this.onAddcontractCompletedDelegate == null)) {
+                this.onAddcontractCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnAddcontractCompleted);
+            }
+            base.InvokeAsync(this.onBeginAddcontractDelegate, new object[] {
+                        aluguerData}, this.onEndAddcontractDelegate, this.onAddcontractCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[] GetHouseData() {
             return base.Channel.GetHouseData();
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[]> GetHouseDataAsync() {
-            return base.Channel.GetHouseDataAsync();
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginGetHouseData(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetHouseData(callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[] EndGetHouseData(System.IAsyncResult result) {
+            return base.Channel.EndGetHouseData(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetHouseData(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return this.BeginGetHouseData(callback, asyncState);
+        }
+        
+        private object[] OnEndGetHouseData(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido[] retVal = this.EndGetHouseData(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetHouseDataCompleted(object state) {
+            if ((this.GetHouseDataCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetHouseDataCompleted(this, new GetHouseDataCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetHouseDataAsync() {
+            this.GetHouseDataAsync(null);
+        }
+        
+        public void GetHouseDataAsync(object userState) {
+            if ((this.onBeginGetHouseDataDelegate == null)) {
+                this.onBeginGetHouseDataDelegate = new BeginOperationDelegate(this.OnBeginGetHouseData);
+            }
+            if ((this.onEndGetHouseDataDelegate == null)) {
+                this.onEndGetHouseDataDelegate = new EndOperationDelegate(this.OnEndGetHouseData);
+            }
+            if ((this.onGetHouseDataCompletedDelegate == null)) {
+                this.onGetHouseDataCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetHouseDataCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetHouseDataDelegate, null, this.onEndGetHouseDataDelegate, this.onGetHouseDataCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.alojamento SearchHouseId(string id) {
             return base.Channel.SearchHouseId(id);
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.alojamento> SearchHouseIdAsync(string id) {
-            return base.Channel.SearchHouseIdAsync(id);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginSearchHouseId(string id, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginSearchHouseId(id, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.alojamento EndSearchHouseId(System.IAsyncResult result) {
+            return base.Channel.EndSearchHouseId(result);
+        }
+        
+        private System.IAsyncResult OnBeginSearchHouseId(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string id = ((string)(inValues[0]));
+            return this.BeginSearchHouseId(id, callback, asyncState);
+        }
+        
+        private object[] OnEndSearchHouseId(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.alojamento retVal = this.EndSearchHouseId(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnSearchHouseIdCompleted(object state) {
+            if ((this.SearchHouseIdCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.SearchHouseIdCompleted(this, new SearchHouseIdCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void SearchHouseIdAsync(string id) {
+            this.SearchHouseIdAsync(id, null);
+        }
+        
+        public void SearchHouseIdAsync(string id, object userState) {
+            if ((this.onBeginSearchHouseIdDelegate == null)) {
+                this.onBeginSearchHouseIdDelegate = new BeginOperationDelegate(this.OnBeginSearchHouseId);
+            }
+            if ((this.onEndSearchHouseIdDelegate == null)) {
+                this.onEndSearchHouseIdDelegate = new EndOperationDelegate(this.OnEndSearchHouseId);
+            }
+            if ((this.onSearchHouseIdCompletedDelegate == null)) {
+                this.onSearchHouseIdCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnSearchHouseIdCompleted);
+            }
+            base.InvokeAsync(this.onBeginSearchHouseIdDelegate, new object[] {
+                        id}, this.onEndSearchHouseIdDelegate, this.onSearchHouseIdCompletedDelegate, userState);
         }
         
         public bool AddHouse(ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData) {
             return base.Channel.AddHouse(aluguerData);
         }
         
-        public System.Threading.Tasks.Task<bool> AddHouseAsync(ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData) {
-            return base.Channel.AddHouseAsync(aluguerData);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginAddHouse(ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginAddHouse(aluguerData, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndAddHouse(System.IAsyncResult result) {
+            return base.Channel.EndAddHouse(result);
+        }
+        
+        private System.IAsyncResult OnBeginAddHouse(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData = ((ImoEstudantePLMetroUi.CRUDImoestudante.alojamento)(inValues[0]));
+            return this.BeginAddHouse(aluguerData, callback, asyncState);
+        }
+        
+        private object[] OnEndAddHouse(System.IAsyncResult result) {
+            bool retVal = this.EndAddHouse(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnAddHouseCompleted(object state) {
+            if ((this.AddHouseCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.AddHouseCompleted(this, new AddHouseCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void AddHouseAsync(ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData) {
+            this.AddHouseAsync(aluguerData, null);
+        }
+        
+        public void AddHouseAsync(ImoEstudantePLMetroUi.CRUDImoestudante.alojamento aluguerData, object userState) {
+            if ((this.onBeginAddHouseDelegate == null)) {
+                this.onBeginAddHouseDelegate = new BeginOperationDelegate(this.OnBeginAddHouse);
+            }
+            if ((this.onEndAddHouseDelegate == null)) {
+                this.onEndAddHouseDelegate = new EndOperationDelegate(this.OnEndAddHouse);
+            }
+            if ((this.onAddHouseCompletedDelegate == null)) {
+                this.onAddHouseCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnAddHouseCompleted);
+            }
+            base.InvokeAsync(this.onBeginAddHouseDelegate, new object[] {
+                        aluguerData}, this.onEndAddHouseDelegate, this.onAddHouseCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] GetComodData() {
             return base.Channel.GetComodData();
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[]> GetComodDataAsync() {
-            return base.Channel.GetComodDataAsync();
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginGetComodData(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetComodData(callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] EndGetComodData(System.IAsyncResult result) {
+            return base.Channel.EndGetComodData(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetComodData(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return this.BeginGetComodData(callback, asyncState);
+        }
+        
+        private object[] OnEndGetComodData(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] retVal = this.EndGetComodData(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetComodDataCompleted(object state) {
+            if ((this.GetComodDataCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetComodDataCompleted(this, new GetComodDataCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetComodDataAsync() {
+            this.GetComodDataAsync(null);
+        }
+        
+        public void GetComodDataAsync(object userState) {
+            if ((this.onBeginGetComodDataDelegate == null)) {
+                this.onBeginGetComodDataDelegate = new BeginOperationDelegate(this.OnBeginGetComodData);
+            }
+            if ((this.onEndGetComodDataDelegate == null)) {
+                this.onEndGetComodDataDelegate = new EndOperationDelegate(this.OnEndGetComodData);
+            }
+            if ((this.onGetComodDataCompletedDelegate == null)) {
+                this.onGetComodDataCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetComodDataCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetComodDataDelegate, null, this.onEndGetComodDataDelegate, this.onGetComodDataCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] GetComodDataAlojID(string id) {
             return base.Channel.GetComodDataAlojID(id);
         }
         
-        public System.Threading.Tasks.Task<ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[]> GetComodDataAlojIDAsync(string id) {
-            return base.Channel.GetComodDataAlojIDAsync(id);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginGetComodDataAlojID(string id, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetComodDataAlojID(id, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] EndGetComodDataAlojID(System.IAsyncResult result) {
+            return base.Channel.EndGetComodDataAlojID(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetComodDataAlojID(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string id = ((string)(inValues[0]));
+            return this.BeginGetComodDataAlojID(id, callback, asyncState);
+        }
+        
+        private object[] OnEndGetComodDataAlojID(System.IAsyncResult result) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] retVal = this.EndGetComodDataAlojID(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetComodDataAlojIDCompleted(object state) {
+            if ((this.GetComodDataAlojIDCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetComodDataAlojIDCompleted(this, new GetComodDataAlojIDCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetComodDataAlojIDAsync(string id) {
+            this.GetComodDataAlojIDAsync(id, null);
+        }
+        
+        public void GetComodDataAlojIDAsync(string id, object userState) {
+            if ((this.onBeginGetComodDataAlojIDDelegate == null)) {
+                this.onBeginGetComodDataAlojIDDelegate = new BeginOperationDelegate(this.OnBeginGetComodDataAlojID);
+            }
+            if ((this.onEndGetComodDataAlojIDDelegate == null)) {
+                this.onEndGetComodDataAlojIDDelegate = new EndOperationDelegate(this.OnEndGetComodDataAlojID);
+            }
+            if ((this.onGetComodDataAlojIDCompletedDelegate == null)) {
+                this.onGetComodDataAlojIDCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetComodDataAlojIDCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetComodDataAlojIDDelegate, new object[] {
+                        id}, this.onEndGetComodDataAlojIDDelegate, this.onGetComodDataAlojIDCompletedDelegate, userState);
         }
         
         public bool RemoveComod(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData) {
             return base.Channel.RemoveComod(comodidadeData);
         }
         
-        public System.Threading.Tasks.Task<bool> RemoveComodAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData) {
-            return base.Channel.RemoveComodAsync(comodidadeData);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginRemoveComod(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginRemoveComod(comodidadeData, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndRemoveComod(System.IAsyncResult result) {
+            return base.Channel.EndRemoveComod(result);
+        }
+        
+        private System.IAsyncResult OnBeginRemoveComod(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData = ((ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido)(inValues[0]));
+            return this.BeginRemoveComod(comodidadeData, callback, asyncState);
+        }
+        
+        private object[] OnEndRemoveComod(System.IAsyncResult result) {
+            bool retVal = this.EndRemoveComod(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnRemoveComodCompleted(object state) {
+            if ((this.RemoveComodCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.RemoveComodCompleted(this, new RemoveComodCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void RemoveComodAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData) {
+            this.RemoveComodAsync(comodidadeData, null);
+        }
+        
+        public void RemoveComodAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comodidadeData, object userState) {
+            if ((this.onBeginRemoveComodDelegate == null)) {
+                this.onBeginRemoveComodDelegate = new BeginOperationDelegate(this.OnBeginRemoveComod);
+            }
+            if ((this.onEndRemoveComodDelegate == null)) {
+                this.onEndRemoveComodDelegate = new EndOperationDelegate(this.OnEndRemoveComod);
+            }
+            if ((this.onRemoveComodCompletedDelegate == null)) {
+                this.onRemoveComodCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnRemoveComodCompleted);
+            }
+            base.InvokeAsync(this.onBeginRemoveComodDelegate, new object[] {
+                        comodidadeData}, this.onEndRemoveComodDelegate, this.onRemoveComodCompletedDelegate, userState);
         }
         
         public bool AddComodList(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData) {
             return base.Channel.AddComodList(aluguerData);
         }
         
-        public System.Threading.Tasks.Task<bool> AddComodListAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData) {
-            return base.Channel.AddComodListAsync(aluguerData);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginAddComodList(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginAddComodList(aluguerData, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndAddComodList(System.IAsyncResult result) {
+            return base.Channel.EndAddComodList(result);
+        }
+        
+        private System.IAsyncResult OnBeginAddComodList(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData = ((ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[])(inValues[0]));
+            return this.BeginAddComodList(aluguerData, callback, asyncState);
+        }
+        
+        private object[] OnEndAddComodList(System.IAsyncResult result) {
+            bool retVal = this.EndAddComodList(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnAddComodListCompleted(object state) {
+            if ((this.AddComodListCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.AddComodListCompleted(this, new AddComodListCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void AddComodListAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData) {
+            this.AddComodListAsync(aluguerData, null);
+        }
+        
+        public void AddComodListAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido[] aluguerData, object userState) {
+            if ((this.onBeginAddComodListDelegate == null)) {
+                this.onBeginAddComodListDelegate = new BeginOperationDelegate(this.OnBeginAddComodList);
+            }
+            if ((this.onEndAddComodListDelegate == null)) {
+                this.onEndAddComodListDelegate = new EndOperationDelegate(this.OnEndAddComodList);
+            }
+            if ((this.onAddComodListCompletedDelegate == null)) {
+                this.onAddComodListCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnAddComodListCompleted);
+            }
+            base.InvokeAsync(this.onBeginAddComodListDelegate, new object[] {
+                        aluguerData}, this.onEndAddComodListDelegate, this.onAddComodListCompletedDelegate, userState);
         }
         
         public bool AddComod(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod) {
             return base.Channel.AddComod(comod);
         }
         
-        public System.Threading.Tasks.Task<bool> AddComodAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod) {
-            return base.Channel.AddComodAsync(comod);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginAddComod(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginAddComod(comod, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndAddComod(System.IAsyncResult result) {
+            return base.Channel.EndAddComod(result);
+        }
+        
+        private System.IAsyncResult OnBeginAddComod(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod = ((ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido)(inValues[0]));
+            return this.BeginAddComod(comod, callback, asyncState);
+        }
+        
+        private object[] OnEndAddComod(System.IAsyncResult result) {
+            bool retVal = this.EndAddComod(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnAddComodCompleted(object state) {
+            if ((this.AddComodCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.AddComodCompleted(this, new AddComodCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void AddComodAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod) {
+            this.AddComodAsync(comod, null);
+        }
+        
+        public void AddComodAsync(ImoEstudantePLMetroUi.CRUDImoestudante.comodidadeRespostaPedido comod, object userState) {
+            if ((this.onBeginAddComodDelegate == null)) {
+                this.onBeginAddComodDelegate = new BeginOperationDelegate(this.OnBeginAddComod);
+            }
+            if ((this.onEndAddComodDelegate == null)) {
+                this.onEndAddComodDelegate = new EndOperationDelegate(this.OnEndAddComod);
+            }
+            if ((this.onAddComodCompletedDelegate == null)) {
+                this.onAddComodCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnAddComodCompleted);
+            }
+            base.InvokeAsync(this.onBeginAddComodDelegate, new object[] {
+                        comod}, this.onEndAddComodDelegate, this.onAddComodCompletedDelegate, userState);
         }
         
         public bool FacePublicHabitacao(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento) {
             return base.Channel.FacePublicHabitacao(alojamento);
         }
         
-        public System.Threading.Tasks.Task<bool> FacePublicHabitacaoAsync(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento) {
-            return base.Channel.FacePublicHabitacaoAsync(alojamento);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginFacePublicHabitacao(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginFacePublicHabitacao(alojamento, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndFacePublicHabitacao(System.IAsyncResult result) {
+            return base.Channel.EndFacePublicHabitacao(result);
+        }
+        
+        private System.IAsyncResult OnBeginFacePublicHabitacao(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento = ((ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido)(inValues[0]));
+            return this.BeginFacePublicHabitacao(alojamento, callback, asyncState);
+        }
+        
+        private object[] OnEndFacePublicHabitacao(System.IAsyncResult result) {
+            bool retVal = this.EndFacePublicHabitacao(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnFacePublicHabitacaoCompleted(object state) {
+            if ((this.FacePublicHabitacaoCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.FacePublicHabitacaoCompleted(this, new FacePublicHabitacaoCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void FacePublicHabitacaoAsync(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento) {
+            this.FacePublicHabitacaoAsync(alojamento, null);
+        }
+        
+        public void FacePublicHabitacaoAsync(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento, object userState) {
+            if ((this.onBeginFacePublicHabitacaoDelegate == null)) {
+                this.onBeginFacePublicHabitacaoDelegate = new BeginOperationDelegate(this.OnBeginFacePublicHabitacao);
+            }
+            if ((this.onEndFacePublicHabitacaoDelegate == null)) {
+                this.onEndFacePublicHabitacaoDelegate = new EndOperationDelegate(this.OnEndFacePublicHabitacao);
+            }
+            if ((this.onFacePublicHabitacaoCompletedDelegate == null)) {
+                this.onFacePublicHabitacaoCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnFacePublicHabitacaoCompleted);
+            }
+            base.InvokeAsync(this.onBeginFacePublicHabitacaoDelegate, new object[] {
+                        alojamento}, this.onEndFacePublicHabitacaoDelegate, this.onFacePublicHabitacaoCompletedDelegate, userState);
         }
         
         public bool TwittHabitacao(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento) {
             return base.Channel.TwittHabitacao(alojamento);
         }
         
-        public System.Threading.Tasks.Task<bool> TwittHabitacaoAsync(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento) {
-            return base.Channel.TwittHabitacaoAsync(alojamento);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginTwittHabitacao(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginTwittHabitacao(alojamento, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndTwittHabitacao(System.IAsyncResult result) {
+            return base.Channel.EndTwittHabitacao(result);
+        }
+        
+        private System.IAsyncResult OnBeginTwittHabitacao(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento = ((ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido)(inValues[0]));
+            return this.BeginTwittHabitacao(alojamento, callback, asyncState);
+        }
+        
+        private object[] OnEndTwittHabitacao(System.IAsyncResult result) {
+            bool retVal = this.EndTwittHabitacao(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnTwittHabitacaoCompleted(object state) {
+            if ((this.TwittHabitacaoCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.TwittHabitacaoCompleted(this, new TwittHabitacaoCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void TwittHabitacaoAsync(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento) {
+            this.TwittHabitacaoAsync(alojamento, null);
+        }
+        
+        public void TwittHabitacaoAsync(ImoEstudantePLMetroUi.CRUDImoestudante.AlojamentoRespostaPedido alojamento, object userState) {
+            if ((this.onBeginTwittHabitacaoDelegate == null)) {
+                this.onBeginTwittHabitacaoDelegate = new BeginOperationDelegate(this.OnBeginTwittHabitacao);
+            }
+            if ((this.onEndTwittHabitacaoDelegate == null)) {
+                this.onEndTwittHabitacaoDelegate = new EndOperationDelegate(this.OnEndTwittHabitacao);
+            }
+            if ((this.onTwittHabitacaoCompletedDelegate == null)) {
+                this.onTwittHabitacaoCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnTwittHabitacaoCompleted);
+            }
+            base.InvokeAsync(this.onBeginTwittHabitacaoDelegate, new object[] {
+                        alojamento}, this.onEndTwittHabitacaoDelegate, this.onTwittHabitacaoCompletedDelegate, userState);
         }
     }
 }

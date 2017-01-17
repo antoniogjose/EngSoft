@@ -10,11 +10,7 @@ using System.Windows.Forms;
 
 using GMap.NET.MapProviders;
 using GMap.NET;
-
-
-
-
-
+using GMap.NET.WindowsForms;
 
 namespace ImoEstudantePLMetroUi
 {
@@ -52,6 +48,7 @@ namespace ImoEstudantePLMetroUi
             gMapControl1.SetPositionByKeywords("Braga, Portugal");
 
             gMapControl1.SetPositionByKeywords("Barcelos, Portugal");
+
 
 
             gMapControl1.DragButton = MouseButtons.Left;

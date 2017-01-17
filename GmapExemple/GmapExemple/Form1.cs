@@ -17,8 +17,10 @@ using GMap.NET.WindowsForms.ToolTips;
 
 using System.Globalization;
 using System.Net;
-using Newtonsoft.Json;
-using System.Web.Script.Serialization;
+
+
+
+
 
 namespace GmapExemple
 {
@@ -34,33 +36,22 @@ namespace GmapExemple
         private void gMapControl1_Load(object sender, EventArgs e)
         {
 
-            //use google provider
+
             gMapControl1.MapProvider = GoogleMapProvider.Instance;
-            //get tiles from server only
+ 
             gMapControl1.Manager.Mode = AccessMode.ServerOnly;
-            //not use proxy
+
             GMapProvider.WebProxy = null;
-            //center map on moscow
-            // gMapControl1.Position = new PointLatLng(55.755786121111, 37.617633343333);
+
             gMapControl1.SetPositionByKeywords("Barcelos, Portugal");
 
             gMapControl1.DragButton = MouseButtons.Left;
 
-
-            //zoom min/max; default both = 2
             gMapControl1.MinZoom = 1;
             gMapControl1.MaxZoom = 20;
-            //set zoom
+
             gMapControl1.Zoom = 15;
 
-            /**
-                        // Add a Marquer
-                        GMapOverlay markers = new GMapOverlay("markers");
-                        GMapMarker marker = new GMarkerGoogle(
-                            new PointLatLng(48.8617774, 2.349272),
-                            GMarkerGoogleType.blue_pushpin);
-                        markers.Markers.Add(marker);
-                        gMapControl1.Overlays.Add(markers);**/
             GMapOverlay markers = new GMapOverlay("markers");
             GMapMarker marker = new GMarkerGoogle(new PointLatLng(41.5361453446439, -8.6068868637085), GMarkerGoogleType.blue_pushpin);
             markers.Markers.Add(marker);
@@ -81,13 +72,6 @@ namespace GmapExemple
 
                 lV_Poi.Clear();
 
-                /*
-                NumberStyles style = NumberStyles.Number | NumberStyles.AllowCurrencySymbol;
-                CultureInfo culture = CultureInfo.CreateSpecificCulture("en-GB");
-                    Decimal.TryParse(l, style, culture, out latfinal);
-                    Decimal.TryParse(g, style, culture, out lngfinal);
-                 
-                 */
 
                 tBLat.Text = lat.ToString();//.Replace(',', '.');
                 tBLgn.Text = lng.ToString();//.Replace(',', '.');
@@ -98,13 +82,7 @@ namespace GmapExemple
                 Double.TryParse(l, style, culture, out latfinal);
                 Double.TryParse(g, style, culture, out lngfinal);
 
-                // Add a Marquer
-              //  GMapOverlay markers = new GMapOverlay("markers");
-              //  GMapMarker marker = new GMarkerGoogle( new PointLatLng(latfinal, lngfinal), GMarkerGoogleType.red_big_stop);
-              //  markers.Markers.Add(marker);
-              //  gMapControl1.Overlays.Add(markers);
 
-                // Adicionar POI´s
 
                 WebClient webClient = new WebClient();
 

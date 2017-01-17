@@ -31,6 +31,7 @@ namespace ImoEstudantePLMetroUi
             try
             {
                 ClasseStatic.log = new Service1Client();
+
                 ClasseStatic.us = new UtilizadorRespostaPedido();
 
 
@@ -42,9 +43,11 @@ namespace ImoEstudantePLMetroUi
                 ClasseStatic.log.ClientCredentials.UserName.Password = password;
 
                 ClasseStatic.us = ClasseStatic.log.GetUserType(userName);
-
                 MessageBox.Show("Inicio de Sessão por: " + ClasseStatic.us.Nome);
 
+
+                //ClasseStatic.log.GetUserTypeCompleted += Log_GetUserTypeCompleted;
+                //ClasseStatic.log.GetUserTypeAsync(userName);
 
                 Form1 prg = new Form1();
                 prg.Show();
@@ -60,6 +63,14 @@ namespace ImoEstudantePLMetroUi
 
             }
         }
+
+        //private void Log_GetUserTypeCompleted(object sender, GetUserTypeCompletedEventArgs e)
+        //{
+        //    ClasseStatic.us = e.Result;
+        //    MessageBox.Show("Inicio de Sessão por: " + ClasseStatic.us.Nome);
+
+
+        //}
 
         private void LogForm_FormClosed(object sender, FormClosedEventArgs e)
         {
