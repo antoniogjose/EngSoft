@@ -234,6 +234,12 @@
     <Compile Include="Idioma.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\UserData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserData.Designer.cs">
+      <DependentUpon>UserData.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LogForm.resx">
       <DependentUpon>LogForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -303,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SearchRent.resx">
       <DependentUpon>SearchRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserData.resx">
+      <DependentUpon>UserData.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ImoEstudantePLMetroUi_TemporaryKey.pfx" />
     <None Include="packages.config" />

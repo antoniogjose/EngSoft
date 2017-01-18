@@ -76,6 +76,8 @@ namespace ImoEstudantePLMetroUi
             SearchHouse.Instance.Dock = DockStyle.Fill;
             panel.Controls.Add(AddUser.Instance);
             AddUser.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(UserData.Instance);
+            UserData.Instance.Dock = DockStyle.Fill;
 
         }
 
@@ -173,16 +175,16 @@ namespace ImoEstudantePLMetroUi
 
         private void menuToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            if (!panel.Controls.Contains(EditUser.Instance))
+            if (!panel.Controls.Contains(UserData.Instance))
             {
-                
-                EditUser.Instance.BringToFront();
+
+                UserData.Instance.BringToFront();
 
                 // switch language panel
                 Idioma.switchLanguage(panel, cul, res_man);
             }
             else
-                EditUser.Instance.BringToFront();
+                UserData.Instance.BringToFront();
         }
 
         private void adicionarUtilizadorToolStripMenuItem_Click(object sender, EventArgs e)
