@@ -51,7 +51,7 @@
             this.metroPanel1.Location = new System.Drawing.Point(7, 63);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(364, 201);
-            this.metroPanel1.TabIndex = 1;
+            this.metroPanel1.TabIndex = 0;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
@@ -79,7 +79,7 @@
             this.btnLogin.Location = new System.Drawing.Point(275, 158);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 4;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             this.btnLogin.Enter += new System.EventHandler(this.btnLogin_Click);
@@ -88,15 +88,16 @@
             // 
             this.TbPassword.Location = new System.Drawing.Point(87, 129);
             this.TbPassword.Name = "TbPassword";
+            this.TbPassword.PasswordChar = '*';
             this.TbPassword.Size = new System.Drawing.Size(263, 23);
-            this.TbPassword.TabIndex = 3;
+            this.TbPassword.TabIndex = 2;
             // 
             // tbUserName
             // 
             this.tbUserName.Location = new System.Drawing.Point(87, 100);
             this.tbUserName.Name = "tbUserName";
             this.tbUserName.Size = new System.Drawing.Size(263, 23);
-            this.tbUserName.TabIndex = 2;
+            this.tbUserName.TabIndex = 1;
             // 
             // LogForm
             // 

@@ -33,8 +33,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.editHouse_tabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.editHouse_tabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.editHouse_tabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.editHouse_tabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -49,24 +49,22 @@
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
             this.panelDashBoard.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.HorizontalScrollbarSize = 12;
+            this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
-            this.panelDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(1005, 610);
+            this.panelDashBoard.Size = new System.Drawing.Size(848, 553);
             this.panelDashBoard.TabIndex = 5;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.VerticalScrollbarSize = 13;
+            this.panelDashBoard.VerticalScrollbarSize = 10;
             // 
             // editHouse_label1
             // 
             this.editHouse_label1.AutoSize = true;
             this.editHouse_label1.BackColor = System.Drawing.Color.DimGray;
-            this.editHouse_label1.Location = new System.Drawing.Point(5, 27);
-            this.editHouse_label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.editHouse_label1.Location = new System.Drawing.Point(4, 22);
             this.editHouse_label1.Name = "editHouse_label1";
-            this.editHouse_label1.Size = new System.Drawing.Size(234, 20);
+            this.editHouse_label1.Size = new System.Drawing.Size(224, 19);
             this.editHouse_label1.TabIndex = 3;
             this.editHouse_label1.Text = "ImoEstudante » Edição de Habitação";
             // 
@@ -77,10 +75,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.metroTabControl1);
-            this.panel1.Location = new System.Drawing.Point(0, 58);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1005, 553);
+            this.panel1.Size = new System.Drawing.Size(848, 506);
             this.panel1.TabIndex = 2;
             // 
             // metroTabControl1
@@ -89,64 +86,53 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroTabControl1.Controls.Add(this.editHouse_tabPage1);
-            this.metroTabControl1.Controls.Add(this.editHouse_tabPage3);
             this.metroTabControl1.Controls.Add(this.editHouse_tabPage2);
+            this.metroTabControl1.Controls.Add(this.editHouse_tabPage3);
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
-            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 2;
-            this.metroTabControl1.Size = new System.Drawing.Size(1005, 553);
+            this.metroTabControl1.Size = new System.Drawing.Size(848, 506);
             this.metroTabControl1.TabIndex = 2;
             // 
             // editHouse_tabPage1
             // 
             this.editHouse_tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editHouse_tabPage1.HorizontalScrollbarBarColor = true;
-            this.editHouse_tabPage1.HorizontalScrollbarSize = 12;
-            this.editHouse_tabPage1.Location = new System.Drawing.Point(4, 39);
-            this.editHouse_tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editHouse_tabPage1.Location = new System.Drawing.Point(4, 35);
             this.editHouse_tabPage1.Name = "editHouse_tabPage1";
-            this.editHouse_tabPage1.Size = new System.Drawing.Size(997, 510);
+            this.editHouse_tabPage1.Size = new System.Drawing.Size(746, 410);
             this.editHouse_tabPage1.TabIndex = 0;
             this.editHouse_tabPage1.Text = "Dados da Habitação";
             this.editHouse_tabPage1.VerticalScrollbarBarColor = true;
-            this.editHouse_tabPage1.VerticalScrollbarSize = 13;
-            // 
-            // editHouse_tabPage2
-            // 
-            this.editHouse_tabPage2.HorizontalScrollbarBarColor = true;
-            this.editHouse_tabPage2.HorizontalScrollbarSize = 12;
-            this.editHouse_tabPage2.Location = new System.Drawing.Point(4, 39);
-            this.editHouse_tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.editHouse_tabPage2.Name = "editHouse_tabPage2";
-            this.editHouse_tabPage2.Size = new System.Drawing.Size(997, 510);
-            this.editHouse_tabPage2.TabIndex = 2;
-            this.editHouse_tabPage2.Text = "Avaliações";
-            this.editHouse_tabPage2.VerticalScrollbarBarColor = true;
-            this.editHouse_tabPage2.VerticalScrollbarSize = 13;
             // 
             // editHouse_tabPage3
             // 
             this.editHouse_tabPage3.HorizontalScrollbarBarColor = true;
-            this.editHouse_tabPage3.HorizontalScrollbarSize = 12;
-            this.editHouse_tabPage3.Location = new System.Drawing.Point(4, 39);
-            this.editHouse_tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editHouse_tabPage3.Location = new System.Drawing.Point(4, 35);
             this.editHouse_tabPage3.Name = "editHouse_tabPage3";
-            this.editHouse_tabPage3.Size = new System.Drawing.Size(997, 510);
+            this.editHouse_tabPage3.Size = new System.Drawing.Size(746, 410);
             this.editHouse_tabPage3.TabIndex = 1;
             this.editHouse_tabPage3.Text = "Mapa e Pontos de Interesse";
             this.editHouse_tabPage3.VerticalScrollbarBarColor = true;
-            this.editHouse_tabPage3.VerticalScrollbarSize = 13;
+            // 
+            // editHouse_tabPage2
+            // 
+            this.editHouse_tabPage2.HorizontalScrollbarBarColor = true;
+            this.editHouse_tabPage2.Location = new System.Drawing.Point(4, 35);
+            this.editHouse_tabPage2.Name = "editHouse_tabPage2";
+            this.editHouse_tabPage2.Size = new System.Drawing.Size(840, 467);
+            this.editHouse_tabPage2.TabIndex = 2;
+            this.editHouse_tabPage2.Text = "Avaliações";
+            this.editHouse_tabPage2.VerticalScrollbarBarColor = true;
             // 
             // EditHouse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelDashBoard);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditHouse";
-            this.Size = new System.Drawing.Size(1005, 610);
+            this.Size = new System.Drawing.Size(848, 553);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
             this.panel1.ResumeLayout(false);

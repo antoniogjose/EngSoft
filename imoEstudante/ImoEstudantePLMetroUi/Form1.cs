@@ -28,21 +28,54 @@ namespace ImoEstudantePLMetroUi
         {
           
             InitializeComponent();
+            LoadPages();
 
-            if (!panel.Controls.Contains(DashBoardMainPage.Instance))
-            {
-                panel.Controls.Add(DashBoardMainPage.Instance);
-                DashBoardMainPage.Instance.Dock = DockStyle.Fill;
-                DashBoardMainPage.Instance.BringToFront();
-            }
-            else
-                DashBoardMainPage.Instance.BringToFront();
+            DashBoardMainPage.Instance.BringToFront();
 
             if(ClasseStatic.us != null)
             {
                 logInToolStripMenuItem.Enabled = false;
                 logOutToolStripMenuItem.Text = logOutToolStripMenuItem.Text + " : "+ ClasseStatic.us.Nome.TrimEnd();
             }
+
+        }
+
+
+
+        private void LoadPages()
+        {
+            panel.Controls.Add(DashBoardMainPage.Instance);
+            DashBoardMainPage.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(EditUser.Instance);
+            EditUser.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(SearchUser.Instance);
+            SearchUser.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(SearchRent.Instance);
+            SearchRent.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(AddRent.Instance);
+            AddRent.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(EditRent.Instance);
+            EditRent.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(EditHouse.Instance);
+            EditHouse.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(AddHouse.Instance);
+            AddHouse.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(ListHouse.Instance);
+            ListHouse.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(SearchClient.Instance);
+            SearchClient.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(AddClient.Instance);
+            AddClient.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(EditClient.Instance);
+            EditClient.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(ListClient.Instance);
+            ListClient.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(ListRent.Instance);
+            ListRent.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(SearchHouse.Instance);
+            SearchHouse.Instance.Dock = DockStyle.Fill;
+            panel.Controls.Add(AddUser.Instance);
+            AddUser.Instance.Dock = DockStyle.Fill;
 
         }
 
@@ -142,8 +175,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(EditUser.Instance))
             {
-                panel.Controls.Add(EditUser.Instance);
-                EditUser.Instance.Dock = DockStyle.Fill;
+                
                 EditUser.Instance.BringToFront();
 
                 // switch language panel
@@ -157,8 +189,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(SearchUser.Instance))
             {
-                panel.Controls.Add(SearchUser.Instance);
-                SearchUser.Instance.Dock = DockStyle.Fill;
+                
                 SearchUser.Instance.BringToFront();
 
                 // switch language panel
@@ -172,8 +203,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(SearchRent.Instance))
             {
-                panel.Controls.Add(SearchRent.Instance);
-                SearchRent.Instance.Dock = DockStyle.Fill;
+               
                 SearchRent.Instance.BringToFront();
 
                 // switch language panel
@@ -187,8 +217,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(AddRent.Instance))
             {
-                panel.Controls.Add(AddRent.Instance);
-                AddRent.Instance.Dock = DockStyle.Fill;
+               
                 AddRent.Instance.BringToFront();
 
                 // switch language panel
@@ -202,8 +231,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(EditRent.Instance))
             {
-                panel.Controls.Add(EditRent.Instance);
-                EditRent.Instance.Dock = DockStyle.Fill;
+              
                 EditRent.Instance.BringToFront();
 
                 // switch language panel
@@ -217,8 +245,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(AddHouse.Instance))
             {
-                panel.Controls.Add(AddHouse.Instance);
-                AddHouse.Instance.Dock = DockStyle.Fill;
+              
                 AddHouse.Instance.BringToFront();
 
                 // switch language panel
@@ -232,8 +259,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(EditHouse.Instance))
             {
-                panel.Controls.Add(EditHouse.Instance);
-                EditHouse.Instance.Dock = DockStyle.Fill;
+               
                 EditHouse.Instance.BringToFront();
 
                 // switch language panel
@@ -247,8 +273,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(ListHouse.Instance))
             {
-                panel.Controls.Add(ListHouse.Instance);
-                ListHouse.Instance.Dock = DockStyle.Fill;
+              
                 ListHouse.Instance.BringToFront();
 
                 // switch language panel
@@ -262,8 +287,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(SearchClient.Instance))
             {
-                panel.Controls.Add(SearchClient.Instance);
-                SearchClient.Instance.Dock = DockStyle.Fill;
+               
                 SearchClient.Instance.BringToFront();
 
                 // switch language panel
@@ -277,8 +301,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(AddClient.Instance))
             {
-                panel.Controls.Add(AddClient.Instance);
-                AddClient.Instance.Dock = DockStyle.Fill;
+               
                 AddClient.Instance.BringToFront();
 
                 // switch language panel
@@ -292,8 +315,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(EditClient.Instance))
             {
-                panel.Controls.Add(EditClient.Instance);
-                EditClient.Instance.Dock = DockStyle.Fill;
+                
                 EditClient.Instance.BringToFront();
 
                 // switch language panel
@@ -307,8 +329,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(ListClient.Instance))
             {
-                panel.Controls.Add(ListClient.Instance);
-                ListClient.Instance.Dock = DockStyle.Fill;
+                
                 ListClient.Instance.BringToFront();
 
                 // switch language panel
@@ -322,8 +343,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(ListRent.Instance))
             {
-                panel.Controls.Add(ListRent.Instance);
-                ListRent.Instance.Dock = DockStyle.Fill;
+               
                 ListRent.Instance.BringToFront();
 
                 // switch language panel
@@ -337,8 +357,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(SearchHouse.Instance))
             {
-                panel.Controls.Add(SearchHouse.Instance);
-                SearchHouse.Instance.Dock = DockStyle.Fill;
+               
                 SearchHouse.Instance.BringToFront();
 
                 // switch language panel
@@ -352,8 +371,7 @@ namespace ImoEstudantePLMetroUi
         {
             if (!panel.Controls.Contains(AddUser.Instance))
             {
-                panel.Controls.Add(AddUser.Instance);
-                AddUser.Instance.Dock = DockStyle.Fill;
+               
                 AddUser.Instance.BringToFront();
 
                 // switch language panel

@@ -43,24 +43,22 @@
             this.panelDashBoard.Controls.Add(this.panel1);
             this.panelDashBoard.HorizontalScrollbarBarColor = true;
             this.panelDashBoard.HorizontalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.HorizontalScrollbarSize = 12;
+            this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
-            this.panelDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(1005, 610);
+            this.panelDashBoard.Size = new System.Drawing.Size(848, 553);
             this.panelDashBoard.TabIndex = 5;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
-            this.panelDashBoard.VerticalScrollbarSize = 13;
+            this.panelDashBoard.VerticalScrollbarSize = 10;
             // 
             // editRent_label1
             // 
             this.editRent_label1.AutoSize = true;
             this.editRent_label1.BackColor = System.Drawing.Color.DimGray;
-            this.editRent_label1.Location = new System.Drawing.Point(5, 27);
-            this.editRent_label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.editRent_label1.Location = new System.Drawing.Point(4, 22);
             this.editRent_label1.Name = "editRent_label1";
-            this.editRent_label1.Size = new System.Drawing.Size(222, 20);
+            this.editRent_label1.Size = new System.Drawing.Size(211, 19);
             this.editRent_label1.TabIndex = 3;
             this.editRent_label1.Text = "ImoEstudante » Edição de Aluguer";
             // 
@@ -70,20 +68,18 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Location = new System.Drawing.Point(0, 58);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1005, 553);
+            this.panel1.Size = new System.Drawing.Size(848, 506);
             this.panel1.TabIndex = 2;
             // 
             // EditRent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelDashBoard);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EditRent";
-            this.Size = new System.Drawing.Size(1005, 610);
+            this.Size = new System.Drawing.Size(848, 553);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
             this.ResumeLayout(false);

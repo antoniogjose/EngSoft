@@ -76,7 +76,7 @@
             this.panelDashBoard.HorizontalScrollbarSize = 10;
             this.panelDashBoard.Location = new System.Drawing.Point(0, 0);
             this.panelDashBoard.Name = "panelDashBoard";
-            this.panelDashBoard.Size = new System.Drawing.Size(754, 496);
+            this.panelDashBoard.Size = new System.Drawing.Size(848, 553);
             this.panelDashBoard.TabIndex = 5;
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
@@ -101,7 +101,7 @@
             this.panel1.Controls.Add(this.metroTabControl1);
             this.panel1.Location = new System.Drawing.Point(0, 47);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 449);
+            this.panel1.Size = new System.Drawing.Size(848, 506);
             this.panel1.TabIndex = 2;
             // 
             // metroTabControl1
@@ -114,7 +114,7 @@
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(754, 449);
+            this.metroTabControl1.Size = new System.Drawing.Size(848, 506);
             this.metroTabControl1.TabIndex = 7;
             // 
             // metroTabPage1
@@ -144,7 +144,7 @@
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 35);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(746, 410);
+            this.metroTabPage1.Size = new System.Drawing.Size(840, 467);
             this.metroTabPage1.TabIndex = 1;
             this.metroTabPage1.Text = "Habitações";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -191,7 +191,7 @@
             this.panel2.Controls.Add(this.lB_SearchHouse_OpPesq);
             this.panel2.Location = new System.Drawing.Point(262, 30);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(125, 350);
+            this.panel2.Size = new System.Drawing.Size(125, 407);
             this.panel2.TabIndex = 12;
             // 
             // lB_SearchHouse_OpPesq
@@ -207,7 +207,7 @@
             ""});
             this.lB_SearchHouse_OpPesq.Location = new System.Drawing.Point(3, 3);
             this.lB_SearchHouse_OpPesq.Name = "lB_SearchHouse_OpPesq";
-            this.lB_SearchHouse_OpPesq.Size = new System.Drawing.Size(117, 345);
+            this.lB_SearchHouse_OpPesq.Size = new System.Drawing.Size(117, 405);
             this.lB_SearchHouse_OpPesq.TabIndex = 0;
             this.lB_SearchHouse_OpPesq.Click += new System.EventHandler(this.lB_SearchHouse_OpPesq_Click);
             // 
@@ -355,7 +355,7 @@
             // metroButton4
             // 
             this.metroButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButton4.Location = new System.Drawing.Point(393, 386);
+            this.metroButton4.Location = new System.Drawing.Point(393, 443);
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(125, 21);
             this.metroButton4.TabIndex = 7;
@@ -364,7 +364,7 @@
             // metroButton3
             // 
             this.metroButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButton3.Location = new System.Drawing.Point(262, 386);
+            this.metroButton3.Location = new System.Drawing.Point(262, 443);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(125, 21);
             this.metroButton3.TabIndex = 7;
@@ -373,7 +373,7 @@
             // metroButton1
             // 
             this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButton1.Location = new System.Drawing.Point(131, 386);
+            this.metroButton1.Location = new System.Drawing.Point(131, 443);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(125, 21);
             this.metroButton1.TabIndex = 7;
@@ -382,7 +382,7 @@
             // metroButton2
             // 
             this.metroButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroButton2.Location = new System.Drawing.Point(0, 386);
+            this.metroButton2.Location = new System.Drawing.Point(0, 443);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(125, 21);
             this.metroButton2.TabIndex = 7;
@@ -396,7 +396,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(393, 30);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(354, 350);
+            this.dataGridView1.Size = new System.Drawing.Size(447, 407);
             this.dataGridView1.TabIndex = 2;
             // 
             // SearchHouse
@@ -405,7 +405,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelDashBoard);
             this.Name = "SearchHouse";
-            this.Size = new System.Drawing.Size(754, 496);
+            this.Size = new System.Drawing.Size(848, 553);
             this.panelDashBoard.ResumeLayout(false);
             this.panelDashBoard.PerformLayout();
             this.panel1.ResumeLayout(false);
