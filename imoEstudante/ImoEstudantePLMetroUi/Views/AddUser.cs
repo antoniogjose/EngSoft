@@ -39,10 +39,10 @@ namespace ImoEstudantePLMetroUi
                 {
                     //PictureBox PictureBox1 = new PictureBox();
 
-                    pictureBoxAddUser.Image = new Bitmap(dlg.FileName);
+                    //pictureBoxAddUser.Image = new Bitmap(dlg.FileName);
 
                     // Add the new control to its parent's controls collection
-                    this.Controls.Add(pictureBoxAddUser);
+                   // this.Controls.Add(pictureBoxAddUser);
                 }
             }
         }

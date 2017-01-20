@@ -28,61 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddUser));
             this.panelDashBoard = new MetroFramework.Controls.MetroPanel();
             this.addUser_label1 = new MetroFramework.Controls.MetroLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.addUser_tabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.tb_addUser_DescAndar = new System.Windows.Forms.ComboBox();
-            this.cb_addUser_Cidade = new System.Windows.Forms.ComboBox();
-            this.cb_addUser_Pais = new System.Windows.Forms.ComboBox();
-            this.tb_addUser_Estado = new System.Windows.Forms.ComboBox();
-            this.bt_addUser_Salvar = new MetroFramework.Controls.MetroButton();
-            this.bt_addUser_Limpar = new MetroFramework.Controls.MetroButton();
-            this.tb_addUser_Genero = new System.Windows.Forms.TextBox();
-            this.tb_addUser_DataNasci = new System.Windows.Forms.TextBox();
-            this.tb_addUser_Password = new System.Windows.Forms.TextBox();
-            this.tb_addUser_User = new System.Windows.Forms.TextBox();
-            this.tb_addUser_Naci = new System.Windows.Forms.TextBox();
-            this.tb_addUser_TelefEmerg = new System.Windows.Forms.TextBox();
-            this.tb_addUser_CodPostal = new System.Windows.Forms.TextBox();
-            this.tb_addUser_Andar = new System.Windows.Forms.TextBox();
-            this.tb_addUser_Num = new System.Windows.Forms.TextBox();
-            this.tb_addUser_Rua = new System.Windows.Forms.TextBox();
-            this.tb_addUser_Email = new System.Windows.Forms.TextBox();
-            this.tb_addUser_NomeEmerg = new System.Windows.Forms.TextBox();
-            this.tb_addUser_Tel = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.tb_UserData_Cidade = new System.Windows.Forms.ComboBox();
+            this.cB_UserData_Pais = new System.Windows.Forms.ComboBox();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.bt_UserData_Salvar = new MetroFramework.Controls.MetroButton();
+            this.bt_UserData_Limpar = new MetroFramework.Controls.MetroButton();
+            this.tB_UserData_Genero = new System.Windows.Forms.TextBox();
+            this.tB_UserData_DataNasci = new System.Windows.Forms.TextBox();
+            this.tb_UserData_Password2 = new System.Windows.Forms.TextBox();
+            this.tB_UserData_PassAnt = new System.Windows.Forms.TextBox();
+            this.tb_UserData_Password = new System.Windows.Forms.TextBox();
+            this.tb_UserData_UserType = new System.Windows.Forms.TextBox();
+            this.tb_UserData_User = new System.Windows.Forms.TextBox();
+            this.tB_UserData_Naci = new System.Windows.Forms.TextBox();
+            this.tb_UserData_TelefEmerg = new System.Windows.Forms.TextBox();
+            this.tB_UserData_DescAndar = new System.Windows.Forms.TextBox();
+            this.tb_UserData_CodPostal = new System.Windows.Forms.TextBox();
+            this.tb_UserData_Andar = new System.Windows.Forms.TextBox();
+            this.tb_UserData_Num = new System.Windows.Forms.TextBox();
+            this.tB_UserData_Rua = new System.Windows.Forms.TextBox();
+            this.tB_UserData_Email = new System.Windows.Forms.TextBox();
+            this.tb_UserData_NomeEmerg = new System.Windows.Forms.TextBox();
+            this.tB_UserData_Tel = new System.Windows.Forms.TextBox();
+            this.userData__label12 = new System.Windows.Forms.Label();
+            this.userData__label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.editUser_label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.userData__Genero = new System.Windows.Forms.Label();
+            this.userData__label15 = new System.Windows.Forms.Label();
+            this.userData__label13 = new System.Windows.Forms.Label();
+            this.userData__label11 = new System.Windows.Forms.Label();
+            this.userData__label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.editUser_label10 = new System.Windows.Forms.Label();
             this.editUser_label16 = new System.Windows.Forms.Label();
             this.editUser_label15 = new System.Windows.Forms.Label();
-            this.editUser_label5 = new System.Windows.Forms.Label();
+            this.userData__DataNasc = new System.Windows.Forms.Label();
             this.editUser_label12 = new System.Windows.Forms.Label();
             this.editUser_label14 = new System.Windows.Forms.Label();
-            this.editUser_label8 = new System.Windows.Forms.Label();
-            this.editUser_label7 = new System.Windows.Forms.Label();
+            this.userData__label8 = new System.Windows.Forms.Label();
+            this.userData__Nac = new System.Windows.Forms.Label();
             this.editUser_label13 = new System.Windows.Forms.Label();
             this.editUser_label11 = new System.Windows.Forms.Label();
-            this.editUser_label9 = new System.Windows.Forms.Label();
-            this.tb_addUser_Nome = new System.Windows.Forms.TextBox();
-            this.editUser_label3 = new System.Windows.Forms.Label();
-            this.pictureBoxAddUser = new System.Windows.Forms.PictureBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.userData__label9 = new System.Windows.Forms.Label();
+            this.tB_UserData_Nome = new System.Windows.Forms.TextBox();
+            this.userData__nome = new System.Windows.Forms.Label();
+            this.pictureBoxUserData = new System.Windows.Forms.PictureBox();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.addUser_tabPage1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserData)).BeginInit();
             this.SuspendLayout();
             // 
             // panelDashBoard
@@ -150,340 +153,388 @@
             this.addUser_tabPage1.Text = "Dados do Utilizador";
             this.addUser_tabPage1.VerticalScrollbarBarColor = true;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // metroPanel1
             // 
             this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroPanel1.Controls.Add(this.tb_addUser_DescAndar);
-            this.metroPanel1.Controls.Add(this.cb_addUser_Cidade);
-            this.metroPanel1.Controls.Add(this.cb_addUser_Pais);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Estado);
+            this.metroPanel1.Controls.Add(this.tb_UserData_Cidade);
+            this.metroPanel1.Controls.Add(this.cB_UserData_Pais);
             this.metroPanel1.Controls.Add(this.metroButton1);
-            this.metroPanel1.Controls.Add(this.bt_addUser_Salvar);
-            this.metroPanel1.Controls.Add(this.bt_addUser_Limpar);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Genero);
-            this.metroPanel1.Controls.Add(this.tb_addUser_DataNasci);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Password);
-            this.metroPanel1.Controls.Add(this.tb_addUser_User);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Naci);
-            this.metroPanel1.Controls.Add(this.tb_addUser_TelefEmerg);
-            this.metroPanel1.Controls.Add(this.tb_addUser_CodPostal);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Andar);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Num);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Rua);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Email);
-            this.metroPanel1.Controls.Add(this.tb_addUser_NomeEmerg);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Tel);
-            this.metroPanel1.Controls.Add(this.label6);
-            this.metroPanel1.Controls.Add(this.label2);
+            this.metroPanel1.Controls.Add(this.bt_UserData_Salvar);
+            this.metroPanel1.Controls.Add(this.bt_UserData_Limpar);
+            this.metroPanel1.Controls.Add(this.tB_UserData_Genero);
+            this.metroPanel1.Controls.Add(this.tB_UserData_DataNasci);
+            this.metroPanel1.Controls.Add(this.tb_UserData_Password2);
+            this.metroPanel1.Controls.Add(this.tB_UserData_PassAnt);
+            this.metroPanel1.Controls.Add(this.tb_UserData_Password);
+            this.metroPanel1.Controls.Add(this.tb_UserData_UserType);
+            this.metroPanel1.Controls.Add(this.tb_UserData_User);
+            this.metroPanel1.Controls.Add(this.tB_UserData_Naci);
+            this.metroPanel1.Controls.Add(this.tb_UserData_TelefEmerg);
+            this.metroPanel1.Controls.Add(this.tB_UserData_DescAndar);
+            this.metroPanel1.Controls.Add(this.tb_UserData_CodPostal);
+            this.metroPanel1.Controls.Add(this.tb_UserData_Andar);
+            this.metroPanel1.Controls.Add(this.tb_UserData_Num);
+            this.metroPanel1.Controls.Add(this.tB_UserData_Rua);
+            this.metroPanel1.Controls.Add(this.tB_UserData_Email);
+            this.metroPanel1.Controls.Add(this.tb_UserData_NomeEmerg);
+            this.metroPanel1.Controls.Add(this.tB_UserData_Tel);
+            this.metroPanel1.Controls.Add(this.userData__label12);
+            this.metroPanel1.Controls.Add(this.userData__label14);
             this.metroPanel1.Controls.Add(this.label5);
-            this.metroPanel1.Controls.Add(this.editUser_label6);
-            this.metroPanel1.Controls.Add(this.label4);
+            this.metroPanel1.Controls.Add(this.userData__Genero);
+            this.metroPanel1.Controls.Add(this.userData__label15);
+            this.metroPanel1.Controls.Add(this.userData__label13);
+            this.metroPanel1.Controls.Add(this.userData__label11);
+            this.metroPanel1.Controls.Add(this.userData__label10);
+            this.metroPanel1.Controls.Add(this.label7);
             this.metroPanel1.Controls.Add(this.label1);
-            this.metroPanel1.Controls.Add(this.label3);
-            this.metroPanel1.Controls.Add(this.editUser_label10);
             this.metroPanel1.Controls.Add(this.editUser_label16);
             this.metroPanel1.Controls.Add(this.editUser_label15);
-            this.metroPanel1.Controls.Add(this.editUser_label5);
+            this.metroPanel1.Controls.Add(this.userData__DataNasc);
             this.metroPanel1.Controls.Add(this.editUser_label12);
             this.metroPanel1.Controls.Add(this.editUser_label14);
-            this.metroPanel1.Controls.Add(this.editUser_label8);
-            this.metroPanel1.Controls.Add(this.editUser_label7);
+            this.metroPanel1.Controls.Add(this.userData__label8);
+            this.metroPanel1.Controls.Add(this.userData__Nac);
             this.metroPanel1.Controls.Add(this.editUser_label13);
             this.metroPanel1.Controls.Add(this.editUser_label11);
-            this.metroPanel1.Controls.Add(this.editUser_label9);
-            this.metroPanel1.Controls.Add(this.tb_addUser_Nome);
-            this.metroPanel1.Controls.Add(this.editUser_label3);
-            this.metroPanel1.Controls.Add(this.pictureBoxAddUser);
+            this.metroPanel1.Controls.Add(this.userData__label9);
+            this.metroPanel1.Controls.Add(this.tB_UserData_Nome);
+            this.metroPanel1.Controls.Add(this.userData__nome);
+            this.metroPanel1.Controls.Add(this.pictureBoxUserData);
             this.metroPanel1.HorizontalScrollbarBarColor = false;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(0, 3);
+            this.metroPanel1.Location = new System.Drawing.Point(0, 0);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(840, 461);
-            this.metroPanel1.TabIndex = 2;
-            this.metroPanel1.VerticalScrollbar = true;
+            this.metroPanel1.TabIndex = 4;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // tb_addUser_DescAndar
+            // tb_UserData_Cidade
             // 
-            this.tb_addUser_DescAndar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_DescAndar.FormattingEnabled = true;
-            this.tb_addUser_DescAndar.Items.AddRange(new object[] {
+            this.tb_UserData_Cidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_Cidade.FormattingEnabled = true;
+            this.tb_UserData_Cidade.Items.AddRange(new object[] {
             "Activo",
             "Desactivo"});
-            this.tb_addUser_DescAndar.Location = new System.Drawing.Point(388, 199);
-            this.tb_addUser_DescAndar.Name = "tb_addUser_DescAndar";
-            this.tb_addUser_DescAndar.Size = new System.Drawing.Size(139, 23);
-            this.tb_addUser_DescAndar.TabIndex = 7;
+            this.tb_UserData_Cidade.Location = new System.Drawing.Point(128, 215);
+            this.tb_UserData_Cidade.Name = "tb_UserData_Cidade";
+            this.tb_UserData_Cidade.Size = new System.Drawing.Size(185, 23);
+            this.tb_UserData_Cidade.TabIndex = 7;
             // 
-            // cb_addUser_Cidade
+            // cB_UserData_Pais
             // 
-            this.cb_addUser_Cidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_addUser_Cidade.FormattingEnabled = true;
-            this.cb_addUser_Cidade.Items.AddRange(new object[] {
+            this.cB_UserData_Pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cB_UserData_Pais.FormattingEnabled = true;
+            this.cB_UserData_Pais.Items.AddRange(new object[] {
             "Activo",
             "Desactivo"});
-            this.cb_addUser_Cidade.Location = new System.Drawing.Point(130, 261);
-            this.cb_addUser_Cidade.Name = "cb_addUser_Cidade";
-            this.cb_addUser_Cidade.Size = new System.Drawing.Size(255, 23);
-            this.cb_addUser_Cidade.TabIndex = 7;
+            this.cB_UserData_Pais.Location = new System.Drawing.Point(128, 244);
+            this.cB_UserData_Pais.Name = "cB_UserData_Pais";
+            this.cB_UserData_Pais.Size = new System.Drawing.Size(185, 23);
+            this.cB_UserData_Pais.TabIndex = 7;
             // 
-            // cb_addUser_Pais
+            // metroButton1
             // 
-            this.cb_addUser_Pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_addUser_Pais.FormattingEnabled = true;
-            this.cb_addUser_Pais.Items.AddRange(new object[] {
-            "Activo",
-            "Desactivo"});
-            this.cb_addUser_Pais.Location = new System.Drawing.Point(130, 290);
-            this.cb_addUser_Pais.Name = "cb_addUser_Pais";
-            this.cb_addUser_Pais.Size = new System.Drawing.Size(255, 23);
-            this.cb_addUser_Pais.TabIndex = 7;
+            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton1.Location = new System.Drawing.Point(727, 117);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(101, 19);
+            this.metroButton1.TabIndex = 6;
+            this.metroButton1.Text = "Alterar imagem...";
             // 
-            // tb_addUser_Estado
+            // bt_UserData_Salvar
             // 
-            this.tb_addUser_Estado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_Estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Estado.FormattingEnabled = true;
-            this.tb_addUser_Estado.Items.AddRange(new object[] {
-            "Activo",
-            "Desactivo"});
-            this.tb_addUser_Estado.Location = new System.Drawing.Point(676, 321);
-            this.tb_addUser_Estado.Name = "tb_addUser_Estado";
-            this.tb_addUser_Estado.Size = new System.Drawing.Size(152, 23);
-            this.tb_addUser_Estado.TabIndex = 7;
+            this.bt_UserData_Salvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_UserData_Salvar.Location = new System.Drawing.Point(753, 404);
+            this.bt_UserData_Salvar.Name = "bt_UserData_Salvar";
+            this.bt_UserData_Salvar.Size = new System.Drawing.Size(75, 45);
+            this.bt_UserData_Salvar.TabIndex = 6;
+            this.bt_UserData_Salvar.Text = "Salvar";
             // 
-            // bt_addUser_Salvar
+            // bt_UserData_Limpar
             // 
-            this.bt_addUser_Salvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_addUser_Salvar.Location = new System.Drawing.Point(753, 404);
-            this.bt_addUser_Salvar.Name = "bt_addUser_Salvar";
-            this.bt_addUser_Salvar.Size = new System.Drawing.Size(75, 45);
-            this.bt_addUser_Salvar.TabIndex = 6;
-            this.bt_addUser_Salvar.Text = "Salvar";
+            this.bt_UserData_Limpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_UserData_Limpar.Location = new System.Drawing.Point(676, 404);
+            this.bt_UserData_Limpar.Name = "bt_UserData_Limpar";
+            this.bt_UserData_Limpar.Size = new System.Drawing.Size(75, 45);
+            this.bt_UserData_Limpar.TabIndex = 6;
+            this.bt_UserData_Limpar.Text = "Limpar";
             // 
-            // bt_addUser_Limpar
+            // tB_UserData_Genero
             // 
-            this.bt_addUser_Limpar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_addUser_Limpar.Location = new System.Drawing.Point(676, 404);
-            this.bt_addUser_Limpar.Name = "bt_addUser_Limpar";
-            this.bt_addUser_Limpar.Size = new System.Drawing.Size(75, 45);
-            this.bt_addUser_Limpar.TabIndex = 6;
-            this.bt_addUser_Limpar.Text = "Limpar";
+            this.tB_UserData_Genero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_Genero.Location = new System.Drawing.Point(410, 42);
+            this.tB_UserData_Genero.Name = "tB_UserData_Genero";
+            this.tB_UserData_Genero.Size = new System.Drawing.Size(211, 21);
+            this.tB_UserData_Genero.TabIndex = 4;
             // 
-            // tb_addUser_Genero
+            // tB_UserData_DataNasci
             // 
-            this.tb_addUser_Genero.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tB_UserData_DataNasci.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_DataNasci.Location = new System.Drawing.Point(130, 41);
+            this.tB_UserData_DataNasci.Name = "tB_UserData_DataNasci";
+            this.tB_UserData_DataNasci.Size = new System.Drawing.Size(183, 21);
+            this.tB_UserData_DataNasci.TabIndex = 4;
+            // 
+            // tb_UserData_Password2
+            // 
+            this.tb_UserData_Password2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb_UserData_Password2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_Password2.Location = new System.Drawing.Point(676, 372);
+            this.tb_UserData_Password2.Name = "tb_UserData_Password2";
+            this.tb_UserData_Password2.Size = new System.Drawing.Size(152, 21);
+            this.tb_UserData_Password2.TabIndex = 4;
+            // 
+            // tB_UserData_PassAnt
+            // 
+            this.tB_UserData_PassAnt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tB_UserData_PassAnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_PassAnt.Location = new System.Drawing.Point(676, 274);
+            this.tB_UserData_PassAnt.Name = "tB_UserData_PassAnt";
+            this.tB_UserData_PassAnt.Size = new System.Drawing.Size(152, 21);
+            this.tB_UserData_PassAnt.TabIndex = 4;
+            // 
+            // tb_UserData_Password
+            // 
+            this.tb_UserData_Password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb_UserData_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_Password.Location = new System.Drawing.Point(676, 320);
+            this.tb_UserData_Password.Name = "tb_UserData_Password";
+            this.tb_UserData_Password.Size = new System.Drawing.Size(152, 21);
+            this.tb_UserData_Password.TabIndex = 4;
+            // 
+            // tb_UserData_UserType
+            // 
+            this.tb_UserData_UserType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb_UserData_UserType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_UserType.Location = new System.Drawing.Point(676, 163);
+            this.tb_UserData_UserType.Name = "tb_UserData_UserType";
+            this.tb_UserData_UserType.ReadOnly = true;
+            this.tb_UserData_UserType.Size = new System.Drawing.Size(152, 21);
+            this.tb_UserData_UserType.TabIndex = 4;
+            // 
+            // tb_UserData_User
+            // 
+            this.tb_UserData_User.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tb_UserData_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_User.Location = new System.Drawing.Point(676, 215);
+            this.tb_UserData_User.Name = "tb_UserData_User";
+            this.tb_UserData_User.ReadOnly = true;
+            this.tb_UserData_User.Size = new System.Drawing.Size(152, 21);
+            this.tb_UserData_User.TabIndex = 4;
+            // 
+            // tB_UserData_Naci
+            // 
+            this.tB_UserData_Naci.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_Genero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Genero.Location = new System.Drawing.Point(130, 67);
-            this.tb_addUser_Genero.Name = "tb_addUser_Genero";
-            this.tb_addUser_Genero.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_Genero.TabIndex = 4;
+            this.tB_UserData_Naci.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_Naci.Location = new System.Drawing.Point(130, 69);
+            this.tB_UserData_Naci.Name = "tB_UserData_Naci";
+            this.tB_UserData_Naci.Size = new System.Drawing.Size(491, 21);
+            this.tB_UserData_Naci.TabIndex = 4;
             // 
-            // tb_addUser_DataNasci
+            // tb_UserData_TelefEmerg
             // 
-            this.tb_addUser_DataNasci.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb_UserData_TelefEmerg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_DataNasci.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_DataNasci.Location = new System.Drawing.Point(130, 41);
-            this.tb_addUser_DataNasci.Name = "tb_addUser_DataNasci";
-            this.tb_addUser_DataNasci.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_DataNasci.TabIndex = 4;
+            this.tb_UserData_TelefEmerg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_TelefEmerg.Location = new System.Drawing.Point(130, 428);
+            this.tb_UserData_TelefEmerg.Name = "tb_UserData_TelefEmerg";
+            this.tb_UserData_TelefEmerg.Size = new System.Drawing.Size(491, 21);
+            this.tb_UserData_TelefEmerg.TabIndex = 4;
             // 
-            // tb_addUser_Password
+            // tB_UserData_DescAndar
             // 
-            this.tb_addUser_Password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Password.Location = new System.Drawing.Point(676, 267);
-            this.tb_addUser_Password.Name = "tb_addUser_Password";
-            this.tb_addUser_Password.Size = new System.Drawing.Size(152, 21);
-            this.tb_addUser_Password.TabIndex = 4;
+            this.tB_UserData_DescAndar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_DescAndar.Location = new System.Drawing.Point(410, 175);
+            this.tB_UserData_DescAndar.Name = "tB_UserData_DescAndar";
+            this.tB_UserData_DescAndar.Size = new System.Drawing.Size(211, 21);
+            this.tB_UserData_DescAndar.TabIndex = 4;
             // 
-            // tb_addUser_User
+            // tb_UserData_CodPostal
             // 
-            this.tb_addUser_User.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_User.Location = new System.Drawing.Point(676, 215);
-            this.tb_addUser_User.Name = "tb_addUser_User";
-            this.tb_addUser_User.Size = new System.Drawing.Size(152, 21);
-            this.tb_addUser_User.TabIndex = 4;
+            this.tb_UserData_CodPostal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_CodPostal.Location = new System.Drawing.Point(410, 215);
+            this.tb_UserData_CodPostal.Name = "tb_UserData_CodPostal";
+            this.tb_UserData_CodPostal.Size = new System.Drawing.Size(211, 21);
+            this.tb_UserData_CodPostal.TabIndex = 4;
             // 
-            // tb_addUser_Naci
+            // tb_UserData_Andar
             // 
-            this.tb_addUser_Naci.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb_UserData_Andar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_Andar.Location = new System.Drawing.Point(250, 175);
+            this.tb_UserData_Andar.Name = "tb_UserData_Andar";
+            this.tb_UserData_Andar.Size = new System.Drawing.Size(63, 21);
+            this.tb_UserData_Andar.TabIndex = 4;
+            // 
+            // tb_UserData_Num
+            // 
+            this.tb_UserData_Num.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_Num.Location = new System.Drawing.Point(130, 175);
+            this.tb_UserData_Num.Name = "tb_UserData_Num";
+            this.tb_UserData_Num.Size = new System.Drawing.Size(63, 21);
+            this.tb_UserData_Num.TabIndex = 4;
+            // 
+            // tB_UserData_Rua
+            // 
+            this.tB_UserData_Rua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_Naci.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Naci.Location = new System.Drawing.Point(130, 93);
-            this.tb_addUser_Naci.Name = "tb_addUser_Naci";
-            this.tb_addUser_Naci.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_Naci.TabIndex = 4;
+            this.tB_UserData_Rua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_Rua.Location = new System.Drawing.Point(130, 148);
+            this.tB_UserData_Rua.Name = "tB_UserData_Rua";
+            this.tB_UserData_Rua.Size = new System.Drawing.Size(491, 21);
+            this.tB_UserData_Rua.TabIndex = 4;
             // 
-            // tb_addUser_TelefEmerg
+            // tB_UserData_Email
             // 
-            this.tb_addUser_TelefEmerg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.tB_UserData_Email.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_TelefEmerg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_TelefEmerg.Location = new System.Drawing.Point(130, 428);
-            this.tb_addUser_TelefEmerg.Name = "tb_addUser_TelefEmerg";
-            this.tb_addUser_TelefEmerg.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_TelefEmerg.TabIndex = 4;
+            this.tB_UserData_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_Email.Location = new System.Drawing.Point(130, 121);
+            this.tB_UserData_Email.Name = "tB_UserData_Email";
+            this.tB_UserData_Email.Size = new System.Drawing.Size(491, 21);
+            this.tB_UserData_Email.TabIndex = 4;
             // 
-            // tb_addUser_CodPostal
+            // tb_UserData_NomeEmerg
             // 
-            this.tb_addUser_CodPostal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_CodPostal.Location = new System.Drawing.Point(130, 233);
-            this.tb_addUser_CodPostal.Name = "tb_addUser_CodPostal";
-            this.tb_addUser_CodPostal.Size = new System.Drawing.Size(255, 21);
-            this.tb_addUser_CodPostal.TabIndex = 4;
-            // 
-            // tb_addUser_Andar
-            // 
-            this.tb_addUser_Andar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Andar.Location = new System.Drawing.Point(250, 199);
-            this.tb_addUser_Andar.Name = "tb_addUser_Andar";
-            this.tb_addUser_Andar.Size = new System.Drawing.Size(63, 21);
-            this.tb_addUser_Andar.TabIndex = 4;
-            // 
-            // tb_addUser_Num
-            // 
-            this.tb_addUser_Num.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Num.Location = new System.Drawing.Point(130, 199);
-            this.tb_addUser_Num.Name = "tb_addUser_Num";
-            this.tb_addUser_Num.Size = new System.Drawing.Size(63, 21);
-            this.tb_addUser_Num.TabIndex = 4;
-            // 
-            // tb_addUser_Rua
-            // 
-            this.tb_addUser_Rua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tb_UserData_NomeEmerg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_Rua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Rua.Location = new System.Drawing.Point(130, 172);
-            this.tb_addUser_Rua.Name = "tb_addUser_Rua";
-            this.tb_addUser_Rua.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_Rua.TabIndex = 4;
+            this.tb_UserData_NomeEmerg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_UserData_NomeEmerg.Location = new System.Drawing.Point(130, 402);
+            this.tb_UserData_NomeEmerg.Name = "tb_UserData_NomeEmerg";
+            this.tb_UserData_NomeEmerg.Size = new System.Drawing.Size(491, 21);
+            this.tb_UserData_NomeEmerg.TabIndex = 4;
             // 
-            // tb_addUser_Email
+            // tB_UserData_Tel
             // 
-            this.tb_addUser_Email.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tB_UserData_Tel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Email.Location = new System.Drawing.Point(130, 145);
-            this.tb_addUser_Email.Name = "tb_addUser_Email";
-            this.tb_addUser_Email.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_Email.TabIndex = 4;
+            this.tB_UserData_Tel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_Tel.Location = new System.Drawing.Point(130, 95);
+            this.tB_UserData_Tel.Name = "tB_UserData_Tel";
+            this.tB_UserData_Tel.Size = new System.Drawing.Size(491, 21);
+            this.tB_UserData_Tel.TabIndex = 4;
             // 
-            // tb_addUser_NomeEmerg
+            // userData__label12
             // 
-            this.tb_addUser_NomeEmerg.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_NomeEmerg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_NomeEmerg.Location = new System.Drawing.Point(130, 402);
-            this.tb_addUser_NomeEmerg.Name = "tb_addUser_NomeEmerg";
-            this.tb_addUser_NomeEmerg.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_NomeEmerg.TabIndex = 4;
+            this.userData__label12.AutoSize = true;
+            this.userData__label12.BackColor = System.Drawing.Color.Transparent;
+            this.userData__label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__label12.Location = new System.Drawing.Point(321, 218);
+            this.userData__label12.Name = "userData__label12";
+            this.userData__label12.Size = new System.Drawing.Size(83, 15);
+            this.userData__label12.TabIndex = 3;
+            this.userData__label12.Text = "Código Postal";
             // 
-            // tb_addUser_Tel
+            // userData__label14
             // 
-            this.tb_addUser_Tel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_Tel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Tel.Location = new System.Drawing.Point(130, 119);
-            this.tb_addUser_Tel.Name = "tb_addUser_Tel";
-            this.tb_addUser_Tel.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_Tel.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 236);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 15);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Código Postal";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 293);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Pais";
+            this.userData__label14.AutoSize = true;
+            this.userData__label14.BackColor = System.Drawing.Color.Transparent;
+            this.userData__label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__label14.Location = new System.Drawing.Point(1, 247);
+            this.userData__label14.Name = "userData__label14";
+            this.userData__label14.Size = new System.Drawing.Size(31, 15);
+            this.userData__label14.TabIndex = 3;
+            this.userData__label14.Text = "Pais";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(321, 201);
+            this.label5.Location = new System.Drawing.Point(342, 178);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 15);
             this.label5.TabIndex = 3;
             this.label5.Text = "Descrição";
             // 
-            // editUser_label6
+            // userData__Genero
             // 
-            this.editUser_label6.AutoSize = true;
-            this.editUser_label6.BackColor = System.Drawing.Color.Transparent;
-            this.editUser_label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label6.Location = new System.Drawing.Point(2, 68);
-            this.editUser_label6.Name = "editUser_label6";
-            this.editUser_label6.Size = new System.Drawing.Size(48, 15);
-            this.editUser_label6.TabIndex = 3;
-            this.editUser_label6.Text = "Genero";
+            this.userData__Genero.AutoSize = true;
+            this.userData__Genero.BackColor = System.Drawing.Color.Transparent;
+            this.userData__Genero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__Genero.Location = new System.Drawing.Point(356, 45);
+            this.userData__Genero.Name = "userData__Genero";
+            this.userData__Genero.Size = new System.Drawing.Size(48, 15);
+            this.userData__Genero.TabIndex = 3;
+            this.userData__Genero.Text = "Genero";
             // 
-            // label4
+            // userData__label15
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(205, 201);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Andar";
+            this.userData__label15.AutoSize = true;
+            this.userData__label15.BackColor = System.Drawing.Color.Transparent;
+            this.userData__label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__label15.Location = new System.Drawing.Point(205, 177);
+            this.userData__label15.Name = "userData__label15";
+            this.userData__label15.Size = new System.Drawing.Size(39, 15);
+            this.userData__label15.TabIndex = 3;
+            this.userData__label15.Text = "Andar";
+            // 
+            // userData__label13
+            // 
+            this.userData__label13.AutoSize = true;
+            this.userData__label13.BackColor = System.Drawing.Color.Transparent;
+            this.userData__label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__label13.Location = new System.Drawing.Point(1, 218);
+            this.userData__label13.Name = "userData__label13";
+            this.userData__label13.Size = new System.Drawing.Size(46, 15);
+            this.userData__label13.TabIndex = 3;
+            this.userData__label13.Text = "Cidade";
+            // 
+            // userData__label11
+            // 
+            this.userData__label11.AutoSize = true;
+            this.userData__label11.BackColor = System.Drawing.Color.Transparent;
+            this.userData__label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__label11.Location = new System.Drawing.Point(3, 178);
+            this.userData__label11.Name = "userData__label11";
+            this.userData__label11.Size = new System.Drawing.Size(52, 15);
+            this.userData__label11.TabIndex = 3;
+            this.userData__label11.Text = "Número";
+            // 
+            // userData__label10
+            // 
+            this.userData__label10.AutoSize = true;
+            this.userData__label10.BackColor = System.Drawing.Color.Transparent;
+            this.userData__label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__label10.Location = new System.Drawing.Point(2, 148);
+            this.userData__label10.Name = "userData__label10";
+            this.userData__label10.Size = new System.Drawing.Size(30, 15);
+            this.userData__label10.TabIndex = 3;
+            this.userData__label10.Text = "Rua";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(673, 350);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 15);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Password ( nova )";
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 264);
+            this.label1.Location = new System.Drawing.Point(673, 252);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 15);
+            this.label1.Size = new System.Drawing.Size(112, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Cidade";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 202);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Número";
-            // 
-            // editUser_label10
-            // 
-            this.editUser_label10.AutoSize = true;
-            this.editUser_label10.BackColor = System.Drawing.Color.Transparent;
-            this.editUser_label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label10.Location = new System.Drawing.Point(2, 172);
-            this.editUser_label10.Name = "editUser_label10";
-            this.editUser_label10.Size = new System.Drawing.Size(30, 15);
-            this.editUser_label10.TabIndex = 3;
-            this.editUser_label10.Text = "Rua";
+            this.label1.Text = "Password ( antiga )";
             // 
             // editUser_label16
             // 
@@ -491,11 +542,11 @@
             this.editUser_label16.AutoSize = true;
             this.editUser_label16.BackColor = System.Drawing.Color.Transparent;
             this.editUser_label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label16.Location = new System.Drawing.Point(673, 302);
+            this.editUser_label16.Location = new System.Drawing.Point(673, 145);
             this.editUser_label16.Name = "editUser_label16";
-            this.editUser_label16.Size = new System.Drawing.Size(45, 15);
+            this.editUser_label16.Size = new System.Drawing.Size(103, 15);
             this.editUser_label16.TabIndex = 3;
-            this.editUser_label16.Text = "Estado";
+            this.editUser_label16.Text = "Tipo de Utilizador";
             // 
             // editUser_label15
             // 
@@ -503,22 +554,22 @@
             this.editUser_label15.AutoSize = true;
             this.editUser_label15.BackColor = System.Drawing.Color.Transparent;
             this.editUser_label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label15.Location = new System.Drawing.Point(673, 245);
+            this.editUser_label15.Location = new System.Drawing.Point(673, 298);
             this.editUser_label15.Name = "editUser_label15";
-            this.editUser_label15.Size = new System.Drawing.Size(61, 15);
+            this.editUser_label15.Size = new System.Drawing.Size(104, 15);
             this.editUser_label15.TabIndex = 3;
-            this.editUser_label15.Text = "Password";
+            this.editUser_label15.Text = "Password ( nova )";
             // 
-            // editUser_label5
+            // userData__DataNasc
             // 
-            this.editUser_label5.AutoSize = true;
-            this.editUser_label5.BackColor = System.Drawing.Color.Transparent;
-            this.editUser_label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label5.Location = new System.Drawing.Point(2, 42);
-            this.editUser_label5.Name = "editUser_label5";
-            this.editUser_label5.Size = new System.Drawing.Size(119, 15);
-            this.editUser_label5.TabIndex = 3;
-            this.editUser_label5.Text = "Data de Nascimento";
+            this.userData__DataNasc.AutoSize = true;
+            this.userData__DataNasc.BackColor = System.Drawing.Color.Transparent;
+            this.userData__DataNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__DataNasc.Location = new System.Drawing.Point(2, 42);
+            this.userData__DataNasc.Name = "userData__DataNasc";
+            this.userData__DataNasc.Size = new System.Drawing.Size(119, 15);
+            this.userData__DataNasc.TabIndex = 3;
+            this.userData__DataNasc.Text = "Data de Nascimento";
             // 
             // editUser_label12
             // 
@@ -544,27 +595,27 @@
             this.editUser_label14.TabIndex = 3;
             this.editUser_label14.Text = "Nome de Utilizador";
             // 
-            // editUser_label8
+            // userData__label8
             // 
-            this.editUser_label8.AutoSize = true;
-            this.editUser_label8.BackColor = System.Drawing.Color.Transparent;
-            this.editUser_label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label8.Location = new System.Drawing.Point(2, 120);
-            this.editUser_label8.Name = "editUser_label8";
-            this.editUser_label8.Size = new System.Drawing.Size(55, 15);
-            this.editUser_label8.TabIndex = 3;
-            this.editUser_label8.Text = "Telefone";
+            this.userData__label8.AutoSize = true;
+            this.userData__label8.BackColor = System.Drawing.Color.Transparent;
+            this.userData__label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__label8.Location = new System.Drawing.Point(2, 96);
+            this.userData__label8.Name = "userData__label8";
+            this.userData__label8.Size = new System.Drawing.Size(55, 15);
+            this.userData__label8.TabIndex = 3;
+            this.userData__label8.Text = "Telefone";
             // 
-            // editUser_label7
+            // userData__Nac
             // 
-            this.editUser_label7.AutoSize = true;
-            this.editUser_label7.BackColor = System.Drawing.Color.Transparent;
-            this.editUser_label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label7.Location = new System.Drawing.Point(2, 94);
-            this.editUser_label7.Name = "editUser_label7";
-            this.editUser_label7.Size = new System.Drawing.Size(87, 15);
-            this.editUser_label7.TabIndex = 3;
-            this.editUser_label7.Text = "Nacionalidade";
+            this.userData__Nac.AutoSize = true;
+            this.userData__Nac.BackColor = System.Drawing.Color.Transparent;
+            this.userData__Nac.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__Nac.Location = new System.Drawing.Point(2, 70);
+            this.userData__Nac.Name = "userData__Nac";
+            this.userData__Nac.Size = new System.Drawing.Size(87, 15);
+            this.userData__Nac.TabIndex = 3;
+            this.userData__Nac.Text = "Nacionalidade";
             // 
             // editUser_label13
             // 
@@ -584,68 +635,53 @@
             this.editUser_label11.AutoSize = true;
             this.editUser_label11.BackColor = System.Drawing.Color.Transparent;
             this.editUser_label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label11.Location = new System.Drawing.Point(2, 378);
+            this.editUser_label11.Location = new System.Drawing.Point(3, 372);
             this.editUser_label11.Name = "editUser_label11";
             this.editUser_label11.Size = new System.Drawing.Size(191, 15);
             this.editUser_label11.TabIndex = 3;
             this.editUser_label11.Text = "Contacto em caso de emergência";
             // 
-            // editUser_label9
+            // userData__label9
             // 
-            this.editUser_label9.AutoSize = true;
-            this.editUser_label9.BackColor = System.Drawing.Color.Transparent;
-            this.editUser_label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label9.Location = new System.Drawing.Point(2, 146);
-            this.editUser_label9.Name = "editUser_label9";
-            this.editUser_label9.Size = new System.Drawing.Size(39, 15);
-            this.editUser_label9.TabIndex = 3;
-            this.editUser_label9.Text = "Email";
+            this.userData__label9.AutoSize = true;
+            this.userData__label9.BackColor = System.Drawing.Color.Transparent;
+            this.userData__label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__label9.Location = new System.Drawing.Point(2, 122);
+            this.userData__label9.Name = "userData__label9";
+            this.userData__label9.Size = new System.Drawing.Size(39, 15);
+            this.userData__label9.TabIndex = 3;
+            this.userData__label9.Text = "Email";
             // 
-            // tb_addUser_Nome
+            // tB_UserData_Nome
             // 
-            this.tb_addUser_Nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tB_UserData_Nome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tb_addUser_Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_addUser_Nome.Location = new System.Drawing.Point(130, 14);
-            this.tb_addUser_Nome.Name = "tb_addUser_Nome";
-            this.tb_addUser_Nome.Size = new System.Drawing.Size(491, 21);
-            this.tb_addUser_Nome.TabIndex = 4;
+            this.tB_UserData_Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_Nome.Location = new System.Drawing.Point(130, 14);
+            this.tB_UserData_Nome.Name = "tB_UserData_Nome";
+            this.tB_UserData_Nome.Size = new System.Drawing.Size(491, 21);
+            this.tB_UserData_Nome.TabIndex = 4;
             // 
-            // editUser_label3
+            // userData__nome
             // 
-            this.editUser_label3.AutoSize = true;
-            this.editUser_label3.BackColor = System.Drawing.Color.Transparent;
-            this.editUser_label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label3.Location = new System.Drawing.Point(2, 15);
-            this.editUser_label3.Name = "editUser_label3";
-            this.editUser_label3.Size = new System.Drawing.Size(41, 15);
-            this.editUser_label3.TabIndex = 3;
-            this.editUser_label3.Text = "Nome";
+            this.userData__nome.AutoSize = true;
+            this.userData__nome.BackColor = System.Drawing.Color.Transparent;
+            this.userData__nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userData__nome.Location = new System.Drawing.Point(2, 15);
+            this.userData__nome.Name = "userData__nome";
+            this.userData__nome.Size = new System.Drawing.Size(41, 15);
+            this.userData__nome.TabIndex = 3;
+            this.userData__nome.Text = "Nome";
             // 
-            // pictureBoxAddUser
+            // pictureBoxUserData
             // 
-            this.pictureBoxAddUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxAddUser.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddUser.Image")));
-            this.pictureBoxAddUser.Location = new System.Drawing.Point(676, 14);
-            this.pictureBoxAddUser.Name = "pictureBoxAddUser";
-            this.pictureBoxAddUser.Size = new System.Drawing.Size(101, 101);
-            this.pictureBoxAddUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxAddUser.TabIndex = 2;
-            this.pictureBoxAddUser.TabStop = false;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton1.Location = new System.Drawing.Point(676, 116);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(101, 19);
-            this.metroButton1.TabIndex = 6;
-            this.metroButton1.Text = "Alterar imagem...";
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.pictureBoxUserData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxUserData.Location = new System.Drawing.Point(727, 15);
+            this.pictureBoxUserData.Name = "pictureBoxUserData";
+            this.pictureBoxUserData.Size = new System.Drawing.Size(101, 101);
+            this.pictureBoxUserData.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUserData.TabIndex = 2;
+            this.pictureBoxUserData.TabStop = false;
             // 
             // AddUser
             // 
@@ -661,7 +697,7 @@
             this.addUser_tabPage1.ResumeLayout(false);
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUserData)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -673,48 +709,52 @@
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage addUser_tabPage1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private System.Windows.Forms.ComboBox tb_addUser_DescAndar;
-        private System.Windows.Forms.ComboBox cb_addUser_Cidade;
-        private System.Windows.Forms.ComboBox cb_addUser_Pais;
-        private System.Windows.Forms.ComboBox tb_addUser_Estado;
-        private MetroFramework.Controls.MetroButton bt_addUser_Salvar;
-        private MetroFramework.Controls.MetroButton bt_addUser_Limpar;
-        private System.Windows.Forms.TextBox tb_addUser_Genero;
-        private System.Windows.Forms.TextBox tb_addUser_DataNasci;
-        private System.Windows.Forms.TextBox tb_addUser_Password;
-        private System.Windows.Forms.TextBox tb_addUser_User;
-        private System.Windows.Forms.TextBox tb_addUser_Naci;
-        private System.Windows.Forms.TextBox tb_addUser_TelefEmerg;
-        private System.Windows.Forms.TextBox tb_addUser_CodPostal;
-        private System.Windows.Forms.TextBox tb_addUser_Andar;
-        private System.Windows.Forms.TextBox tb_addUser_Num;
-        private System.Windows.Forms.TextBox tb_addUser_Rua;
-        private System.Windows.Forms.TextBox tb_addUser_Email;
-        private System.Windows.Forms.TextBox tb_addUser_NomeEmerg;
-        private System.Windows.Forms.TextBox tb_addUser_Tel;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox tb_UserData_Cidade;
+        private System.Windows.Forms.ComboBox cB_UserData_Pais;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton bt_UserData_Salvar;
+        private MetroFramework.Controls.MetroButton bt_UserData_Limpar;
+        private System.Windows.Forms.TextBox tB_UserData_Genero;
+        private System.Windows.Forms.TextBox tB_UserData_DataNasci;
+        private System.Windows.Forms.TextBox tb_UserData_Password2;
+        private System.Windows.Forms.TextBox tB_UserData_PassAnt;
+        private System.Windows.Forms.TextBox tb_UserData_Password;
+        private System.Windows.Forms.TextBox tb_UserData_UserType;
+        private System.Windows.Forms.TextBox tb_UserData_User;
+        private System.Windows.Forms.TextBox tB_UserData_Naci;
+        private System.Windows.Forms.TextBox tb_UserData_TelefEmerg;
+        private System.Windows.Forms.TextBox tB_UserData_DescAndar;
+        private System.Windows.Forms.TextBox tb_UserData_CodPostal;
+        private System.Windows.Forms.TextBox tb_UserData_Andar;
+        private System.Windows.Forms.TextBox tb_UserData_Num;
+        private System.Windows.Forms.TextBox tB_UserData_Rua;
+        private System.Windows.Forms.TextBox tB_UserData_Email;
+        private System.Windows.Forms.TextBox tb_UserData_NomeEmerg;
+        private System.Windows.Forms.TextBox tB_UserData_Tel;
+        private System.Windows.Forms.Label userData__label12;
+        private System.Windows.Forms.Label userData__label14;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label editUser_label6;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label userData__Genero;
+        private System.Windows.Forms.Label userData__label15;
+        private System.Windows.Forms.Label userData__label13;
+        private System.Windows.Forms.Label userData__label11;
+        private System.Windows.Forms.Label userData__label10;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label editUser_label10;
         private System.Windows.Forms.Label editUser_label16;
         private System.Windows.Forms.Label editUser_label15;
-        private System.Windows.Forms.Label editUser_label5;
+        private System.Windows.Forms.Label userData__DataNasc;
         private System.Windows.Forms.Label editUser_label12;
         private System.Windows.Forms.Label editUser_label14;
-        private System.Windows.Forms.Label editUser_label8;
-        private System.Windows.Forms.Label editUser_label7;
+        private System.Windows.Forms.Label userData__label8;
+        private System.Windows.Forms.Label userData__Nac;
         private System.Windows.Forms.Label editUser_label13;
         private System.Windows.Forms.Label editUser_label11;
-        private System.Windows.Forms.Label editUser_label9;
-        private System.Windows.Forms.TextBox tb_addUser_Nome;
-        private System.Windows.Forms.Label editUser_label3;
-        private System.Windows.Forms.PictureBox pictureBoxAddUser;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label userData__label9;
+        private System.Windows.Forms.TextBox tB_UserData_Nome;
+        private System.Windows.Forms.Label userData__nome;
+        private System.Windows.Forms.PictureBox pictureBoxUserData;
     }
 }
