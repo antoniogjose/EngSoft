@@ -98,7 +98,7 @@
             this.addClient_tabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
             this.addClient_tabControl1.Location = new System.Drawing.Point(0, 0);
             this.addClient_tabControl1.Name = "addClient_tabControl1";
-            this.addClient_tabControl1.SelectedIndex = 1;
+            this.addClient_tabControl1.SelectedIndex = 0;
             this.addClient_tabControl1.Size = new System.Drawing.Size(848, 506);
             this.addClient_tabControl1.TabIndex = 0;
             // 
@@ -108,7 +108,7 @@
             this.addClient_tabPage1.HorizontalScrollbarBarColor = true;
             this.addClient_tabPage1.Location = new System.Drawing.Point(4, 35);
             this.addClient_tabPage1.Name = "addClient_tabPage1";
-            this.addClient_tabPage1.Size = new System.Drawing.Size(746, 410);
+            this.addClient_tabPage1.Size = new System.Drawing.Size(840, 467);
             this.addClient_tabPage1.TabIndex = 0;
             this.addClient_tabPage1.Text = "Dados de Cliente";
             this.addClient_tabPage1.VerticalScrollbarBarColor = true;

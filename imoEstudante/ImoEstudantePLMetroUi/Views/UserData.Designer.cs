@@ -34,7 +34,6 @@
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.addRent_tabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.tb_UserData_DescAndar = new System.Windows.Forms.ComboBox();
             this.tb_UserData_Cidade = new System.Windows.Forms.ComboBox();
             this.cB_UserData_Pais = new System.Windows.Forms.ComboBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
@@ -43,6 +42,7 @@
             this.tB_UserData_Genero = new System.Windows.Forms.TextBox();
             this.tB_UserData_DataNasci = new System.Windows.Forms.TextBox();
             this.tb_UserData_Password2 = new System.Windows.Forms.TextBox();
+            this.tB_UserData_PassAnt = new System.Windows.Forms.TextBox();
             this.tb_UserData_Password = new System.Windows.Forms.TextBox();
             this.tb_UserData_UserType = new System.Windows.Forms.TextBox();
             this.tb_UserData_User = new System.Windows.Forms.TextBox();
@@ -64,6 +64,7 @@
             this.userData__label11 = new System.Windows.Forms.Label();
             this.userData__label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.editUser_label16 = new System.Windows.Forms.Label();
             this.editUser_label15 = new System.Windows.Forms.Label();
             this.userData__DataNasc = new System.Windows.Forms.Label();
@@ -77,8 +78,7 @@
             this.tB_UserData_Nome = new System.Windows.Forms.TextBox();
             this.userData__nome = new System.Windows.Forms.Label();
             this.pictureBoxUserData = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tB_UserData_PassAnt = new System.Windows.Forms.TextBox();
+            this.tB_UserData_DescAndar = new System.Windows.Forms.TextBox();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -138,7 +138,7 @@
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(848, 506);
-            this.metroTabControl1.TabIndex = 2;
+            this.metroTabControl1.TabIndex = 0;
             // 
             // addRent_tabPage1
             // 
@@ -157,7 +157,6 @@
             this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroPanel1.Controls.Add(this.tb_UserData_DescAndar);
             this.metroPanel1.Controls.Add(this.tb_UserData_Cidade);
             this.metroPanel1.Controls.Add(this.cB_UserData_Pais);
             this.metroPanel1.Controls.Add(this.metroButton1);
@@ -172,6 +171,7 @@
             this.metroPanel1.Controls.Add(this.tb_UserData_User);
             this.metroPanel1.Controls.Add(this.tB_UserData_Naci);
             this.metroPanel1.Controls.Add(this.tb_UserData_TelefEmerg);
+            this.metroPanel1.Controls.Add(this.tB_UserData_DescAndar);
             this.metroPanel1.Controls.Add(this.tb_UserData_CodPostal);
             this.metroPanel1.Controls.Add(this.tb_UserData_Andar);
             this.metroPanel1.Controls.Add(this.tb_UserData_Num);
@@ -209,23 +209,10 @@
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(840, 461);
             this.metroPanel1.TabIndex = 3;
-            this.metroPanel1.VerticalScrollbar = true;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             this.metroPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel1_Paint);
-            // 
-            // tb_UserData_DescAndar
-            // 
-            this.tb_UserData_DescAndar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_UserData_DescAndar.FormattingEnabled = true;
-            this.tb_UserData_DescAndar.Items.AddRange(new object[] {
-            "Activo",
-            "Desactivo"});
-            this.tb_UserData_DescAndar.Location = new System.Drawing.Point(410, 175);
-            this.tb_UserData_DescAndar.Name = "tb_UserData_DescAndar";
-            this.tb_UserData_DescAndar.Size = new System.Drawing.Size(211, 23);
-            this.tb_UserData_DescAndar.TabIndex = 7;
             // 
             // tb_UserData_Cidade
             // 
@@ -304,6 +291,15 @@
             this.tb_UserData_Password2.Size = new System.Drawing.Size(152, 21);
             this.tb_UserData_Password2.TabIndex = 4;
             // 
+            // tB_UserData_PassAnt
+            // 
+            this.tB_UserData_PassAnt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tB_UserData_PassAnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_PassAnt.Location = new System.Drawing.Point(676, 274);
+            this.tB_UserData_PassAnt.Name = "tB_UserData_PassAnt";
+            this.tB_UserData_PassAnt.Size = new System.Drawing.Size(152, 21);
+            this.tB_UserData_PassAnt.TabIndex = 4;
+            // 
             // tb_UserData_Password
             // 
             this.tb_UserData_Password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -329,6 +325,7 @@
             this.tb_UserData_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_UserData_User.Location = new System.Drawing.Point(676, 215);
             this.tb_UserData_User.Name = "tb_UserData_User";
+            this.tb_UserData_User.ReadOnly = true;
             this.tb_UserData_User.Size = new System.Drawing.Size(152, 21);
             this.tb_UserData_User.TabIndex = 4;
             // 
@@ -516,6 +513,18 @@
             this.label7.TabIndex = 3;
             this.label7.Text = "Password ( nova )";
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(673, 252);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Password ( antiga )";
+            // 
             // editUser_label16
             // 
             this.editUser_label16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -615,7 +624,7 @@
             this.editUser_label11.AutoSize = true;
             this.editUser_label11.BackColor = System.Drawing.Color.Transparent;
             this.editUser_label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label11.Location = new System.Drawing.Point(2, 378);
+            this.editUser_label11.Location = new System.Drawing.Point(3, 372);
             this.editUser_label11.Name = "editUser_label11";
             this.editUser_label11.Size = new System.Drawing.Size(191, 15);
             this.editUser_label11.TabIndex = 3;
@@ -663,26 +672,13 @@
             this.pictureBoxUserData.TabIndex = 2;
             this.pictureBoxUserData.TabStop = false;
             // 
-            // label1
+            // tB_UserData_DescAndar
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(673, 252);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Password ( antiga )";
-            // 
-            // tB_UserData_PassAnt
-            // 
-            this.tB_UserData_PassAnt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tB_UserData_PassAnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tB_UserData_PassAnt.Location = new System.Drawing.Point(676, 274);
-            this.tB_UserData_PassAnt.Name = "tB_UserData_PassAnt";
-            this.tB_UserData_PassAnt.Size = new System.Drawing.Size(152, 21);
-            this.tB_UserData_PassAnt.TabIndex = 4;
+            this.tB_UserData_DescAndar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_DescAndar.Location = new System.Drawing.Point(410, 175);
+            this.tB_UserData_DescAndar.Name = "tB_UserData_DescAndar";
+            this.tB_UserData_DescAndar.Size = new System.Drawing.Size(211, 21);
+            this.tB_UserData_DescAndar.TabIndex = 4;
             // 
             // UserData
             // 
@@ -711,7 +707,6 @@
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage addRent_tabPage1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private System.Windows.Forms.ComboBox tb_UserData_DescAndar;
         private System.Windows.Forms.ComboBox tb_UserData_Cidade;
         private System.Windows.Forms.ComboBox cB_UserData_Pais;
         private MetroFramework.Controls.MetroButton metroButton1;
@@ -756,5 +751,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tB_UserData_PassAnt;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tB_UserData_DescAndar;
     }
 }

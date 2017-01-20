@@ -38,7 +38,9 @@ namespace ImoEstudantePLMetroUi
                 tB_UserData_Genero.Text = ClasseStatic.us.Gen;
                 tB_UserData_Tel.Text = ClasseStatic.us.Contactos.ToList().Where(x => x.Tipo == "Telefone" && x.Nivel == 1).First().Valor.ToString();
                 tB_UserData_Email.Text = ClasseStatic.us.Contactos.ToList().Where(x => x.Tipo == "Email" && x.Nivel == 1).First().Valor.ToString();
-                //rB_UserData_Morada.Text = ClasseStatic.us.MoradaUtilizador.Rua.TrimEnd() + " Nº " + ClasseStatic.us.MoradaUtilizador.Numero + " " 
+                tb_UserData_TelefEmerg.Text = ClasseStatic.us.Contactos.ToList().Where(x => x.Tipo == "Urgente" && x.Nivel == 1).First().Valor;
+                tb_UserData_NomeEmerg.Text = ClasseStatic.us.Contactos.ToList().Where(x => x.Tipo == "Urgente" && x.Nivel == 1).First().Descricao;
+                    //rB_UserData_Morada.Text = ClasseStatic.us.MoradaUtilizador.Rua.TrimEnd() + " Nº " + ClasseStatic.us.MoradaUtilizador.Numero + " " 
                 //    + ((ClasseStatic.us.MoradaUtilizador.Andar == 0)?"": ClasseStatic.us.MoradaUtilizador.Andar.ToString() + " " + ClasseStatic.us.MoradaUtilizador.DescAndar.TrimEnd()).ToString() + 
                 //    "\n" +
                 //    ClasseStatic.us.MoradaUtilizador.CodPostal + " " +  + ", " + 
@@ -49,7 +51,7 @@ namespace ImoEstudantePLMetroUi
 
                 if (ClasseStatic.us.MoradaUtilizador.DescAndar != null)
                 {
-                    tb_UserData_DescAndar.Text = ClasseStatic.us.MoradaUtilizador.DescAndar;
+                    tB_UserData_DescAndar.Text = ClasseStatic.us.MoradaUtilizador.DescAndar;
                     tb_UserData_Andar.Text = ClasseStatic.us.MoradaUtilizador.Andar.ToString();
                 }
 
@@ -59,12 +61,16 @@ namespace ImoEstudantePLMetroUi
                 tb_UserData_User.Text = ClasseStatic.us.UserName;
                 tb_UserData_CodPostal.Text = ClasseStatic.us.MoradaUtilizador.CodPostal.ToString();
 
+                // pais da morada
                 List <CRUDImoestudante.PaisRespostaPedido> listObjt = ClasseStatic.log.GetPaises("token").ToList();
                 foreach (CRUDImoestudante.PaisRespostaPedido element in listObjt)
                     cB_UserData_Pais.Items.Add(element.Name);
 
                 int index = cB_UserData_Pais.FindString(ClasseStatic.us.MoradaUtilizador.Pais.TrimEnd());
                 cB_UserData_Pais.SelectedIndex = index;
+
+                // Descrição do andar
+
 
 
 
@@ -92,7 +98,9 @@ namespace ImoEstudantePLMetroUi
             edit.IdCurso = ClasseStatic.us.IdCurso;
             edit.Contactos.ToList().Where(x => x.Tipo == "Telefone" && x.Nivel == 1).First().Valor = tB_UserData_Tel.Text;
             edit.Contactos.ToList().Where(x => x.Tipo == "Email" && x.Nivel == 1).First().Valor = tB_UserData_Email.Text;
-             
+            edit.Contactos.ToList().Where(x => x.Tipo == "Urgente" && x.Nivel == 1).First().Valor = tb_UserData_TelefEmerg.Text;
+            edit.Contactos.ToList().Where(x => x.Tipo == "Urgente" && x.Nivel == 1).First().Descricao = tb_UserData_NomeEmerg.Text;
+
 
             // morada
             edit.MoradaUtilizador = new MoradaRespostaPedido();
@@ -107,7 +115,7 @@ namespace ImoEstudantePLMetroUi
             if (tb_UserData_Andar.Text != "")
             {
                 
-                edit.MoradaUtilizador.DescAndar = tb_UserData_DescAndar.Text;
+                edit.MoradaUtilizador.DescAndar = tB_UserData_DescAndar.Text;
                 edit.MoradaUtilizador.Andar = Convert.ToInt32(tb_UserData_Andar.Text);
             }
 

@@ -542,6 +542,9 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DescricaoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdContactoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -560,6 +563,19 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Descricao {
+            get {
+                return this.DescricaoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DescricaoField, value) != true)) {
+                    this.DescricaoField = value;
+                    this.RaisePropertyChanged("Descricao");
+                }
             }
         }
         
@@ -2513,6 +2529,9 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descricaoField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int idContactoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -2537,6 +2556,19 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string descricao {
+            get {
+                return this.descricaoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descricaoField, value) != true)) {
+                    this.descricaoField = value;
+                    this.RaisePropertyChanged("descricao");
+                }
             }
         }
         
