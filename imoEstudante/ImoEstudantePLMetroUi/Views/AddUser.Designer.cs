@@ -37,7 +37,7 @@
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tb_UserData_Cidade = new System.Windows.Forms.ComboBox();
             this.cB_UserData_Pais = new System.Windows.Forms.ComboBox();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.bt_AddUser_Addimg = new MetroFramework.Controls.MetroButton();
             this.bt_UserData_Salvar = new MetroFramework.Controls.MetroButton();
             this.bt_UserData_Limpar = new MetroFramework.Controls.MetroButton();
             this.tB_UserData_Genero = new System.Windows.Forms.TextBox();
@@ -164,7 +164,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroPanel1.Controls.Add(this.tb_UserData_Cidade);
             this.metroPanel1.Controls.Add(this.cB_UserData_Pais);
-            this.metroPanel1.Controls.Add(this.metroButton1);
+            this.metroPanel1.Controls.Add(this.bt_AddUser_Addimg);
             this.metroPanel1.Controls.Add(this.bt_UserData_Salvar);
             this.metroPanel1.Controls.Add(this.bt_UserData_Limpar);
             this.metroPanel1.Controls.Add(this.tB_UserData_Genero);
@@ -242,14 +242,15 @@
             this.cB_UserData_Pais.Size = new System.Drawing.Size(185, 23);
             this.cB_UserData_Pais.TabIndex = 7;
             // 
-            // metroButton1
+            // bt_AddUser_Addimg
             // 
-            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton1.Location = new System.Drawing.Point(727, 117);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(101, 19);
-            this.metroButton1.TabIndex = 6;
-            this.metroButton1.Text = "Alterar imagem...";
+            this.bt_AddUser_Addimg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_AddUser_Addimg.Location = new System.Drawing.Point(727, 117);
+            this.bt_AddUser_Addimg.Name = "bt_AddUser_Addimg";
+            this.bt_AddUser_Addimg.Size = new System.Drawing.Size(101, 19);
+            this.bt_AddUser_Addimg.TabIndex = 6;
+            this.bt_AddUser_Addimg.Text = "Alterar imagem...";
+            this.bt_AddUser_Addimg.Click += new System.EventHandler(this.bt_AddUser_Addimg_Click);
             // 
             // bt_UserData_Salvar
             // 
@@ -713,7 +714,7 @@
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private System.Windows.Forms.ComboBox tb_UserData_Cidade;
         private System.Windows.Forms.ComboBox cB_UserData_Pais;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton bt_AddUser_Addimg;
         private MetroFramework.Controls.MetroButton bt_UserData_Salvar;
         private MetroFramework.Controls.MetroButton bt_UserData_Limpar;
         private System.Windows.Forms.TextBox tB_UserData_Genero;

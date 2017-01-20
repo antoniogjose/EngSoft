@@ -28,7 +28,7 @@ namespace ImoEstudantePLMetroUi
             InitializeComponent();
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void bt_AddUser_Addimg_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog dlg = new OpenFileDialog())
             {
@@ -37,14 +37,12 @@ namespace ImoEstudantePLMetroUi
 
                 if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    //PictureBox PictureBox1 = new PictureBox();
+                    pictureBoxUserData.Load(dlg.FileName);
 
-                    //pictureBoxAddUser.Image = new Bitmap(dlg.FileName);
-
-                    // Add the new control to its parent's controls collection
-                   // this.Controls.Add(pictureBoxAddUser);
                 }
             }
         }
+
+
     }
 }
