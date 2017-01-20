@@ -22,13 +22,14 @@
   <xs:complexType name="UtilizadorRespostaPedido">
     <xs:sequence>
       <xs:element minOccurs="0" name="Contactos" nillable="true" type="tns:ArrayOfContactoRespostaPedido" />
-      <xs:element minOccurs="0" name="CursoUtilizador" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="DataNascimento" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Gen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdCurso" type="xs:int" />
       <xs:element minOccurs="0" name="IdUser" type="xs:int" />
       <xs:element minOccurs="0" name="MoradaUtilizador" nillable="true" type="tns:MoradaRespostaPedido" />
       <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="PaisOrigen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TipoUtilizador" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
     </xs:sequence>

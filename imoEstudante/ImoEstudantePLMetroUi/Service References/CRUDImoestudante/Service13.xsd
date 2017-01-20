@@ -54,6 +54,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="EditUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="utilizador" nillable="true" type="q5:UtilizadorRespostaPedido" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EditUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EditUserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="GetUserType">
     <xs:complexType>
       <xs:sequence>
@@ -64,14 +78,14 @@
   <xs:element name="GetUserTypeResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetUserTypeResult" nillable="true" type="q5:UtilizadorRespostaPedido" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetUserTypeResult" nillable="true" type="q6:UtilizadorRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="UpDatePais">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="paises" nillable="true" type="q6:ArrayOfPaisRespostaPedido" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="paises" nillable="true" type="q7:ArrayOfPaisRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -92,7 +106,7 @@
   <xs:element name="GetPaisesResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetPaisesResult" nillable="true" type="q7:ArrayOfPaisRespostaPedido" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetPaisesResult" nillable="true" type="q8:ArrayOfPaisRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -104,7 +118,7 @@
   <xs:element name="GetContractDataResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="GetContractDataResult" nillable="true" type="q8:ArrayOfaluguer" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="GetContractDataResult" nillable="true" type="q9:ArrayOfaluguer" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -118,14 +132,14 @@
   <xs:element name="SearchContractIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="SearchContractIdResult" nillable="true" type="q9:aluguer" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="SearchContractIdResult" nillable="true" type="q10:aluguer" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="Addcontract">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="aluguerData" nillable="true" type="q10:aluguer" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="aluguerData" nillable="true" type="q11:aluguer" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -144,7 +158,7 @@
   <xs:element name="GetHouseDataResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetHouseDataResult" nillable="true" type="q11:ArrayOfAlojamentoRespostaPedido" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetHouseDataResult" nillable="true" type="q12:ArrayOfAlojamentoRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -158,14 +172,14 @@
   <xs:element name="SearchHouseIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="SearchHouseIdResult" nillable="true" type="q12:alojamento" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="SearchHouseIdResult" nillable="true" type="q13:alojamento" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="AddHouse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="aluguerData" nillable="true" type="q13:alojamento" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CRUDImoestudante.App_Data" minOccurs="0" name="aluguerData" nillable="true" type="q14:alojamento" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -184,7 +198,7 @@
   <xs:element name="GetComodDataResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetComodDataResult" nillable="true" type="q14:ArrayOfcomodidadeRespostaPedido" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetComodDataResult" nillable="true" type="q15:ArrayOfcomodidadeRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -198,14 +212,14 @@
   <xs:element name="GetComodDataAlojIDResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetComodDataAlojIDResult" nillable="true" type="q15:ArrayOfcomodidadeRespostaPedido" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="GetComodDataAlojIDResult" nillable="true" type="q16:ArrayOfcomodidadeRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="RemoveComod">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="comodidadeData" nillable="true" type="q16:comodidadeRespostaPedido" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="comodidadeData" nillable="true" type="q17:comodidadeRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -219,7 +233,7 @@
   <xs:element name="AddComodList">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="aluguerData" nillable="true" type="q17:ArrayOfcomodidadeRespostaPedido" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="aluguerData" nillable="true" type="q18:ArrayOfcomodidadeRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -233,7 +247,7 @@
   <xs:element name="AddComod">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="comod" nillable="true" type="q18:comodidadeRespostaPedido" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="comod" nillable="true" type="q19:comodidadeRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -247,7 +261,7 @@
   <xs:element name="FacePublicHabitacao">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="alojamento" nillable="true" type="q19:AlojamentoRespostaPedido" />
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="alojamento" nillable="true" type="q20:AlojamentoRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -261,7 +275,7 @@
   <xs:element name="TwittHabitacao">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="alojamento" nillable="true" type="q20:AlojamentoRespostaPedido" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/CRUDImoestudante" minOccurs="0" name="alojamento" nillable="true" type="q21:AlojamentoRespostaPedido" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

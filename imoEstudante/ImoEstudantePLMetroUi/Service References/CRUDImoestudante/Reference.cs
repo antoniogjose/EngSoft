@@ -183,13 +183,13 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         private ImoEstudantePLMetroUi.CRUDImoestudante.ContactoRespostaPedido[] ContactosField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string CursoUtilizadorField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime DataNascimentoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string GenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdCursoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int IdUserField;
@@ -202,6 +202,9 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string PaisOrigenField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PasswordField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TipoUtilizadorField;
@@ -233,19 +236,6 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string CursoUtilizador {
-            get {
-                return this.CursoUtilizadorField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CursoUtilizadorField, value) != true)) {
-                    this.CursoUtilizadorField = value;
-                    this.RaisePropertyChanged("CursoUtilizador");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.DateTime DataNascimento {
             get {
                 return this.DataNascimentoField;
@@ -267,6 +257,19 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
                 if ((object.ReferenceEquals(this.GenField, value) != true)) {
                     this.GenField = value;
                     this.RaisePropertyChanged("Gen");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int IdCurso {
+            get {
+                return this.IdCursoField;
+            }
+            set {
+                if ((this.IdCursoField.Equals(value) != true)) {
+                    this.IdCursoField = value;
+                    this.RaisePropertyChanged("IdCurso");
                 }
             }
         }
@@ -319,6 +322,19 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
                 if ((object.ReferenceEquals(this.PaisOrigenField, value) != true)) {
                     this.PaisOrigenField = value;
                     this.RaisePropertyChanged("PaisOrigen");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Password {
+            get {
+                return this.PasswordField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
                 }
             }
         }
@@ -2866,6 +2882,14 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         
         ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[] EndGetUserTypes(System.IAsyncResult result);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/EditUser", ReplyAction="http://tempuri.org/IService1/EditUserResponse")]
+        bool EditUser(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IService1/EditUser", ReplyAction="http://tempuri.org/IService1/EditUserResponse")]
+        System.IAsyncResult BeginEditUser(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador, System.AsyncCallback callback, object asyncState);
+        
+        bool EndEditUser(System.IAsyncResult result);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetUserType", ReplyAction="http://tempuri.org/IService1/GetUserTypeResponse")]
         ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido GetUserType(string userLogin);
         
@@ -3071,6 +3095,25 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
             get {
                 base.RaiseExceptionIfNecessary();
                 return ((ImoEstudantePLMetroUi.CRUDImoestudante.TipoUserRespostaPedido[])(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class EditUserCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public EditUserCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
             }
         }
     }
@@ -3407,6 +3450,12 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         
         private System.Threading.SendOrPostCallback onGetUserTypesCompletedDelegate;
         
+        private BeginOperationDelegate onBeginEditUserDelegate;
+        
+        private EndOperationDelegate onEndEditUserDelegate;
+        
+        private System.Threading.SendOrPostCallback onEditUserCompletedDelegate;
+        
         private BeginOperationDelegate onBeginGetUserTypeDelegate;
         
         private EndOperationDelegate onEndGetUserTypeDelegate;
@@ -3529,6 +3578,8 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
         public event System.EventHandler<AddUserCompletedEventArgs> AddUserCompleted;
         
         public event System.EventHandler<GetUserTypesCompletedEventArgs> GetUserTypesCompleted;
+        
+        public event System.EventHandler<EditUserCompletedEventArgs> EditUserCompleted;
         
         public event System.EventHandler<GetUserTypeCompletedEventArgs> GetUserTypeCompleted;
         
@@ -3756,6 +3807,56 @@ namespace ImoEstudantePLMetroUi.CRUDImoestudante {
                 this.onGetUserTypesCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetUserTypesCompleted);
             }
             base.InvokeAsync(this.onBeginGetUserTypesDelegate, null, this.onEndGetUserTypesDelegate, this.onGetUserTypesCompletedDelegate, userState);
+        }
+        
+        public bool EditUser(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador) {
+            return base.Channel.EditUser(utilizador);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public System.IAsyncResult BeginEditUser(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginEditUser(utilizador, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        public bool EndEditUser(System.IAsyncResult result) {
+            return base.Channel.EndEditUser(result);
+        }
+        
+        private System.IAsyncResult OnBeginEditUser(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador = ((ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido)(inValues[0]));
+            return this.BeginEditUser(utilizador, callback, asyncState);
+        }
+        
+        private object[] OnEndEditUser(System.IAsyncResult result) {
+            bool retVal = this.EndEditUser(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnEditUserCompleted(object state) {
+            if ((this.EditUserCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.EditUserCompleted(this, new EditUserCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void EditUserAsync(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador) {
+            this.EditUserAsync(utilizador, null);
+        }
+        
+        public void EditUserAsync(ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido utilizador, object userState) {
+            if ((this.onBeginEditUserDelegate == null)) {
+                this.onBeginEditUserDelegate = new BeginOperationDelegate(this.OnBeginEditUser);
+            }
+            if ((this.onEndEditUserDelegate == null)) {
+                this.onEndEditUserDelegate = new EndOperationDelegate(this.OnEndEditUser);
+            }
+            if ((this.onEditUserCompletedDelegate == null)) {
+                this.onEditUserCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnEditUserCompleted);
+            }
+            base.InvokeAsync(this.onBeginEditUserDelegate, new object[] {
+                        utilizador}, this.onEndEditUserDelegate, this.onEditUserCompletedDelegate, userState);
         }
         
         public ImoEstudantePLMetroUi.CRUDImoestudante.UtilizadorRespostaPedido GetUserType(string userLogin) {

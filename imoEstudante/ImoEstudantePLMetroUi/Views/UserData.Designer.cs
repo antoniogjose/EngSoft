@@ -77,6 +77,8 @@
             this.tB_UserData_Nome = new System.Windows.Forms.TextBox();
             this.userData__nome = new System.Windows.Forms.Label();
             this.pictureBoxUserData = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tB_UserData_PassAnt = new System.Windows.Forms.TextBox();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -164,6 +166,7 @@
             this.metroPanel1.Controls.Add(this.tB_UserData_Genero);
             this.metroPanel1.Controls.Add(this.tB_UserData_DataNasci);
             this.metroPanel1.Controls.Add(this.tb_UserData_Password2);
+            this.metroPanel1.Controls.Add(this.tB_UserData_PassAnt);
             this.metroPanel1.Controls.Add(this.tb_UserData_Password);
             this.metroPanel1.Controls.Add(this.tb_UserData_UserType);
             this.metroPanel1.Controls.Add(this.tb_UserData_User);
@@ -185,6 +188,7 @@
             this.metroPanel1.Controls.Add(this.userData__label11);
             this.metroPanel1.Controls.Add(this.userData__label10);
             this.metroPanel1.Controls.Add(this.label7);
+            this.metroPanel1.Controls.Add(this.label1);
             this.metroPanel1.Controls.Add(this.editUser_label16);
             this.metroPanel1.Controls.Add(this.editUser_label15);
             this.metroPanel1.Controls.Add(this.userData__DataNasc);
@@ -264,6 +268,7 @@
             this.bt_UserData_Salvar.Size = new System.Drawing.Size(75, 45);
             this.bt_UserData_Salvar.TabIndex = 6;
             this.bt_UserData_Salvar.Text = "Salvar";
+            this.bt_UserData_Salvar.Click += new System.EventHandler(this.bt_UserData_Salvar_Click);
             // 
             // bt_UserData_Limpar
             // 
@@ -294,7 +299,7 @@
             // 
             this.tb_UserData_Password2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_UserData_Password2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_UserData_Password2.Location = new System.Drawing.Point(676, 345);
+            this.tb_UserData_Password2.Location = new System.Drawing.Point(676, 372);
             this.tb_UserData_Password2.Name = "tb_UserData_Password2";
             this.tb_UserData_Password2.Size = new System.Drawing.Size(152, 21);
             this.tb_UserData_Password2.TabIndex = 4;
@@ -303,7 +308,7 @@
             // 
             this.tb_UserData_Password.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tb_UserData_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_UserData_Password.Location = new System.Drawing.Point(676, 293);
+            this.tb_UserData_Password.Location = new System.Drawing.Point(676, 320);
             this.tb_UserData_Password.Name = "tb_UserData_Password";
             this.tb_UserData_Password.Size = new System.Drawing.Size(152, 21);
             this.tb_UserData_Password.TabIndex = 4;
@@ -505,11 +510,11 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(673, 323);
+            this.label7.Location = new System.Drawing.Point(673, 350);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 15);
+            this.label7.Size = new System.Drawing.Size(104, 15);
             this.label7.TabIndex = 3;
-            this.label7.Text = "Password";
+            this.label7.Text = "Password ( nova )";
             // 
             // editUser_label16
             // 
@@ -529,11 +534,11 @@
             this.editUser_label15.AutoSize = true;
             this.editUser_label15.BackColor = System.Drawing.Color.Transparent;
             this.editUser_label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editUser_label15.Location = new System.Drawing.Point(673, 271);
+            this.editUser_label15.Location = new System.Drawing.Point(673, 298);
             this.editUser_label15.Name = "editUser_label15";
-            this.editUser_label15.Size = new System.Drawing.Size(61, 15);
+            this.editUser_label15.Size = new System.Drawing.Size(104, 15);
             this.editUser_label15.TabIndex = 3;
-            this.editUser_label15.Text = "Password";
+            this.editUser_label15.Text = "Password ( nova )";
             // 
             // userData__DataNasc
             // 
@@ -658,6 +663,27 @@
             this.pictureBoxUserData.TabIndex = 2;
             this.pictureBoxUserData.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(673, 252);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(112, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Password ( antiga )";
+            // 
+            // tB_UserData_PassAnt
+            // 
+            this.tB_UserData_PassAnt.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tB_UserData_PassAnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tB_UserData_PassAnt.Location = new System.Drawing.Point(676, 274);
+            this.tB_UserData_PassAnt.Name = "tB_UserData_PassAnt";
+            this.tB_UserData_PassAnt.Size = new System.Drawing.Size(152, 21);
+            this.tB_UserData_PassAnt.TabIndex = 4;
+            // 
             // UserData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -728,5 +754,7 @@
         private System.Windows.Forms.TextBox tb_UserData_Password2;
         private System.Windows.Forms.TextBox tb_UserData_UserType;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tB_UserData_PassAnt;
+        private System.Windows.Forms.Label label1;
     }
 }

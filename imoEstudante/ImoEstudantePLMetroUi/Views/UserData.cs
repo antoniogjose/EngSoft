@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using ImoEstudantePLMetroUi.Resources;
+using ImoEstudantePLMetroUi.CRUDImoestudante;
 
 namespace ImoEstudantePLMetroUi
 {
@@ -73,6 +74,52 @@ namespace ImoEstudantePLMetroUi
 
         private void metroPanel1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void bt_UserData_Salvar_Click(object sender, EventArgs e)
+        {
+
+            UtilizadorRespostaPedido edit = new UtilizadorRespostaPedido();
+            edit.TipoUtilizador = ClasseStatic.us.TipoUtilizador;
+            edit.IdUser = ClasseStatic.us.IdUser;
+            edit.Nome = tB_UserData_Nome.Text;
+            edit.DataNascimento = Convert.ToDateTime(tB_UserData_DataNasci.Text);
+            edit.PaisOrigen = tB_UserData_Naci.Text;
+            edit.Gen = tB_UserData_Genero.Text;
+            edit.Password = tB_UserData_PassAnt.Text;
+            edit.Contactos = ClasseStatic.us.Contactos;
+            edit.IdCurso = ClasseStatic.us.IdCurso;
+            edit.Contactos.ToList().Where(x => x.Tipo == "Telefone" && x.Nivel == 1).First().Valor = tB_UserData_Tel.Text;
+            edit.Contactos.ToList().Where(x => x.Tipo == "Email" && x.Nivel == 1).First().Valor = tB_UserData_Email.Text;
+             
+
+            // morada
+            edit.MoradaUtilizador = new MoradaRespostaPedido();
+            edit.MoradaUtilizador.IdMorada = ClasseStatic.us.MoradaUtilizador.IdMorada;
+            edit.MoradaUtilizador.Cidade = tb_UserData_Cidade.Text;
+            edit.MoradaUtilizador.CodPostal = Convert.ToInt32(tb_UserData_CodPostal.Text);
+            edit.MoradaUtilizador.Pais = cB_UserData_Pais.SelectedItem.ToString();
+
+            // não é possivel alterar o tipo de utilizador
+            edit.MoradaUtilizador.Rua = tB_UserData_Rua.Text;
+
+            if (tb_UserData_Andar.Text != "")
+            {
+                
+                edit.MoradaUtilizador.DescAndar = tb_UserData_DescAndar.Text;
+                edit.MoradaUtilizador.Andar = Convert.ToInt32(tb_UserData_Andar.Text);
+            }
+
+            edit.UserName = tb_UserData_User.Text;
+
+            //cB_UserData_Pais.DisplayMember = "CountryName";
+            //DataRow selectedDataRow = ((DataRowView)cB_UserData_Pais.SelectedItem).Row;
+
+            edit.PaisOrigen = tB_UserData_Naci.Text;
+
+            if(ClasseStatic.log.EditUser(edit)) MessageBox.Show("Dados Alterados");
+            else MessageBox.Show("Não foi possivel efectuar a operação pretendida!!");
 
         }
     }
