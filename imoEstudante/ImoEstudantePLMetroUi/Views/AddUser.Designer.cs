@@ -39,7 +39,6 @@
             this.bt_AddUser_Addimg = new MetroFramework.Controls.MetroButton();
             this.bt_AddUser_Salvar = new MetroFramework.Controls.MetroButton();
             this.bt_AddUser_Limpar = new MetroFramework.Controls.MetroButton();
-            this.tB_AddUser_Genero = new System.Windows.Forms.TextBox();
             this.tB_AddUser_DataNasci = new System.Windows.Forms.TextBox();
             this.tb_AddUser_Password2 = new System.Windows.Forms.TextBox();
             this.tb_AddUser_Password = new System.Windows.Forms.TextBox();
@@ -78,6 +77,9 @@
             this.pictureBoxAddUser = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.cB_AddUser_UserType = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cB_AddUser_Genero = new System.Windows.Forms.ComboBox();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -156,13 +158,14 @@
             this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroPanel1.Controls.Add(this.comboBox1);
+            this.metroPanel1.Controls.Add(this.cB_AddUser_Genero);
             this.metroPanel1.Controls.Add(this.cB_AddUser_UserType);
             this.metroPanel1.Controls.Add(this.tb_AddUser_Cidade);
             this.metroPanel1.Controls.Add(this.cB_AddUser_Pais);
             this.metroPanel1.Controls.Add(this.bt_AddUser_Addimg);
             this.metroPanel1.Controls.Add(this.bt_AddUser_Salvar);
             this.metroPanel1.Controls.Add(this.bt_AddUser_Limpar);
-            this.metroPanel1.Controls.Add(this.tB_AddUser_Genero);
             this.metroPanel1.Controls.Add(this.tB_AddUser_DataNasci);
             this.metroPanel1.Controls.Add(this.tb_AddUser_Password2);
             this.metroPanel1.Controls.Add(this.tb_AddUser_Password);
@@ -185,6 +188,7 @@
             this.metroPanel1.Controls.Add(this.AddUser__label13);
             this.metroPanel1.Controls.Add(this.AddUser__label11);
             this.metroPanel1.Controls.Add(this.AddUser__label10);
+            this.metroPanel1.Controls.Add(this.label1);
             this.metroPanel1.Controls.Add(this.AddUser_label17);
             this.metroPanel1.Controls.Add(this.AddUser_label16);
             this.metroPanel1.Controls.Add(this.AddUser_label15);
@@ -226,9 +230,6 @@
             // 
             this.cB_AddUser_Pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cB_AddUser_Pais.FormattingEnabled = true;
-            this.cB_AddUser_Pais.Items.AddRange(new object[] {
-            "Activo",
-            "Desactivo"});
             this.cB_AddUser_Pais.Location = new System.Drawing.Point(128, 244);
             this.cB_AddUser_Pais.Name = "cB_AddUser_Pais";
             this.cB_AddUser_Pais.Size = new System.Drawing.Size(185, 23);
@@ -263,14 +264,6 @@
             this.bt_AddUser_Limpar.TabIndex = 6;
             this.bt_AddUser_Limpar.Text = "Limpar";
             // 
-            // tB_AddUser_Genero
-            // 
-            this.tB_AddUser_Genero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tB_AddUser_Genero.Location = new System.Drawing.Point(410, 42);
-            this.tB_AddUser_Genero.Name = "tB_AddUser_Genero";
-            this.tB_AddUser_Genero.Size = new System.Drawing.Size(211, 21);
-            this.tB_AddUser_Genero.TabIndex = 4;
-            // 
             // tB_AddUser_DataNasci
             // 
             this.tB_AddUser_DataNasci.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -278,6 +271,7 @@
             this.tB_AddUser_DataNasci.Name = "tB_AddUser_DataNasci";
             this.tB_AddUser_DataNasci.Size = new System.Drawing.Size(183, 21);
             this.tB_AddUser_DataNasci.TabIndex = 4;
+            this.tB_AddUser_DataNasci.Text = "12/12/1987";
             // 
             // tb_AddUser_Password2
             // 
@@ -296,6 +290,7 @@
             this.tb_AddUser_Password.Name = "tb_AddUser_Password";
             this.tb_AddUser_Password.Size = new System.Drawing.Size(152, 21);
             this.tb_AddUser_Password.TabIndex = 4;
+            this.tb_AddUser_Password.Text = "123";
             // 
             // tb_AddUser_User
             // 
@@ -305,6 +300,7 @@
             this.tb_AddUser_User.Name = "tb_AddUser_User";
             this.tb_AddUser_User.Size = new System.Drawing.Size(152, 21);
             this.tb_AddUser_User.TabIndex = 4;
+            this.tb_AddUser_User.Text = "alberto";
             // 
             // tB_AddUser_Naci
             // 
@@ -315,6 +311,7 @@
             this.tB_AddUser_Naci.Name = "tB_AddUser_Naci";
             this.tB_AddUser_Naci.Size = new System.Drawing.Size(491, 21);
             this.tB_AddUser_Naci.TabIndex = 4;
+            this.tB_AddUser_Naci.Text = "Alberto";
             // 
             // tb_AddUser_TelefEmerg
             // 
@@ -325,6 +322,7 @@
             this.tb_AddUser_TelefEmerg.Name = "tb_AddUser_TelefEmerg";
             this.tb_AddUser_TelefEmerg.Size = new System.Drawing.Size(491, 21);
             this.tb_AddUser_TelefEmerg.TabIndex = 4;
+            this.tb_AddUser_TelefEmerg.Text = "921123456";
             // 
             // tB_AddUser_DescAndar
             // 
@@ -341,6 +339,7 @@
             this.tb_AddUser_CodPostal.Name = "tb_AddUser_CodPostal";
             this.tb_AddUser_CodPostal.Size = new System.Drawing.Size(211, 21);
             this.tb_AddUser_CodPostal.TabIndex = 4;
+            this.tb_AddUser_CodPostal.Text = "4700123";
             // 
             // tb_AddUser_Andar
             // 
@@ -357,6 +356,7 @@
             this.tb_AddUser_Num.Name = "tb_AddUser_Num";
             this.tb_AddUser_Num.Size = new System.Drawing.Size(63, 21);
             this.tb_AddUser_Num.TabIndex = 4;
+            this.tb_AddUser_Num.Text = "1";
             // 
             // tB_AddUser_Rua
             // 
@@ -367,6 +367,7 @@
             this.tB_AddUser_Rua.Name = "tB_AddUser_Rua";
             this.tB_AddUser_Rua.Size = new System.Drawing.Size(491, 21);
             this.tB_AddUser_Rua.TabIndex = 4;
+            this.tB_AddUser_Rua.Text = "rua 1";
             // 
             // tB_AddUserEmail
             // 
@@ -377,6 +378,7 @@
             this.tB_AddUserEmail.Name = "tB_AddUserEmail";
             this.tB_AddUserEmail.Size = new System.Drawing.Size(491, 21);
             this.tB_AddUserEmail.TabIndex = 4;
+            this.tB_AddUserEmail.Text = "Alberto@gmail.com";
             // 
             // tb_AddUser_NomeEmerg
             // 
@@ -387,6 +389,7 @@
             this.tb_AddUser_NomeEmerg.Name = "tb_AddUser_NomeEmerg";
             this.tb_AddUser_NomeEmerg.Size = new System.Drawing.Size(491, 21);
             this.tb_AddUser_NomeEmerg.TabIndex = 4;
+            this.tb_AddUser_NomeEmerg.Text = "Urgencia";
             // 
             // tB_AddUser_Tel
             // 
@@ -397,6 +400,7 @@
             this.tB_AddUser_Tel.Name = "tB_AddUser_Tel";
             this.tB_AddUser_Tel.Size = new System.Drawing.Size(491, 21);
             this.tB_AddUser_Tel.TabIndex = 4;
+            this.tB_AddUser_Tel.Text = "912123456";
             // 
             // AddUser__label12
             // 
@@ -623,6 +627,7 @@
             this.tB_AddUser_Nome.Name = "tB_AddUser_Nome";
             this.tB_AddUser_Nome.Size = new System.Drawing.Size(491, 21);
             this.tB_AddUser_Nome.TabIndex = 4;
+            this.tB_AddUser_Nome.Text = "Alberto";
             // 
             // AddUser__nome
             // 
@@ -651,15 +656,50 @@
             // 
             // cB_AddUser_UserType
             // 
+            this.cB_AddUser_UserType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cB_AddUser_UserType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cB_AddUser_UserType.FormattingEnabled = true;
-            this.cB_AddUser_UserType.Items.AddRange(new object[] {
-            "Activo",
-            "Desactivo"});
             this.cB_AddUser_UserType.Location = new System.Drawing.Point(676, 167);
             this.cB_AddUser_UserType.Name = "cB_AddUser_UserType";
             this.cB_AddUser_UserType.Size = new System.Drawing.Size(152, 23);
             this.cB_AddUser_UserType.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(673, 250);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Estado";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Activo",
+            "Desactivo"});
+            this.comboBox1.Location = new System.Drawing.Point(676, 272);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(152, 23);
+            this.comboBox1.TabIndex = 7;
+            // 
+            // cB_AddUser_Genero
+            // 
+            this.cB_AddUser_Genero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cB_AddUser_Genero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cB_AddUser_Genero.FormattingEnabled = true;
+            this.cB_AddUser_Genero.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cB_AddUser_Genero.Location = new System.Drawing.Point(410, 39);
+            this.cB_AddUser_Genero.Name = "cB_AddUser_Genero";
+            this.cB_AddUser_Genero.Size = new System.Drawing.Size(211, 23);
+            this.cB_AddUser_Genero.TabIndex = 7;
             // 
             // AddUser
             // 
@@ -694,7 +734,6 @@
         private MetroFramework.Controls.MetroButton bt_AddUser_Addimg;
         private MetroFramework.Controls.MetroButton bt_AddUser_Salvar;
         private MetroFramework.Controls.MetroButton bt_AddUser_Limpar;
-        private System.Windows.Forms.TextBox tB_AddUser_Genero;
         private System.Windows.Forms.TextBox tB_AddUser_DataNasci;
         private System.Windows.Forms.TextBox tb_AddUser_Password2;
         private System.Windows.Forms.TextBox tb_AddUser_Password;
@@ -732,5 +771,8 @@
         private System.Windows.Forms.Label AddUser__nome;
         private System.Windows.Forms.PictureBox pictureBoxAddUser;
         private System.Windows.Forms.ComboBox cB_AddUser_UserType;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cB_AddUser_Genero;
     }
 }

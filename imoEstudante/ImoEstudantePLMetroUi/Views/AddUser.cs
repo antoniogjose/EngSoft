@@ -30,6 +30,24 @@ namespace ImoEstudantePLMetroUi
         public AddUser()
         {
             InitializeComponent();
+
+            // pais da morada
+            List<CRUDImoestudante.PaisRespostaPedido> listObjt = ClasseStatic.log.GetPaises("token").ToList();
+            foreach (CRUDImoestudante.PaisRespostaPedido element in listObjt)
+                cB_AddUser_Pais.Items.Add(element.Name);
+
+            int index = cB_AddUser_Pais.FindString("Portugal");
+            cB_AddUser_Pais.SelectedIndex = index;
+
+            List<CRUDImoestudante.TipoUserRespostaPedido> listObjtipos = ClasseStatic.log.GetUserTypes().ToList();
+            foreach (CRUDImoestudante.TipoUserRespostaPedido element in listObjtipos)
+                cB_AddUser_UserType.Items.Add(element.Tipo.TrimEnd());
+
+            int index2 = cB_AddUser_UserType.FindString("Agente");
+            cB_AddUser_UserType.SelectedIndex = index2;
+
+            cB_AddUser_Genero.SelectedIndex = 1;
+
         }
 
         private void bt_AddUser_Addimg_Click(object sender, EventArgs e)
@@ -50,18 +68,24 @@ namespace ImoEstudantePLMetroUi
         private void bt_UserData_Salvar_Click(object sender, EventArgs e)
         {
             UtilizadorRespostaPedido edit = new UtilizadorRespostaPedido();
-            edit.TipoUtilizador = ClasseStatic.us.TipoUtilizador;
+            edit.TipoUtilizador = cB_AddUser_UserType.SelectedItem.ToString();
             edit.IdUser = 0;
             edit.Nome = tB_AddUser_Nome.Text;
             edit.DataNascimento = Convert.ToDateTime(tB_AddUser_DataNasci.Text);
             edit.PaisOrigen = tB_AddUser_Naci.Text;
-            edit.Gen = tB_AddUser_Genero.Text;
+            edit.Gen = cB_AddUser_Genero.SelectedItem.ToString();
+            edit.IdCurso = 1;
 
             // preciso validar as duas
+            edit.UserName = tb_AddUser_User.Text;
             edit.Password = tb_AddUser_Password.Text;
 
+            // contactos
             edit.Contactos = new ContactoRespostaPedido[3];
             edit.IdCurso = ClasseStatic.us.IdCurso;
+            edit.Contactos[0] = new ContactoRespostaPedido();
+            edit.Contactos[1] = new ContactoRespostaPedido();
+            edit.Contactos[2] = new ContactoRespostaPedido();
 
             edit.Contactos[0].Tipo = "Telefone";
             edit.Contactos[0].Valor = tB_AddUser_Tel.Text;
@@ -71,9 +95,9 @@ namespace ImoEstudantePLMetroUi
             edit.Contactos[1].Valor = tB_AddUserEmail.Text;
             edit.Contactos[1].Descricao = "Pessoal";
 
-            edit.Contactos[1].Tipo = "Urgente";
-            edit.Contactos[1].Valor = tb_AddUser_TelefEmerg.Text;
-            edit.Contactos[1].Descricao = tb_AddUser_NomeEmerg.Text;
+            edit.Contactos[2].Tipo = "Urgente";
+            edit.Contactos[2].Valor = tb_AddUser_TelefEmerg.Text;
+            edit.Contactos[2].Descricao = tb_AddUser_NomeEmerg.Text;
 
 
             // morada
@@ -93,16 +117,12 @@ namespace ImoEstudantePLMetroUi
                 edit.MoradaUtilizador.Andar = Convert.ToInt32(tb_AddUser_Andar.Text);
             }
 
-            edit.UserName = tb_AddUser_User.Text;
-            edit.Password = tb_A
-
-            //cB_UserData_Pais.DisplayMember = "CountryName";
-            //DataRow selectedDataRow = ((DataRowView)cB_UserData_Pais.SelectedItem).Row;
+            
 
             edit.PaisOrigen = tB_AddUser_Naci.Text;
 
-            if (ClasseStatic.log.EditUser(edit)) MessageBox.Show("Dados Alterados");
-            else MessageBox.Show("Não foi possivel efectuar a operação pretendida!!");
+            if (ClasseStatic.log.AddUser(edit)) MessageBox.Show("O Utilizador foi adicionado");
+            else MessageBox.Show("Não foi possivel adicionar utilizador!!");
         }
     }
 }
