@@ -65,20 +65,20 @@ namespace ImoEstudantePLMetroUi
 
             edit.Contactos[0].Tipo = "Telefone";
             edit.Contactos[0].Valor = tB_AddUser_Tel.Text;
+            edit.Contactos[0].Descricao = "Pessoal";
 
+            edit.Contactos[1].Tipo = "Email";
+            edit.Contactos[1].Valor = tB_AddUserEmail.Text;
+            edit.Contactos[1].Descricao = "Pessoal";
 
-
-            edit.Contactos.ToList().Where(x => x.Tipo == "Telefone" && x.Nivel == 1).First().Valor = tB_AddUser_Tel.Text;
-            edit.Contactos.ToList().Where(x => x.Tipo == "Telefone" && x.Nivel == 1).First().Descricao = tB_AddUser_Tel.Text;
-            edit.Contactos.ToList().Where(x => x.Tipo == "Email" && x.Nivel == 1).First().Valor = tB_AddUserEmail.Text;
-            edit.Contactos.ToList().Where(x => x.Tipo == "Email" && x.Nivel == 1).First().Descricao = "Pessoal";
-            edit.Contactos.ToList().Where(x => x.Tipo == "Urgente" && x.Nivel == 1).First().Valor = tb_AddUser_TelefEmerg.Text;
-            edit.Contactos.ToList().Where(x => x.Tipo == "Urgente" && x.Nivel == 1).First().Descricao = tb_AddUser_NomeEmerg.Text;
+            edit.Contactos[1].Tipo = "Urgente";
+            edit.Contactos[1].Valor = tb_AddUser_TelefEmerg.Text;
+            edit.Contactos[1].Descricao = tb_AddUser_NomeEmerg.Text;
 
 
             // morada
             edit.MoradaUtilizador = new MoradaRespostaPedido();
-            edit.MoradaUtilizador.IdMorada = ClasseStatic.us.MoradaUtilizador.IdMorada;
+            edit.MoradaUtilizador.IdMorada = 0;
             edit.MoradaUtilizador.Cidade = tb_AddUser_Cidade.Text;
             edit.MoradaUtilizador.CodPostal = Convert.ToInt32(tb_AddUser_CodPostal.Text);
             edit.MoradaUtilizador.Pais = cB_AddUser_Pais.SelectedItem.ToString();
@@ -94,6 +94,7 @@ namespace ImoEstudantePLMetroUi
             }
 
             edit.UserName = tb_AddUser_User.Text;
+            edit.Password = tb_A
 
             //cB_UserData_Pais.DisplayMember = "CountryName";
             //DataRow selectedDataRow = ((DataRowView)cB_UserData_Pais.SelectedItem).Row;
