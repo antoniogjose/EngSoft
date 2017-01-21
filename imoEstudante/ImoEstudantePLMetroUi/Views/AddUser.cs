@@ -76,6 +76,7 @@ namespace ImoEstudantePLMetroUi
             edit.Gen = cB_AddUser_Genero.SelectedItem.ToString();
             edit.IdCurso = 1;
 
+
             // preciso validar as duas
             edit.UserName = tb_AddUser_User.Text;
             edit.Password = tb_AddUser_Password.Text;

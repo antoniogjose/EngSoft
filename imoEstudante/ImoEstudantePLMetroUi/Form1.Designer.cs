@@ -40,30 +40,22 @@
             this.menuImoEstudante_Idiom_EN = new System.Windows.Forms.ToolStripMenuItem();
             this.menuImoEstudante_Idiom_SP = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.menuImoEstudante_Definitions = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.logInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuImoEstudante_LogOut = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuImoEstudante_Close = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRents = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRents_Search = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRents_Add = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuRents_Export = new System.Windows.Forms.ToolStripMenuItem();
             this.menuRents_List = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHabitations = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHabitations_Search = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHabitations_Add = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuHabitations_Export = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHabitations_List = new System.Windows.Forms.ToolStripMenuItem();
             this.menuClients = new System.Windows.Forms.ToolStripMenuItem();
             this.menuClients_Search = new System.Windows.Forms.ToolStripMenuItem();
             this.menuClients_Add = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuClients_Export = new System.Windows.Forms.ToolStripMenuItem();
             this.menuClients_List = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuHelp_View = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuHelp_About = new System.Windows.Forms.ToolStripMenuItem();
             this.panel = new MetroFramework.Controls.MetroPanel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -89,12 +81,9 @@
             this.toolStripSeparator2,
             this.menuImoEstudante_Idiom,
             this.toolStripSeparator1,
-            this.menuImoEstudante_Definitions,
-            this.toolStripSeparator3,
             this.logInToolStripMenuItem,
             this.logOutToolStripMenuItem,
-            this.menuImoEstudante_LogOut,
-            this.menuImoEstudante_Close});
+            this.menuImoEstudante_LogOut});
             this.menuImoEstudante.Name = "menuImoEstudante";
             resources.ApplyResources(this.menuImoEstudante, "menuImoEstudante");
             // 
@@ -157,16 +146,6 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
-            // menuImoEstudante_Definitions
-            // 
-            this.menuImoEstudante_Definitions.Name = "menuImoEstudante_Definitions";
-            resources.ApplyResources(this.menuImoEstudante_Definitions, "menuImoEstudante_Definitions");
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            // 
             // logInToolStripMenuItem
             // 
             this.logInToolStripMenuItem.Name = "logInToolStripMenuItem";
@@ -182,17 +161,11 @@
             this.menuImoEstudante_LogOut.Name = "menuImoEstudante_LogOut";
             resources.ApplyResources(this.menuImoEstudante_LogOut, "menuImoEstudante_LogOut");
             // 
-            // menuImoEstudante_Close
-            // 
-            this.menuImoEstudante_Close.Name = "menuImoEstudante_Close";
-            resources.ApplyResources(this.menuImoEstudante_Close, "menuImoEstudante_Close");
-            // 
             // menuRents
             // 
             this.menuRents.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuRents_Search,
             this.menuRents_Add,
-            this.menuRents_Export,
             this.menuRents_List});
             this.menuRents.Name = "menuRents";
             resources.ApplyResources(this.menuRents, "menuRents");
@@ -209,11 +182,6 @@
             resources.ApplyResources(this.menuRents_Add, "menuRents_Add");
             this.menuRents_Add.Click += new System.EventHandler(this.btAddRent_Click);
             // 
-            // menuRents_Export
-            // 
-            this.menuRents_Export.Name = "menuRents_Export";
-            resources.ApplyResources(this.menuRents_Export, "menuRents_Export");
-            // 
             // menuRents_List
             // 
             this.menuRents_List.Name = "menuRents_List";
@@ -225,7 +193,6 @@
             this.menuHabitations.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuHabitations_Search,
             this.menuHabitations_Add,
-            this.menuHabitations_Export,
             this.menuHabitations_List});
             this.menuHabitations.Name = "menuHabitations";
             resources.ApplyResources(this.menuHabitations, "menuHabitations");
@@ -242,11 +209,6 @@
             resources.ApplyResources(this.menuHabitations_Add, "menuHabitations_Add");
             this.menuHabitations_Add.Click += new System.EventHandler(this.btAddHouse_Click);
             // 
-            // menuHabitations_Export
-            // 
-            this.menuHabitations_Export.Name = "menuHabitations_Export";
-            resources.ApplyResources(this.menuHabitations_Export, "menuHabitations_Export");
-            // 
             // menuHabitations_List
             // 
             this.menuHabitations_List.Name = "menuHabitations_List";
@@ -258,7 +220,6 @@
             this.menuClients.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuClients_Search,
             this.menuClients_Add,
-            this.menuClients_Export,
             this.menuClients_List});
             this.menuClients.Name = "menuClients";
             resources.ApplyResources(this.menuClients, "menuClients");
@@ -275,11 +236,6 @@
             resources.ApplyResources(this.menuClients_Add, "menuClients_Add");
             this.menuClients_Add.Click += new System.EventHandler(this.btAddClient_Click);
             // 
-            // menuClients_Export
-            // 
-            this.menuClients_Export.Name = "menuClients_Export";
-            resources.ApplyResources(this.menuClients_Export, "menuClients_Export");
-            // 
             // menuClients_List
             // 
             this.menuClients_List.Name = "menuClients_List";
@@ -288,21 +244,8 @@
             // 
             // menuHelp
             // 
-            this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuHelp_View,
-            this.menuHelp_About});
             this.menuHelp.Name = "menuHelp";
             resources.ApplyResources(this.menuHelp, "menuHelp");
-            // 
-            // menuHelp_View
-            // 
-            this.menuHelp_View.Name = "menuHelp_View";
-            resources.ApplyResources(this.menuHelp_View, "menuHelp_View");
-            // 
-            // menuHelp_About
-            // 
-            this.menuHelp_About.Name = "menuHelp_About";
-            resources.ApplyResources(this.menuHelp_About, "menuHelp_About");
             // 
             // panel
             // 
@@ -346,18 +289,12 @@
         private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Idiom_PT;
         private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Idiom_EN;
         private System.Windows.Forms.ToolStripMenuItem menuRents_Add;
-        private System.Windows.Forms.ToolStripMenuItem menuRents_Export;
         private System.Windows.Forms.ToolStripMenuItem menuRents_List;
         private System.Windows.Forms.ToolStripMenuItem menuHabitations_Add;
-        private System.Windows.Forms.ToolStripMenuItem menuHabitations_Export;
         private System.Windows.Forms.ToolStripMenuItem menuHabitations_List;
         private System.Windows.Forms.ToolStripMenuItem menuClients_Add;
-        private System.Windows.Forms.ToolStripMenuItem menuClients_Export;
         private System.Windows.Forms.ToolStripMenuItem menuClients_List;
         private System.Windows.Forms.ToolStripMenuItem menuHelp;
-        private System.Windows.Forms.ToolStripMenuItem menuHelp_View;
-        private System.Windows.Forms.ToolStripMenuItem menuHelp_About;
-        private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Close;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Search;
@@ -365,8 +302,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuHabitations_Search;
         private System.Windows.Forms.ToolStripMenuItem menuClients_Search;
         private MetroFramework.Controls.MetroPanel panel;
-        private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Definitions;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_LogOut;
         private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Add;
         private System.Windows.Forms.ToolStripMenuItem menuImoEstudante_Idiom_SP;
