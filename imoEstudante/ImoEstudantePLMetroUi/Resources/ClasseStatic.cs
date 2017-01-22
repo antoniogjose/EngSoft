@@ -12,6 +12,8 @@ namespace ImoEstudantePLMetroUi.Resources
     public class ClasseStatic
     {
         public static UtilizadorRespostaPedido us { get; set; }
+        public static UtilizadorRespostaPedido cliente { get; set; }
         public static Service1Client log { get; set; }
+        public static AlojamentoRespostaPedido alj { get; set; }
     }
 }

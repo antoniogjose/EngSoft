@@ -95,9 +95,9 @@
             this.lb_addHouse_ = new System.Windows.Forms.Label();
             this.dg_Avaliacoes = new System.Windows.Forms.DataGridView();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
-            this.lB_POI = new System.Windows.Forms.ListBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.lB_POI = new System.Windows.Forms.ListBox();
+            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -154,8 +154,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
-            this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
+            this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Small;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
@@ -649,7 +649,7 @@
             // metroButton2
             // 
             this.metroButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton2.Location = new System.Drawing.Point(-2330, 114);
+            this.metroButton2.Location = new System.Drawing.Point(-2978, 114);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(115, 49);
             this.metroButton2.TabIndex = 15;
@@ -658,7 +658,7 @@
             // metroButton1
             // 
             this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton1.Location = new System.Drawing.Point(-2330, 169);
+            this.metroButton1.Location = new System.Drawing.Point(-2978, 169);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(115, 49);
             this.metroButton1.TabIndex = 15;
@@ -713,7 +713,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Location = new System.Drawing.Point(332, 84);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(508, 134);
+            this.richTextBox1.Size = new System.Drawing.Size(0, 134);
             this.richTextBox1.TabIndex = 11;
             this.richTextBox1.Text = "";
             // 
@@ -730,7 +730,7 @@
             "Iten3"});
             this.comboBox1.Location = new System.Drawing.Point(448, 25);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(59, 23);
+            this.comboBox1.Size = new System.Drawing.Size(0, 23);
             this.comboBox1.TabIndex = 10;
             // 
             // label4
@@ -796,7 +796,7 @@
             this.dg_Avaliacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_Avaliacoes.Location = new System.Drawing.Point(0, 226);
             this.dg_Avaliacoes.Name = "dg_Avaliacoes";
-            this.dg_Avaliacoes.Size = new System.Drawing.Size(840, 241);
+            this.dg_Avaliacoes.Size = new System.Drawing.Size(192, 0);
             this.dg_Avaliacoes.TabIndex = 3;
             // 
             // metroTabPage2
@@ -812,6 +812,28 @@
             this.metroTabPage2.Text = "Mapa e Pontos de Interesse";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.Enter += new System.EventHandler(this.metroTabPage2_Enter);
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel2.Location = new System.Drawing.Point(0, 8);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(106, 15);
+            this.metroLabel2.TabIndex = 4;
+            this.metroLabel2.Text = "Pontos de Interesse";
+            // 
+            // lB_POI
+            // 
+            this.lB_POI.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lB_POI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lB_POI.FormattingEnabled = true;
+            this.lB_POI.Location = new System.Drawing.Point(4, 34);
+            this.lB_POI.Name = "lB_POI";
+            this.lB_POI.Size = new System.Drawing.Size(306, 433);
+            this.lB_POI.TabIndex = 3;
+            this.lB_POI.SelectedIndexChanged += new System.EventHandler(this.lB_POI_SelectedIndexChanged);
             // 
             // gMapControl1
             // 
@@ -840,27 +862,6 @@
             this.gMapControl1.Size = new System.Drawing.Size(524, 456);
             this.gMapControl1.TabIndex = 2;
             this.gMapControl1.Zoom = 0D;
-            // 
-            // lB_POI
-            // 
-            this.lB_POI.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.lB_POI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lB_POI.FormattingEnabled = true;
-            this.lB_POI.Location = new System.Drawing.Point(4, 34);
-            this.lB_POI.Name = "lB_POI";
-            this.lB_POI.Size = new System.Drawing.Size(306, 433);
-            this.lB_POI.TabIndex = 3;
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel2.Location = new System.Drawing.Point(0, 8);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(106, 15);
-            this.metroLabel2.TabIndex = 4;
-            this.metroLabel2.Text = "Pontos de Interesse";
             // 
             // AddHouse
             // 

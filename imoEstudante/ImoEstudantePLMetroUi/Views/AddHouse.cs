@@ -15,13 +15,16 @@ using ImoEstudantePLMetroUi.Views;
 using System.Net;
 using System.Web.Script.Serialization;
 using ImoEstudantePLMetroUi.Resources;
+using GMap.NET.WindowsForms.Markers;
 
 namespace ImoEstudantePLMetroUi
 {
     public partial class AddHouse : MetroFramework.Controls.MetroUserControl
     {
         private static AddHouse _instance;
-        internal readonly GMapOverlay objects = new GMapOverlay("objects");
+        internal readonly GMapOverlay markers = new GMapOverlay("markers");
+        Example pois;
+        GMapMarker marker;
 
         public static AddHouse Instance
         {
@@ -39,6 +42,10 @@ namespace ImoEstudantePLMetroUi
 
         private void metroTabPage2_Enter(object sender, EventArgs e)
         {
+
+            double latit = 41.5361453446439;
+            double longit = -8.6068868637085;
+
             lB_POI.Items.Clear();
             //use google provider
             gMapControl1.MapProvider = GoogleMapProvider.Instance;
@@ -47,11 +54,12 @@ namespace ImoEstudantePLMetroUi
             //not use proxy
             GMapProvider.WebProxy = null;
             //center map on moscow
-            // gMapControl1.Position = new PointLatLng(55.755786121111, 37.617633343333);
+            gMapControl1.Position = new PointLatLng(latit, longit);
 
-            gMapControl1.SetPositionByKeywords("Braga, Portugal");
+            //gMapControl1.SetPositionByKeywords("Braga, Portugal");
 
-            gMapControl1.SetPositionByKeywords("Barcelos, Portugal");
+            //gMapControl1.SetPositionByKeywords("Barcelos, Portugal");
+
 
 
 
@@ -76,9 +84,11 @@ namespace ImoEstudantePLMetroUi
 
             JavaScriptSerializer jss = new JavaScriptSerializer();
 
-            Example pois = jss.Deserialize<Example>(results);
+            pois = jss.Deserialize<Example>(results);
 
-
+            marker = new GMarkerGoogle(new PointLatLng(latit, longit), GMarkerGoogleType.blue);
+            markers.Markers.Add(marker);
+            gMapControl1.Overlays.Add(markers);
 
             for (int i = 0; i < pois.results.Count; i++)
             {
@@ -86,6 +96,10 @@ namespace ImoEstudantePLMetroUi
                 byte[] bytes = Encoding.Default.GetBytes(pois.results[i].name);
                 string myString = Encoding.UTF8.GetString(bytes);
                 lB_POI.Items.Add(myString);
+
+                //marker = new GMarkerGoogle(new PointLatLng(pois.results[i].geometry.location.lat, pois.results[i].geometry.location.lng), GMarkerGoogleType.green_small);
+                //markers.Markers.Add(marker);
+                //gMapControl1.Overlays.Add(markers);
             }
         }
 
@@ -94,6 +108,40 @@ namespace ImoEstudantePLMetroUi
             AddHouseImages.Instance.BringToFront();
 
             //Idioma.switchLanguage(panel, cul, res_man);
+        }
+
+        private bool MarkerExist(GMapMarker marker)
+        {
+            foreach( GMapMarker x in markers.Markers)
+            {
+                if (x.Position.Lat == marker.Position.Lat && x.Position.Lng == marker.Position.Lng)
+                    return true;
+            }
+            return false;
+        }
+
+        private void lB_POI_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string curItem = lB_POI.SelectedItem.ToString();
+            gMapControl1.Overlays.Clear();
+
+            for (int i = 0; i < pois.results.Count; i++)
+            {
+                // apresentar o nome do POI em portugues
+                byte[] bytes = Encoding.Default.GetBytes(pois.results[i].name);
+                string myString = Encoding.UTF8.GetString(bytes);
+                if (curItem == myString)
+                {
+                    marker = new GMarkerGoogle(new PointLatLng(pois.results[i].geometry.location.lat, pois.results[i].geometry.location.lng), GMarkerGoogleType.green_small);
+
+                    if (!MarkerExist(marker))
+                    {
+                        markers.Markers.Add(marker);
+                        gMapControl1.Overlays.Add(markers);
+                    }
+                }
+            }
+
         }
     }
 }
