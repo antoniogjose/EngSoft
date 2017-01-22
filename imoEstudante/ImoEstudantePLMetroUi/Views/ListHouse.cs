@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using ImoEstudantePLMetroUi.Resources;
+using ImoEstudantePLMetroUi.CRUDImoestudante;
+
 namespace ImoEstudantePLMetroUi
 {
     public partial class ListHouse : MetroFramework.Controls.MetroUserControl
@@ -26,6 +29,7 @@ namespace ImoEstudantePLMetroUi
         public ListHouse()
         {
             InitializeComponent();
+            dataGridView1.DataSource = ClasseStatic.log.GetHouseData();
         }
     }
 }

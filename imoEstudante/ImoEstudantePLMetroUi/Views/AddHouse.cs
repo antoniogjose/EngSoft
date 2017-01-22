@@ -60,6 +60,59 @@ namespace ImoEstudantePLMetroUi
             gMapControl1.Zoom = 15;
         }
 
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void metroTabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelDashBoard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cB_addHouse_pais_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bT_addHouse_inserir_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

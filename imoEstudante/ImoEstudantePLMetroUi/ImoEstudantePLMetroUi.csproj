@@ -141,6 +141,12 @@
     <Compile Include="Views\AddHouse.Designer.cs">
       <DependentUpon>AddHouse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\AddHouseImages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AddHouseImages.designer.cs">
+      <DependentUpon>AddHouseImages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\AddRent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -249,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AddHouse.resx">
       <DependentUpon>AddHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddHouseImages.resx">
+      <DependentUpon>AddHouseImages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AddRent.resx">
       <DependentUpon>AddRent.cs</DependentUpon>
