@@ -73,7 +73,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.bT_addHouse_inserir = new System.Windows.Forms.Button();
+            this.bT_addHouse_inserirFoto = new System.Windows.Forms.Button();
             this.cB_addHouse_pais = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tB_addHouse_rua = new System.Windows.Forms.TextBox();
@@ -96,6 +96,8 @@
             this.dg_Avaliacoes = new System.Windows.Forms.DataGridView();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.lB_POI = new System.Windows.Forms.ListBox();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.panelDashBoard.SuspendLayout();
             this.panel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -123,7 +125,6 @@
             this.panelDashBoard.VerticalScrollbarBarColor = true;
             this.panelDashBoard.VerticalScrollbarHighlightOnWheel = false;
             this.panelDashBoard.VerticalScrollbarSize = 10;
-            this.panelDashBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDashBoard_Paint);
             // 
             // metroLabel1
             // 
@@ -203,7 +204,7 @@
             this.metroTabPage1.Controls.Add(this.label7);
             this.metroTabPage1.Controls.Add(this.label8);
             this.metroTabPage1.Controls.Add(this.label6);
-            this.metroTabPage1.Controls.Add(this.bT_addHouse_inserir);
+            this.metroTabPage1.Controls.Add(this.bT_addHouse_inserirFoto);
             this.metroTabPage1.Controls.Add(this.cB_addHouse_pais);
             this.metroTabPage1.Controls.Add(this.label5);
             this.metroTabPage1.Controls.Add(this.tB_addHouse_rua);
@@ -215,22 +216,21 @@
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Dados da Habitação";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
-            this.metroTabPage1.Click += new System.EventHandler(this.metroTabPage1_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(439, 404);
+            this.button1.Location = new System.Drawing.Point(668, 231);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 26);
+            this.button1.Size = new System.Drawing.Size(116, 26);
             this.button1.TabIndex = 56;
             this.button1.Text = "Inserir";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // bT_addHouse_recomecar
             // 
-            this.bT_addHouse_recomecar.Location = new System.Drawing.Point(317, 404);
+            this.bT_addHouse_recomecar.Location = new System.Drawing.Point(668, 199);
             this.bT_addHouse_recomecar.Name = "bT_addHouse_recomecar";
-            this.bT_addHouse_recomecar.Size = new System.Drawing.Size(92, 26);
+            this.bT_addHouse_recomecar.Size = new System.Drawing.Size(116, 26);
             this.bT_addHouse_recomecar.TabIndex = 55;
             this.bT_addHouse_recomecar.Text = "Recomeçar";
             this.bT_addHouse_recomecar.UseVisualStyleBackColor = true;
@@ -304,7 +304,6 @@
             this.checkBox4.TabIndex = 48;
             this.checkBox4.Text = "Máquina de Lavar Roupa";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -451,7 +450,6 @@
             this.tB_addHouse_longitude.Name = "tB_addHouse_longitude";
             this.tB_addHouse_longitude.Size = new System.Drawing.Size(198, 23);
             this.tB_addHouse_longitude.TabIndex = 21;
-            this.tB_addHouse_longitude.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -522,7 +520,6 @@
             this.cB_addHouse_cidade.Name = "cB_addHouse_cidade";
             this.cB_addHouse_cidade.Size = new System.Drawing.Size(198, 23);
             this.cB_addHouse_cidade.TabIndex = 12;
-            this.cB_addHouse_cidade.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // tB_addHouse_descAndar
             // 
@@ -567,7 +564,6 @@
             this.label8.Size = new System.Drawing.Size(46, 15);
             this.label8.TabIndex = 7;
             this.label8.Text = "Cidade";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label6
             // 
@@ -578,17 +574,16 @@
             this.label6.Size = new System.Drawing.Size(31, 15);
             this.label6.TabIndex = 6;
             this.label6.Text = "Pais";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // bT_addHouse_inserir
+            // bT_addHouse_inserirFoto
             // 
-            this.bT_addHouse_inserir.Location = new System.Drawing.Point(668, 12);
-            this.bT_addHouse_inserir.Name = "bT_addHouse_inserir";
-            this.bT_addHouse_inserir.Size = new System.Drawing.Size(116, 64);
-            this.bT_addHouse_inserir.TabIndex = 5;
-            this.bT_addHouse_inserir.Text = "Inserir Fotos";
-            this.bT_addHouse_inserir.UseVisualStyleBackColor = true;
-            this.bT_addHouse_inserir.Click += new System.EventHandler(this.bT_addHouse_inserir_Click);
+            this.bT_addHouse_inserirFoto.Location = new System.Drawing.Point(668, 12);
+            this.bT_addHouse_inserirFoto.Name = "bT_addHouse_inserirFoto";
+            this.bT_addHouse_inserirFoto.Size = new System.Drawing.Size(116, 64);
+            this.bT_addHouse_inserirFoto.TabIndex = 5;
+            this.bT_addHouse_inserirFoto.Text = "Inserir Fotos";
+            this.bT_addHouse_inserirFoto.UseVisualStyleBackColor = true;
+            this.bT_addHouse_inserirFoto.Click += new System.EventHandler(this.bT_addHouse_inserirFoto_Click);
             // 
             // cB_addHouse_pais
             // 
@@ -597,7 +592,6 @@
             this.cB_addHouse_pais.Name = "cB_addHouse_pais";
             this.cB_addHouse_pais.Size = new System.Drawing.Size(159, 23);
             this.cB_addHouse_pais.TabIndex = 4;
-            this.cB_addHouse_pais.SelectedIndexChanged += new System.EventHandler(this.cB_addHouse_pais_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -655,7 +649,7 @@
             // metroButton2
             // 
             this.metroButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton2.Location = new System.Drawing.Point(-1034, 114);
+            this.metroButton2.Location = new System.Drawing.Point(-2330, 114);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(115, 49);
             this.metroButton2.TabIndex = 15;
@@ -664,7 +658,7 @@
             // metroButton1
             // 
             this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton1.Location = new System.Drawing.Point(-1034, 169);
+            this.metroButton1.Location = new System.Drawing.Point(-2330, 169);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(115, 49);
             this.metroButton1.TabIndex = 15;
@@ -719,7 +713,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Location = new System.Drawing.Point(332, 84);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(0, 134);
+            this.richTextBox1.Size = new System.Drawing.Size(508, 134);
             this.richTextBox1.TabIndex = 11;
             this.richTextBox1.Text = "";
             // 
@@ -734,9 +728,9 @@
             "Iten1",
             "Iten2",
             "Iten3"});
-            this.comboBox1.Location = new System.Drawing.Point(332, 27);
+            this.comboBox1.Location = new System.Drawing.Point(448, 25);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(0, 23);
+            this.comboBox1.Size = new System.Drawing.Size(59, 23);
             this.comboBox1.TabIndex = 10;
             // 
             // label4
@@ -788,7 +782,7 @@
             this.lb_addHouse_.AutoSize = true;
             this.lb_addHouse_.BackColor = System.Drawing.Color.Transparent;
             this.lb_addHouse_.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_addHouse_.Location = new System.Drawing.Point(329, 9);
+            this.lb_addHouse_.Location = new System.Drawing.Point(329, 30);
             this.lb_addHouse_.Name = "lb_addHouse_";
             this.lb_addHouse_.Size = new System.Drawing.Size(113, 15);
             this.lb_addHouse_.TabIndex = 9;
@@ -802,11 +796,13 @@
             this.dg_Avaliacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_Avaliacoes.Location = new System.Drawing.Point(0, 226);
             this.dg_Avaliacoes.Name = "dg_Avaliacoes";
-            this.dg_Avaliacoes.Size = new System.Drawing.Size(0, 0);
+            this.dg_Avaliacoes.Size = new System.Drawing.Size(840, 241);
             this.dg_Avaliacoes.TabIndex = 3;
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.Controls.Add(this.metroLabel2);
+            this.metroTabPage2.Controls.Add(this.lB_POI);
             this.metroTabPage2.Controls.Add(this.gMapControl1);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
@@ -815,7 +811,6 @@
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Mapa e Pontos de Interesse";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.Click += new System.EventHandler(this.metroTabPage2_Click);
             this.metroTabPage2.Enter += new System.EventHandler(this.metroTabPage2_Enter);
             // 
             // gMapControl1
@@ -829,7 +824,7 @@
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(0, 8);
+            this.gMapControl1.Location = new System.Drawing.Point(316, 8);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 2;
             this.gMapControl1.MinZoom = 2;
@@ -842,9 +837,30 @@
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(840, 456);
+            this.gMapControl1.Size = new System.Drawing.Size(524, 456);
             this.gMapControl1.TabIndex = 2;
             this.gMapControl1.Zoom = 0D;
+            // 
+            // lB_POI
+            // 
+            this.lB_POI.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lB_POI.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lB_POI.FormattingEnabled = true;
+            this.lB_POI.Location = new System.Drawing.Point(4, 34);
+            this.lB_POI.Name = "lB_POI";
+            this.lB_POI.Size = new System.Drawing.Size(306, 433);
+            this.lB_POI.TabIndex = 3;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel2.Location = new System.Drawing.Point(0, 8);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(106, 15);
+            this.metroLabel2.TabIndex = 4;
+            this.metroLabel2.Text = "Pontos de Interesse";
             // 
             // AddHouse
             // 
@@ -864,6 +880,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dg_Avaliacoes)).EndInit();
             this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -881,7 +898,7 @@
         private System.Windows.Forms.DataGridView dg_Avaliacoes;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton1;
-        private System.Windows.Forms.Button bT_addHouse_inserir;
+        private System.Windows.Forms.Button bT_addHouse_inserirFoto;
         private System.Windows.Forms.ComboBox cB_addHouse_pais;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tB_addHouse_rua;
@@ -937,5 +954,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lb_addHouse_;
+        private System.Windows.Forms.ListBox lB_POI;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
     }
 }

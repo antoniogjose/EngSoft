@@ -15,6 +15,7 @@ using System.Resources;
 using System.ServiceModel.Security;
 using ImoEstudantePLMetroUi.CRUDImoestudante;
 using ImoEstudantePLMetroUi.Resources;
+using ImoEstudantePLMetroUi.Views;
 
 namespace ImoEstudantePLMetroUi
 {
@@ -78,6 +79,9 @@ namespace ImoEstudantePLMetroUi
             AddUser.Instance.Dock = DockStyle.Fill;
             panel.Controls.Add(UserData.Instance);
             UserData.Instance.Dock = DockStyle.Fill;
+
+            panel.Controls.Add(AddHouseImages.Instance);
+            AddHouseImages.Instance.Dock = DockStyle.Fill;
 
         }
 

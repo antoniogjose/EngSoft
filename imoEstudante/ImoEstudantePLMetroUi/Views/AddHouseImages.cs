@@ -12,6 +12,17 @@ namespace ImoEstudantePLMetroUi.Views
 {
     public partial class AddHouseImages : UserControl
     {
+        private static AddHouseImages _instance;
+
+        public static AddHouseImages Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new AddHouseImages();
+                return _instance;
+            }
+        }
         public AddHouseImages()
         {
             InitializeComponent();
@@ -19,32 +30,42 @@ namespace ImoEstudantePLMetroUi.Views
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+ 
+        }
+
+        private void bT_AddHouseImages_add_Click(object sender, EventArgs e)
+        {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Selecione por favor";
             ofd.Multiselect = true;
             ofd.Filter = "JPG|*.jpg| JPEG |*.jpeg|GIF|*.gif|PNG|.*png";
             DialogResult dr = ofd.ShowDialog();
-            if(dr==System.Windows.Forms.DialogResult.OK)
+            if (dr == System.Windows.Forms.DialogResult.OK)
             {
-                string [] files = ofd.FileNames;
-                int x = 20;
-                int y = 20;
+                string[] files = ofd.FileNames;
+                int x = 40;
+                int y = 40;
                 int maxHeight = -1;
                 foreach (string img in files)
                 {
                     PictureBox pic = new PictureBox();
                     pic.Image = Image.FromFile(img);
                     pic.Location = new Point(x, y);
-                    pic.SizeMode = PictureBoxSizeMode.CenterImage;
+                    pic.SizeMode = PictureBoxSizeMode.StretchImage;
                     maxHeight = Math.Max(pic.Height, maxHeight);
-                    if(x< this.ClientSize.Width -100)
+                    if (x < this.ClientSize.Width - 200)
                     {
-                        x = 20;
-                        y += maxHeight + 10;
+                        x = 40;
+                        y += maxHeight + 20;
                     }
-                    this.panelImage.Controls.Add(pic);
+                    this.flowLayoutPanel1.Controls.Add(pic);
                 }
             }
+        }
+
+        private void metroLink1_Click(object sender, EventArgs e)
+        {
+            this.SendToBack();
         }
     }
 }

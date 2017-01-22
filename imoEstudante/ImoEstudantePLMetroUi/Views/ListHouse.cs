@@ -29,6 +29,12 @@ namespace ImoEstudantePLMetroUi
         public ListHouse()
         {
             InitializeComponent();
+            //AlojamentoRespostaPedido[] data = ClasseStatic.log.GetHouseData();
+            //int nColunas = data.Count();
+            //for (int i = 0; i < nColunas; i++)
+            //{
+            //    dataGridView1.Columns.Add(data[i].IdAlojamento.ToString(), data[i].MoradaAlojamento.Rua.ToString());
+            //}
             dataGridView1.DataSource = ClasseStatic.log.GetHouseData();
         }
     }

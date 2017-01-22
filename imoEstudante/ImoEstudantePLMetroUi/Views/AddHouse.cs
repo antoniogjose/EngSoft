@@ -11,6 +11,10 @@ using System.Windows.Forms;
 using GMap.NET.MapProviders;
 using GMap.NET;
 using GMap.NET.WindowsForms;
+using ImoEstudantePLMetroUi.Views;
+using System.Net;
+using System.Web.Script.Serialization;
+using ImoEstudantePLMetroUi.Resources;
 
 namespace ImoEstudantePLMetroUi
 {
@@ -35,9 +39,9 @@ namespace ImoEstudantePLMetroUi
 
         private void metroTabPage2_Enter(object sender, EventArgs e)
         {
-            //
+            lB_POI.Items.Clear();
             //use google provider
-             gMapControl1.MapProvider = GoogleMapProvider.Instance;
+            gMapControl1.MapProvider = GoogleMapProvider.Instance;
             //get tiles from server only
             gMapControl1.Manager.Mode = AccessMode.ServerOnly;
             //not use proxy
@@ -58,61 +62,38 @@ namespace ImoEstudantePLMetroUi
             gMapControl1.MaxZoom = 20;
             //set zoom
             gMapControl1.Zoom = 15;
+
+            WebClient webClient = new WebClient();
+
+            string uri = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
+
+            uri += "location=" + "41.5343785144371" + "," + "-8.61559867858887" + "&";
+            uri += "radius=" + "500" + "&";
+            uri += "types=point_of_interest&";
+            uri += "key=AIzaSyAk7AXTSD8FhpqAixnP6_Alh3uOh4v1198";
+
+            string results = webClient.DownloadString(uri);
+
+            JavaScriptSerializer jss = new JavaScriptSerializer();
+
+            Example pois = jss.Deserialize<Example>(results);
+
+
+
+            for (int i = 0; i < pois.results.Count; i++)
+            {
+                // apresentar o nome do POI em portugues
+                byte[] bytes = Encoding.Default.GetBytes(pois.results[i].name);
+                string myString = Encoding.UTF8.GetString(bytes);
+                lB_POI.Items.Add(myString);
+            }
         }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        private void bT_addHouse_inserirFoto_Click(object sender, EventArgs e)
         {
+            AddHouseImages.Instance.BringToFront();
 
-        }
-
-        private void metroTabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelDashBoard_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cB_addHouse_pais_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox4_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bT_addHouse_inserir_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metroTabPage2_Click(object sender, EventArgs e)
-        {
-
+            //Idioma.switchLanguage(panel, cul, res_man);
         }
     }
 }
